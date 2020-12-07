@@ -1,0 +1,81 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta content="IE=8" http-equiv="X-UA-Compatible">
+      <title>动力传动系统故障诊断码（DTC）类型定义</title><script> document.domain="saic-gm.com"; function showImg(obj){ var as = document.getElementsByTagName('a'); for(var i=0;i<as.length;i++){as[i].innerHTML='点击显示图片';as[i].parentNode.style.height='40px';} var src = obj.getAttribute("data-url"); var imgstr='<OBJECT width="892" height="680" type="image" classid="CLSID:B789F873-EB93-11D2-A6D8-00A0241989B9"><PARAM NAME="src" value="'+src+'"></OBJECT>';setTimeout(function(){obj.parentNode.style.height='700px';obj.innerHTML = imgstr;}, 1000 );parent.iFrameHeight2();}</script><meta name="Generator" content="Arbortext Publishing Engine 6.0 M130">
+      <meta name="Stylesheet" content="E:\PTC\arbortext pe\custom\doctypes\sm\sm_html.style">
+      <link rel="stylesheet" href="commonCss.css" charset="UTF-8" type="text/css"></head>
+   <div class=" x-servinfo-1-0" id="styler-id1">
+      <h4 class=" x-title-19-0" id="styler-id1.1">动力传动系统故障诊断码（DTC）类型定义</h4>
+      <div class=" x-servinfosub-2-0" id="styler-id1.2">
+         <h5 class=" x-title-16-0" id="styler-id1.2.1">与排放有关的故障诊断码</h5>
+         <ul class=" x-list1-8-0">
+            <h3 class=" x-title-24-0" id="styler-id1.2.2.1">设置故障诊断码时采取的操作 - A类</h3>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;当诊断运行且未通过时，控制模块点亮故障指示灯 (MIL)。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;控制模块记录诊断未通过时的运行状态。控制模块将此信息存储在“Freeze Frame/Failure Records（冻结故障状态/故障记录）”中。</span></li>
+         </ul>
+         <ul class=" x-list1-8-0">
+            <h3 class=" x-title-24-0" id="styler-id1.2.3.1">设置故障诊断码时采取的操作 - B类</h3>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;在第三个连续点火循环中诊断运行并未通过时，控制模块点亮故障指示灯。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;控制模块记录诊断未通过时的运行状态。诊断第一次未能通过时，控制模块将此信息保存在障记录D。如果在第三个连续点火循环中，诊断报告失败，则控制模块记录诊断未通过时的运行状态。控制模块将运行状况写入冻结故障状态D并更新故障记录</span></li>
+         </ul>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;以下情况适用于缺火故障诊断码：</span></li>
+            <ul class=" x-list2-2-0">
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-3 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-3"><span style="font-family: Arial; ">– </span> 如果控制模块在连续3个循环过程中检测到低水平或排放水平缺火故障，则控制模块点亮故障指示灯。</span></li>
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-3 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-3"><span style="font-family: Arial; ">– </span> 如果控制模块检测到高水平或催化剂破坏型缺火，则控制模块使故障指示灯以每秒钟一次的速率闪烁。</span></li>
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-3 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-3"><span style="font-family: Arial; ">– </span> 如果控制模块在3个不连续点火循环过程中检测到缺火，则将模块中存储的条件与当前条件相比较。当以下情况出现时，控制模块点亮故障指示灯：</span></li>
+               <ul class=" x-list3-1-0">
+                  <li class=" x--inherit-background-color x-item-5-0 x-item-5-2 x--zero-text-indent"><span class=" x-ptxt-1-0 x-ptxt-1-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;发动机负荷在先前未通过测试的值的20%以内。</span></li>
+                  <li class=" x--inherit-background-color x-item-5-0 x-item-5-2 x--zero-text-indent"><span class=" x-ptxt-1-0 x-ptxt-1-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;发动机转速在先前未通过测试时的转速375转/分以内。</span></li>
+                  <li class=" x--inherit-background-color x-item-5-0 x-item-5-2 x--zero-text-indent"><span class=" x-ptxt-1-0 x-ptxt-1-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;发动机冷却液温度与先前未通过测试的值在同一范围内。</span></li>
+               </ul>
+            </ul>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;以下情况适用于燃油调整故障诊断码：</span></li>
+            <ul class=" x-list2-2-0">
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-3 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-3"><span style="font-family: Arial; ">– </span> 如果控制模块在3个连续点火循环过程中检测到燃油调整故障，则控制模块点亮故障指示灯。</span></li>
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-3 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-3"><span style="font-family: Arial; ">– </span> 如果控制模块在3个不连续点火循环过程中检测到燃油调整故障，则将模块中存储的条件与当前条件相比较。当以下情况出现时，控制模块点亮故障指示灯：</span></li>
+               <ul class=" x-list3-1-0">
+                  <li class=" x--inherit-background-color x-item-5-0 x-item-5-2 x--zero-text-indent"><span class=" x-ptxt-1-0 x-ptxt-1-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;发动机负荷在先前未通过测试的值的20%以内。</span></li>
+                  <li class=" x--inherit-background-color x-item-5-0 x-item-5-2 x--zero-text-indent"><span class=" x-ptxt-1-0 x-ptxt-1-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;发动机转速在先前未通过测试时的转速375转/分以内。</span></li>
+                  <li class=" x--inherit-background-color x-item-5-0 x-item-5-2 x--zero-text-indent"><span class=" x-ptxt-1-0 x-ptxt-1-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;发动机冷却液温度与先前未通过测试的值在同一范围内。</span></li>
+               </ul>
+            </ul>
+         </ul>
+         <ul class=" x-list1-8-0">
+            <h3 class=" x-title-24-0" id="styler-id1.2.5.1">熄灭故障指示灯/清除故障诊断码的条件 - A类或B类</h3>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;在4个连续点火循环中诊断运行并成功通过后，控制模块将熄灭故障指示灯。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;当诊断运行并通过时，则清除当前故障诊断码（即上次测试未通过的故障诊断码）。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;如果在连续40个预热循环中，该诊断以及其他和排放有关的诊断都成功通过了测试，则清除历史故障诊断码。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;用故障诊断仪熄灭故障指示灯并清除故障诊断码。</span></li>
+         </ul>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.3">
+         <h5 class=" x-title-16-0" id="styler-id1.3.1">与排放无关的故障诊断码</h5>
+         <ul class=" x-list1-8-0">
+            <h3 class=" x-title-24-0" id="styler-id1.3.2.1">设置故障诊断码时采取的操作 - C类</h3>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;当诊断运行且未通过时，控制模块在存储器中储存故障诊断码信息。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;故障指示灯不点亮。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;控制模块记录诊断未通过时的运行状态。控制模块将此信息存储在“Failure Records（故障记录）”中。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;驾驶员信息中心（如装备）可能会显示一条信息。</span></li>
+         </ul>
+         <ul class=" x-list1-8-0">
+            <h3 class=" x-title-24-0" id="styler-id1.3.3.1">清除故障诊断码的条件 - C类</h3>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;当诊断运行并且通过时，清除当前故障诊断码（即上次测试失败的故障诊断码）。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;如果在连续40个预热循环中，该诊断以及其他和非排放有关的诊断都成功通过了测试，则清除历史故障诊断码。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;用故障诊断仪清除故障诊断码。</span></li>
+         </ul>
+         <ul class=" x-list1-8-0">
+            <h3 class=" x-title-24-0" id="styler-id1.3.4.1">设置故障诊断码时采取的操作D类</h3>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;控制模块将执行默认操作但是故障诊断码将不被存储到故障记录中。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;故障指示灯或 尽快维修车辆 指示灯不点亮。</span></li>
+         </ul>
+         <div class=" x-para-1-0">
+            <h3 class=" x-title-10-0" id="styler-id1.3.5.1">清除故障诊断码的条件D类</h3>
+            <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; margin-left: 8mm; text-indent: 0pt; ">用故障诊断仪清除故障诊断码。</div>
+         </div>
+      </div>
+   </div>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta content="IE=8" http-equiv="X-UA-Compatible">
+      <title>变速器自适应值读入</title><script> document.domain="saic-gm.com"; function showImg(obj){ var as = document.getElementsByTagName('a'); for(var i=0;i<as.length;i++){as[i].innerHTML='点击显示图片';as[i].parentNode.style.height='40px';} var src = obj.getAttribute("data-url"); var imgstr='<OBJECT width="892" height="680" type="image" classid="CLSID:B789F873-EB93-11D2-A6D8-00A0241989B9"><PARAM NAME="src" value="'+src+'"></OBJECT>';setTimeout(function(){obj.parentNode.style.height='700px';obj.innerHTML = imgstr;}, 1000 );parent.iFrameHeight2();}</script><meta name="Generator" content="Arbortext Publishing Engine 6.0 M130">
+      <meta name="Stylesheet" content="E:\PTC\arbortext pe\custom\doctypes\sm\sm_html.style">
+      <link rel="stylesheet" href="tocCss1.css" charset="UTF-8" type="text/css"></head>
+   <div class=" x-servinfo-1-0" id="styler-id1">
+      <h4 class=" x-title-19-0" id="styler-id1.1">变速器自适应值读入</h4>
+      <div class=" x-servinfosub-2-0" id="styler-id1.2">
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">“变速器自适应值读入”是六速自动变速器的一个程序，在这个程序中运行一系列测试，使变速器控制模块 (TCM) 读入各离合器特征。一旦读入离合器数据，“变速器自适应值读入”将它转换为自适应数据单元，用于换档期间变速器控制模块控制离合器。故障诊断仪可启动“变速器自适应值读入”程序。此程序在变速器维修后使用。</div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">只有车辆进行了以下维修中的一项时，才必须执行“变速器自适应值读入”程序。在以下维修中的一项完成之后若未执行本程序，可能会造成变速器性能不良以及设置变速器DTC：</div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;变速器内部维修/大修</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;阀体修理或更换</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;控制电磁阀总成更换</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;变速器控制模块软件/校准更新</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;针对换档质量问题的任何维修</span></li>
+         </ul>
+         <div class=" x-note-3-0">
+            <div id="styler-id1.2.4.1"></div>
+            <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x--ufe-zb-1-0">注意:</span>执行“变速器自适应值读入”程序之前，确保满足以下条件：
+            </div>
+            <ul class=" x-list1-5-0 x-list1-5-1">
+               <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;用楔块垫好驱动轮</span></li>
+               <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;拉起驻车制动器</span></li>
+               <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;踩下行车制动器</span></li>
+               <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;0%节气门开度，且无外部发动机转速控制</span></li>
+               <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;传动液温度介于下面列出的值之间，如果以高于或低于这些温度运行测试，测试将无法启动：</span></li>
+               <ul class=" x-list2-2-0">
+                  <li class=" x--inherit-background-color x-item-6-0 x-item-6-3 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-3"><span style="font-family: Arial; ">– </span> MY2011和之前型号70–95°C (158–203°F)</span></li>
+                  <li class=" x--inherit-background-color x-item-6-0 x-item-6-3 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-3"><span style="font-family: Arial; ">– </span> MY2012第一代70–95°C (158–203°F)</span></li>
+                  <li class=" x--inherit-background-color x-item-6-0 x-item-6-3 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-3"><span style="font-family: Arial; ">– </span> MY2012第二代64–95°C (147–203°F)</span></li>
+                  <li class=" x--inherit-background-color x-item-6-0 x-item-6-3 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-3"><span style="font-family: Arial; ">– </span> MY2013第一代70–95°C (158–203°F)</span></li>
+                  <li class=" x--inherit-background-color x-item-6-0 x-item-6-3 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-3"><span style="font-family: Arial; ">– </span> MY 2013第二代64–76°C (147–169°F)</span></li>
+                  <li class=" x--inherit-background-color x-item-6-0 x-item-6-3 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-3"><span style="font-family: Arial; ">– </span> MY 2014及之后64–76°C (147–169°F)</span></li>
+               </ul>
+               <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;变速器换档杆从驻车档挂到倒档，循环3次，以排出倒档离合器中的空气。</span></li>
+               <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;如果变速器油温增加至下列值，那么变速器自适应值读入将中断：</span></li>
+               <ul class=" x-list2-2-0">
+                  <li class=" x--inherit-background-color x-item-6-0 x-item-6-3 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-3"><span style="font-family: Arial; ">– </span> MY2011及之前110°C (230°F)</span></li>
+                  <li class=" x--inherit-background-color x-item-6-0 x-item-6-3 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-3"><span style="font-family: Arial; ">– </span> MY2012第一代110°C (230°F)</span></li>
+                  <li class=" x--inherit-background-color x-item-6-0 x-item-6-3 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-3"><span style="font-family: Arial; ">– </span> MY2012第二代100°C (212°F)</span></li>
+                  <li class=" x--inherit-background-color x-item-6-0 x-item-6-3 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-3"><span style="font-family: Arial; ">– </span> MY 2013第一代110°C (230°F)</span></li>
+                  <li class=" x--inherit-background-color x-item-6-0 x-item-6-3 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-3"><span style="font-family: Arial; ">– </span> MY 2013第二代86°C (187°F)</span></li>
+                  <li class=" x--inherit-background-color x-item-6-0 x-item-6-3 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-3"><span style="font-family: Arial; ">– </span> MY 2014及之后86°C (187°F)</span></li>
+               </ul>
+            </ul>
+         </div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent">
+               <div class=" x-note-1-0">
+                  <div id="styler-id1.2.5.1.1.1"></div>
+                  <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x--ufe-zb-1-0">注意:</span>如果程序执行期间所需的条件未满足，“变速器自适应值读入”可能会异常中断，程序需要从起点处重新开始运行。如果发生此类状况，变速器将保持在空档状态直到控制器关闭，在重试程序前，将点火钥匙置于OFF（关闭）位置并拆下故障诊断仪，并等待30秒以上的时间。如果程序重复发生故障，超出了工程设置的限制，有可能出现了变速器硬件问题。
+                  </div>
+               </div><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">1.</span>通过选择以下选项，用故障诊断仪导航至“Transmission Adapative Values Learn”（变速器自适应值读入）选项:</span></li>
+            <ul class=" x-list2-2-0">
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">1.1</span>&nbsp;维修诊断</span></li>
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">1.2</span>&nbsp;选择车型</span></li>
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">1.3</span>&nbsp;动力总成</span></li>
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">1.4</span>&nbsp;手自动档</span></li>
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">1.5</span>&nbsp;变速器控制模块</span></li>
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">1.6</span>&nbsp;GF6自动变速箱</span></li>
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">1.7</span>&nbsp;学习变速箱自适应值</span></li>
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">1.8</span>&nbsp;请按照出现的提示进行操作</span></li>
+            </ul>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent">
+               <div class=" x-note-1-0">
+                  <div id="styler-id1.2.5.3.1.1"></div>
+                  <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x--ufe-zb-1-0">注意:</span>如果程序执行期间所需的条件未满足，“变速器自适应值读入”可能会异常中断，程序需要从起点处重新开始运行。
+                  </div>
+               </div><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">2.</span>使用故障诊断仪执行“变速器自适应值读入”程序。程序执行时，故障诊断仪数据显示屏将提供操作说明。必要时按照故障诊断仪的说明操作。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">3.</span>一旦程序完成，关闭发动机并将变速器控制模块断电。您将与故障诊断仪失去通信。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent">
+               <div class=" x-note-1-0">
+                  <div id="styler-id1.2.5.5.1.1"></div>
+                  <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x--ufe-zb-1-0">注意:</span>当“变速器自适应值读入”程序完成时，变速器将保持在空档状态，直到控制器关闭。如果停止行驶1-2分钟，点火钥匙置于“OFF（关闭）”位置且拆下故障诊断仪后，车辆仍保持空档状态，则断开蓄电池，等待5-10分钟，然后再连接蓄电池。倒档和前进档应恢复。
+                  </div>
+               </div><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">4.</span>重新起动发动机。这将完成“变速器自适应值读入”程序。</span></li>
+         </ul>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.3">
+         <h5 class=" x-title-16-0" id="styler-id1.3.1">故障排查</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">如果“变速器自适应值读入”不运行，且上述条件已满足，确保以下条件：</div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent">
+               <div class=" x-note-1-0">
+                  <div id="styler-id1.3.3.1.1.1"></div>
+                  <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x--ufe-zb-1-0">注意:</span>通过使用故障诊断仪确定变速器代数以检查是否出现特定DTC P0842。如果DTC未显示无效，变速器为第一代。如果DTC显示无效，则变速器为第二代。
+                  </div>
+               </div><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;确定变速器为第一代还是第二代。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;确认车型年款。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;确认变速器油温度在车型年款和变速器代数表中列出的温度范围内。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;制动系统和制动开关运行正常</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;没有激活的DTC</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;在测试开始时，关闭节气门，将发动机转速增加到1,500转/分以上</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;驻车档/空档位置开关正确调整且功能正常</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;管路压力控制可以达到1,000千帕，且在规定范围之内</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;车辆未移动或过度振动</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;离合器装配正确</span></li>
+         </ul>
+      </div>
+   </div>
+</html>

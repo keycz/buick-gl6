@@ -1,0 +1,638 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+  <meta content="IE=8" http-equiv="X-UA-Compatible"> 
+  <title>振动分析－发动机平衡</title>
+  <script> document.domain="saic-gm.com"; function showImg(obj){ var as = document.getElementsByTagName('a'); for(var i=0;i<as.length;i++){as[i].innerHTML='点击显示图片';as[i].parentNode.style.height='40px';} var src = obj.getAttribute("data-url"); var imgstr='<OBJECT width="892" height="680" type="image" classid="CLSID:B789F873-EB93-11D2-A6D8-00A0241989B9"><PARAM NAME="src" value="'+src+'"></OBJECT>';setTimeout(function(){obj.parentNode.style.height='700px';obj.innerHTML = imgstr;}, 1000 );parent.iFrameHeight2();}</script>
+  <meta name="Generator" content="Arbortext Publishing Engine 6.0 M130"> 
+  <meta name="Stylesheet" content="C:\Program Files\PTC\Arbortext PE\custom\doctypes\sm\sm_html.style"> 
+  <link rel="stylesheet" href="commonCss.css" charset="UTF-8" type="text/css">
+ </head> 
+ <body>
+  <div class=" x-servinfo-1-0" id="styler-id1"> 
+   <h4 class=" x-title-19-0" id="styler-id1.1">振动分析－发动机平衡</h4> 
+   <div class=" x-servinfosub-2-0" id="styler-id1.3"> 
+    <ul class=" x-list1-8-0"> 
+     <h3 class=" x-title-24-0" id="styler-id1.3.1.1">专用工具</h3> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;<span class=" x-sptool-1-0"><span class=" x-sptool-no-1-0">CH-51450-NVH</span><span class=" x-sptool-desc-1-0">示波器诊断组件（带NVH）</span></span></span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;<span class=" x-sptool-1-0"><span class=" x-sptool-no-1-0">EL-38792-A</span><span class=" x-sptool-desc-1-0">电子振动分析仪 (EVA) 2</span></span></span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;<span class=" x-sptool-1-0"><span class=" x-sptool-no-1-0">EL-47955</span><span class=" x-sptool-desc-1-0">多诊断接口(MDI)</span></span></span></li> 
+    </ul> 
+    <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">
+     关于当地同等工具，参见
+     <a class=" x-cell-link-2-0" href="A61654-1734588.html">专用工具和设备</a>。 
+    </div> 
+   </div> 
+   <div class=" x-servinfosub-1-0" id="styler-id1.4"> 
+    <h5 class=" x-title-16-0" id="styler-id1.4.1">测试说明</h5> 
+    <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">
+     以下编号与诊断表中的步骤号相对应。
+    </div> 
+    <ul class=" x-exp-list-1-0"> 
+     <li class=" x--inherit-background-color x-exp-item-1-0 x--zero-text-indent"><span style="margin-left: 8mm; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">4.如果有足够的空隙将变速器变矩器和发动机飞轮/挠性板分离，则在进一步测试时可以将变速器与发动机隔离。</span></li> 
+     <li class=" x--inherit-background-color x-exp-item-1-0 x--zero-text-indent"><span style="margin-left: 8mm; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">5.如果发动机飞轮/挠性板的横向跳动量过大，与变速器变矩器的质量组合在一起时，会产生扰动。</span></li> 
+     <li class=" x--inherit-background-color x-exp-item-1-0 x--zero-text-indent"><span style="margin-left: 8mm; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">6.如果发动机飞轮/挠性板在发动机曲轴处松动或开裂、损坏，与变速器变矩器的质量组合在一起时，会产生扰动。</span></li> 
+     <li class=" x--inherit-background-color x-exp-item-1-0 x--zero-text-indent"><span style="margin-left: 8mm; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">7.该步骤是为了将变速器与发动机隔离，以确定扰动是否仅与发动机有关。</span></li> 
+     <li class=" x--inherit-background-color x-exp-item-1-0 x--zero-text-indent"><span style="margin-left: 8mm; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">9.将变速器变矩器重新定位到发动机飞轮/挠性板上，会改变变矩器与发动机后端的平衡关系。</span></li> 
+     <li class=" x--inherit-background-color x-exp-item-1-0 x--zero-text-indent"><span style="margin-left: 8mm; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">11.将<span class=" x-sptool-1-0"><span class=" x-sptool-no-1-0">CH-51450-NVH</span><span class=" x-sptool-desc-1-0">示波器诊断组件（带 NVH）</span></span>或<span class=" x-sptool-1-0"><span class=" x-sptool-no-1-0">EL-38792-A</span><span class=" x-sptool-desc-1-0">电子振动分析仪 (EVA) 2</span></span>传感器沿发动机油底壳的前后缘放置在油底壳的底面上，并进行比较，这将有助于缩小扰动原因的范围。</span></li> 
+     <li class=" x--inherit-background-color x-exp-item-1-0 x--zero-text-indent"><span style="margin-left: 8mm; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">13.如果发动机飞轮的横向跳动量过大，与离合器压盘和离合器从动盘的质量组合在一起时，会产生扰动。</span></li> 
+     <li class=" x--inherit-background-color x-exp-item-1-0 x--zero-text-indent"><span style="margin-left: 8mm; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">14.对离合器压盘和发动机飞轮作标记，以便其中一个的较重部位与另一个的较轻部位正确配合。如压盘与飞轮之间未正确配合，则会产生扰动。</span></li> 
+     <li class=" x--inherit-background-color x-exp-item-1-0 x--zero-text-indent"><span style="margin-left: 8mm; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">15.如果发动机飞轮在发动机曲轴处的连接松动或者发动机飞轮开裂、损坏和/或缺少配重块；和/或离合器压盘和离合器从动盘弹簧松动、开裂、翘曲、损坏和/或缺少配重块，则它们的质量组合时，有可能产生扰动。</span></li> 
+     <li class=" x--inherit-background-color x-exp-item-1-0 x--zero-text-indent"><span style="margin-left: 8mm; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">16.如果发动机飞轮在发动机曲轴处的连接松动或者发动机飞轮开裂、损坏和/或缺少配重块；和/或离合器压盘和离合器从动盘弹簧松动、开裂、翘曲、损坏和/或缺少配重块，则它们的质量组合时，有可能产生扰动。</span></li> 
+     <li class=" x--inherit-background-color x-exp-item-1-0 x--zero-text-indent"><span style="margin-left: 8mm; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">17.将压盘重新定位到发动机飞轮上，改变压盘/飞轮总成与发动机后端之间的平衡关系。</span></li> 
+     <li class=" x--inherit-background-color x-exp-item-1-0 x--zero-text-indent"><span style="margin-left: 8mm; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">18.发动机飞轮/挠性板损坏、错位和/或失衡，会产生扰动。</span></li> 
+     <li class=" x--inherit-background-color x-exp-item-1-0 x--zero-text-indent"><span style="margin-left: 8mm; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">19.发动机曲轴扭转减振器损坏、错位和/或失衡，会产生扰动。</span></li> 
+    </ul> 
+   </div> 
+   <div class=" x-servinfosub-1-0" id="styler-id1.5"> 
+    <div class=" x-table-1-0 x-table-1-1" id="styler-id1.5.1"> 
+     <h3 class=" x-title-17-0" id="styler-id1.5.1.1">振动分析－发动机平衡</h3> 
+     <table class=" x-tgroup-1-0" cellpadding="7" frame="box" border="1" rules="all"> 
+      <colgroup> 
+       <col style="width: 49px; "> 
+       <col style="width: 371px; "> 
+       <col style="width: 134px; "> 
+       <col style="width: 134px; "> 
+      </colgroup> 
+      <thead class=" x-thead-1-0" style="vertical-align: bottom; text-align: left; font-weight: bold; "> 
+       <tr class=" x-row-1-0"> 
+        <th class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          步骤
+         </div> </th> 
+        <th class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          操作
+         </div> </th> 
+        <th class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          是
+         </div> </th> 
+        <th class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          否
+         </div> </th> 
+       </tr> 
+      </thead> 
+      <tbody class=" x-tbody-1-0" style="vertical-align: top; "> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          1
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          是否从“振动分析－发动机/附件隔振”表转至此处？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s02">步骤 2</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-cell-link-2-0" href="A63449-2084484.html">振动分析－发动机/附件隔振</a>
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          2
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: top; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          <span class=" x-sptool-1-0"><span class=" x-sptool-no-1-0">CH-51450-NVH</span><span class=" x-sptool-desc-1-0">示波器诊断组件（带NVH）</span></span>或
+          <span class=" x-sptool-1-0"><span class=" x-sptool-no-1-0">EL-38792-A</span><span class=" x-sptool-desc-1-0">电子振动分析仪(EVA) 2</span></span>可用吗？ 
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s03">步骤 3</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-cell-link-2-0" href="A62603-2332690.html">振动诊断帮助</a>
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          3
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: top; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          车辆是否配备手动变速器？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s11">步骤 11</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s04">步骤 4</a>
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          <a class=" x-intxref-1-0" href="#td04">4</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: top; padding: 7px; "> 
+         <ul class=" x-table-list1-1-0"> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">举升并顶起车辆。参见<a class=" x-cell-link-2-0" href="A47852-S0000046003.html">举升和顶起车辆</a>。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">拆下飞轮/挠性板与变矩器的螺栓检修孔盖（如装备）。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">确定是否有足够的空隙将变速器变矩器从发动机飞轮/挠性板分离，并确保变矩器不会与飞轮/挠性板意外接合。</span></li> 
+         </ul> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          是否有足够的空隙使变速器变矩器与发动机飞轮/挠性板分离，并确保其不触碰到发动机飞轮/挠性板？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s05">步骤 5</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s11">步骤 11</a>
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          <a class=" x-intxref-1-0" href="#td05">5</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: top; padding: 7px; "> 
+         <ul class=" x-table-list1-1-0"> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">使飞轮/挠性板至变矩器的检修孔盖保持拆下状态，车辆保持举升状态，然后标记变速器变矩器与发动机飞轮/挠性板的相对位置。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">断开变矩器并且将其与飞轮/挠性板分开。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">将变速器变矩器固定在离开发动机飞轮/挠性板的位置，以避免与飞轮/挠性板意外接合。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">降低车辆，起动发动机，并使发动机怠速运行。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">举升并顶起车辆。参见<a class=" x-cell-link-2-0" href="A47852-S0000046003.html">举升和顶起车辆</a>。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">目视检查飞轮/挠性板的横向跳动量是否过大。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">降低车辆。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">关闭点火开关。</span></li> 
+         </ul> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          飞轮/挠性板的横向跳动量是否过大？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s08">步骤 8</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s06">步骤 6</a>
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          <a class=" x-intxref-1-0" href="#td06">6</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: top; padding: 7px; "> 
+         <ul class=" x-table-list1-1-0"> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">举升并顶起车辆。参见<a class=" x-cell-link-2-0" href="A47852-S0000046003.html">举升和顶起车辆</a>。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">检查飞轮/挠性板是否存在以下情况：</span></li> 
+          <ul class=" x-table-list2-1-0"> 
+           <li class=" x--inherit-background-color x-table-item-6-0 x-table-item-6-2 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">发动机曲轴处连接松动</span></li> 
+           <li class=" x--inherit-background-color x-table-item-6-0 x-table-item-6-2 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">开裂和/或损坏</span></li> 
+           <li class=" x--inherit-background-color x-table-item-6-0 x-table-item-6-2 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">缺少配重块</span></li> 
+          </ul> 
+         </ul> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          飞轮/挠性板是否存在上述任何情况？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s08">步骤 8</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s07">步骤 7</a>
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          <a class=" x-intxref-1-0" href="#td07">7</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: top; padding: 7px; "> 
+         <ul class=" x-table-list1-1-0"> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">变速器变矩器仍然固定在离开发动机飞轮/挠性板的位置，以避免与飞轮/挠性板意外接合，在这种情况下降下车辆。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">用木块垫好前轮。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">同时施加行车制动器和驻车制动器。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">仍然安装<span class=" x-sptool-1-0"><span class=" x-sptool-no-1-0">CH-51450-NVH</span><span class=" x-sptool-desc-1-0">示波器诊断组件（带 NVH）</span></span>和<span class=" x-sptool-1-0"><span class=" x-sptool-no-1-0">EL-47955</span><span class=" x-sptool-desc-1-0">多诊断接口 (MDI)</span></span>，或者故障诊断仪和<span class=" x-sptool-1-0"><span class=" x-sptool-no-1-0">EL-38792-A</span><span class=" x-sptool-desc-1-0">电子振动分析仪 2</span></span>的情况下，起动发动机。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">将变速器挂在空档或驻车档。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">缓慢地提高发动机转速，直至扰动最明显为止。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">记录故障诊断仪上获取的发动机转速，并记录主频读数（如果从<span class=" x-sptool-1-0"><span class=" x-sptool-no-1-0">EL-38792-A</span><span class=" x-sptool-desc-1-0">电子振动分析仪 (EVA) 2</span></span>获得）。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">关闭点火开关。</span></li> 
+         </ul> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          扰动是否显著减少或消除？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s09">步骤 9</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s11">步骤 11</a>
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          8
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: top; padding: 7px; "> 
+         <ul class=" x-table-list1-1-0"> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">如果飞轮/挠性板在发动机曲轴处连接松动，按规定顺序和紧固规格紧固飞轮/挠性板安装螺栓。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">如果飞轮/挠性板开裂、损坏和/或缺少配重块，更换损坏的飞轮/挠性板。</span></li> 
+         </ul> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          是否完成了紧固或更换操作？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s20">步骤 20</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          －
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          <a class=" x-intxref-1-0" href="#td09">9</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: top; padding: 7px; "> 
+         <ul class=" x-table-list1-1-0"> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">举升并顶起车辆。参见<a class=" x-cell-link-2-0" href="A47852-S0000046003.html">举升和顶起车辆</a>。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">从原来位置转动 120 度，将变速器变矩器重新定位在发动机飞轮/挠性板上。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">将变速器变矩器重新连接至发动机飞轮/挠性板。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">降低车辆。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">用木块垫好前轮。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">同时施加行车制动器和驻车制动器。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">仍然安装<span class=" x-sptool-1-0"><span class=" x-sptool-no-1-0">CH-51450-NVH</span><span class=" x-sptool-desc-1-0">示波器诊断组件（带 NVH）</span></span>和<span class=" x-sptool-1-0"><span class=" x-sptool-no-1-0">EL-47955</span><span class=" x-sptool-desc-1-0">多诊断接口 (MDI)</span></span>，或者故障诊断仪和<span class=" x-sptool-1-0"><span class=" x-sptool-no-1-0">EL-38792-A</span><span class=" x-sptool-desc-1-0">电子振动分析仪 2</span></span>的情况下，起动发动机。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">将变速器挂在空档或驻车档。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">缓慢地提高发动机转速，直至扰动最明显为止。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">记录故障诊断仪上获取的发动机转速，并记录主频读数（如果从<span class=" x-sptool-1-0"><span class=" x-sptool-no-1-0">CH-51450-NVH</span><span class=" x-sptool-desc-1-0">示波器诊断组件（带 NVH）</span></span>或<span class=" x-sptool-1-0"><span class=" x-sptool-no-1-0">EL-38792-A</span><span class=" x-sptool-desc-1-0">电子振动分析仪 (EVA) 2</span></span>获得的话）。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">如果扰动仍然明显，再次重新定位变矩器，以使扰动达到最小。</span></li> 
+         </ul> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          扰动是否显著减少或消除？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s20">步骤 20</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s10">步骤 10</a>
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          10
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: top; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          更换失衡的变速器变矩器。
+         </div> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          是否完成更换？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s20">步骤 20</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          －
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          <a class=" x-intxref-1-0" href="#td11">11</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: top; padding: 7px; "> 
+         <ul class=" x-table-list1-1-0"> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">举升并顶起车辆。参见<a class=" x-cell-link-2-0" href="A47852-S0000046003.html">举升和顶起车辆</a>。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">将<span class=" x-sptool-1-0"><span class=" x-sptool-no-1-0">CH-51450-NVH</span><span class=" x-sptool-desc-1-0">示波器诊断组件（带 NVH）</span></span>或<span class=" x-sptool-1-0"><span class=" x-sptool-no-1-0">EL-38792-A</span><span class=" x-sptool-desc-1-0">电子振动分析仪 (EVA) 2</span></span>传感器沿发动机油底壳的前缘放置在油底壳的底面上。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">降低车辆。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">用木块垫好前轮。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">同时施加行车制动器和驻车制动器。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">仍然安装<span class=" x-sptool-1-0"><span class=" x-sptool-no-1-0">CH-51450-NVH</span><span class=" x-sptool-desc-1-0">示波器诊断组件（带 NVH）</span></span>和<span class=" x-sptool-1-0"><span class=" x-sptool-no-1-0">EL-47955</span><span class=" x-sptool-desc-1-0">多诊断接口 (MDI)</span></span>，或者故障诊断仪和<span class=" x-sptool-1-0"><span class=" x-sptool-no-1-0">EL-38792-A</span><span class=" x-sptool-desc-1-0">电子振动分析仪 2</span></span>的情况下，起动发动机。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">将变速器挂在空档或驻车档。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">缓慢地提高发动机转速，直至扰动最明显为止。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">记录故障诊断仪上获取的发动机转速，并记录主频读数（如果通过发动机油底壳底面从<span class=" x-sptool-1-0"><span class=" x-sptool-no-1-0">CH-51450-NVH</span><span class=" x-sptool-desc-1-0">示波器诊断组件（带 NVH）</span></span>或<span class=" x-sptool-1-0"><span class=" x-sptool-no-1-0">EL-38792-A</span><span class=" x-sptool-desc-1-0">电子振动分析仪 (EVA) 2</span></span>获得的话）。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">重复步骤 1 至 9，将<span class=" x-sptool-1-0"><span class=" x-sptool-no-1-0">CH-51450-NVH</span><span class=" x-sptool-desc-1-0">示波器诊断组件（带 NVH）</span></span>或<span class=" x-sptool-1-0"><span class=" x-sptool-no-1-0">EL-38792-A</span><span class=" x-sptool-desc-1-0">电子振动分析仪 (EVA) 2</span></span>传感器沿发动机油底壳的后缘放置在油底壳的底面上。</span></li> 
+         </ul> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          沿发动机前缘放置时，扰动是否更大？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s19">步骤 19</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s12">步骤 12</a>
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          12
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: top; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          车辆是否配备自动变速器？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s18">步骤 18</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s13">步骤 13</a>
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          <a class=" x-intxref-1-0" href="#td13">13</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: top; padding: 7px; "> 
+         <ul class=" x-table-list1-1-0"> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">举升并顶起车辆。参见<a class=" x-cell-link-2-0" href="A47852-S0000046003.html">举升和顶起车辆</a>。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">拆下飞轮检查盖。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">起动发动机。使发动机怠速运转。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">目视检查发动机飞轮离合器表面的横向跳动量是否过大。</span></li> 
+         </ul> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          发动机飞轮离合器表面的横向跳动量是否过大？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s18">步骤 18</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s14">步骤 14</a>
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          <a class=" x-intxref-1-0" href="#td14">14</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: top; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          检查离合器压盘至发动机飞轮的安装位置是否符合工厂规定。
+         </div> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          离合器压盘是否正确地安装至发动机飞轮？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s16">步骤 16</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s15">步骤 15</a>
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          <a class=" x-intxref-1-0" href="#td15">15</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: top; padding: 7px; "> 
+         <ul class=" x-table-list1-1-0"> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">将离合器压盘和离合器从动盘从发动机飞轮上拆下。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">检查发动机飞轮是否有以下情况：</span></li> 
+          <ul class=" x-table-list2-1-0"> 
+           <li class=" x--inherit-background-color x-table-item-6-0 x-table-item-6-2 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">发动机曲轴处连接松动</span></li> 
+           <li class=" x--inherit-background-color x-table-item-6-0 x-table-item-6-2 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">开裂、翘曲和/或损坏</span></li> 
+           <li class=" x--inherit-background-color x-table-item-6-0 x-table-item-6-2 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">缺少配重块</span></li> 
+          </ul> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">检查离合器压盘和离合器从动盘是否有以下情况：</span></li> 
+          <ul class=" x-table-list2-1-0"> 
+           <li class=" x--inherit-background-color x-table-item-6-0 x-table-item-6-2 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">离合器从动盘减振弹簧松动和/或损坏</span></li> 
+           <li class=" x--inherit-background-color x-table-item-6-0 x-table-item-6-2 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">离合器压盘膜片弹簧松动和/或损坏</span></li> 
+           <li class=" x--inherit-background-color x-table-item-6-0 x-table-item-6-2 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">开裂、翘曲和/或损坏</span></li> 
+           <li class=" x--inherit-background-color x-table-item-6-0 x-table-item-6-2 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">缺少配重块</span></li> 
+          </ul> 
+         </ul> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          是否存在任何上述情况？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s18">步骤 18</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s17">步骤 17</a>
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          <a class=" x-intxref-1-0" href="#td16">16</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: top; padding: 7px; "> 
+         <ul class=" x-table-list1-1-0"> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">将离合器压盘和离合器从动盘从发动机飞轮上拆下。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">检查发动机飞轮是否有以下情况：</span></li> 
+          <ul class=" x-table-list2-1-0"> 
+           <li class=" x--inherit-background-color x-table-item-6-0 x-table-item-6-2 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">发动机曲轴处连接松动</span></li> 
+           <li class=" x--inherit-background-color x-table-item-6-0 x-table-item-6-2 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">开裂、翘曲和/或损坏</span></li> 
+           <li class=" x--inherit-background-color x-table-item-6-0 x-table-item-6-2 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">缺少配重块</span></li> 
+          </ul> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">检查离合器压盘和离合器从动盘是否有以下情况：</span></li> 
+          <ul class=" x-table-list2-1-0"> 
+           <li class=" x--inherit-background-color x-table-item-6-0 x-table-item-6-2 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">离合器从动盘减振弹簧松动和/或损坏</span></li> 
+           <li class=" x--inherit-background-color x-table-item-6-0 x-table-item-6-2 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">离合器压盘膜片弹簧松动和/或损坏</span></li> 
+           <li class=" x--inherit-background-color x-table-item-6-0 x-table-item-6-2 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">开裂、翘曲和/或损坏</span></li> 
+           <li class=" x--inherit-background-color x-table-item-6-0 x-table-item-6-2 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">缺少配重块</span></li> 
+          </ul> 
+         </ul> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          是否存在任何上述情况？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s18">步骤 18</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-cell-link-2-0" href="A62603-2332690.html">振动诊断帮助</a>
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          <a class=" x-intxref-1-0" href="#td17">17</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: top; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          将压盘重新定位到发动机飞轮上。
+         </div> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          是否完成了重新定位？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s20">步骤 20</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          －
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          <a class=" x-intxref-1-0" href="#td18">18</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: top; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          更换发动机飞轮/挠性板。
+         </div> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          是否完成更换？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s20">步骤 20</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          －
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          <a class=" x-intxref-1-0" href="#td19">19</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: top; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          更换发动机曲轴扭转减振器。
+         </div> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          是否完成更换？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s20">步骤 20</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          －
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          20
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          检查车辆，以确定现在扰动是否已显著减少或消除。执行以下步骤：
+         </div> 
+         <ul class=" x-table-list1-1-0"> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">安装或连接诊断期间拆下或断开的所有部件。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">将故障诊断仪安装至客户的车辆。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">将<span class=" x-sptool-1-0"><span class=" x-sptool-no-1-0">CH-51450-NVH</span><span class=" x-sptool-desc-1-0">示波器诊断组件（带 NVH）</span></span>或<span class=" x-sptool-1-0"><span class=" x-sptool-no-1-0">EL-38792-A</span><span class=" x-sptool-desc-1-0">电子振动分析仪 (EVA) 2</span></span>（如可用）安装至客户车辆；将传感器放置在其原来在车上的位置。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">用木块垫好前轮。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">同时施加行车制动器和驻车制动器。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">起动发动机。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">将变速器挂在空档或驻车档。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">缓慢地提高发动机转速，直至扰动最为明显为止。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">记录故障诊断仪上获取的发动机转速，并记录主频读数（如果从<span class=" x-sptool-1-0"><span class=" x-sptool-no-1-0">CH-51450-NVH</span><span class=" x-sptool-desc-1-0">示波器诊断组件（带 NVH）</span></span>或<span class=" x-sptool-1-0"><span class=" x-sptool-no-1-0">EL-38792-A</span><span class=" x-sptool-desc-1-0">电子振动分析仪 (EVA) 2</span></span>（如可用）获得的话）。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">将变速器挂在行车档。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">缓慢地提高发动机转速，直至扰动最为明显为止。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">记录故障诊断仪上获取的发动机转速，并记录主频读数（如果从<span class=" x-sptool-1-0"><span class=" x-sptool-no-1-0">CH-51450-NVH</span><span class=" x-sptool-desc-1-0">示波器诊断组件（带 NVH）</span></span>或<span class=" x-sptool-1-0"><span class=" x-sptool-no-1-0">EL-38792-A</span><span class=" x-sptool-desc-1-0">电子振动分析仪 (EVA) 2</span></span>（如可用）获得的话）。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">如果扰动已显著减少或消除，则将变速器挂在倒档，确认其结果，然后重复步骤 11 和 12。动力总成的倒档负载有可能增强或改变振动特征。</span></li> 
+         </ul> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          扰动是否显著减少或消除？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s21">步骤 21</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-cell-link-2-0" href="A62603-2332690.html">振动诊断帮助</a>
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          21
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: top; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          按“振动分析－路试”表进行检测。参见
+          <a class=" x-cell-link-2-0" href="A62590-2516043.html">振动分析－路试</a>。 
+         </div> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          扰动是否仍然存在？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-cell-link-2-0" href="A62603-2332690.html">振动诊断帮助</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          系统正常
+         </div> </td> 
+       </tr> 
+      </tbody> 
+     </table> 
+    </div> 
+   </div> 
+  </div>  
+ </body>
+</html>

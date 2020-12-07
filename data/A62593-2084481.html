@@ -1,0 +1,618 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+  <meta content="IE=8" http-equiv="X-UA-Compatible"> 
+  <title>振动分析－轮胎和车轮</title>
+  <script> document.domain="saic-gm.com"; function showImg(obj){ var as = document.getElementsByTagName('a'); for(var i=0;i<as.length;i++){as[i].innerHTML='点击显示图片';as[i].parentNode.style.height='40px';} var src = obj.getAttribute("data-url"); var imgstr='<OBJECT width="892" height="680" type="image" classid="CLSID:B789F873-EB93-11D2-A6D8-00A0241989B9"><PARAM NAME="src" value="'+src+'"></OBJECT>';setTimeout(function(){obj.parentNode.style.height='700px';obj.innerHTML = imgstr;}, 1000 );parent.iFrameHeight2();}</script>
+  <meta name="Generator" content="Arbortext Publishing Engine 6.0 M130"> 
+  <meta name="Stylesheet" content="C:\Program Files\PTC\Arbortext PE\custom\doctypes\sm\sm_html.style"> 
+  <link rel="stylesheet" href="commonCss.css" charset="UTF-8" type="text/css">
+ </head> 
+ <body>
+  <div class=" x-servinfo-1-0" id="styler-id1"> 
+   <h4 class=" x-title-19-0" id="styler-id1.1">振动分析－轮胎和车轮</h4> 
+   <div class=" x-servinfosub-2-0" id="styler-id1.3"> 
+    <h5 class=" x-title-16-0" id="styler-id1.3.1">测试说明</h5> 
+    <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">
+     以下编号指的是诊断表中的步骤号：
+    </div> 
+    <ul class=" x-exp-list-1-0"> 
+     <li class=" x--inherit-background-color x-exp-item-1-0 x--zero-text-indent"><span style="margin-left: 8mm; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">4.轮胎和车轮总成上存在异物和/或损坏、异常或过度磨损的轮胎和车轮总成都可能导致振动扰动。</span></li> 
+     <li class=" x--inherit-background-color x-exp-item-1-0 x--zero-text-indent"><span style="margin-left: 8mm; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">6.如果轮胎和车轮总成安装在车上时，跳动量经测量已经过大，则轮胎和车轮总成不一定是导致振动扰动的原因。车上跳动（如果存在）可能引起或导致振动扰动，但引起车上跳动的原因不一定是轮胎和车轮总成。</span></li> 
+     <li class=" x--inherit-background-color x-exp-item-1-0 x--zero-text-indent"><span style="margin-left: 8mm; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">7.在车下测量时，轮胎和车轮总成跳动量过大，将会引起振动扰动。</span></li> 
+     <li class=" x--inherit-background-color x-exp-item-1-0 x--zero-text-indent"><span style="margin-left: 8mm; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">9.在车下测量时，如果轮胎和车轮总成显示临界跳动量（在可接受范围内但接近最大值），而与其配装的轮毂/车桥法兰也显示临界跳动量，那么该轮胎和车轮总成仍可能导致振动扰动。当轮胎和车轮总成与轮毂/车桥法兰装配后，其临界跳动量叠加在一起可能产生一个过大的跳动量，从而导致振动扰动。</span></li> 
+     <li class=" x--inherit-background-color x-exp-item-1-0 x--zero-text-indent"><span style="margin-left: 8mm; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">14.如果制动盘和/或制动鼓（如装备）的不平衡量过大，则将引起或可能导致振动扰动。</span></li> 
+     <li class=" x--inherit-background-color x-exp-item-1-0 x--zero-text-indent"><span style="margin-left: 8mm; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">15.轮毂/车桥法兰和/或车轮双头螺栓如果存在过大的跳动量，可能导致振动扰动。</span></li> 
+     <li class=" x--inherit-background-color x-exp-item-1-0 x--zero-text-indent"><span style="margin-left: 8mm; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">16.当轮胎和车轮总成与轮毂/车桥法兰装配后，其临界跳动量叠加在一起可能产生一个过大的跳动量，从而导致振动扰动。将轮胎和车轮总成配装（或矢量匹配）到轮毂/车桥法兰上，可以修正组合跳动量。</span></li> 
+     <li class=" x--inherit-background-color x-exp-item-1-0 x--zero-text-indent"><span style="margin-left: 8mm; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">18.在平衡和跳动量合格的轮胎和车轮总成上可能会出现作用力变化。作用力变化（如果存在）会引起或导致振动扰动。</span></li> 
+     <li class=" x--inherit-background-color x-exp-item-1-0 x--zero-text-indent"><span style="margin-left: 8mm; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">20.对转向输入和/或扭矩负载输入敏感的部件会影响或者可能会导致振动扰动。</span></li> 
+     <li class=" x--inherit-background-color x-exp-item-1-0 x--zero-text-indent"><span style="margin-left: 8mm; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">22.轮胎和车轮总成与其他处于临界平衡的部件叠加产生的微小不平衡量，可使用车上平衡或精平衡的方法来减小。</span></li> 
+    </ul> 
+   </div> 
+   <div class=" x-servinfosub-1-0" id="styler-id1.4"> 
+    <div class=" x-table-1-0 x-table-1-1" id="styler-id1.4.1"> 
+     <h3 class=" x-title-17-0" id="styler-id1.4.1.1">振动分析－轮胎和车轮</h3> 
+     <table class=" x-tgroup-1-0" cellpadding="7" frame="box" border="1" rules="all"> 
+      <colgroup> 
+       <col style="width: 49px; "> 
+       <col style="width: 371px; "> 
+       <col style="width: 134px; "> 
+       <col style="width: 134px; "> 
+      </colgroup> 
+      <thead class=" x-thead-1-0" style="vertical-align: bottom; text-align: left; font-weight: bold; "> 
+       <tr class=" x-row-1-0"> 
+        <th class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          步骤
+         </div> </th> 
+        <th class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          操作
+         </div> </th> 
+        <th class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          是
+         </div> </th> 
+        <th class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          否
+         </div> </th> 
+       </tr> 
+      </thead> 
+      <tbody class=" x-tbody-1-0" style="vertical-align: top; "> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          1
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: top; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          是否完成“振动分析－路试”表？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s02">步骤 2</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-cell-link-2-0" href="A62590-2516043.html">振动分析－路试</a>
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          2
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: top; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          根据“振动分析－路试”表，振动问题是否与轮胎和车轮总成的一阶扰动有关？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s04">步骤 4</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s03">步骤 3</a>
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          3
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: top; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          根据“振动分析－路试”表，振动问题是否与轮胎和车轮总成的二阶或高阶扰动有关？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s18">步骤 18</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-cell-link-2-0" href="A62590-2516043.html">振动分析－路试</a>
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          <a class=" x-intxref-1-0" href="#td04">4</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: top; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          目视检查轮胎和车轮总成是否出现以下情况：
+         </div> 
+         <ul class=" x-table-list1-1-0"> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-2 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">积垢，如淤泥、底漆、积冰/积雪、沥青等。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-2 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">损坏，异常或过度磨损</span></li> 
+         </ul> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          参见
+          <a class=" x-cell-link-2-0" href="A63436-2332698.html">轮胎和车轮的检查</a>。 
+         </div> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          是否有轮胎和车轮总成出现上述任何情况？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s05">步骤 5</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s06">步骤 6</a>
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          5
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: top; padding: 7px; "> 
+         <ul class=" x-table-list1-1-0"> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">清除轮胎和车轮总成上的积垢。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">必要时，更换损坏、异常或过度磨损的车轮或轮胎。</span></li> 
+         </ul> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          是否完成修理或更换操作？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s23">步骤 23</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          －
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          <a class=" x-intxref-1-0" href="#td06">6</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: top; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          测量轮胎和车轮总成的车上跳动量。参见
+          <a class=" x-cell-link-2-0" href="A63437-2332699.html">轮胎和车轮总成跳动量的测量－车上</a>。 
+         </div> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          跳动量测量值是否表明有跳动问题？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s07">步骤 7</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s12">步骤 12</a>
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          <a class=" x-intxref-1-0" href="#td07">7</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: top; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          测量轮胎和车轮总成的车下跳动量。参见
+          <a class=" x-cell-link-2-0" href="A63438-S0000015303.html">轮胎和车轮总成跳动量的测量－车下</a>。 
+         </div> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          跳动量测量值是否表明有跳动问题？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s19">步骤 19</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s08">步骤 8</a>
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          8
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          车辆是否配备防爆轮胎？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s12">步骤 12</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s09">步骤 9</a>
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          <a class=" x-intxref-1-0" href="#td09">9</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: top; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          任一轮胎和车轮总成的跳动量测量值是否为临界跳动量（在可接受范围内，但接近最大值）？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s10">步骤 10</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s15">步骤 15</a>
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          10
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: top; padding: 7px; "> 
+         <div class=" x-note-5-0"> 
+          <div id="styler-id1.4.1.2.6.10.2.1.1"></div> 
+          <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">
+           <span class=" x--ufe-zb-1-0">注意:</span>在重新安装到车辆前，确保配装的每一个轮胎和车轮总成已正确平衡。 
+          </div> 
+         </div> 
+         <ul class=" x-table-list1-1-0"> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">对每个临界跳动量的轮胎和车轮总成，将轮胎配装到车轮。参见<a class=" x-cell-link-2-0" href="A62621-2084548.html">轮胎和车轮配装（矢量匹配）</a>。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">测量每个配装轮胎和车轮总成的跳动量。参见<a class=" x-cell-link-2-0" href="A63438-S0000015303.html">轮胎和车轮总成跳动量的测量－车下</a>。</span></li> 
+         </ul> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          能否显著地减少轮胎和车轮总成的跳动量？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s11">步骤 11</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s19">步骤 19</a>
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          11
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: top; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          重新测量轮胎和车轮总成的车上跳动量。参见
+          <a class=" x-cell-link-2-0" href="A63437-2332699.html">轮胎和车轮总成跳动量的测量－车上</a>。 
+         </div> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          测量值是否表明有跳动问题？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s15">步骤 15</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s23">步骤 23</a>
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          12
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: top; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          检查轮胎和车轮总成的平衡。参见
+          <a class=" x-cell-link-2-0" href="A62619-2332760.html">轮胎和车轮总成平衡－车下</a>。 
+         </div> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          是否有任何轮胎和车轮总成失衡？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s13">步骤 13</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s14">步骤 14</a>
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          13
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: top; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          必要时平衡轮胎和车轮总成。参见
+          <a class=" x-cell-link-2-0" href="A62619-2332760.html">轮胎和车轮总成平衡－车下</a>。 
+         </div> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          能否达到平衡？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s23">步骤 23</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-cell-link-2-0" href="A62603-2332690.html">振动诊断帮助</a>
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          <a class=" x-intxref-1-0" href="#td14">14</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: top; padding: 7px; "> 
+         <ul class=" x-table-list1-1-0"> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">检查制动盘和制动鼓（如装备）是否损坏。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">检查制动盘和制动鼓（如装备）的平衡状况。参见<a class=" x-cell-link-2-0" href="A63439-2332752.html">制动盘/制动鼓平衡的检查</a>。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">更换已损坏和/或失衡的制动盘和/或制动鼓（如装备）。</span></li> 
+         </ul> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          是否发现并排除了故障？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s23">步骤 23</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s17">步骤 17</a>
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          <a class=" x-intxref-1-0" href="#td15">15</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: top; padding: 7px; "> 
+         <ul class=" x-table-list1-1-0"> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">测量轮毂/车桥法兰和车轮双头螺栓（如装备）的跳动量。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">检查车轮螺栓（如装备）的平直度和损坏情况。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">参见<a class=" x-cell-link-2-0" href="A63440-2540465.html">轮毂/车桥法兰和车轮双头螺栓跳动量的检查</a>。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">如果检查程序显示存在跳动问题，则更换相应的零部件：</span></li> 
+          <ul class=" x-table-list2-1-0"> 
+           <li class=" x--inherit-background-color x-table-item-6-0 x-table-item-6-2 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">车轮双头螺栓（如装备）</span></li> 
+           <li class=" x--inherit-background-color x-table-item-6-0 x-table-item-6-2 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">车轮螺栓（如装备）</span></li> 
+           <li class=" x--inherit-background-color x-table-item-6-0 x-table-item-6-2 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">车轮轴承/轮毂总成</span></li> 
+          </ul> 
+         </ul> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          是否发现并排除了故障？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s23">步骤 23</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s16">步骤 16</a>
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          <a class=" x-intxref-1-0" href="#td16">16</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: top; padding: 7px; "> 
+         <ul class=" x-table-list1-1-0"> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">将轮胎和车轮总成配装到轮毂/车桥法兰上。参见<a class=" x-cell-link-2-0" href="A62622-2084549.html">轮胎和车轮总成与轮毂/车桥法兰的配装</a>。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">重新测量轮胎和车轮总成的车上跳动量。参见<a class=" x-cell-link-2-0" href="A63437-2332699.html">轮胎和车轮总成跳动量的测量－车上</a>。</span></li> 
+         </ul> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          能否显著地减少车上轮胎和车轮总成的跳动量？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s23">步骤 23</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s02">步骤 2</a>
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          17
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: top; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          检查是否有径向力和横向力变化。参见
+          <a class=" x-cell-link-2-0" href="A63441-2332758.html">轮胎和车轮总成隔振测试</a>。 
+         </div> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          能否找到一个或多个轮胎和车轮总成为扰动原因？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s19">步骤 19</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s20">步骤 20</a>
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          <a class=" x-intxref-1-0" href="#td18">18</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: top; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          检查是否有径向力和横向力变化。参见
+          <a class=" x-cell-link-2-0" href="A63441-2332758.html">轮胎和车轮总成隔振测试</a>。 
+         </div> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          能否找到一个或多个轮胎和车轮总成为扰动原因？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s19">步骤 19</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s21">步骤 21</a>
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          19
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: top; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          必要时，更换任何隔离测试为扰动原因的轮胎和/或车轮。
+         </div> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          是否完成更换？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s23">步骤 23</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          －
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          <a class=" x-intxref-1-0" href="#td20">20</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: top; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          按“振动分析－轮毂/车桥输入”表进行检测。参见
+          <a class=" x-cell-link-2-0" href="A62595-S0000015300.html">振动分析－轮毂和/或车桥输入</a>。 
+         </div> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          是否发现并排除了故障？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s23">步骤 23</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s22">步骤 22</a>
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          21
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: top; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          按“振动分析－轮毂/车桥输入”表进行检测。参见
+          <a class=" x-cell-link-2-0" href="A62595-S0000015300.html">振动分析－轮毂和/或车桥输入</a>。 
+         </div> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          是否发现并排除了故障？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s23">步骤 23</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-cell-link-2-0" href="A62603-2332690.html">振动诊断帮助</a>
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          <a class=" x-intxref-1-0" href="#td22">22</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: top; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          对轮胎和车轮总成进行车上精平衡。参见
+          <a class=" x-cell-link-2-0" href="A62620-2086912.html">轮胎和车轮总成平衡－车上</a>。 
+         </div> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          是否完成车上精密平衡操作？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s23">步骤 23</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          －
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          23
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: top; padding: 7px; "> 
+         <ul class=" x-table-list1-1-0"> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">安装或连接诊断期间拆下或断开的所有部件。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">按“振动分析－路试”表进行检测。参见<a class=" x-cell-link-2-0" href="A62590-2516043.html">振动分析－路试</a>。</span></li> 
+         </ul> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          振动是否仍然存在？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s02">步骤 2</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          系统正常
+         </div> </td> 
+       </tr> 
+      </tbody> 
+     </table> 
+    </div> 
+   </div> 
+  </div>  
+ </body>
+</html>

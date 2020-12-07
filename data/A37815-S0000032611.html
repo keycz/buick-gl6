@@ -1,0 +1,212 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta content="IE=8" http-equiv="X-UA-Compatible">
+      <title>充电系统的说明与操作</title><script> document.domain="saic-gm.com"; function showImg(obj){ var as = document.getElementsByTagName('a'); for(var i=0;i<as.length;i++){as[i].innerHTML='点击显示图片';as[i].parentNode.style.height='40px';} var src = obj.getAttribute("data-url"); var imgstr='<OBJECT width="892" height="680" type="image" classid="CLSID:B789F873-EB93-11D2-A6D8-00A0241989B9"><PARAM NAME="src" value="'+src+'"></OBJECT>';setTimeout(function(){obj.parentNode.style.height='700px';obj.innerHTML = imgstr;}, 1000 );parent.iFrameHeight2();}</script><meta name="Generator" content="Arbortext Publishing Engine 6.0 M130">
+      <meta name="Stylesheet" content="C:\Program Files\PTC\Arbortext PE\custom\doctypes\sm\sm_html.style">
+      <link rel="stylesheet" href="commonCss.css" charset="UTF-8" type="text/css"></head>
+   <div class=" x-servinfo-1-0" id="styler-id1">
+      <h4 class=" x-title-19-0" id="styler-id1.1">充电系统的说明与操作</h4>
+      <div class=" x-servinfosub-2-0" id="styler-id1.2">
+         <h5 class=" x-title-16-0" id="styler-id1.2.1">电源管理概述</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">电源管理系统用于监测和控制充电系统，并发出诊断信息，提醒驾驶员注意蓄电池和发电机可能存在故障。本电源管理系统主要利用已有的车载电脑功能，使发电机效率最大化，管理负载，改善蓄电池充电状态和寿命，使系统对燃油经济性的影响降到最小程度。电源管理系统执行3个功能：</div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;监测蓄电池电压并估计蓄电池的状态。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;它通过提高怠速转速和调节电压进行校正。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;进行诊断并提醒驾驶员。</span></li>
+         </ul>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">在点火开关置于打开和关闭位置时估计蓄电池的状态。当点火开关置于关闭位置时，通过测量开路电压来判断蓄电池的充电状态。充电状态是蓄电池的酸浓度和内阻的函数。蓄电池停止工作数小时后，通过读取蓄电池开路电压估计充电状态。</div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">充电状态可作为诊断工具，告知顾客或经销商蓄电池的状态。点火开关置于打开位置时，根据调整的净安培小时数、蓄电池容量、初始充电状态和温度，利用算法持续估算充电状态。</div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">在运行时，蓄电池放电程度主要由与蓄电池一体化的蓄电池电流传感器提供的净安培小时数来确定。</div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">此外，电源管理功能用于执行调节电压控制，以改善蓄电池充电状态、蓄电池寿命和燃油经济性。这是通过对蓄电池充电状态和温度的了解，将充电电压设置为不损害蓄电池寿命的最佳充电电压来完成的。</div>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.3">
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">“充电系统的说明与操作”分为3节。第一节说明充电系统的部件和它们集成的电源管理。第二节说明充电系统的操作。第三节说明仪表板组合仪表充电指示灯的操作、驾驶员信息中心信息和电压表操作。</div>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.4">
+         <h5 class=" x-title-16-0" id="styler-id1.4.1">充电系统部件</h5>
+         <div class=" x-para-1-0">
+            <h3 class=" x-title-10-0" id="styler-id1.4.2.1">发电机</h3>
+            <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; margin-left: 8mm; text-indent: 0pt; ">发电机是可维修的部件。如果诊断出发电机故障，则必须将它作为一个总成更换。发动机传动皮带驱动发电机。当转子旋转时，它将使定子线圈产生交流电 (AC)。然后，交流电压通过一系列二极管整流。整流电压转换成供车辆电气系统使用的直流电 (DC)，以维持电气负载和蓄电池充电。电压调节器与发电机控制装置集成一体，控制着发电机的输出。不可维修。电压调节器控制供给转子的电流量。如果发电机磁场控制电路出现故障，发电机默认输出电压为13.8伏。</div>
+         </div>
+         <div class=" x-para-1-0">
+            <h3 class=" x-title-10-0" id="styler-id1.4.3.1">车身控制模块 (BCM)</h3>
+            <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; margin-left: 8mm; text-indent: 0pt; ">车身控制模块 (BCM) 是一个GMLAN装置。它与发动机控制模块 (ECM) 和仪表板组合仪表通信以进行电源管理操作。车身控制模块确定发电机输出，并发送信息到发动机控制模块，以控制发电机接通信号电路。它监测来自发动机控制模块的发电机磁场占空比信号电路信息，以控制发电机。它监测蓄电池电流传感器、蓄电池正极电压电路，并估计蓄电池温度以确定蓄电池充电状态。车身控制模块进行怠速提高。</div>
+         </div>
+         <div class=" x-para-1-0">
+            <h3 class=" x-title-10-0" id="styler-id1.4.4.1">蓄电池电流传感器</h3>
+            <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; margin-left: 8mm; text-indent: 0pt; ">蓄电池电流传感器是一个可维修的部件，它与蓄电池的蓄电池负极电缆连接。蓄电池电流传感器是一个3线式霍尔效应电流传感器。蓄电池电流传感器监测蓄电池电流。它直接输入到车身控制模块中。它产生一个128赫兹、占空比为0-100%的5伏脉宽调制 (PWM)
+               信号。正常的占空比在5–95%之间。0–5%和95–100%之间的占空比用于诊断目的。
+            </div>
+         </div>
+         <div class=" x-para-1-0">
+            <h3 class=" x-title-10-0" id="styler-id1.4.5.1">发动机控制模块 (ECM)</h3>
+            <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; margin-left: 8mm; text-indent: 0pt; ">发动机运行时，发动机控制模块将发电机接通信号发送至发电机以打开调节器。发电机电压调节器通过控制转子的电流从而控制输出电压。转子电流与调节器供给的电脉冲宽度成正比。发动机起动后，调节器通过内部导线检测定子上的交流电压从而感应发电机的转动。一旦发动机运行，调节器通过控制脉冲宽度来改变励磁场电流。这就能调节发电机输出电压，使蓄电池正常充电以及电气系统正常运行。发电机磁场占空比端子连接到内部电压调节器和外部发动机控制模块。当电压调节器检测到充电系统故障时，向此电路提供搭铁以向发动机控制模块发送信号，提示存在故障。发动机控制模块监测发电机磁场占空比信号电路，并接收基于车身控制模块信息而作出的控制指令。</div>
+         </div>
+         <div class=" x-para-1-0">
+            <h3 class=" x-title-10-0" id="styler-id1.4.6.1">仪表板组合仪表</h3>
+            <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; margin-left: 8mm; text-indent: 0pt; ">充电系统出现故障时，仪表板组合仪表会提醒用户。有2种提醒方式，充电指示灯和驾驶员信息中心的“SERVICE BATTERY CHARGING SYSTEM（维修蓄电池充电系统）”（如装备）信息。</div>
+         </div>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.5">
+         <h5 class=" x-title-16-0" id="styler-id1.5.1">充电系统的运行</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">充电系统的目的在于保持蓄电池充电和车辆负载。有6种操作模式，它们包括：</div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;蓄电池硫化模式</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;充电模式</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;燃油经济模式</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;大灯模式</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;起动模式</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;电压下降模式</span></li>
+         </ul>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">发动机控制模块 (ECM) 通过发电机接通信号电路控制发电机。发动机控制模块通过发电机磁场占空比信号电路监测发电机性能。它是一个128赫兹、占空比为0-100%的脉宽调制 (PWM) 信号。正常的占空比在5–95%之间。0–5%和95–100%之间的占空比用于诊断目的。下表显示发电机的受控占空比和输出电压：</div>
+         <div class=" x-table-1-0 x-table-1-2" id="styler-id1.5.5">
+            <table class=" x-tgroup-1-0" cellpadding="7" frame="box" border="1" rules="all">
+               <colgroup>
+                  <col style="width: 164px; ">
+                  <col style="width: 164px; ">
+               </colgroup>
+               <thead class=" x-thead-1-0" style="vertical-align: bottom; text-align: left; font-weight: bold; ">
+                  <tr class=" x-row-1-0">
+                     <th class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">受控占空比</div>
+                     </th>
+                     <th class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">发电机输出电压</div>
+                     </th>
+                  </tr>
+               </thead>
+               <tbody class=" x-tbody-1-0" style="vertical-align: top; ">
+                  <tr class=" x-row-1-0">
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">10%</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">11伏</div>
+                     </td>
+                  </tr>
+                  <tr class=" x-row-1-0">
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">20%</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">11.56伏</div>
+                     </td>
+                  </tr>
+                  <tr class=" x-row-1-0">
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">30%</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">12.12伏</div>
+                     </td>
+                  </tr>
+                  <tr class=" x-row-1-0">
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">40%</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">12.68伏</div>
+                     </td>
+                  </tr>
+                  <tr class=" x-row-1-0">
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">50%</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">13.25伏</div>
+                     </td>
+                  </tr>
+                  <tr class=" x-row-1-0">
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">60%</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">13.81伏</div>
+                     </td>
+                  </tr>
+                  <tr class=" x-row-1-0">
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">70%</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">14.37伏</div>
+                     </td>
+                  </tr>
+                  <tr class=" x-row-1-0">
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">80%</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">14.94伏</div>
+                     </td>
+                  </tr>
+                  <tr class=" x-row-1-0">
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">90%</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">15.5伏</div>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">发电机通过发电机磁场占空比信号电路将发电机电压输出的反馈信号提供至发动机控制模块。然后此信息被发送至车身控制模块 (BCM)。它是一个128赫兹、占空比为0-100%的脉宽调制信号。正常的占空比在5-99%之间。0-5%和100%之间的占空比用于诊断目的。</div>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.6">
+         <h5 class=" x-title-16-0" id="styler-id1.6.1">蓄电池硫化模式</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">当转换的发电机输出电压低于13.2伏并持续45分钟时，车身控制模块将进入此模式。当此情况出现时，车身控制模块将进入充电模式2-3分钟。然后根据电压要求，车身控制模块将确定进入哪一个模式。</div>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.7">
+         <h5 class=" x-title-16-0" id="styler-id1.7.1">充电模式</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">满足以下任一条件，车身控制模块将进入“充电模式”。</div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;雨刮器接通并持续超过3秒。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;HVAC控制板感测到GMLAN（温度控制电压提高模式请求）属实。高速冷却风扇、后除雾器和HVAC高速鼓风机操作会导致车身控制模块至进入充电模式。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;估计的蓄电池温度低于0°C (32°F)。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;“蓄电池充电状态”低于80%。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;车速高于145公里/小时（90英里/小时）</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;电流传感器出现故障。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;确定系统电压低于12.56伏</span></li>
+         </ul>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">符合上述任一条件后，系统将发电机目标输出电压设置在13.9-15.5伏之间，视蓄电池充电状态和估计的蓄电池温度而定。</div>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.8">
+         <h5 class=" x-title-16-0" id="styler-id1.8.1">燃油经济模式</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">当估计的蓄电池温度高于0°C (32°F) 但低于或等于80°C (176°F)，计算的蓄电池电流小于15安并大于-8安且蓄电池充电状态大于或等于80%时，车身控制模块将进入燃油经济性模式。发电机的目标输出电压是蓄电池开路电压并可在12.5-13.1伏之间。当出现上述任一条件时，车身控制模块将退出此模式并进入“充电模式”。</div>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.9">
+         <h5 class=" x-title-16-0" id="styler-id1.9.1">大灯模式</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">当大灯（远光或近光）打开时，车身控制模块将进入“大灯模式”。电压在13.9–14.5伏之间调节。</div>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.10">
+         <h5 class=" x-title-16-0" id="styler-id1.10.1">起动模式</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">当发动机起动时，车身控制模块设置发电机的目标输出电压为14.5伏并持续30秒。</div>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.11">
+         <h5 class=" x-title-16-0" id="styler-id1.11.1">电压下降模式</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">当计算的环境温度高于0°C (32°F) 时，车身控制模块将进入“电压下降模式”。计算的蓄电池电流小于1安和大于-7安，且发电机磁场占空比小于99%。它的发电机目标输出电压是12.9伏。一旦满足“充电模式”标准，车身控制模块将退出该模式。</div>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.12">
+         <h5 class=" x-title-16-0" id="styler-id1.12.1">仪表板组合仪表的操作</h5>
+         <div class=" x-para-1-0">
+            <h3 class=" x-title-10-0" id="styler-id1.12.2.1">充电指示灯的操作</h3>
+            <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; margin-left: 8mm; text-indent: 0pt; ">以下一种或多种情况发生时，仪表板组合仪表点亮充电指示灯，并在驾驶员信息中心（如装备）显示警告信息：</div>
+         </div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;发动机控制模块 (ECM) 检测到发电机输出电压低于11伏或高于16伏。仪表板组合仪表从发动机控制模块接收到一条请求点亮的GMLAN信息。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;仪表板组合仪表确定系统电压连续30秒以上低于11伏或高于16伏。仪表板组合仪表接收到来自车身控制模块 (BCM) 的GMLAN信息，指示存在系统电压范围问题。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;仪表板组合仪表在每个点火循环开始时执行显示测试。指示灯点亮约3秒。</span></li>
+         </ul>
+         <div class=" x-para-1-0">
+            <h3 class=" x-title-10-0" id="styler-id1.12.4.1">显示信息：“BATTERY NOT CHARGING SERVICE CHARGING SYSTEM（蓄电池不充电，维修充电系统）”或“SERVICE BATTERY CHARGING SYSTEM（维修蓄电池充电系统）”</h3>
+            <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; margin-left: 8mm; text-indent: 0pt; ">车身控制模块和发动机控制模块将一条串行数据信息发送到驾驶员信息中心，以显示信息“BATTERY NOT CHARGING SERVICE CHARGING SYSTEM（蓄电池不充电，维修充电系统）”或“SERVICE BATTERY CHARGING
+               SYSTEM（维修蓄电池充电系统）”。当充电系统故障诊断码为电流故障诊断码时，此信息将会显示。当满足清除故障诊断码的条件时，此信息将关闭。
+            </div>
+         </div>
+      </div>
+   </div>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta content="IE=8" http-equiv="X-UA-Compatible">
+      <title>节气门执行器控制（TAC）系统的说明</title><script> document.domain="saic-gm.com"; function showImg(obj){ var as = document.getElementsByTagName('a'); for(var i=0;i<as.length;i++){as[i].innerHTML='点击显示图片';as[i].parentNode.style.height='40px';} var src = obj.getAttribute("data-url"); var imgstr='<OBJECT width="892" height="680" type="image" classid="CLSID:B789F873-EB93-11D2-A6D8-00A0241989B9"><PARAM NAME="src" value="'+src+'"></OBJECT>';setTimeout(function(){obj.parentNode.style.height='700px';obj.innerHTML = imgstr;}, 1000 );parent.iFrameHeight2();}</script><meta name="Generator" content="Arbortext Publishing Engine 6.0 M130">
+      <meta name="Stylesheet" content="E:\PTC\arbortext pe\custom\doctypes\sm\sm_html.style">
+      <link rel="stylesheet" href="commonCss.css" charset="UTF-8" type="text/css"></head>
+   <div class=" x-servinfo-1-0" id="styler-id1">
+      <h4 class=" x-title-19-0" id="styler-id1.1">节气门执行器控制（TAC）系统的说明</h4>
+      <div class=" x-servinfosub-2-0" id="styler-id1.3">
+         <div class=" x-graphic-1-0"><img alt="Graphic" src="graphics/1913732.png" style="max-width: 100%; "></div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">发动机控制模块 (ECM) 是节气门执行器控制 (TAC) 系统的控制中心。发动机控制模块根据加速踏板位置传感器的输入确定驾驶员的意图，然后根据节气门位置传感器计算相应的节气门响应量。发动机控制模块通过向节气门执行器电机提供脉宽调制电压，实现节气门定位。节气门在两个方向都受弹簧负载，默认位置为微开。</div>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.4">
+         <h5 class=" x-title-16-0" id="styler-id1.4.1">工作模式</h5>
+         <div class=" x-para-1-0">
+            <h3 class=" x-title-10-0" id="styler-id1.4.2.1">正常模式</h3>
+            <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; margin-left: 8mm; text-indent: 0pt; ">在节气门执行器控制系统工作期间，有几种模式或功能被认为是正常的。在正常操作期间可进入以下几种模式：</div>
+         </div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;加速踏板最小值 - 用钥匙起动时，发动机控制模块更新已读入的加速踏板最小值。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;节气门位置最小值 - 用钥匙起动时，发动机控制模块更新已读入的节气门位置最小值。为了读入节气门位置最小值，将节气门移至关闭位置。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;破冰模式 - 如果节气门叶片不能达到预定的最小节气门位置，则进入破冰模式。在破冰模式期间，发动机控制模块指令向关闭方向的节气门执行器电机施加几次最大的脉宽。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;加速踏板最小值 - 用钥匙起动时，发动机控制模块更新已读入的加速踏板最小值。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;蓄电池节电模式 - 在发动机无转速持续预定时间后，发动机控制模块指令蓄电池节电模式。在“蓄电池节电”模式期间，节气门执行器控制模块卸去电机控制电路上的电压，以消除用于保持怠速位置的电流，并使节气门返回至默认的弹簧负载位置。</span></li>
+         </ul>
+         <div class=" x-para-1-0">
+            <h3 class=" x-title-10-0" id="styler-id1.4.4.1">降低发动机功率模式</h3>
+            <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; margin-left: 8mm; text-indent: 0pt; ">发动机控制模块检测到节气门执行器控制系统故障时，发动机控制模块可进入降低发动机功率模式。降低发动机功率可能导致以下一种或多种情况：</div>
+         </div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;限制加速-发动机控制模块将继续使用加速踏板控制节气门，但车辆加速受限制。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;限制节气门模式 - 发动机控制模块将继续使用加速踏板控制节气门，但节气门最大开度受限制。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;节气门默认模式 - 发动机控制模块将关闭节气门执行器电机，节气门将返回至弹簧负载的默认位置。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;强制怠速模式 - 发动机控制模块将执行以下操作：</span></li>
+            <ul class=" x-list2-2-0">
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-3 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-3"><span style="font-family: Arial; ">– </span> 通过定位节气门位置将发动机转速限制在怠速，或者在节气门关闭时控制燃油和点火使发动机怠速。</span></li>
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-3 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-3"><span style="font-family: Arial; ">– </span> 忽略加速踏板的输入。</span></li>
+            </ul>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;发动机关闭模式 - 发动机控制模块将关闭燃油并使节气门执行器断电。</span></li>
+         </ul>
+      </div>
+   </div>
+</html>

@@ -1,0 +1,332 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta content="IE=8" http-equiv="X-UA-Compatible">
+      <title>电源模式的说明与操作</title><script> document.domain="saic-gm.com"; function showImg(obj){ var as = document.getElementsByTagName('a'); for(var i=0;i<as.length;i++){as[i].innerHTML='点击显示图片';as[i].parentNode.style.height='40px';} var src = obj.getAttribute("data-url"); var imgstr='<OBJECT width="892" height="680" type="image" classid="CLSID:B789F873-EB93-11D2-A6D8-00A0241989B9"><PARAM NAME="src" value="'+src+'"></OBJECT>';setTimeout(function(){obj.parentNode.style.height='700px';obj.innerHTML = imgstr;}, 1000 );parent.iFrameHeight2();}</script><meta name="Generator" content="Arbortext Publishing Engine 6.0 M130">
+      <meta name="Stylesheet" content="E:\PTC\arbortext pe\custom\doctypes\sm\sm_html.style">
+      <link rel="stylesheet" href="commonCss.css" charset="UTF-8" type="text/css"></head>
+   <div class=" x-servinfo-1-0" id="styler-id1">
+      <h4 class=" x-title-19-0" id="styler-id1.1">电源模式的说明与操作</h4>
+      <div class=" x-servinfosub-2-0" id="styler-id1.2">
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">本车许多电路的电源是由电源模式主控模块控制的。车辆的电源模式主控模块就是车身控制模块 (BCM)。车身控制模块有多个B+电路向其供电。每个电路都在控制器内分隔，以驱动车身功能的特定输出。任何B+电路中的开路或短路都可能造成车身控制模块内产生多个代码/或一部分不工作，而车身控制模块的其余部分正常工作。在这种情况下，可参考电源分布示意图，以确定控制器的不工作部分是否共享公共B+电路。点火开关是小电流开关，并向电源模式主控模块传送多个离散的点火开关信号，以确定电源模式，并将电源模式通过串行数据电路发送到需要此信息的其它模块。根据需要，电源模式主控模块将启动电源模式主控模块的继电器和其它直接输出。电源模式主控模块决定所需的电源模式（关闭、附件、运行、起动请求），且将信息经由串行数据发送到其它模块。如果电源模式串行数据信息与单独模块通过自身的连接所得到的信息不一致，那切换电压输入的模块将以默认模式运行。</div>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.3">
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">电源模式主控模块收到点火开关或点火开关模式开关信号，确定是否为操作者所期望的电源模式。以下的电源模式参数表显示了相应点火开关位置或点火开关模式开关下这些输入参数（电路）的正确状态和发射器至车辆的范围：</div>
+         <div class=" x-table-1-0 x-table-1-1" id="styler-id1.3.2">
+            <h3 class=" x-title-17-0" id="styler-id1.3.2.1">电源模式参数（不带BTM）</h3>
+            <table class=" x-tgroup-1-0" cellpadding="7" frame="box" border="1" rules="all">
+               <colgroup>
+                  <col style="width: 137px; ">
+                  <col style="width: 137px; ">
+                  <col style="width: 138px; ">
+                  <col style="width: 138px; ">
+                  <col style="width: 137px; ">
+               </colgroup>
+               <thead class=" x-thead-1-0" style="vertical-align: bottom; text-align: left; font-weight: bold; ">
+                  <tr class=" x-row-1-0">
+                     <th class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">点火开关位置</div>
+                     </th>
+                     <th class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">发送的电源模式</div>
+                     </th>
+                     <th class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">点火关闭/运行/起动关闭/运行/起动</div>
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">（关闭/运行/起动电压电路）</div>
+                     </th>
+                     <th class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">点火附件/运行</div>
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">（附件电压电路）</div>
+                     </th>
+                     <th class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">点火运行/起动</div>
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">（点火1电压电路）</div>
+                     </th>
+                  </tr>
+               </thead>
+               <tbody class=" x-tbody-1-0" style="vertical-align: top; ">
+                  <tr class=" x-row-1-0">
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">Off（关闭）钥匙拔出</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">关闭</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">KeyOut/ACC（钥匙拔出/附件）</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">未启动</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">未启动</div>
+                     </td>
+                  </tr>
+                  <tr class=" x-row-1-0">
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">Off（关闭）钥匙插入</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">关闭</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">KeyIn/Off（钥匙插入/关闭）</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">未启动</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">未启动</div>
+                     </td>
+                  </tr>
+                  <tr class=" x-row-1-0">
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">附件</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">附件</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">KeyOut/ACC（钥匙拔出/附件）</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">Active（启动）</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">未启动</div>
+                     </td>
+                  </tr>
+                  <tr class=" x-row-1-0">
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">Run（运行）</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">Run（运行）</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">Run（运行）</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">Active（启动）</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">Active（启动）</div>
+                     </td>
+                  </tr>
+                  <tr class=" x-row-1-0">
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">起动</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">Crank Request（起动请求）</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">Crank（起动）</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">未启动</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">Active（启动）</div>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+         <div class=" x-table-1-0 x-table-1-1" id="styler-id1.3.3">
+            <h3 class=" x-title-17-0" id="styler-id1.3.3.1">电源模式参数（带BTM）</h3>
+            <table class=" x-tgroup-1-0" cellpadding="7" frame="box" border="1" rules="all">
+               <colgroup>
+                  <col style="width: 138px; ">
+                  <col style="width: 138px; ">
+                  <col style="width: 137px; ">
+                  <col style="width: 137px; ">
+                  <col style="width: 137px; ">
+               </colgroup>
+               <thead class=" x-thead-1-0" style="vertical-align: bottom; text-align: left; font-weight: bold; ">
+                  <tr class=" x-row-1-0">
+                     <th class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">电源模式</div>
+                     </th>
+                     <th class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">发送的电源模式</div>
+                     </th>
+                     <th class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">点火开关按钮</div>
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">（电源按钮开关电路输入至车身控制模块）</div>
+                     </th>
+                     <th class="entry-in-tbody" rowspan="1" style="text-align: center; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">点火开关按钮电压</div>
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">点火开关按钮电压输入至车身控制模块</div>
+                     </th>
+                     <th class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">钥匙插入锁芯开关/车内的遥控门锁发射器</div>
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">（在规定范围内发射器至车身控制模块信号）</div>
+                     </th>
+                  </tr>
+               </thead>
+               <tbody class=" x-tbody-1-0" style="vertical-align: top; ">
+                  <tr class=" x-row-1-0">
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">在规定范围内的发射器</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">关闭</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">未启动</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">9伏</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">是</div>
+                     </td>
+                  </tr>
+                  <tr class=" x-row-1-0">
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">超出范围</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">关闭</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">未启动</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">9伏</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">否</div>
+                     </td>
+                  </tr>
+                  <tr class=" x-row-1-0">
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">车辆起动电源模式、然后按下电源按钮开关（脚踩上和离开制动踏板）；发射器在车辆内</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">关闭</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">启动（推下）/未启动（未推下）</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">5-6伏（按下）</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">是</div>
+                     </td>
+                  </tr>
+                  <tr class=" x-row-1-0">
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">车辆熄火电源模式、然后按下电源按钮开关（脚离开制动踏板）；发射器在车辆内</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">附件模式</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">启动（推下）/未启动（未推下）</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">5-6伏（按下）</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">是</div>
+                     </td>
+                  </tr>
+                  <tr class=" x-row-1-0">
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">车辆熄火电源模式、然后按下电源按钮开关，脚踩在制动踏板上； 发射器在车辆内</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">车辆处于运行/起动模式</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">启动（推下）/未启动（未推下）</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">5-6伏（按下）</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">是</div>
+                     </td>
+                  </tr>
+                  <tr class=" x-row-1-0">
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">车辆熄火电源模式、然后按住电源按钮开关达10秒钟（脚离开制动踏板）；发射器在车辆内</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">车辆处于运行/起动模式</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">启动（推下）/未启动（未推下）</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">5-6伏（按下）</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">是</div>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.4">
+         <h5 class=" x-title-16-0" id="styler-id1.4.1">继电器控制电源模式（不带BTM）</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">车身控制模块使用离散点火开关输入“关闭/运行/起动电压”、“附件电压”和“点火1电压”，以区别正确的电源模式。在确定了所期望的电源模式后，车身控制模块将根据该电源模式使对应的继电器通电。</div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">点火钥匙拔出后，保持型附件电源将再通电保持一段时间。参见“<a class=" x-cell-link-2-0" href="A148337-S0000038497.html">保持型附件电源的说明与操作</a>”，以详细了解保持型附件电源的功能。
+         </div>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.5">
+         <h5 class=" x-title-16-0" id="styler-id1.5.1">继电器控制电源模式（带BTM）</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">车身控制模块利用离散按压式按钮开关输入、在规定范围内的发射器状态、当前电源模式状态和制动踏板位置状态辨别正确的电源模式（熄火、附件模式、车辆处于运行/起动模式）。在确定了所期望的电源模式后，车身控制模块将根据该电源模式使对应的继电器通电。</div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">将点火开关置于“OFF（关闭）”位置后，保持型附件电源将再通电保持一段时间。参见“<a class=" x-cell-link-2-0" href="A148337-S0000038497.html">保持型附件电源的说明与操作</a>”，以详细了解保持型附件电源的功能。
+         </div>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.6">
+         <h5 class=" x-title-16-0" id="styler-id1.6.1">按下按钮起动系统（如装备）</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">点火开关模式开关有2个LED灯来指示车辆电源模式。当车辆处于关闭模式，两个LED灯将熄灭。按下点火开关模式开关按钮一次（不踩下制动踏板），车辆进入附件模式并且琥珀色LED灯（附件）将会点亮。附件模式有5分钟超时以减少蓄电池放电。关闭点火开关（不踩下制动踏板），按下按压式按钮起动开关并保持按下达10秒钟将使车辆处于运行/起动模式（车辆不运行），绿色LED（运行/起动）将点亮。关闭点火开关（不踩下制动踏板），按下点火开关模式开关按钮一次，车辆进入运行/起动模式（发动机不运行）,绿色LED灯（运行/起动）将会点亮。这会起动发动机。两个LED灯由车身控制模块
+            (BCM) 提供电压。点火开关模式开关向被动式进入被动式起动 (PEPS) 模块和车身控制模块发送点火开关模式开关状态。被动式进入被动式起动模块将随着点火开关模式开关状态发送一个冗余信号至车身控制模块。
+         </div>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.7">
+         <h5 class=" x-title-16-0" id="styler-id1.7.1">蓄电池节电模式（运输模式）（如装备）</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">在对外运输或车辆储存状况下，蓄电池节电模式（运输模式）减少了一些模块的寄生负载。在蓄电池没有耗尽时，这将提高蓄电池的耗时达到70天。当车辆在运输/存储状态时，由于蓄电池节电模式，一些性能的功能性将降低，像禁用遥控功能执行器或安全防盗功能。打开危险闪光灯、踩下制动踏板、然后将点火钥匙转到起动位置，或在脚踩上制动踏板时推压点火开关模式开关15秒钟以上，可启动蓄电池节电模式。重复前述流程可停用该模式。启用蓄电池节电模式时，驾驶员信息中心（如装备）将显示“Transport
+            Mode（运输模式）为On（打开）”，停用蓄电池节电模式时，显示“Transport Mode（运输模式）为Off（关闭）”。对于没有配备驾驶员信息中心的车辆，当启用了蓄电池节电模式时，组合仪表上蓄电池指示灯将持续闪烁。车辆经过长时间储存后，此功能可在需要时多次使用。
+         </div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">蓄电池节电模式包含一个锁止继电器作业，可在启用时从点火开关电源或记忆电源上断开一些模块。蓄电池节电模式启用并且车辆熄火时，车身控制模块发送解锁继电器的瞬时指令，以在保持型附件电源停用后断电达1分钟。每次起动车辆时，车身控制模块均会发送锁止蓄电池节电继电器的瞬时指令。这使所有特性可在点火开关置于“ON（打开）”位置时使用。车辆熄火并且保持型附件电源停用后，车身控制模块就会发送另一指令解锁继电器。</div>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.8">
+         <h5 class=" x-title-16-0" id="styler-id1.8.1">车身控制模块唤醒/睡眠状态</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">车身控制模块在唤醒状态下能够控制或者运行所有的车身控制模块功能。当系统功能的启动控制或者正常监视停止一段时间后，车身控制模块进入睡眠状态。车身控制模块必须检测到某个唤醒输入信号，才会进入唤醒状态。睡眠状态时车身控制模块监视这些输入。</div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">如果检测到以下任何唤醒输入，车身控制模块将进入唤醒状态：</div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;串行数据线路上动态信息</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;检测到蓄电池重新连接</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;任一车门打开信号</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;大灯点亮</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;钥匙插入点火开关</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;将点火开关置于“ON（打开）”位置。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;驻车灯点亮</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;遥控车门或者遥控起动信息</span></li>
+         </ul>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">当以下所有情况都存在时，车身控制模块将进入睡眠状态：</div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;将点火开关置于“OFF（关闭）”位置，钥匙拔出。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;将点火开关置于“OFF（关闭）”位置，发射器超出范围</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;串行数据线路上无活动。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;没有发出输出指令。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;无延迟计时器进行活动计数。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;未出现唤醒输入。</span></li>
+         </ul>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">如果满足所有这些条件，车身控制模块将进入低功率或睡眠状态。</div>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.9">
+         <h5 class=" x-title-16-0" id="styler-id1.9.1">串行数据唤醒</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">串行数据唤醒电路上的控制模块根据该电路的电压电平启用或停用通信。</div>
+      </div>
+   </div>
+</html>

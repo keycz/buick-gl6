@@ -1,0 +1,274 @@
+
+
+ .x--sfe-BeforeOrAfterText-1-0 {margin-left: 0pt; margin-right: 0pt; }
+ .x--sfe-CollectionItem-1-0 {margin-left: 0pt; margin-right: 0pt; }
+ .x--sfe-CollectionItem-2-0 {margin-left: 0pt; margin-right: 0pt; }
+ .x--sfe-CollectionItem-3-0 {margin-left: 0pt; margin-right: 0pt; }
+ .x--sfe-CollectionItem-4-0 {margin-left: 0pt; margin-right: 0pt; }
+ .x--sfe-CrossReference-1-0 {margin-left: 0pt; margin-right: 0pt; }
+ .x--sfe-CrossReferenceTitle-1-0 {margin-left: 0pt; margin-right: 0pt; }
+ .x--sfe-CrossReferenceTitle-2-0 {margin-left: 0pt; margin-right: 0pt; font-style: italic; }
+ .x--sfe-ExternalLink-1-0 {margin-left: 0pt; margin-right: 0pt; }
+ .x--sfe-Gentext-1-0 {margin-left: 0pt; margin-right: 0pt; }
+ .x--sfe-HeaderOrFooter-1-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 0pt; }
+ .x--sfe-Index-1-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; }
+ .x--sfe-IndexAlphaGroup-Main-Index-1-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.5pc; }
+ .x--sfe-IndexEndPage-Main-Index-1-0 {margin-left: 0pt; margin-right: 0pt; }
+ .x--sfe-IndexEntry-Main-Index-1-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-left: 1em; text-indent: -.5em; text-align: left; }
+ .x--sfe-IndexEntry-Main-Index-2-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-left: 1em; text-indent: -.5em; text-align: left; }
+ .x--sfe-IndexEntry-Main-Index-3-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-left: 1em; text-indent: -.5em; text-align: left; }
+ .x--sfe-IndexEntry-Main-Index-4-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-left: .5em; margin-right: 2pc; text-indent: -.5em; text-align: left; }
+ .x--sfe-IndexGroupHead-Main-Index-1-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: sans-serif; font-weight: bold; font-size: 14pt; text-transform: uppercase; text-align: left; margin-bottom: .5pc; }
+ .x--sfe-IndexHeading-Main-Index-1-0 {margin-left: 0pt; margin-right: 0pt; }
+ .x--sfe-IndexLocators-Main-Index-1-0 {margin-left: 0pt; margin-right: 0pt; }
+ .x--sfe-IndexPage-Main-Index-1-0 {margin-left: 0pt; margin-right: 0pt; }
+ .x--sfe-IndexPage-Main-Index-2-0 {margin-left: 0pt; margin-right: 0pt; }
+ .x--sfe-IndexPostGroup-Main-Index-1-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.5pc; }
+ .x--sfe-IndexPreGroup-Main-Index-1-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.5pc; }
+ .x--sfe-IndexRangeGroup-Main-Index-1-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.5pc; }
+ .x--sfe-IndexSeeAlso-Main-Index-1-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-left: 3em; text-indent: -1.5em; }
+ .x--sfe-IndexSee-Main-Index-1-0 {margin-left: 0pt; margin-right: 0pt; }
+ .x--sfe-IndexSubGroupHead-Main-Index-1-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-weight: bold; font-size: 14pt; text-transform: uppercase; text-align: left; margin-top: 2pc; }
+ .x--sfe-Index-Main-Index-1-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; }
+ .x--sfe-InternalLink-1-0 {margin-left: 0pt; margin-right: 0pt; }
+ .x--sfe-RepeatingTitle-1-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-bottom: 18pt; }
+ .x--sfe-RepeatingTitleBottom-1-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 18pt; }
+ .x--ufe-Schematics-title-1-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-weight: bold; font-size: 13pt; line-height: 16pt; margin-bottom: 6pt; }
+ .x--sfe-TableOfContents-1-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; }
+ .x-address-1-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; }
+ .x-answer-1-0 {margin-left: 0pt; margin-right: 0pt; }
+ .x-arw-list-1-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-size: 12pt; margin-left: 12mm; text-indent: 0pt; line-height: 16.00pt; }
+ .x-arw-list-2-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-size: 12pt; margin-left: 12mm; text-indent: 0pt; line-height: 16.00pt; }
+ .x-arw-list-3-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-size: 12pt; margin-left: 12mm; text-indent: 0pt; line-height: 16.00pt; }
+ .x-attention-item-1-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; margin-left: 1.25em; text-indent: -1.25em; list-style-type: disc; text-indent: 0pt; } .x-attention-item-1-1 {margin-left: 11mm; text-indent: -11mm; list-style-type: disc; text-indent: 0pt; }
+ .x-attention-item-2-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; margin-left: 1.25em; text-indent: -1.25em; list-style-type: disc; text-indent: 0pt; } .x-attention-item-2-1 {margin-left: 16.00mm; text-indent: -16.00mm; list-style-type: disc; text-indent: 0pt; }
+ .x-attention-item-3-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; text-indent: 0pt; }
+ .x-attention-list1-1-0 {margin-left: 0pt; padding-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; }
+ .x-attention-list1-2-0 {margin-left: 0pt; padding-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; } .x-attention-list1-2-1 {}
+ .x-attention-list1-3-0 {margin-left: 0pt; padding-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; } .x-attention-list1-3-1 {}
+ .x-attention-list1-4-0 {margin-left: 0pt; padding-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; } .x-attention-list1-4-1 {}
+ .x-attention-list1-5-0 {margin-left: 0pt; padding-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; } .x-attention-list1-5-1 {}
+ .x-attention-list1-6-0 {margin-left: 0pt; padding-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; }
+ .x-attention-list2-1-0 {margin-left: 0pt; padding-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; }
+ .x-attention-list3-1-0 {margin-left: 0pt; margin-right: 0pt; }
+ .x--ufe-block-1-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-size: 12pt; line-height: 16.00pt; }
+ .x-callout-1-0 {margin-left: 0pt; margin-right: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; }
+ .x-caution-1-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-weight: bold; font-weight: normal; font-size: 12pt; line-height: 16.00pt; }
+ .x-caution-2-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-weight: bold; font-weight: normal; font-size: 12pt; line-height: 16.00pt; }
+ .x-caution-3-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-weight: bold; font-weight: normal; font-size: 12pt; line-height: 16.00pt; }
+ .x-caution-ref-1-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-size: 12pt; line-height: 16.00pt; }
+ .x-caution-ref-2-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-size: 12pt; line-height: 16.00pt; }
+ .x-caution-ref-3-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-size: 12pt; line-height: 16.00pt; margin-top: 6.00pt; margin-bottom: 6.00pt; }
+ .x-caution-sio-1-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-size: 12pt; line-height: 16.00pt; margin-top: 6pt; margin-bottom: 6pt; }
+ .x-cell-link-1-0 {margin-left: 0pt; margin-right: 0pt; }
+ .x-cell-link-2-0 {margin-left: 0pt; margin-right: 0pt; font-size: 12pt; line-height: 16.00pt; }
+ .x-city-1-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; }
+ .x--ufe-column1-1-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-size: 12pt; line-height: 16.00pt; margin-top: 4.00pt; margin-bottom: 4.00pt; }
+ .x-company-1-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; }
+ .x-country-1-0 {margin-left: 0pt; margin-right: 0pt; }
+ .x-danger-1-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-weight: bold; font-style: italic; }
+ .x-danger-sio-1-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-weight: bold; font-style: italic; }
+ .x-def-1-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; margin-bottom: 4pt; }
+ .x-deflist-1-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-size: 12pt; line-height: 16.00pt; margin-bottom: 4pt; }
+ .x-e-mail-1-0 {margin-left: 0pt; margin-right: 0pt; }
+ .x-emph-1-0 {margin-left: 0pt; margin-right: 0pt; font-size: 12pt; line-height: 16.00pt; } .x-emph-1-1 {font-family: 黑体; }
+ .x-error-1-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; }
+ .x-exp-item-1-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; margin-left: 12mm; text-indent: 0pt; text-indent: 0pt; }
+ .x-exp-item-2-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; margin-left: 12mm; text-indent: 0pt; text-indent: 0pt; }
+ .x-exp-itemnum-1-0 {margin-left: 0pt; margin-right: 0pt; }
+ .x-exp-list-1-0 {margin-left: 0pt; padding-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; }
+ .x-fax-1-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; }
+ .x-figgrp-initem-1-0 {margin-left: 0pt; margin-right: 0pt; }
+ .x-figgrp-inlist-1-0 {padding-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-size: 12pt; line-height: 16.00pt; }
+ .x-figgrp-inlist-2-0 {padding-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-size: 12pt; line-height: 16.00pt; }
+ .x-figgrp-inlist-3-0 {padding-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-size: 12pt; line-height: 16.00pt; }
+ .x--ufe-figgrp-inlist-title-1-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-weight: bold; font-size: 12pt; line-height: 16.00pt; }
+ .x--ufe-figgrp-inlist-title1-1-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-weight: bold; font-size: 12pt; line-height: 16.00pt; margin-bottom: 6pt; }
+ .x-figgrp-outlist-1-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; }
+ .x-figure-1-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; font-size: 12pt; line-height: 16.00pt; } .x-figure-1-1 {} .x-figure-1-2 {}
+ .x-figure-sio-1-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-size: 12pt; line-height: 1.1; }
+ .x-figure-sio-2-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-size: 12pt; line-height: 1.1; } .x-figure-sio-2-1 {} .x-figure-sio-2-2 {} .x-figure-sio-2-3 {}
+ .x-figure-sio-3-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-size: 12pt; line-height: 1.1; } .x-figure-sio-3-1 {} .x-figure-sio-3-2 {}
+ .x-fillin-1-0 {margin-left: 0pt; margin-right: 0pt; }
+ .x-ftnote-1-0 {margin-left: 0pt; margin-right: 0pt; }
+ .x-ftnote-2-0 {margin-left: 0pt; margin-right: 0pt; margin-left: 1.50pc; text-indent: -1.50pc; text-align: justify; }
+ .x-ftnref-1-0 {margin-left: 0pt; margin-right: 0pt; }
+ .x-ftnref-2-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: serif; font-weight: normal; font-size: 12pt; font-style: normal; color: #000000; background-color: #FFFFFF; text-decoration: no-underline ; font-variant: normal; margin-left: 1.50pc; text-indent: -1.50pc; text-align: justify; }
+ .x-graphic-1-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; font-size:20px; font-weight:bold; font-family:Arial, Helvetica, sans-serif;}
+ .x-hotspot-1-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-size: 12pt; margin-left: 10pt; text-indent: 0pt; line-height: 16.00pt; } .x-hotspot-1-1 {}
+ .x-hotspot-2-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-size: 12pt; margin-left: 10pt; text-indent: 0pt; line-height: 16.00pt; margin-top: 5pt; } .x-hotspot-2-1 {}
+ .x-hotspot-3-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-size: 12pt; color: #000000; margin-left: 10pt; text-indent: 0pt; line-height: 16.00pt; margin-top: 5pt; }
+ .x-important-1-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-size: 12pt; line-height: 16.00pt; }
+ .x-important-2-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-size: 12pt; line-height: 16.00pt; }
+ .x-important-3-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-size: 12pt; line-height: 16.00pt; }
+ .x-important-4-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-size: 12pt; line-height: 16.00pt; margin-top: 6.00pt; margin-bottom: 6.00pt; }
+ .x-important-5-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-size: 12pt; line-height: 16.00pt; margin-top: 4.00pt; margin-bottom: 4pt; }
+ .x-atidlm-inclusion-1-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; }
+ .x-indxentry-1-0 {margin-left: 0pt; margin-right: 0pt; font-size: 12pt; line-height: 16.00pt; }
+ .x-inline-spec-1-0 {margin-left: 0pt; margin-right: 0pt; }
+ .x-intxref-1-0 {margin-left: 0pt; margin-right: 0pt; }
+ .x--ufe-italic-zb-1-0 {margin-left: 0pt; margin-right: 0pt; font-weight: bold; font-size: 12pt; line-height: 16.00pt; }
+ .x-item-1-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-size: 12pt; line-height: 16.00pt; text-indent: 0pt; } .x-item-1-1 {text-indent: 0pt; } .x-item-1-2 {text-indent: 0pt; } .x-item-1-3 {text-indent: 0pt; }
+ .x-item-2-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-size: 12pt; line-height: 16.00pt; margin-top: 2.00pt; text-indent: 0pt; } .x-item-2-1 {text-indent: 0pt; } .x-item-2-2 {text-indent: 0pt; } .x-item-2-3 {text-indent: 0pt; }
+ .x-item-3-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-size: 12pt; line-height: 16.00pt; text-indent: 0pt; } .x-item-3-1 {text-indent: 0pt; } .x-item-3-2 {text-indent: 0pt; } .x-item-3-3 {text-indent: 0pt; }
+ .x-item-4-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-size: 12pt; line-height: 16.00pt; text-indent: 0pt; }
+ .x-item-5-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-size: 12pt; line-height: 16.00pt; text-indent: 0pt; } .x-item-5-1 {text-indent: 0pt; } .x-item-5-2 {text-indent: 0pt; } .x-item-5-3 {text-indent: 0pt; }
+ .x-item-6-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-size: 12pt; line-height: 16.00pt; text-indent: 0pt; } .x-item-6-1 {text-indent: 0pt; } .x-item-6-2 {text-indent: 0pt; } .x-item-6-3 {text-indent: 0pt; }
+ .x-item-7-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-size: 12pt; margin-left: 25pt; text-indent: 0pt; line-height: 16.00pt; text-indent: 0pt; }
+ .x-item-8-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-size: 12pt; margin-left: 1.25em; text-indent: -1.25em; line-height: 16.00pt; text-indent: 0pt; }
+ .x-item-9-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-size: 12pt; margin-left: 1.25em; text-indent: -1.25em; line-height: 16.00pt; text-indent: 0pt; }
+ .x-item-10-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-size: 12pt; margin-left: 1.25em; text-indent: -1.25em; line-height: 16.00pt; text-indent: 0pt; }
+ .x-item-11-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-size: 12pt; line-height: 16.00pt; text-indent: 0pt; } .x-item-11-1 {text-indent: 0pt; }
+ .x-item-12-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-size: 12pt; margin-left: 3em; text-indent: -3em; line-height: 16.00pt; list-style-type: lower-roman; text-indent: 0pt; }
+ .x-item-13-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-size: 12pt; margin-left: 1.25em; text-indent: -1.25em; line-height: 16.00pt; text-indent: 0pt; } .x-item-13-1 {text-indent: 0pt; } .x-item-13-2 {text-indent: 0pt; } .x-item-13-3 {text-indent: 0pt; }
+ .x-item-14-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-size: 12pt; margin-left: 1.25em; text-indent: -1.25em; line-height: 16.00pt; list-style-type: disc; text-indent: 0pt; }
+ .x-item-15-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-size: 12pt; margin-left: 1.25em; text-indent: -1.25em; line-height: 16.00pt; text-indent: 0pt; }
+ .x-item-16-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-size: 12pt; margin-left: 1.25em; text-indent: -1.25em; line-height: 16.00pt; text-indent: 0pt; }
+ .x-item-17-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-size: 12pt; margin-left: 2em; text-indent: -2em; line-height: 16.00pt; list-style-type: lower-alpha; text-indent: 0pt; }
+ .x-item-18-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-size: 12pt; line-height: 16.00pt; text-indent: 0pt; } .x-item-18-1 {text-indent: 0pt; }
+ .x-item-19-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-size: 12pt; margin-left: 5mm; text-indent: -5mm; line-height: 16.00pt; list-style-type: disc; text-indent: 0pt; }
+ .x-item-20-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-size: 12pt; line-height: 16.00pt; text-indent: 0pt; } .x-item-20-1 {text-indent: 0pt; } .x-item-20-2 {text-indent: 0pt; } .x-item-20-3 {text-indent: 0pt; }
+ .x-item-21-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-size: 12pt; line-height: 16.00pt; text-indent: 0pt; }
+ .x-lev1-1-0 {margin-left: 0pt; margin-right: 0pt; font-size: 12pt; line-height: 16.00pt; }
+ .x-lev2-1-0 {margin-left: 0pt; margin-right: 0pt; font-size: 12pt; line-height: 16.00pt; }
+ .x-lev3-1-0 {margin-left: 0pt; margin-right: 0pt; font-size: 12pt; line-height: 16.00pt; }
+ .x-atidlm-linkcontent-1-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; }
+ .x-list1-1-0 {margin-left: 0pt; padding-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; font-size: 12pt; margin-left: 15pt; text-indent: 0pt; line-height: 16.00pt; } .x-list1-1-1 {}
+ .x-list1-2-0 {margin-left: 0pt; padding-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-size: 12pt; line-height: 16.00pt; }
+ .x-list1-3-0 {margin-left: 0pt; padding-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; font-size: 12pt; line-height: 16.00pt; }
+ .x-list1-4-0 {margin-left: 0pt; padding-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; font-size: 12pt; line-height: 16.00pt; }
+ .x-list1-5-0 {margin-left: 0pt; padding-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; font-size: 12pt; line-height: 16.00pt; } .x-list1-5-1 {}
+ .x-list1-6-0 {margin-left: 0pt; padding-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; font-size: 12pt; line-height: 16.00pt; }
+ .x-list1-7-0 {margin-left: 0pt; padding-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; font-size: 12pt; line-height: 16.00pt; } .x-list1-7-1 {}
+ .x-list1-8-0 {margin-left: 0pt; padding-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; font-size: 12pt; line-height: 16.00pt; }
+ .x-list2-1-0 {margin-left: 0pt; padding-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; font-size: 12pt; line-height: 16.00pt; }
+ .x-list2-2-0 {margin-left: 0pt; padding-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; font-size: 12pt; margin-left: 15.00pt; text-indent: 0pt; line-height: 16.00pt; }
+ .x-list3-1-0 {margin-left: 0pt; padding-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; font-size: 12pt; margin-left: 30.00pt; text-indent: 0pt; line-height: 16.00pt; }
+ .x-atidlm-metadata-1-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; }
+ .x-microsection-1-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-size: 12pt; line-height: 16.00pt; }
+ .x-name-1-0 {margin-left: 0pt; margin-right: 0pt; }
+ .x-note-1-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; }
+ .x-note-2-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; }
+ .x-note-3-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-size: 12pt; line-height: 16.00pt; }
+ .x-note-4-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-size: 12pt; line-height: 16.00pt; }
+ .x-note-5-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-size: 12pt; line-height: 16.00pt; }
+ .x-note-6-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-size: 12pt; line-height: 16.00pt; margin-top: 3.00pt; margin-bottom: 3.00pt; }
+ .x-notice-1-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; }
+ .x-notice-ref-1-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-size: 12pt; margin-left: -4mm; text-indent: -4mm; line-height: 16.00pt; }
+ .x-notice-ref-2-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-size: 12pt; line-height: 16.00pt; margin-top: 6.00pt; margin-bottom: 6.00pt; }
+ .x-notice-sio-1-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-bottom: 6pt; } .x-notice-sio-1-1 {margin-left: 96.00mm; text-indent: 0pt; }
+ .x-notice-sio-2-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-left: -8mm; text-indent: -8mm; margin-top: 6.00pt; margin-bottom: 6.00pt; }
+ .x-notice-sio-3-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 6.00pt; margin-bottom: 6.00pt; }
+ .x-object-link-1-0 {margin-left: 0pt; margin-right: 0pt; } .x-object-link-1-1 {} .x-object-link-1-2 {}
+ .x-object-link-1-0 {margin-left: 0pt; margin-right: 0pt; font-size: 12pt; line-height: 16.00pt; }
+ .x-p01-1-0 {margin-left: 0pt; margin-right: 0pt; }
+ .x-p02-1-0 {margin-left: 0pt; margin-right: 0pt; }
+ .x-p03-1-0 {margin-left: 0pt; margin-right: 0pt; }
+ .x-p04-1-0 {margin-left: 0pt; margin-right: 0pt; }
+ .x-p05-1-0 {margin-left: 0pt; margin-right: 0pt; }
+ .x-p06-1-0 {margin-left: 0pt; margin-right: 0pt; }
+ .x-p07-1-0 {margin-left: 0pt; margin-right: 0pt; }
+ .x-p08-1-0 {margin-left: 0pt; margin-right: 0pt; }
+ .x-p09-1-0 {margin-left: 0pt; margin-right: 0pt; }
+ .x-p10-1-0 {margin-left: 0pt; margin-right: 0pt; }
+ .x-p11-1-0 {margin-left: 0pt; margin-right: 0pt; }
+ .x-p12-1-0 {margin-left: 0pt; margin-right: 0pt; }
+ .x-p13-1-0 {margin-left: 0pt; margin-right: 0pt; }
+ .x-p14-1-0 {margin-left: 0pt; margin-right: 0pt; }
+ .x-p15-1-0 {margin-left: 0pt; margin-right: 0pt; }
+ .x-p16-1-0 {margin-left: 0pt; margin-right: 0pt; }
+ .x-p17-1-0 {margin-left: 0pt; margin-right: 0pt; }
+ .x-p18-1-0 {margin-left: 0pt; margin-right: 0pt; }
+ .x-p19-1-0 {margin-left: 0pt; margin-right: 0pt; }
+ .x-p20-1-0 {margin-left: 0pt; margin-right: 0pt; }
+ .x-para-1-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-size: 12pt; line-height: 16.00pt; }
+ .x-phone-1-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; }
+ .x-ptxt-1-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; margin-left: 8mm; text-indent: 0pt; line-height: 16.00pt; } .x-ptxt-1-1 {margin-left: 8mm; } .x-ptxt-1-2 {margin-left: 8mm; } .x-ptxt-1-3 {margin-left: 8mm; }
+ .x-ptxt-2-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; margin-left: 8mm; text-indent: 0pt; line-height: 16.00pt; } .x-ptxt-2-1 {margin-left: 8mm;  } .x-ptxt-2-2 {margin-left: 8mm; } .x-ptxt-2-3 {margin-left: 8mm; }
+ .x-ptxt-3-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; font-family: Arial; font-size: 12pt; margin-left: 8mm; text-indent: 0pt; line-height: 16.00pt; } .x-ptxt-3-1 {margin-left: 8mm;  } .x-ptxt-3-2 {margin-left: 8mm; } .x-ptxt-3-3 {margin-left: 8mm; }
+ .x-ptxt-4-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; margin-left: 8.00mm; text-indent: 0pt; line-height: 16.00pt; } .x-ptxt-4-1 {margin-left: 8mm;  } .x-ptxt-4-2 {margin-left: 8mm; } .x-ptxt-4-3 {margin-left: 8mm; }
+ .x-question-1-0 {margin-left: 0pt; margin-right: 0pt; }
+ .x-atidlm-resourcepair-1-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; }
+ .x--ufe-right-1-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-size: 12pt; text-align: right; line-height: 16.00pt; }
+ .x-satitle-1-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-weight: bold; font-size: 12pt; line-height: 16.00pt; margin-top: 10pt; margin-bottom: 3pt; }
+ .x-section-1-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-size: 12pt; line-height: 16.00pt; }
+ .x-sectiontoc-1-0 {margin-left: 0pt; margin-right: 0pt; }
+ .x-servinfo-1-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-size: 12pt; line-height: 16.00pt; }
+ .x-servinfosub-1-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-size: 12pt; line-height: 16.00pt; }
+ .x-servinfosub-2-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-size: 12pt; line-height: 16.00pt; }
+ .x-sm-1-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: 宋体; font-size: 12pt; margin-left: 2.00mm; text-indent: 0pt; line-height: 16.00pt; margin-left: 5px; margin-right: 5px; }
+ .x-atidlm-source-1-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; }
+ .x-spec-1-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-size: 12pt; line-height: 16.00pt; }
+ .x-spec-2-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-size: 12pt; line-height: 16.00pt; }
+ .x-sptool-1-0 {margin-left: 0pt; margin-right: 0pt; font-size: 12pt; line-height: 16.00pt; }
+ .x-sptool-desc-1-0 {margin-left: 0pt; margin-right: 0pt; font-size: 12pt; line-height: 16.00pt; }
+ .x-sptool-no-1-0 {margin-left: 0pt; margin-right: 0pt; font-size: 12pt; line-height: 16.00pt; }
+ .x-state-1-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; }
+ .x-street-1-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; }
+ .x-sub-1-0 {margin-left: 0pt; margin-right: 0pt; }
+ .x-subsection-1-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-size: 12pt; line-height: 16.00pt; }
+ .x-sup-1-0 {margin-left: 0pt; margin-right: 0pt; }
+ .x-symbol-1-0 {margin-left: 0pt; margin-right: 0pt; }
+ .x-table-1-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; font-size: 12pt; line-height: 16.00pt; } .x-table-1-1 {} .x-table-1-2 {}
+ .x-table-item-1-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-size: 12pt; line-height: 16.00pt; text-indent: 0pt; } .x-table-item-1-1 {margin-left: 35pt; text-indent: -35pt; list-style-type: decimal; text-indent: 0pt; } .x-table-item-1-2 {margin-left: 35pt; text-indent: -35pt; list-style-type: disc; text-indent: 0pt; } .x-table-item-1-3 {margin-left: 35pt; text-indent: -35pt; list-style-type: disc; text-indent: 0pt; }
+ .x-table-item-2-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-size: 12pt; margin-left: 1.25em; text-indent: -1.25em; line-height: 16.00pt; list-style-type: disc; text-indent: 0pt; }
+ .x-table-item-3-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-size: 12pt; margin-left: 1.25em; text-indent: -1.25em; line-height: 16.00pt; list-style-type: disc; text-indent: 0pt; }
+ .x-table-item-4-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-size: 12pt; margin-left: 1.25em; text-indent: -1.25em; line-height: 16.00pt; list-style-type: disc; text-indent: 0pt; }
+ .x-table-item-5-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-size: 12pt; margin-left: 1.25em; text-indent: -1.25em; line-height: 16.00pt; list-style-type: disc; text-indent: 0pt; }
+ .x-table-item-6-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-size: 12pt; margin-left: 1.25em; text-indent: -1.25em; line-height: 16.00pt; margin-top: 2pt; list-style-type: disc; text-indent: 0pt; } .x-table-item-6-1 {margin-left: 25pt; text-indent: -25pt; list-style-type: decimal; text-indent: 0pt; } .x-table-item-6-2 {margin-left: 25pt; text-indent: -25pt; list-style-type: disc; text-indent: 0pt; } .x-table-item-6-3 {margin-left: 25pt; text-indent: -25pt; list-style-type: disc; text-indent: 0pt; }
+ .x-table-item-7-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-size: 12pt; margin-left: 1.25em; text-indent: -1.25em; line-height: 16.00pt; list-style-type: disc; text-indent: 0pt; } .x-table-item-7-1 {margin-left: 15pt; text-indent: -15pt; list-style-type: decimal; text-indent: 0pt; } .x-table-item-7-2 {margin-left: 15pt; text-indent: -15pt; list-style-type: disc; text-indent: 0pt; } .x-table-item-7-3 {margin-left: 15pt; text-indent: -15pt; list-style-type: disc; text-indent: 0pt; }
+ .x-table-item-8-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-size: 12pt; text-indent: -0pt; line-height: 16.00pt; list-style-type: disc; text-indent: 0pt; }
+ .x-table-list1-1-0 {margin-left: 0pt; padding-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-size: 12pt; line-height: 16.00pt; margin-top: 6pt; margin-bottom: 6pt; }
+ .x-table-list2-1-0 {margin-left: 0pt; padding-left: 0pt; margin-right: 0pt; text-indent: 0pt; }
+ .x-table-list3-1-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; }
+ .x-atidlm-target-1-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; }
+ .x-term-1-0 {margin-left: 0pt; margin-right: 0pt; font-weight: bold; font-size: 12pt; line-height: 16.00pt; }
+ .x-text-string-1-0 {margin-left: 0pt; margin-right: 0pt; }
+ .x-tip-1-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-size: 12pt; line-height: 16.00pt; margin-top: 2.00pt; }
+ .x-tip-2-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-size: 12pt; line-height: 16.00pt; margin-top: 6pt; }
+ .x-title-1-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-weight: bold; text-align: left; line-height: 1.1; margin-top: 5.00mm; margin-bottom: 5mm; font-size: 14pt; font-family: Arial; font-size: 14pt; }
+ .x-title-2-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-weight: bold; text-align: left; font-family: Arial; font-size: 12pt; margin-top: 8pt; margin-bottom: 3pt; }
+ .x-title-3-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-weight: bold; text-align: left; font-family: Arial; font-size: 12pt; line-height: 12pt; margin-top: 4pt; margin-bottom: 4pt; }
+ .x-title-4-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-weight: bold; text-align: left; line-height: 1.1; margin-top: 5.00mm; margin-bottom: 5mm; font-weight: bold; margin-left: 8mm; text-indent: 0pt; }
+ .x-title-5-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-weight: bold; text-align: left; font-family: Arial; font-size: 12pt; }
+ .x-title-6-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-weight: bold; text-align: left; line-height: 1.1; margin-top: 5.00mm; margin-bottom: 5mm; font-family: Arial; font-weight: bold; }
+ .x-title-7-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-weight: bold; line-height: 1.1; margin-top: 5.00mm; margin-bottom: 5mm; font-family: Arial; font-weight: bold; }
+ .x-title-8-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-weight: bold; text-align: left; line-height: 1.1; margin-top: 5.00mm; margin-bottom: 5mm; font-family: Arial; font-weight: bold; }
+ .x-title-9-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-weight: bold; text-align: left; font-family: Arial; margin-top: 6.00pt; margin-bottom: 6.00pt; }
+ .x-title-10-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-weight: bold; text-align: left; font-family: Arial; margin-top: 6.00pt; }
+ .x-title-11-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-weight: bold; text-align: left; font-family: Arial; font-size: 12pt; margin-left: 8mm; text-indent: 0pt; margin-top: 6.00pt; margin-bottom: 6.00pt; }
+ .x-title-12-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-weight: bold; text-align: left; line-height: 1.1; margin-top: 5.00mm; margin-bottom: 5mm; font-family: Arial; }
+ .x-title-13-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-weight: bold; text-align: left; line-height: 1.1; margin-top: 5.00mm; margin-bottom: 5mm; font-family: Arial; }
+ .x-title-14-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-weight: bold; text-align: left; line-height: 1.1; margin-top: 5.00mm; margin-bottom: 5mm; font-family: Arial; }
+ .x-title-15-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-weight: bold; text-align: left; line-height: 1.1; margin-top: 5.00mm; margin-bottom: 5mm; font-family: Arial; }
+ .x-title-16-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-weight: bold; text-align: left; font-size: 12pt; font-family: Arial; margin-top: 10pt; margin-bottom: 6pt; }
+ .x-title-17-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-weight: bold; text-align: left; line-height: 1.1; margin-top: 5.00mm; margin-bottom: 5mm; font-family: Arial; font-size: 13pt; margin-top: 3.00mm; margin-bottom: 3.00mm; }
+ .x-title-18-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-weight: bold; text-align: left; line-height: 1.1; margin-top: 5.00mm; margin-bottom: 5mm; font-family: Arial; font-size: 13pt; } .x-title-18-1 {} .x-title-18-2 {} .x-title-18-3 {}
+ .x-title-19-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-weight: bold; text-align: left; line-height: 1.1; margin-top: 5.00mm; margin-bottom: 5mm; font-size: 13pt; font-family: Arial; margin-top: 1.00mm; }
+ .x-title-20-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-weight: bold; text-align: left; line-height: 1.1; margin-top: 5.00mm; margin-bottom: 5mm; font-size: 14pt; font-family: Arial; margin-left: 0pt; text-indent: 0pt; }
+ .x-title-21-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-weight: bold; text-align: left; line-height: 1.1; margin-top: 5.00mm; margin-bottom: 5mm; font-size: 18pt; font-family: Arial; }
+ .x-title-22-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-weight: bold; text-align: left; line-height: 1.1; margin-top: 5.00mm; margin-bottom: 5mm; font-size: 20pt; font-family: Arial; font-size: 20pt; }
+ .x-title-23-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-weight: bold; text-align: left; font-family: Arial; font-size: 12pt; margin-bottom: 5pt; }
+ .x-title-24-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-weight: bold; text-align: left; line-height: 1.1; margin-top: 5.00mm; margin-bottom: 5mm; font-family: Arial; }
+ .x-u-list1-1-0 {margin-left: 0pt; padding-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; font-size: 12pt; line-height: 16.00pt; }
+ .x-u-list2-1-0 {margin-left: 0pt; margin-right: 0pt; }
+ .x-warning-1-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-weight: bold; font-size: 12pt; line-height: 16.00pt; }
+ .x-warning-2-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-weight: bold; font-size: 12pt; line-height: 16.00pt; }
+ .x-warning-ref-1-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-weight: bold; margin-left: -30pt; text-indent: 0pt; }
+ .x-warning-ref-2-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-weight: bold; }
+ .x-warning-sio-1-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-weight: bold; font-size: 12pt; line-height: 16.00pt; }
+ .x--ufe-zb-1-0 {margin-left: 0pt; margin-right: 0pt; font-weight: bold; font-family: Arial; font-size: 12pt; line-height: 16.00pt; }
+ .x-zip-1-0 {margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; }
+table {border-color: #000000; font-size: 100%; border-collapse: collapse; }
+td, th, { border-color: #000000; }
+table[rules][rules="none"]  > tr > td, table[rules][rules="none"] > * > tr > td, table[rules][rules="none"] > tr > th, table[rules][rules="none"] > * > tr > th, table[rules][rules="none"] > td, table[rules][rules="none"] > th { border-width: thin; border-style: none; }
+table[frame="box"][border]:not([border="0"]), table[frame="border"][border]:not([border="0"]), table:not([frame])[border]:not([border="0"]) { border-style: solid; }
+th, td {border-top-style: none; border-left-style: none; }
+ .entry-in-tbody {border-color: #000000; margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-size: 12pt; margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; line-height: 16.00pt; margin-top: 0pt; }
+ .x--title-as-table {border: none; padding: 0pt; }
+ .x--listitem-as-table {border: none; padding: 0pt; }
+ .x--zero-left-margins {margin-left: 0pt; text-indent: 0pt; }
+ .x--zero-text-indent {text-indent: 0pt; }
+ .x--zero-top-bot-margins {margin-top: 0pt; margin-bottom: 0pt; }
+ .x--inherit-background-color {background-color: inherit; }
+ .x--br-clear {font-size: 0pt; line-height: 0pt; clear: both; }

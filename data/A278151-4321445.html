@@ -1,0 +1,84 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+  <meta content="IE=8" http-equiv="X-UA-Compatible"> 
+  <title>轮胎气压计数程序</title>
+  <script> document.domain="saic-gm.com"; function showImg(obj){ var as = document.getElementsByTagName('a'); for(var i=0;i<as.length;i++){as[i].innerHTML='点击显示图片';as[i].parentNode.style.height='40px';} var src = obj.getAttribute("data-url"); var imgstr='<OBJECT width="892" height="680" type="image" classid="CLSID:B789F873-EB93-11D2-A6D8-00A0241989B9"><PARAM NAME="src" value="'+src+'"></OBJECT>';setTimeout(function(){obj.parentNode.style.height='700px';obj.innerHTML = imgstr;}, 1000 );parent.iFrameHeight2();}</script>
+  <meta name="Generator" content="Arbortext Publishing Engine 6.0 M130"> 
+  <meta name="Stylesheet" content="E:\PTC\arbortext pe\custom\doctypes\sm\sm_html.style"> 
+  <link rel="stylesheet" href="tocCss2.css" charset="UTF-8" type="text/css">
+ </head> 
+ <body>
+  <div class=" x-servinfo-1-0" id="styler-id1"> 
+   <h4 class=" x-title-19-0" id="styler-id1.1">轮胎气压计数程序</h4> 
+   <div class=" x-servinfosub-2-0" id="styler-id1.3"> 
+    <h5 class=" x-title-16-0" id="styler-id1.3.1">简介</h5> 
+    <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">
+     可以借助每个传感器的轮胎气压滚动计数参数确认是否在接收传感器的传输信号。驾车行驶时，轮胎气压滚动计数随着接收到的每个轮胎气压监测传感器传输信号而增加。如果某个可疑传感器的传输信号不增加、相对于其他传感器增加非常缓慢，或者根本没有信号，这可能是售后加装设备的干扰所致。可通过故障诊断仪确认传感器传输成功率（遥控门锁接收器接收到每个传感器传输信号的比率）。
+    </div> 
+    <div class=" x-note-3-0"> 
+     <div id="styler-id1.3.3.1"></div> 
+     <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">
+      <span class=" x--ufe-zb-1-0">注意:</span>
+      <span class=" x-emph-1-0 x-emph-1-1">如果轮胎气压传感器呈现“no Signal or poor intermittent signal reception（无信号或间歇性信号接收不良）”，则使用故障诊断仪程序检查是否存在以下情况，然后再继续进行操作：</span>
+     </div> 
+    </div> 
+    <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">
+     在使用该诊断程序前，执行
+     <a class=" x-cell-link-2-0" href="A72794-S0000000347.html">诊断系统检查－车辆</a>。 
+    </div> 
+    <ul class=" x-list1-8-0"> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;传感器不传输或传输无效数据至遥控门锁接收器 (RCDLR)。</span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;传感器可能呈现电池电压过低的情况。</span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;如装备，驾驶员信息中心将针对可疑的传感器显示“—”。</span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;售后加装车轮气门系统的位置可能导致传感器无法正常工作。</span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;先前的车轮/轮胎维修或轮胎泄气可能会损坏传感器。</span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;使用非通用汽车认可的轮胎密封胶可能会阻碍传感器压力检测口，导致轮胎气压值读数不精确。如果检查到这种状况，则将密封胶从轮胎上清除并更换传感器。参见<a class=" x-cell-link-2-0" href="A127228-S0000042077.html">轮胎气压指示器传感器的更换</a></span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;由于车辆水平无线电频率受到某些物体的干扰，诸如但不限于售后加装点火系统、DVD 播放器、CB 收音机或金属型玻璃有色贴膜等，遥控门锁接收器 (RCDLR) 有时无法接收到传感器的传输信号。</span></li> 
+    </ul> 
+   </div> 
+   <div class=" x-servinfosub-1-0" id="styler-id1.4"> 
+    <h5 class=" x-title-16-0" id="styler-id1.4.1">如何确定传感器信号是否不良或没有信号</h5> 
+    <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">
+     使用故障诊断仪并遵照屏幕显示说明：
+    </div> 
+    <ul class=" x-list1-8-0"> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">1.</span>选择“Module Diagnosis（模块诊断）”</span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">2.</span>选择车身控制模块</span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">3.</span>选择“配置/重设”功能。</span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">4.</span>选择轮胎气压传感器信号重置</span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">5.</span>将显示轮胎气压传感器滚动计数参数</span></li> 
+    </ul> 
+    <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">
+     <span class=" x-emph-1-0 x-emph-1-1">如果一个或多个轮胎气压传感器的轮胎气压传感器滚动计数参数低于 50%</span>
+    </div> 
+    <div class=" x-note-3-0"> 
+     <div id="styler-id1.4.5.1"></div> 
+     <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">
+      <span class=" x--ufe-zb-1-0">注意:</span>在车辆上将轮胎气压传感器移动至另一位置时，将传感器保留在其所安装的原始轮胎上。 
+     </div> 
+    </div> 
+    <ul class=" x-list1-8-0"> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;在车辆上将适合的轮胎移动至另一位置，并确认轮胎气压传感器滚动计数已增加。参见<a class=" x-cell-link-2-0" href="A59611-S0000041782.html">轮胎和车轮的拆卸和安装</a>。</span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;将轮胎移动至另一位置后，如果轮胎气压传感器滚动计数参数未增加，更换适合的 B2 轮胎气压传感器并执行<a class=" x-cell-link-2-0" href="A127229-S0000027188.html">轮胎气压指示灯传感器的读入</a>。</span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;将轮胎移动至另一位置后，如果轮胎气压传感器滚动计数参数未增加，检查任何可能干扰轮胎气压传感器信号的售后加装设备。拔下设备并重新运行测试。</span></li> 
+    </ul> 
+    <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">
+     <span class=" x-emph-1-0 x-emph-1-1">如果一个或多个轮胎上的轮胎气压传感器滚动计数参数高于 50%（遵循维修信息中的正常轮胎气压监测 (TPM) 故障排除）</span>
+    </div> 
+    <ul class=" x-list1-8-0"> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">1.</span>确认所有 4 个轮胎监测气压传感器 DTC 是否设置。</span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">2.</span>如果设置了所有 2 个或更多的轮胎监视器压力传感器 DTC，则测试无钥匙进入天线是否正常工作或天线是否正确固定。参见<a class=" x-cell-link-2-0" href="A185634-S0000039026.html">无钥匙进入系统故障</a>、<a class=" x-cell-link-2-0" href="A185634-S0000039026.html">无钥匙进入系统故障</a>。</span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">3.</span>执行<a class=" x-cell-link-2-0" href="A127229-S0000027188.html">轮胎气压指示灯传感器的读入</a>。</span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">4.</span>当车辆以高于 40 km/h (25 mph) 的速度行驶 2 分钟以上时，请确认故障诊断仪上的“Tire Pressure Sensor Mode（轮胎气压传感器模式）”参数变更为“Drive（驱动）”。</span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">5.</span>如果“Tire Pressure Sensor Mode（轮胎气压传感器模式）”参数未变更为“Drive（驱动）”。</span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">6.</span>更换相应的 B2 轮胎气压传感器。</span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">7.</span>执行<a class=" x-cell-link-2-0" href="A127229-S0000027188.html">轮胎气压指示灯传感器的读入</a>。</span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">8.</span>如果“Tire Pressure Sensor Mode（轮胎气压传感器模式）”参数变更为“Drive（驱动）”。</span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">9.</span>一切正常。</span></li> 
+    </ul> 
+   </div> 
+  </div>  
+ </body>
+</html>

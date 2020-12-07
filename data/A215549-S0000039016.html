@@ -1,0 +1,91 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta content="IE=8" http-equiv="X-UA-Compatible">
+      <title>带集成发射器的钥匙的编程</title><script> document.domain="saic-gm.com"; function showImg(obj){ var as = document.getElementsByTagName('a'); for(var i=0;i<as.length;i++){as[i].innerHTML='点击显示图片';as[i].parentNode.style.height='40px';} var src = obj.getAttribute("data-url"); var imgstr='<OBJECT width="892" height="680" type="image" classid="CLSID:B789F873-EB93-11D2-A6D8-00A0241989B9"><PARAM NAME="src" value="'+src+'"></OBJECT>';setTimeout(function(){obj.parentNode.style.height='700px';obj.innerHTML = imgstr;}, 1000 );parent.iFrameHeight2();}</script><meta name="Generator" content="Arbortext Publishing Engine 6.0 M130">
+      <meta name="Stylesheet" content="E:\PTC\arbortext pe\custom\doctypes\sm\sm_html.style">
+      <link rel="stylesheet" href="commonCss.css" charset="UTF-8" type="text/css"></head>
+   <div class=" x-servinfo-1-0" id="styler-id1">
+      <h4 class=" x-title-19-0" id="styler-id1.1">带集成发射器的钥匙的编程</h4>
+      <div class=" x-servinfosub-2-0" id="styler-id1.3">
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">利用以下所述的程序可以通过多种途径对钥匙进行编程。使用“更换钥匙”程序将首先从车辆上删除所有已知的钥匙。然后，任何现有的钥匙及新钥匙都将被编程。当钥匙不需要读入或从车辆上删除时，应使用此程序。如果用一把要读入至车辆的新钥匙更换损坏、不工作或被盗的钥匙，则必须使用“更换钥匙”程序。此程序可以确保在编程后无法用旧的钥匙进入或起动车辆。</div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">“添加钥匙”程序在编程前不会删除任何钥匙。此程序会将钥匙简单地编程入下一个可用槽。“添加钥匙”程序仅在要给车辆添加另一把钥匙时才会使用。不管出于何种理由更换钥匙，在对需要更换钥匙的车辆进行钥匙编程时禁止使用“添加钥匙”程序。</div>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.4">
+         <h5 class=" x-title-16-0" id="styler-id1.4.1">更换钥匙</h5>
+         <div class=" x-note-3-0">
+            <div id="styler-id1.4.2.1"></div>
+            <ul class=" x-list1-5-0"><span class=" x--ufe-zb-1-0">注意:</span><li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;此程序将不会读入之前读入的所有钥匙。需要编程的所有钥匙必须位于车辆上。</span></li>
+               <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;现有读入的钥匙存在与否都可能使用此程序。</span></li>
+               <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;每辆车总共可读入8把钥匙。</span></li>
+               <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;此程序只能读入车辆钥匙信息。此程序不会读入车身控制模块（BCM）和发动机控制模块（ECM）之间的任何安全防盗系统信息。</span></li>
+               <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;如果蓄电池电压过低，则继续程序前给蓄电池充电。</span></li>
+            </ul>
+         </div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">1.</span>将故障诊断仪连接至车辆并访问维修编程系统。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">2.</span>确保车辆上的所有耗电装置已关闭。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">3.</span>选择维修编程系统应用程序并按屏幕上的说明进行操作。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">4.</span>选择“Reprogram ECU（重新编程电子控制单元）”。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">5.</span>选择“IMMO Immobilizer Learn（IMMO安全防盗系统读入）”。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">6.</span>选择“Program Transponder or Remote Key（编程无线电频率收发器或遥控钥匙）”功能。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent">
+               <div class=" x-note-1-0">
+                  <div id="styler-id1.4.3.7.1.1"></div>
+                  <ul class=" x-list1-1-0"><span class=" x--ufe-zb-1-0">注意:</span><li class=" x--inherit-background-color x-item-18-0 x-item-18-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;读入程序期间，维修编程系统会多次指示将点火开关置于“RUN（运行）”位置。继续操作维修编程系统端子之前确保车辆确实处于运行模式。如果点火开关未处于“RUN（运行）”模式，则读入程序会失败。</span></li>
+                     <li class=" x--inherit-background-color x-item-18-0 x-item-18-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;钥匙袋位于中央控制台储物区的后部。将钥匙平置于凹槽内，按钮朝向车辆前部且钥匙环置于顶部。未能将钥匙平置于凹槽内将导致无法编程。</span></li>
+                  </ul>
+               </div><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">7.</span>按照屏幕上的说明执行。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">8.</span>完成维修编程系统程序后，按住点火模式开关15秒。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">9.</span>使用故障诊断仪，清除所有DTC。</span></li>
+         </ul>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.5">
+         <h5 class=" x-title-16-0" id="styler-id1.5.1">添加钥匙</h5>
+         <div class=" x-note-3-0">
+            <div id="styler-id1.5.2.1"></div>
+            <ul class=" x-list1-5-0"><span class=" x--ufe-zb-1-0">注意:</span><li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;现有读入的钥匙存在与否都可能使用此程序。</span></li>
+               <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;每辆车总共可读入8把钥匙。</span></li>
+               <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;此程序只能读入车辆钥匙信息。此程序不会读入车身控制模块（BCM）和发动机控制模块（ECM）之间的任何安全防盗系统信息。</span></li>
+               <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;如果蓄电池电压过低，则继续程序前给蓄电池充电。</span></li>
+            </ul>
+         </div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">1.</span>将故障诊断仪连接至车辆并访问维修编程系统。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">2.</span>确保车辆上的所有耗电装置已关闭。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">3.</span>选择维修编程系统应用程序并按屏幕上的说明进行操作。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">4.</span>选择“Reprogram ECU（重新编程电子控制单元）”。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">5.</span>选择“IMMO Immobilizer Learn（IMMO安全防盗系统读入）”。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">6.</span>选择“Program Transponder &amp; Remote Key（编程无线电频率收发器和遥控钥匙）”功能。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent">
+               <div class=" x-note-1-0">
+                  <div id="styler-id1.5.3.7.1.1"></div>
+                  <ul class=" x-list1-1-0"><span class=" x--ufe-zb-1-0">注意:</span><li class=" x--inherit-background-color x-item-18-0 x-item-18-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;读入程序期间，维修编程系统会多次指示将点火开关置于“RUN（运行）”位置。继续操作维修编程系统端子之前确保车辆确实处于运行模式。如果点火开关未处于“RUN（运行）”模式，则读入程序会失败。</span></li>
+                     <li class=" x--inherit-background-color x-item-18-0 x-item-18-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;钥匙袋位于中央控制台储物区的后部。将钥匙平置于凹槽内，按钮朝向车辆前部且钥匙环置于顶部。未能将钥匙平置于凹槽内将导致无法编程。</span></li>
+                  </ul>
+               </div><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">7.</span>按照屏幕上的说明执行。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">8.</span>完成维修编程系统程序后，按住点火模式开关15秒。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">9.</span>使用故障诊断仪，清除所有DTC。</span></li>
+         </ul>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.6">
+         <h5 class=" x-title-16-0" id="styler-id1.6.1">无法完成编程</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">尝试对安全防盗系统部件进行编程时，各种不同条件可能会致使编程操作无法完成。这些情况可能因系统正常运行、系统故障或外来因素造成。未完成编程的常见症状是在尝试期间接收到出错消息或维修编程系统应用程序停止响应。</div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;车身控制模块（BCM）中设置了DTC</span><div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">安全防盗系统是车身控制模块软件的一个功能。如果车身控制模块中设置了安全防盗系统DTC，例如DTC B305B，则安全防盗系统中发现一个故障。如果在尝试对部件进行编程之前未将其纠正，则可能无法完成编程。在对任何安全防盗系统部件进行编程前，纠正所有安全防盗系统DTC。</div>
+            </li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;钥匙已编程到其他车辆，或者不是该车辆适用的正确类型</span><div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">钥匙只能编程到一辆车。一旦钥匙编程到某辆车，就会在其使用寿命内与该车辆配对。该钥匙可反复被同一车辆读入，但无法将其编程到不同的车辆。</div>
+               <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">很多车辆既配备基本的无钥匙进入系统，又配备选装的被动式进入系统。这些钥匙通常看起来相同，但彼此不能替代。为确认钥匙正确，将蚀刻在钥匙上的零件号与零件目录中标识的零件号进行比较。钥匙应对于车辆上安装的系统是正确的。</div>
+            </li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;防盗系统模块未正确固定或钥匙未在槽内正确定位。</span><div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">防盗系统模块未充分就位或未正确固定，可能会阻碍钥匙内的收发器和防盗系统模块之间耦合。位置偏差1 毫米就可能导致编程无法完成。确保防盗模块正确安装且在其卡扣中充分就位。</div>
+               <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">钥匙应在正确方向上定位，使其平置于凹槽中。如果钥匙附带的较大钥匙环或其他物品妨碍钥匙平置，则将钥匙环拆下。</div>
+               <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">要确定防盗模块是否正确固定，请将电池从钥匙中拆下并将钥匙置于凹槽中。尝试通过按下车辆的“ON/OFF（打开/关闭）”开关更改车辆模式。车辆应更改模式。如果驾驶员信息中心显示“NO REMOTE DETECTED（未检测到遥控钥匙）”消息，则防盗系统模块可能未正确固定。</div>
+            </li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;外部干扰中断编程操作</span><div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">外部射频干扰和电磁干扰可能中断钥匙和防盗系统模块之间的低频耦合。干扰可能来自多个不同位置。插入车辆电源插座的设备，例如手机充电器、笔记本电脑、全球定位系统设备等可能导致干扰。车辆位置也可能导致干扰。靠近机场或军事设施的位置可能导致干扰。如有必要，拆下所有客户安装的设备，并在怀疑存在干扰的情况下移动车辆。</div>
+            </li>
+         </ul>
+      </div>
+   </div>
+</html>

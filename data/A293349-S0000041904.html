@@ -1,0 +1,575 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta content="IE=8" http-equiv="X-UA-Compatible">
+      <title>DTC P0121-P0123、P0221-P0223、P16A0-P16A2或P16B0-P16B2</title><script> document.domain="saic-gm.com"; function showImg(obj){ var as = document.getElementsByTagName('a'); for(var i=0;i<as.length;i++){as[i].innerHTML='点击显示图片';as[i].parentNode.style.height='40px';} var src = obj.getAttribute("data-url"); var imgstr='<OBJECT width="892" height="680" type="image" classid="CLSID:B789F873-EB93-11D2-A6D8-00A0241989B9"><PARAM NAME="src" value="'+src+'"></OBJECT>';setTimeout(function(){obj.parentNode.style.height='700px';obj.innerHTML = imgstr;}, 1000 );parent.iFrameHeight2();}</script><meta name="Generator" content="Arbortext Publishing Engine 6.0 M130">
+      <meta name="Stylesheet" content="E:\PTC\arbortext pe\custom\doctypes\sm\sm_html.style">
+      <link rel="stylesheet" href="commonCss.css" charset="UTF-8" type="text/css"></head>
+   <div class=" x-servinfo-1-0" id="styler-id1">
+      <h4 class=" x-title-19-0" id="styler-id1.1">DTC P0121-P0123、P0221-P0223、P16A0-P16A2或P16B0-P16B2</h4>
+      <div class=" x-servinfosub-2-0" id="styler-id1.2">
+         <h5 class=" x-title-16-0" id="styler-id1.2.1">诊断说明</h5>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;在使用本诊断程序前执行“<a class=" x-cell-link-2-0" href="A72794-S0000000347.html">诊断系统检查－车辆</a>”。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;查看“<a class=" x-cell-link-2-0" href="A161235-S0000000340.html">诊断策略</a>”中的诊断方法概述。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;“<a class=" x-cell-link-2-0" href="A161236-S0000000342.html">诊断程序说明</a>”提供每种诊断类别的概述。</span></li>
+         </ul>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.3">
+         <h5 class=" x-title-16-0" id="styler-id1.3.1">DTC说明</h5>
+         <div class=" x-deflist-1-0">
+            <div class=" x-def-1-0">&nbsp;&nbsp;&nbsp;&nbsp;<span class=" x--ufe-zb-1-0">DTC P0121 29:</span><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">电子节气门位置传感器1信号不合理</span></div>
+            <div class=" x-def-1-0">&nbsp;&nbsp;&nbsp;&nbsp;<span class=" x--ufe-zb-1-0">DTC P0122 16:</span><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">电子节气门位置传感器1信号电路电压过低</span></div>
+            <div class=" x-def-1-0">&nbsp;&nbsp;&nbsp;&nbsp;<span class=" x--ufe-zb-1-0">DTC P0123 17:</span><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">电子节气门位置传感器1信号电路电压过高</span></div>
+            <div class=" x-def-1-0">&nbsp;&nbsp;&nbsp;&nbsp;<span class=" x--ufe-zb-1-0">DTC P0221 29:</span><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">电子节气门位置传感器2信号不合理</span></div>
+            <div class=" x-def-1-0">&nbsp;&nbsp;&nbsp;&nbsp;<span class=" x--ufe-zb-1-0">DTC P0222 16:</span><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">电子节气门位置传感器2信号电路电压过低</span></div>
+            <div class=" x-def-1-0">&nbsp;&nbsp;&nbsp;&nbsp;<span class=" x--ufe-zb-1-0">DTC P0223 17:</span><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">电子节气门位置传感器2信号电路电压过高</span></div>
+            <div class=" x-def-1-0">&nbsp;&nbsp;&nbsp;&nbsp;<span class=" x--ufe-zb-1-0">DTC P16A0 16:</span><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">传感器通讯线路1电压过低</span></div>
+            <div class=" x-def-1-0">&nbsp;&nbsp;&nbsp;&nbsp;<span class=" x--ufe-zb-1-0">DTC P16A1 17:</span><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">传感器通讯线路1电压过高</span></div>
+            <div class=" x-def-1-0">&nbsp;&nbsp;&nbsp;&nbsp;<span class=" x--ufe-zb-1-0">DTC P16A2 2A:</span><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">传感器通讯线路1电压性能故障（无效信号）</span></div>
+            <div class=" x-def-1-0">&nbsp;&nbsp;&nbsp;&nbsp;<span class=" x--ufe-zb-1-0">DTC P16A2 29:</span><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">传感器通讯线路1电压性能故障（信号不变）</span></div>
+            <div class=" x-def-1-0">&nbsp;&nbsp;&nbsp;&nbsp;<span class=" x--ufe-zb-1-0">DTC P16B0 16:</span><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">传感器通讯线路2电压过低</span></div>
+            <div class=" x-def-1-0">&nbsp;&nbsp;&nbsp;&nbsp;<span class=" x--ufe-zb-1-0">DTC P16B1 17:</span><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">传感器通讯线路2电压过高</span></div>
+            <div class=" x-def-1-0">&nbsp;&nbsp;&nbsp;&nbsp;<span class=" x--ufe-zb-1-0">DTC P16B2 2A:</span><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">传感器通讯线路2电压性能故障(无效信号)</span></div>
+            <div class=" x-def-1-0">&nbsp;&nbsp;&nbsp;&nbsp;<span class=" x--ufe-zb-1-0">DTC P16B2 29:</span><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">传感器通讯线路2电压性能故障（信号不变）</span></div>
+         </div>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.4">
+         <h5 class=" x-title-16-0" id="styler-id1.4.1">故障诊断信息</h5>
+         <div class=" x-table-1-0 x-table-1-1" id="styler-id1.4.2">
+            <table class=" x-tgroup-1-0" cellpadding="7" frame="box" border="1" rules="all">
+               <colgroup>
+                  <col style="width: 237px; ">
+                  <col style="width: 86px; ">
+                  <col style="width: 86px; ">
+                  <col style="width: 86px; ">
+                  <col style="width: 86px; ">
+                  <col style="width: 106px; ">
+               </colgroup>
+               <thead class=" x-thead-1-0" style="vertical-align: bottom; text-align: left; font-weight: bold; ">
+                  <tr class=" x-row-1-0">
+                     <th class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">电路</div>
+                     </th>
+                     <th class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">对搭铁短路</div>
+                     </th>
+                     <th class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">电阻过高</div>
+                     </th>
+                     <th class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">开路</div>
+                     </th>
+                     <th class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">对电压短路</div>
+                     </th>
+                     <th class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">信号性能</div>
+                     </th>
+                  </tr>
+               </thead>
+               <tbody class=" x-tbody-1-0" style="vertical-align: top; ">
+                  <tr class=" x-row-1-0">
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">5伏参考电压</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">P0122 16, P0222 16，P16B0 16， P16A0 16</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">P0122 16, P0222 16</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">P0122 16, P0222 16, P16A0 16, P16B0 16</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">P0123 17, P0223 17</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">P16A2, P16B2</div>
+                     </td>
+                  </tr>
+                  <tr class=" x-row-1-0">
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">节气门位置传感器1 信号</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">P0122 16，P16A0 16</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">P0122 16</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">P0122 16，P16A1 17</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">P0123 17, P16A1 17, P16A2</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">P0121 29, P16A2</div>
+                     </td>
+                  </tr>
+                  <tr class=" x-row-1-0">
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">节气门位置传感器2 信号</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">P0222 16, P16B0 16</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">P0222 16</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">P0222 16, P16B1 17</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">P0223 17, P16B1 17, P16B2</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">P0221 29, P16B2</div>
+                     </td>
+                  </tr>
+                  <tr class=" x-row-1-0">
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">低电平参考电压</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">－</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">P0122 16, P0222 16</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">P0122 16, P0222 16, P16A1 17, P16B1 17</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">－</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">－</div>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.5">
+         <h5 class=" x-title-16-0" id="styler-id1.5.1">故障诊断仪典型数据</h5>
+         <div class=" x-table-1-0 x-table-1-1" id="styler-id1.5.2">
+            <h3 class=" x-title-17-0" id="styler-id1.5.2.1">节气门位置传感器1</h3>
+            <table class=" x-tgroup-1-0" cellpadding="7" frame="box" border="1" rules="all">
+               <colgroup>
+                  <col style="width: 292px; ">
+                  <col style="width: 132px; ">
+                  <col style="width: 132px; ">
+                  <col style="width: 132px; ">
+               </colgroup>
+               <thead class=" x-thead-1-0" style="vertical-align: bottom; text-align: left; font-weight: bold; ">
+                  <tr class=" x-row-1-0">
+                     <th class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">电路</div>
+                     </th>
+                     <th class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">对搭铁短路</div>
+                     </th>
+                     <th class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">开路</div>
+                     </th>
+                     <th class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">对电压短路</div>
+                     </th>
+                  </tr>
+               </thead>
+               <tbody class=" x-tbody-1-0" style="vertical-align: top; ">
+                  <tr class=" x-row-1-0">
+                     <td class="entry-in-tbody" rowspan="1" colspan="4" style="text-align: left; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; "><span class=" x-emph-1-0 x-emph-1-1">运行条件：</span>发动机在多种操作条件下运行
+                        </div>
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; "><span class=" x-emph-1-0 x-emph-1-1">正常范围：</span>4.75–0.35伏
+                        </div>
+                     </td>
+                  </tr>
+                  <tr class=" x-row-1-0">
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">5伏参考电压</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">0伏</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">0伏</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">5伏</div>
+                     </td>
+                  </tr>
+                  <tr class=" x-row-1-0">
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">节气门位置传感器1 信号</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">0伏</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">0伏</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">5伏</div>
+                     </td>
+                  </tr>
+                  <tr class=" x-row-1-0">
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">低电平参考电压</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">－</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">4-5伏</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">－</div>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+         <div class=" x-table-1-0 x-table-1-1" id="styler-id1.5.3">
+            <h3 class=" x-title-17-0" id="styler-id1.5.3.1">节气门位置传感器2</h3>
+            <table class=" x-tgroup-1-0" cellpadding="7" frame="box" border="1" rules="all">
+               <colgroup>
+                  <col style="width: 292px; ">
+                  <col style="width: 132px; ">
+                  <col style="width: 132px; ">
+                  <col style="width: 132px; ">
+               </colgroup>
+               <thead class=" x-thead-1-0" style="vertical-align: bottom; text-align: left; font-weight: bold; ">
+                  <tr class=" x-row-1-0">
+                     <th class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">电路</div>
+                     </th>
+                     <th class="entry-in-tbody" rowspan="1" style="text-align: center; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">对搭铁短路</div>
+                     </th>
+                     <th class="entry-in-tbody" rowspan="1" style="text-align: center; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">开路</div>
+                     </th>
+                     <th class="entry-in-tbody" rowspan="1" style="text-align: center; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">对电压短路</div>
+                     </th>
+                  </tr>
+               </thead>
+               <tbody class=" x-tbody-1-0" style="vertical-align: top; ">
+                  <tr class=" x-row-1-0">
+                     <td class="entry-in-tbody" rowspan="1" colspan="4" style="text-align: left; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; "><span class=" x-emph-1-0 x-emph-1-1">运行条件：</span>发动机在多种操作条件下运行
+                        </div>
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; "><span class=" x-emph-1-0 x-emph-1-1">参数正常范围：</span>0.25-4.59伏
+                        </div>
+                     </td>
+                  </tr>
+                  <tr class=" x-row-1-0">
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">5伏参考电压</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">0伏</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">0伏</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">5伏</div>
+                     </td>
+                  </tr>
+                  <tr class=" x-row-1-0">
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">节气门位置传感器2 信号</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">0伏</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">5伏</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">5伏</div>
+                     </td>
+                  </tr>
+                  <tr class=" x-row-1-0">
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">低电平参考电压</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">－</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">4-5伏</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">－</div>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.6">
+         <h5 class=" x-title-16-0" id="styler-id1.6.1">电路/系统说明</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">节气门体总成包含2个节气门体位置传感器。节气门体位置传感器安装在节气门体总成上且不可维修。节气门位置传感器将提供一个相对节气门叶片角度变化的信号电压。发动机控制模块 (ECM) 向节气门位置传感器提供1个通用5伏参考电压电路、1个通用低电平参考电压电路和2个独立的信号电路。</div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">两个节气门位置传感器的功能相反。当踩下加速踏板至节气门全开 (WOT) 位置时，节气门位置传感器1信号电压降低，节气门位置传感器2信号电压升高。</div>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.7">
+         <h5 class=" x-title-16-0" id="styler-id1.7.1">运行DTC的条件</h5>
+         <ul class=" x-list1-8-0">
+            <h3 class=" x-title-24-0" id="styler-id1.7.2.1">P0122 16、P0123 17、P0222 16或P0223 17</h3>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;发动机起动后运行时间大于12秒。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;满足上述条件后，DTC P0122、P0123、P0222、P0223将持续运行。</span></li>
+         </ul>
+         <ul class=" x-list1-8-0">
+            <h3 class=" x-title-24-0" id="styler-id1.7.3.1">P0121 29或P0221 29</h3>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;发动机转速大于1200转/分。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;满足上述条件时，DTC P0121、P0221将持续运行。</span></li>
+         </ul>
+         <ul class=" x-list1-8-0">
+            <h3 class=" x-title-24-0" id="styler-id1.7.4.1">P16A0 16、P16A1 17、P16A2 2A、P16A2 29、P16B0 16、P16B1 17、P16B2 2A或P16B2 29</h3>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;未设置DTC P06A3。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;点火开关处于“ON（打开）”位置，或发动机正在运行。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;运行/起动电压大于6.41 V。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;满足上述条件并持续1 s后，这些DTC 将持续运行。</span></li>
+         </ul>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.8">
+         <h5 class=" x-title-16-0" id="styler-id1.8.1">设置DTC的条件</h5>
+         <div class=" x-para-1-0">
+            <h3 class=" x-title-10-0" id="styler-id1.8.2.1">P0121 29或P0221 29</h3>
+            <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; margin-left: 8mm; text-indent: 0pt; ">发动机控制模块检测到节气门位置传感器1与节气门位置传感器2电压相差大于6.27伏。</div>
+         </div>
+         <div class=" x-para-1-0">
+            <h3 class=" x-title-10-0" id="styler-id1.8.3.1">P0122 16</h3>
+            <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; margin-left: 8mm; text-indent: 0pt; ">发动机控制模块检测到节气门位置传感器1的电压低于0.156伏并持续1秒以上。</div>
+         </div>
+         <div class=" x-para-1-0">
+            <h3 class=" x-title-10-0" id="styler-id1.8.4.1">P0123 17</h3>
+            <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; margin-left: 8mm; text-indent: 0pt; ">发动机控制模块检测到节气门位置传感器1的电压高于4.883伏并持续1秒以上。</div>
+         </div>
+         <div class=" x-para-1-0">
+            <h3 class=" x-title-10-0" id="styler-id1.8.5.1">P0222 16</h3>
+            <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; margin-left: 8mm; text-indent: 0pt; ">发动机控制模块检测到节气门位置传感器2的电压低于0.176伏并持续1秒以上。</div>
+         </div>
+         <div class=" x-para-1-0">
+            <h3 class=" x-title-10-0" id="styler-id1.8.6.1">P0223 17</h3>
+            <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; margin-left: 8mm; text-indent: 0pt; ">发动机控制模块检测到节气门位置传感器2的电压高于4.629伏并持续1秒以上。</div>
+         </div>
+         <div class=" x-para-1-0">
+            <h3 class=" x-title-10-0" id="styler-id1.8.7.1">P16A0 16或P16B0 16</h3>
+            <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; margin-left: 8mm; text-indent: 0pt; ">发动机控制模块检测到节气门位置传感器信号电路上出现电压过低状况并持续178 ms以上，或在497 ms的时间范围内持续了247 ms。</div>
+         </div>
+         <div class=" x-para-1-0">
+            <h3 class=" x-title-10-0" id="styler-id1.8.8.1">P16A1 17或P16B1 17</h3>
+            <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; margin-left: 8mm; text-indent: 0pt; ">发动机控制模块检测到节气门位置传感器信号电路上出现电压过高状况并持续178 ms以上，或在497 ms的 时间范围内持续了247 ms。</div>
+         </div>
+         <div class=" x-para-1-0">
+            <h3 class=" x-title-10-0" id="styler-id1.8.9.1">P16A2 2A、P16A2 29、P16B2 2A或P16B2 29</h3>
+            <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; margin-left: 8mm; text-indent: 0pt; ">发动机控制模块(ECM) 检测到通过节气门位置传感器信号电路接收的信息不正确并持续178 ms 以上，或在 497 ms 的时间范围内持续了247 ms。</div>
+         </div>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.9">
+         <h5 class=" x-title-16-0" id="styler-id1.9.1">设置DTC时采取的操作</h5>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;DTC P0121、P0122、P0123、P0221、P0222、P0223、P16A0、P16A1、P16A2、P16B0、P16B1或P16B2是A类DTC。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;发动机控制模块指令节气门执行器控制系统在“降低发动机功率”模式下工作。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;信息中心或指示灯显示“Reduced Engine Power（降低发动机功率）”。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;在特定条件下，控制模块指令发动机关闭。</span></li>
+         </ul>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.10">
+         <h5 class=" x-title-16-0" id="styler-id1.10.1">清除故障指示灯/DTC的条件</h5>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;DTC P0121、P0122、P0123、P0221、P0222、P0223、P16A0、P16A1、P16A2、P16B0、P16B1或P16B2是A类DTC。</span></li>
+         </ul>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.11">
+         <h5 class=" x-title-16-0" id="styler-id1.11.1">诊断帮助</h5>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;节气门位置和节气门执行器控制电路上的电阻过大故障会导致DTC的设置。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;如果加速踏板踩下至节气门全开位置，则节气门叶片角度或节气门位置角将被限定在40%以下。</span></li>
+         </ul>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.12">
+         <h5 class=" x-title-16-0" id="styler-id1.12.1">参考信息</h5>
+         <div class=" x-satitle-1-0">示意图参考</div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; "><a class=" x-cell-link-2-0" href="A279956-S0000036043.html">发动机控制示意图</a></div>
+         <div class=" x-satitle-1-0">连接器端视图参考</div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; "><a class=" x-cell-link-2-0" href="A164814-S0000039806.html">部件连接器端视图</a></div>
+         <div class=" x-satitle-1-0">说明与操作</div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; "><a class=" x-cell-link-2-0" href="A279673-S0000031364.html">节气门执行器控制（TAC）系统的说明</a></div>
+         <div class=" x-satitle-1-0">电气信息参考</div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;<a class=" x-cell-link-2-0" href="A62194-S0000038422.html">电路测试</a></span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;<a class=" x-cell-link-2-0" href="A61973-S0000038457.html">连接器修理</a></span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;<a class=" x-cell-link-2-0" href="A62112-S0000038440.html">测试是否存在间歇性故障和不良连接</a></span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;<a class=" x-cell-link-2-0" href="A61965-S0000038455.html">线路修理</a></span></li>
+         </ul>
+         <div class=" x-satitle-1-0">DTC类型参考</div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; "><a class=" x-cell-link-2-0" href="A161179-S0000002977.html">动力传动系统故障诊断码（DTC）类型定义</a></div>
+         <div class=" x-satitle-1-0">故障诊断仪参考</div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">参见“<a class=" x-cell-link-2-0" href="A72864-S0000034009.html">控制模块参考</a>”以获取故障诊断仪信息
+         </div>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.13">
+         <h5 class=" x-title-16-0" id="styler-id1.13.1">电路/系统检验</h5>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">1.</span>将点火开关置于“ON（打开）”位置。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">2.</span>确认故障诊断仪的“Throttle Position Sensor 1（节气门位置传感器1）”和“Throttle Position Sensor 2（节气门位置传感器2）”电压参数在1.0-4.0伏之间，并随着加速踏板的输入而变化。</span></li>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果不在1.0-4.0伏之间或不变化</span></span><div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">参见“电路/系统测试”</div>
+            </li>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果在1.0-4.0伏之间且变化</span></span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">3.</span>用故障诊断仪执行“节气门扫描测试”时，确认“Throttle Position Sensor 1 and 2 Agree/Disagree（节气门位置传感器1和2一致/不一致）”参数显示“Agree（一致）”。</span></li>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果是“Disagree（不一致）”</span></span><div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">参见“电路/系统测试”</div>
+            </li>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果是“Agree（一致）”</span></span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">4.</span>确定车辆当前的测试海拔。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">5.</span>确认故障诊断仪上的“MAP Sensor（歧管绝对压力传感器）”压力参数处于“<a class=" x-cell-link-2-0" href="A280031-S0000031275.html">海拔与大气压力</a>”表规定的范围内。</span></li>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">歧管绝对压力传感器压力不在规定范围内</span></span><div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">参见“<a class=" x-cell-link-2-0" href="A280043-S0000041902.html">DTC P0106</a>”。
+               </div>
+            </li>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">歧管绝对压力传感器压力在规定范围内</span></span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">6.</span>发动机怠速运转。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">7.</span>确认故障诊断仪上的“MAP Sensor（歧管绝对压力传感器）”压力参数在26-52千帕（3.8-7.5磅/平方英寸）之间，并随着加速踏板的输入而变化。</span></li>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果不在26-52千帕（3.8-7.5磅/平方英寸）之间或不变化</span></span><div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">参见“<a class=" x-cell-link-2-0" href="A280043-S0000041902.html">DTC P0106</a>”。
+               </div>
+            </li>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果在26-52千帕（3.8-7.5磅/平方英寸）之间并变化</span></span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">8.</span>执行以下操作时，确认故障诊断仪上的“MAF Sensor g/s（质量空气流量传感器（克/秒））”参数随着发动机转速的增加和减少而平稳逐渐变化。</span></li>
+            <ul class=" x-list2-2-0">
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">8.1</span>&nbsp;发动机怠速运转</span></li>
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">8.2</span>&nbsp;执行故障诊断仪快照功能。</span></li>
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">8.3</span>&nbsp;缓慢地将发动机转速提高到3,000转/分，然后回到怠速。</span></li>
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">8.4</span>&nbsp;退出故障诊断仪快照功能并查看数据。</span></li>
+            </ul>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">9.</span>在“运行DTC的条件”下操作车辆，或在从“冻结故障状态/故障记录”数据中查到的条件下操作车辆。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">10.</span>确认未设置DTC。</span></li>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果设置了DTC</span></span><div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">参见“电路/系统测试”</div>
+            </li>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果未设置DTC</span></span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">11.</span>全部正常。</span></li>
+         </ul>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.14">
+         <h5 class=" x-title-16-0" id="styler-id1.14.1">电路/系统测试</h5>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent">
+               <div class=" x-note-1-0">
+                  <div id="styler-id1.14.2.1.1.1"></div>
+                  <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x--ufe-zb-1-0">注意:</span>断开节气门体线束连接器可导致其他DTC设置。
+                  </div>
+               </div><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">1.</span>将点火开关置于“OFF（关闭）”位置，关闭所有车辆系统，断开Q38节气门体处的线束连接器。可能需要2分钟才能让所有车辆系统断电。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">2.</span>测试低电平参考电压电路端子6和搭铁之间的电阻是否小于10欧。</span></li>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果等于或高于10欧</span></span></li>
+            <ul class=" x-list2-2-0">
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">2.1</span>&nbsp;点火开关置于“OFF（关闭）”位置，断开K20发动机控制模块处的线束连接器。</span></li>
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">2.2</span>&nbsp;测试低电平参考电压端对端的电阻是否小于2欧。</span></li>
+               <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">如果为2欧或更大，则修理电路中的开路/电阻过大。</span></li>
+               <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">如果小于2欧，则更换K20发动机控制模块。</span></li>
+            </ul>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果小于10欧</span></span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">3.</span>将点火开关置于“ON（打开）”位置。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">4.</span>测试5伏参考电压电路端子2和搭铁之间的电压是否为4.8-5.2伏。</span></li>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果小于4.8伏</span></span></li>
+            <ul class=" x-list2-2-0">
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">4.1</span>&nbsp;点火开关置于“OFF（关闭）”位置，断开K20发动机控制模块处的线束连接器。</span></li>
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">4.2</span>&nbsp;测试5伏参考电压电路端子和搭铁之间的电阻是否为无穷大。</span></li>
+               <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">如果电阻不为无穷大，则修理电路上的对搭铁短路故障。</span></li>
+               <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">如果电阻为无穷大</span></li>
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">4.3</span>&nbsp;测试5伏参考电压电路端对端的电阻是否小于2欧。</span></li>
+               <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">如果为2欧或更大，则修理电路中的开路/电阻过大。</span></li>
+               <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">如果小于2欧，则更换K20发动机控制模块。</span></li>
+            </ul>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果大于5.2伏</span></span></li>
+            <ul class=" x-list2-2-0">
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">4.1</span>&nbsp;将点火开关置于“OFF（关闭）”位置，断开K20发动机控制模块处的线束连接器，再将点火开关置于“ON（打开）”位置。</span></li>
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">4.2</span>&nbsp;测试5伏参考电压电路和搭铁之间的电压是否低于1伏。</span></li>
+               <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">如果是1伏或更高，则修理电路上的对电压短路故障。</span></li>
+               <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">如果小于1伏，则更换K20发动机控制模块。</span></li>
+            </ul>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果在4.8-5.2伏之间</span></span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">5.</span>将点火开关置于“ON（打开）”位置。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">6.</span>确认故障诊断仪的“Throttle Position Sensor 2 voltage（节气门位置传感器2电压）”参数小于1V。</span></li>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果等于或高于1.0伏</span></span></li>
+            <ul class=" x-list2-2-0">
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">6.1</span>&nbsp;将点火开关置于“OFF（关闭）”位置，断开K20发动机控制模块处的线束连接器，再将点火开关置于“ON（打开）”位置。</span></li>
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">6.2</span>&nbsp;测试信号电路和搭铁之间的电压是否低于1伏。</span></li>
+               <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">如果是1伏或更高，则修理电路上的对电压短路故障。</span></li>
+               <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">如果小于1伏，则更换K20发动机控制模块。</span></li>
+            </ul>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果小于1.0伏</span></span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">7.</span>在节气门位置传感器2信号电路端子4和5伏参考电压电路端子2之间安装一根带3安培保险丝的跨接线。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">8.</span>确认故障诊断仪上的“Throttle Position Sensor 2 voltage（节气门位置传感器2电压）”参数高于4.8伏。</span></li>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果等于或小于4.8伏</span></span></li>
+            <ul class=" x-list2-2-0">
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">8.1</span>&nbsp;点火开关置于“OFF（关闭）”位置，断开K20发动机控制模块处的线束连接器。</span></li>
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">8.2</span>&nbsp;测试信号电路和搭铁之间的电阻是否为无穷大。</span></li>
+               <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">如果电阻不为无穷大，则修理电路上的对搭铁短路故障。</span></li>
+               <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">如果电阻为无穷大</span></li>
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">8.3</span>&nbsp;测试信号电路端对端的电阻是否小于2欧。</span></li>
+               <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">如果为2欧或更大，则修理电路中的开路/电阻过大。</span></li>
+               <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">如果小于2欧，则更换K20发动机控制模块。</span></li>
+            </ul>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果高于4.8伏</span></span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">9.</span>确认故障诊断仪的“Throttle Position Sensor 1voltage（节气门位置传感器1电压）”参数小于1V。</span></li>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果等于或高于1.0伏</span></span></li>
+            <ul class=" x-list2-2-0">
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">9.1</span>&nbsp;将点火开关置于“OFF（关闭）”位置，断开K20发动机控制模块处的线束连接器，再将点火开关置于“ON（打开）”位置。</span></li>
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">9.2</span>&nbsp;测试信号电路和搭铁之间的电压是否低于1伏。</span></li>
+               <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">如果是1伏或更高，则修理电路上的对电压短路故障。</span></li>
+               <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">如果小于1伏，则更换K20发动机控制模块。</span></li>
+            </ul>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果小于1.0伏</span></span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">10.</span>在节气门位置传感器1信号电路端子1和5伏参考电压电路端子2之间安装一根带3安培保险丝的跨接线。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">11.</span>确认故障诊断仪上的“Throttle Position Sensor 1 voltage（节气门位置传感器1电压）”参数高于4.8伏。</span></li>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果等于或小于4.8伏</span></span></li>
+            <ul class=" x-list2-2-0">
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">11.1</span>&nbsp;点火开关置于“OFF（关闭）”位置，断开K20发动机控制模块处的线束连接器。</span></li>
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">11.2</span>&nbsp;测试信号电路和搭铁之间的电阻是否为无穷大。</span></li>
+               <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">如果电阻不为无穷大，则修理电路上的对搭铁短路故障。</span></li>
+               <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">如果电阻为无穷大</span></li>
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">11.3</span>&nbsp;测试信号电路端对端的电阻是否小于2欧。</span></li>
+               <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">如果为2欧或更大，则修理电路中的开路/电阻过大。</span></li>
+               <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">如果小于2欧，则更换K20发动机控制模块。</span></li>
+            </ul>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果高于4.8伏</span></span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">12.</span>测试或更换Q38节气门体。</span></li>
+         </ul>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.15">
+         <h5 class=" x-title-16-0" id="styler-id1.15.1">维修指南</h5>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;<a class=" x-cell-link-2-0" href="A279973-S0000039923.html">节气门体总成的更换</a></span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;参见“<a class=" x-cell-link-2-0" href="A72864-S0000034009.html">控制模块参考</a>”以了解更换、编程和设置发动机控制模块的信息</span></li>
+         </ul>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.16">
+         <h5 class=" x-title-16-0" id="styler-id1.16.1">修理效果检验</h5>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">1.</span>在诊断时，安装所有已被拆下或更换的部件。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">2.</span>在拆下或更换部件时，根据需要进行调节、编程或设置程序。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">3.</span>用故障诊断仪清除DTC。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">4.</span>将点火开关置于“OFF（关闭）”位置，所有车辆系统关闭。可能需要2分钟才能让所有车辆系统断电。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">5.</span>将点火开关置于“ON（打开）”位置。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">6.</span>在用故障诊断仪执行节气门扫描测试的同时，确认故障诊断仪的“Throttle Position Sensors 1 and 2 Agree/Disagree（节气门位置传感器1和2一致/不一致）”参数显示“Agree（一致）”。</span></li>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果是“Disagree（不一致）”</span></span><div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">测试或更换Q38节气门体总成。</div>
+            </li>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果是“Agree（一致）”</span></span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">7.</span>如果修理与DTC有关，则再现“运行DTC的条件”并使用“冻结故障状态/故障记录”（如适用）确认未设置DTC。</span></li>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果设置了DTC</span></span><div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">参见“<a class=" x-cell-link-2-0" href="A72795-S0000038249.html">故障诊断码（DTC）列表－车辆</a>”以进行进一步诊断。
+               </div>
+            </li>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果未设置DTC</span></span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">8.</span>全部正常</span></li>
+         </ul>
+      </div>
+   </div>
+</html>

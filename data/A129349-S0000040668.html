@@ -1,0 +1,233 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta content="IE=8" http-equiv="X-UA-Compatible">
+      <title>自动HVAC的说明与操作</title><script> document.domain="saic-gm.com"; function showImg(obj){ var as = document.getElementsByTagName('a'); for(var i=0;i<as.length;i++){as[i].innerHTML='点击显示图片';as[i].parentNode.style.height='40px';} var src = obj.getAttribute("data-url"); var imgstr='<OBJECT width="892" height="680" type="image" classid="CLSID:B789F873-EB93-11D2-A6D8-00A0241989B9"><PARAM NAME="src" value="'+src+'"></OBJECT>';setTimeout(function(){obj.parentNode.style.height='700px';obj.innerHTML = imgstr;}, 1000 );parent.iFrameHeight2();}</script><meta name="Generator" content="Arbortext Publishing Engine 6.0 M130">
+      <meta name="Stylesheet" content="E:\PTC\arbortext pe\custom\doctypes\sm\sm_html.style">
+      <link rel="stylesheet" href="commonCss.css" charset="UTF-8" type="text/css"></head>
+   <div class=" x-servinfo-1-0" id="styler-id1">
+      <h4 class=" x-title-19-0" id="styler-id1.1">自动HVAC的说明与操作</h4>
+      <div class=" x-servinfosub-2-0" id="styler-id1.2">
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">空气温度和送风的说明与操作分为八个部分：</div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;暖风、通风与空调系统控制部件</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;风速</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;送风</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;暖风和空调系统的操作</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;内循环操作</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;自动操作</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;发动机冷却液</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;空调循环</span></li>
+         </ul>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.3">
+         <h5 class=" x-title-16-0" id="styler-id1.3.1">暖风、通风与空调系统控制部件</h5>
+         <div class=" x-para-1-0">
+            <h3 class=" x-title-10-0" id="styler-id1.3.2.1">暖风、通风与空调系统控制</h3>
+            <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; margin-left: 8mm; text-indent: 0pt; ">暖风、通风与空调系统控制装置包括用来控制暖风、通风与空调系统功能的所有按钮、开关和转盘并且作为操作者和暖风、通风与空调系统控制模块之间的界面。所选数值通过LIN总线传送到暖风、通风与空调系统控制模块。</div>
+         </div>
+         <div class=" x-para-1-0">
+            <h3 class=" x-title-10-0" id="styler-id1.3.3.1">暖风、通风与空调系统控制模块</h3>
+            <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; margin-left: 8mm; text-indent: 0pt; ">暖风、通风与空调系统控制模块是一个GMLAN装置，作为操作者与暖风、通风与空调系统之间的接口，以保持并控制期望的空气温度和空气分配设置。蓄电池正极电压电路向暖风、通风与空调系统控制模块提供用于保持活性存储器的电源。如果蓄电池正极电压电路断电，则所有暖风、通风与空调系统DTC和设置将从保持活性存储器中擦除。车体控制模块
+               (BCM) 作为车辆模式的总控设备，提供设备打开信号。暖风、通风与空调系统控制模块提供鼓风机、送风模式和空气温度设置。
+            </div>
+         </div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">该暖风、通风与空调系统控制模块支持以下功能：</div>
+         <div class=" x-table-1-0 x-table-1-1" id="styler-id1.3.5">
+            <table class=" x-tgroup-1-0" cellpadding="7" frame="box" border="1" rules="all">
+               <colgroup>
+                  <col style="width: 345px; ">
+                  <col style="width: 344px; ">
+               </colgroup>
+               <thead class=" x-thead-1-0" style="vertical-align: bottom; text-align: left; font-weight: bold; ">
+                  <tr class=" x-row-1-0">
+                     <th class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">功能</div>
+                     </th>
+                     <th class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">可用性</div>
+                     </th>
+                  </tr>
+               </thead>
+               <tbody class=" x-tbody-1-0" style="vertical-align: middle; ">
+                  <tr class=" x-row-1-0">
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">后鼓风</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">技术人员重新编程后可用</div>
+                     </td>
+                  </tr>
+                  <tr class=" x-row-1-0">
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">吹洗</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">是</div>
+                     </td>
+                  </tr>
+                  <tr class=" x-row-1-0">
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">个性化设置</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">是</div>
+                     </td>
+                  </tr>
+                  <tr class=" x-row-1-0">
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">执行器校准</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">是</div>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+         <div class=" x-para-1-0">
+            <h3 class=" x-title-10-0" id="styler-id1.3.6.1">模式执行器</h3>
+            <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; margin-left: 8mm; text-indent: 0pt; ">模式执行器是5线步进电机。暖风、通风与空调系统控制模块向步进电机提供12伏参考电压，并用脉冲搭铁信号向4个步进电机线圈供电。步进电机将调节门移动至计算位置，以到达所选位置。如果是新的步进电机，则应对其零点进行校准。步进电机校准后，暖风、通风与空调系统控制模块能够驱动相应的线圈，以正确到达期望的调节门位置。</div>
+         </div>
+         <div class=" x-para-1-0">
+            <h3 class=" x-title-10-0" id="styler-id1.3.7.1">空气温度执行器</h3>
+            <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; margin-left: 8mm; text-indent: 0pt; ">空气温度执行器是5线步进电机。暖风、通风与空调系统控制模块向步进电机提供12伏参考电压，并用脉冲搭铁信号向4个步进电机线圈供电。空气温度执行器将混合空气风门移动至计算位置，以达到所选的温度控制装置的温度。如果是新的步进电机，则应对其零点进行校准。步进电机校准后，暖风、通风与空调系统控制模块能够驱动相应的线圈，以正确到达期望的空气温度门位置。</div>
+         </div>
+         <div class=" x-para-1-0">
+            <h3 class=" x-title-10-0" id="styler-id1.3.8.1">内循环执行器</h3>
+            <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; margin-left: 8mm; text-indent: 0pt; ">内循环执行器是5线步进电机。暖风、通风与空调系统控制模块向步进电机提供12伏参考电压，并用脉冲搭铁信号向4个步进电机线圈供电。步进电机将循环风门移动至计算位置，以到达所需位置。如果是新的步进电机，则应对其零点进行校准。步进电机校准后，暖风、通风与空调系统控制模块能够驱动相应的线圈，以正确到达期望的循环风门位置。</div>
+         </div>
+         <div class=" x-para-1-0">
+            <h3 class=" x-title-10-0" id="styler-id1.3.9.1">鼓风机电机和模块</h3>
+            <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; margin-left: 8mm; text-indent: 0pt; ">鼓风机电机控制处理器通过增大或减小鼓风机电机搭铁侧电压值来控制鼓风机电机的转速。暖风、通风与空调系统控制模块通过鼓风机电机转速控制电路向鼓风机电机控制处理器提供低压侧脉宽调制 (PWM) 信号。当所需的鼓风机转速增大时，暖风、通风与空调系统控制模块增加转速信号调节至搭铁的时间。当所需的鼓风机转速降低时，暖风、通风与空调系统控制模块将减少转速信号调制至搭铁的时间。</div>
+         </div>
+         <div class=" x-para-1-0">
+            <h3 class=" x-title-10-0" id="styler-id1.3.10.1">蒸发器温度传感器</h3>
+            <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; margin-left: 8mm; text-indent: 0pt; ">蒸发器温度传感器为2线负温度系数热敏电阻。传感器在-40至+85°C（-40至+185°F）的温度范围内工作。传感器安装在蒸发器处，测量蒸发器的温度。如果温度降至低于3°C (38°F)，则将关闭压缩机以防止蒸发器冻结。</div>
+         </div>
+         <div class=" x-para-1-0">
+            <h3 class=" x-title-10-0" id="styler-id1.3.11.1">空气质量传感器</h3>
+            <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; margin-left: 8mm; text-indent: 0pt; ">暖风、通风与空调系统控制模块使用空气质量传感器检测碳氢化合物。该传感器使用点火电压电路、搭铁电路和信号电路运行。该信息使用脉宽调制 (PWM) 信号发送至暖风、通风与空调系统控制模块。仅在客户要求自动暖风、通风与空调系统模式时使用。当暖风、通风与空调系统模块检测到碳氢化合物的浓度超过预设值，系统会指令内循环模式以使乘客厢保持无污染。</div>
+         </div>
+         <div class=" x-para-1-0">
+            <h3 class=" x-title-10-0" id="styler-id1.3.12.1">风管温度传感器</h3>
+            <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; margin-left: 8mm; text-indent: 0pt; ">空气温度传感器为2线负温度系数热敏电阻。传感器在-40至+85°C（-40至+185°F）的温度范围内工作。传感器安装在空气分配管内，测量流经风管的空气温度。暖风、通风与空调系统控制模块使用这些数值来计算期望的空气温度风门的位置。</div>
+         </div>
+         <div class=" x-para-1-0">
+            <h3 class=" x-title-10-0" id="styler-id1.3.13.1">空调制冷剂压力传感器</h3>
+            <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; margin-left: 8mm; text-indent: 0pt; ">空调制冷剂压力传感器是一个3线压电式压力传感器。该传感器依靠5伏参考电压、低电平参考电压和信号电路进行工作。空调压力信号可以处在0.2 - 4.8伏之间。空调制冷剂压力过低时，信号值接近0伏。空调制冷剂压力过高时，信号值接近5伏。发动机控制模块
+               (ECM) 将电压信号转换为压力值。当压力太高或太低时，发动机控制模块将不允许空调压缩机离合器接合。
+            </div>
+         </div>
+         <div class=" x-para-1-0">
+            <h3 class=" x-title-10-0" id="styler-id1.3.14.1">空调压缩机</h3>
+            <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; margin-left: 8mm; text-indent: 0pt; ">此空调系统利用常规离合器启用并机械转动压缩机。直接给空调压缩机离合器继电器控制电路提供点火电压。将蓄电池电压提供给开关控制装置。发动机控制模块 (ECM) 通过将空调离合器继电器控制电路接地控制继电器，该电路将关闭允许电流流过压缩机离合器的继电器。当ECM指令零部件打开时，控制电路的电压必须接近0伏。发动机控制模块指令控制电路断开时，电路的电势应接近于蓄电池的电压</div>
+         </div>
+         <div class=" x-para-1-0">
+            <h3 class=" x-title-10-0" id="styler-id1.3.15.1">挡风玻璃温度和车内湿度传感器</h3>
+         </div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">挡风玻璃温度和车内湿度传感器总成提供下列信息：</div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;挡风玻璃相对湿度水平（乘客厢侧）</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;车内挡风玻璃温度（乘客厢侧）</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;湿度传感器元件的温度</span></li>
+         </ul>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">相对湿度传感器测量挡风玻璃乘客厢侧的相对湿度。它也检测乘客厢侧挡风玻璃表面的温度。两个数值被用作暖风、通风与空调系统控制模块应用程序的控制输入，计算乘客厢侧挡风玻璃结雾的风险系数，并能够通过将空调压缩机电源降到最低来减少燃油消耗，从而避免结雾。传感器也能在环境温度寒冷的条件下启动部分内循环模式提高乘客厢的加热性能，而不会引起挡风玻璃出现雾气积聚的风险。湿度传感器元件温度传感器提供湿度传感器元件的温度。该温度值仅在湿度传感元件和车内挡风玻璃表面的热接触不佳时才需要。</div>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.4">
+         <h5 class=" x-title-16-0" id="styler-id1.4.1">风速</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">鼓风机控制开关是HVAC控制的一部分。鼓风机开关位置的所选数值通过LIN总线发送到暖风、通风与空调系统控制模块。</div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">暖风、通风与空调系统控制模块向鼓风机电机控制模块提供脉宽调制信号以指令期望的鼓风机电机转速。</div>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.5">
+         <h5 class=" x-title-16-0" id="styler-id1.5.1">送风</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">可以通过HVAC控制上的空气分配开关选择期望的空气分配模式。HVAC控制通过LIN总线将数值发送到HVAC控制模块。HVAC控制模块控制空气分配执行器，将风门驱动至计算位置。根据风门的位置，空气通过不同的风管分配至仪表板出风口。将模式风门转至除霜位置，暖风、通风与空调系统控制模块将移动内循环执行器至车外空气模式，以避免车窗起雾。选择除霜后，无论冷却液温度为多少，鼓风机电机都将启动。暖风、通风与空调系统控制模块将大量空气传送到前除霜器通风口。空调可以在所有模式下使用。</div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">后窗除雾器不影响暖风、通风与空调系统。</div>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.6">
+         <h5 class=" x-title-16-0" id="styler-id1.6.1">暖风和空调系统的操作</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">暖风和空调系统的目的是向车内提供加热和冷却的空气。空调系统还会进行车内除湿和防止挡风玻璃结雾。不管温度设置如何，以下情况会影响暖风、通风与空调系统达到期望温度的速度：</div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;内循环执行器设置</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;车内温度与期望温度的差别</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;鼓风机电机转速设置</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;模式设置</span></li>
+         </ul>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">当按下空调开关时，HVAC控制通过LIN总线向HVAC控制模块发送信号。HVAC控制模块评估该信号并且通过CAN总线向发动机控制模块发送一个空调请求信号。发动机控制模块在释放之前先检查所有的预设条件，如果所有的条件都符合则将一个释放信号发回给HVAC控制模块。</div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">启动空调压缩机必须满足以下条件：</div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;蓄电池电压介于9 - 18伏之间</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;发动机冷却液温度低于124°C (255°F)</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;发动机转速大于600转/分</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;发动机转速小于5500转/分</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;空调高压侧压力在269 - 2929千帕（39 - 425磅力/平方英寸）之间</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;节气门位置小于100%</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;蒸发器温度高于3°C (38°F)</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;发动机控制模块没有检测到扭矩负载过大</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;发动机控制模块没有检测到怠速不良</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;环境温度高于1°C (34°F)</span></li>
+         </ul>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">发动机控制模块使用空调高压侧压力传感器信息确定以下：</div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;空调系统高压侧压力</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;发动机空调系统负载</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;过大的空调系统高压侧压力</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;空调冷凝器热负载</span></li>
+         </ul>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">气流通过加热器芯和蒸发器芯进入乘客舱。空气温度执行器驱动空气混合风门来确定进气的路径。如果车内温度需要升高，则将混合空气风门置于允许更多气流通过加热器芯的位置。如果车内温度需要降低，则将混合空气风门置于允许更多气流通过蒸发器芯的位置。</div>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.7">
+         <h5 class=" x-title-16-0" id="styler-id1.7.1">内循环操作</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">内循环开关是HVAC控制的一部分。所选的内循环开关位置通过LIN总线发送到暖风、通风与空调系统控制模块。暖风、通风与空调系统控制模块通过进气执行器和内循环执行器控制进气。在内循环模式下，进气风门关闭而内循环风门打开，以便在车内循环空气。在外循环模式下，进气风门打开，然后内循环风门再次关闭，以将车外空气引入车内。只有在除霜模式未激活时，才能启用内循环。激活除霜模式时，内循环执行器打开内循环风门，进气执行器打开进气风门，外部空气循环至挡风玻璃以防止结雾。</div>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.8">
+         <h5 class=" x-title-16-0" id="styler-id1.8.1">自动操作</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">在自动操作状态下，暖风、通风与空调系统控制模块将通过控制空调压缩机离合器、鼓风机电机、空气温度执行器、模式执行器和内循环执行器来保持车内的舒适度。</div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">为了将暖风、通风与空调系统设置到自动模式，需要满足以下要求：</div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">1.</span>自动开关必须开启。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">2.</span>空气温度开关必须在除最热或最冷位置以外的位置。</span></li>
+         </ul>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">一旦达到期望的温度值，鼓风机电机、模式执行器、内循环执行器和空气温度执行器会自动调节，以保持选定的温度。暖风、通风与空调系统控制模块执行以下功能以保持期望空气温度：</div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;监测以下传感器：</span></li>
+            <ul class=" x-list2-2-0">
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-3 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-3"><span style="font-family: Arial; ">– </span> 环境空气温度传感器</span></li>
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-3 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-3"><span style="font-family: Arial; ">– </span> 左下空气温度传感器</span></li>
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-3 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-3"><span style="font-family: Arial; ">– </span> 左上空气温度传感器</span></li>
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-3 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-3"><span style="font-family: Arial; ">– </span> 挡风玻璃温度和车内湿度传感器</span></li>
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-3 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-3"><span style="font-family: Arial; ">– </span> 环境光照/日照传感器</span></li>
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-3 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-3"><span style="font-family: Arial; ">– </span> 空气质量传感器</span></li>
+            </ul>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;调节鼓风机电机转速</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;调整空气温度执行器的位置</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;定位模式执行器的位置</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;定位内循环执行器的位置</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;请求空调运行</span></li>
+         </ul>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">当在自动操作中选定了最暖位置时，鼓风机速度等级将逐渐提高直至车辆达到正常工作温度。在达到正常工作温度之后，鼓风机保持高速，空气温度执行器保持在最热位置。</div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">当在自动操作中选定了最冷位置时，鼓风机保持高速，空气温度执行器保持在最冷位置。模式执行器保持在面板位置，内循环执行器将保持在内循环位置。</div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">在环境低温下，自动暖风、通风与空调系统在最有效的方式下进行加热。操作者可以选择一个极高的温度设置，但是这样并不能加快车辆升温的速度。在较暖的环境温度下，自动暖风、通风与空调系统也会以最有效方式进行空调控制。选择一个极低的温度并不能加快车辆降温的速度。</div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">按下空气质量传感器开关，一旦污染物浓度超过预设值时，HVAC控制模块评估空气质量传感器的信息并关闭内循环风门。</div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">在自动模式下，挡风玻璃温度和车内湿度传感器的数值被用作暖风、通风与空调系统控制模块应用程序的控制输入，计算乘客舱侧的挡风玻璃上结雾的风险度，并能够通过将空调压缩机电源降到最低来减少燃油消耗，从而避免结雾。启动空调压缩机和除霜模式，以防止结雾或除去挡风玻璃乘客舱侧的凝雾。传感器也能在环境温度寒冷的条件下启动部分内循环模式提高乘客厢的加热性能，而不会引起挡风玻璃出现雾气积聚的风险。</div>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.9">
+         <h5 class=" x-title-16-0" id="styler-id1.9.1">发动机冷却液</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">发动机冷却液是暖风系统的重要因素。节温器控制发动机正常工作的冷却液温度。节温器还为冷却系统产生节流，这加快了正向冷却液流动并有助于防止气蚀。</div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">在压力状态下，冷却液通过加热器进口软管进入加热器芯。加热器芯位于暖风、通风与空调系统模块内部。环境空气流经暖风、通风与空调系统模块，吸收流经加热器芯的冷却液的热量。暖风通过暖风、通风与空调系统模块分配到乘客厢，以保证乘客的舒适。打开或关闭空气温度风门控制分配到乘客舱的暖风量。冷却液通过回流加热器软管流出加热器芯，并且循环返回至发动机冷却系统。</div>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.10">
+         <h5 class=" x-title-16-0" id="styler-id1.10.1">空调循环</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">制冷剂是空调系统的关键因素。R-134a是目前唯一经环保署认可的车用制冷剂。R-134a是一种超低温气体，能够将乘客舱的多余热量和湿气转移至车外。</div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">压缩机对气态制冷剂施加压力。压缩制冷剂也会使制冷剂变热。制冷剂通过排放软管从压缩机排出，并被强制流向冷凝器，然后通过空调系统的平衡装置。通过使用一个高压泄压阀使空调系统获得机械保护。如果空调制冷剂压力传感器出现故障，或制冷剂系统堵塞且制冷剂压力持续上升，则高压限压阀会弹开并释放系统中的制冷剂。</div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">经压缩的制冷剂以高温高压蒸汽状态进入冷凝器。当制冷剂流经冷凝器时，制冷剂热量被通过冷凝器的环境空气带走。制冷剂的冷却导致制冷剂凝结，并从气态转化为液态。</div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">冷凝器位于散热器的前方，以达到最大热交换效果。冷凝器由铝制管道和铝制散热片制成，可使制冷剂快速进行热交换。半冷却的液态制冷剂流出冷凝器，流向储液器/干燥器 (R/D)。</div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">储液器/干燥器内有干燥剂，吸收制冷系统中可能产生的水分。储液器/干燥器也用作存储容器，以确保液体稳定地到达“热膨胀阀”。储液器/干燥器中的制冷剂经过液管流向“热膨胀阀”。</div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">“热膨胀阀”位于仪表板前部，与蒸发器进口管和出口管相连接。“热膨胀阀”是空调系统高压侧和低压侧的分界点。当制冷剂通过“热膨胀阀”时，制冷剂压力降低。“热膨胀阀”还测量可能流入蒸发器的液态制冷剂的量。</div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">流出“热膨胀阀”的制冷剂以低压、液态形式流入蒸发器芯。暖风、通风与空调系统模块将环境空气抽入并使其流经蒸发器芯。暖湿空气会导致蒸发器芯内的液态制冷剂沸腾。沸腾的制冷剂从环境空气中吸收热量，并将湿气吸附在蒸发器上。制冷剂通过吸入管路流出蒸发器，并以气态回到空调压缩机，完成空调散热循环。在空调压缩机内，制冷剂再次被压缩，空调散热循环重新开始。</div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">被调节的空气通过暖风、通风与空调系统模块进行分配，以保证乘客的舒适。从乘客舱排出的热量和湿气也会改变形态或凝结，并从暖风、通风与空调系统模块以水的形式排放。</div>
+      </div>
+   </div>
+</html>

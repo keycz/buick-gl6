@@ -1,0 +1,64 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta content="IE=8" http-equiv="X-UA-Compatible">
+      <title>蓄电池传感器模块的读入</title><script> document.domain="saic-gm.com"; function showImg(obj){ var as = document.getElementsByTagName('a'); for(var i=0;i<as.length;i++){as[i].innerHTML='点击显示图片';as[i].parentNode.style.height='40px';} var src = obj.getAttribute("data-url"); var imgstr='<OBJECT width="892" height="680" type="image" classid="CLSID:B789F873-EB93-11D2-A6D8-00A0241989B9"><PARAM NAME="src" value="'+src+'"></OBJECT>';setTimeout(function(){obj.parentNode.style.height='700px';obj.innerHTML = imgstr;}, 1000 );parent.iFrameHeight2();}</script><meta name="Generator" content="Arbortext Publishing Engine 6.0 M130">
+      <meta name="Stylesheet" content="C:\Program Files\PTC\Arbortext PE\custom\doctypes\sm\sm_html.style">
+      <link rel="stylesheet" href="commonCss.css" charset="UTF-8" type="text/css"></head>
+   <div class=" x-servinfo-1-0" id="styler-id1">
+      <h4 class=" x-title-19-0" id="styler-id1.1">蓄电池传感器模块的读入</h4>
+      <div class=" x-servinfosub-2-0" id="styler-id1.2">
+         <h5 class=" x-title-16-0" id="styler-id1.2.1">校准标准</h5>
+         <div class=" x-note-3-0">
+            <div id="styler-id1.2.2.1"></div>
+            <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x--ufe-zb-1-0">注意:</span>该程序仅用于装备有蓄电池传感器模块的车辆。如果在未装备蓄电池传感器模块的情况下运行该程序，则会造成意想不到的后果。如果发生此情况，则需要启用点火循环重新设置车身控制模块。
+            </div>
+         </div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">蓄电池传感器模块直接连接于蓄电池负极端子，用于计算蓄电池的充电状态、功能状况和健康状况，从而确定蓄电池状况。该蓄电池状况用于帮助确定12伏停车/起步系统是否能够在车辆已停车时进行停车/起步活动。</div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">为了确定蓄电池状况，蓄电池传感器必须进行标定。在正常运行过程中，流进或流出蓄电池的所有电流均会流经蓄电池传感器模块，并受到监测。任何未受到蓄电池传感器模块监测的蓄电池充电或放电操作均需要执行标定程序。例如：</div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;更换了具有相同零件编号的蓄电池</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;更换了具有不同零件编号或不同规格的蓄电池</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;蓄电池在车外充电</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;蓄电池在车外放电</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;蓄电池充电不当：</span><div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">若要对蓄电池正确充电，充电器的负极导线必须连接至底盘搭铁，而不能直接连接到蓄电池负极极柱上。连接至底盘搭铁能够使电流在充电过程中流经蓄电池传感器模块，从而受到监测。直接连接至蓄电池负极极柱虽然可以对蓄电池充电，但电流不能受到蓄电池传感器模块监测。</div>
+            </li>
+         </ul>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">其他可能也需要执行标定程序的情况包括：</div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;蓄电池传感器模块未正确标定</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;蓄电池传感器模块断开并重新连接</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;没有开路电压读数达1周</span></li>
+         </ul>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">如果出现了以上情况中的任何情况，必须对蓄电池传感器模块进行标定，以维持12伏起步/停车系统的正常运行。</div>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.3">
+         <h5 class=" x-title-16-0" id="styler-id1.3.1">校准程序</h5>
+         <div class=" x-note-3-0">
+            <div id="styler-id1.3.2.1"></div>
+            <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x--ufe-zb-1-0">注意:</span>要完成蓄电池传感器模块的标定，蓄电池上不可有明显的寄生放电电流。如果车辆静止期间，寄生放电电流不能保持在100毫安以下达10分钟，则标定不能成功完成。参见“<a class=" x-cell-link-2-0" href="A37588-S0000032591.html">蓄电池放电/寄生负载测试</a>”，来纠正任何寄生放电情况。
+            </div>
+         </div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">蓄电池传感器可以采用如下两种方式完成标定：</div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">静置学习：</div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">1.</span>将点火开关置于“OFF（关闭）”位置。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">2.</span>使车辆在没有任何打扰（例如，打开车门、操作车辆部件、使用遥控门锁发射器按钮等）的情况下静止最少4小时。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">3.</span>起动发动机。</span></li>
+         </ul>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">快速学习：</div>
+         <div class=" x-note-3-0">
+            <div id="styler-id1.3.7.1"></div>
+            <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x--ufe-zb-1-0">注意:</span>在实施快速学习之前，必须保证车辆充满电（充电电流需要通过蓄电池传感器模块），以便顺利完成快速学习功能。
+            </div>
+         </div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">1.</span>将点火开关置于“OFF（关闭）”位置。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">2.</span>断开蓄电池传感器模块电气连接，30秒之后再将其连接至蓄电池上。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">3.</span>起动发动机。</span></li>
+         </ul>
+      </div>
+   </div>
+</html>

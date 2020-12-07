@@ -1,0 +1,282 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+  <meta content="IE=8" http-equiv="X-UA-Compatible"> 
+  <title>控制电磁阀和变速器控制模块总成电磁阀性能测试</title>
+  <script> document.domain="saic-gm.com"; function showImg(obj){ var as = document.getElementsByTagName('a'); for(var i=0;i<as.length;i++){as[i].innerHTML='点击显示图片';as[i].parentNode.style.height='40px';} var src = obj.getAttribute("data-url"); var imgstr='<OBJECT width="892" height="680" type="image" classid="CLSID:B789F873-EB93-11D2-A6D8-00A0241989B9"><PARAM NAME="src" value="'+src+'"></OBJECT>';setTimeout(function(){obj.parentNode.style.height='700px';obj.innerHTML = imgstr;}, 1000 );parent.iFrameHeight2();}</script>
+  <meta name="Generator" content="Arbortext Publishing Engine 6.0 M130"> 
+  <meta name="Stylesheet" content="C:\Program Files\PTC\Arbortext PE\custom\doctypes\sm\sm_html.style"> 
+  <link rel="stylesheet" href="commonCss.css" charset="UTF-8" type="text/css">
+ </head> 
+ <body>
+  <div class=" x-servinfo-1-0" id="styler-id1"> 
+   <h4 class=" x-title-19-0" id="styler-id1.1">控制电磁阀和变速器控制模块总成电磁阀性能测试</h4> 
+   <div class=" x-servinfosub-2-0" id="styler-id1.2"> 
+    <div class=" x-para-1-0"> 
+     <h3 class=" x-title-10-0" id="styler-id1.2.1.1">专用工具</h3> 
+     <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; margin-left: 8mm; text-indent: 0pt; ">
+      <span class=" x-sptool-1-0"><span class=" x-sptool-no-1-0">DT-48616</span><span class=" x-sptool-desc-1-0">电磁阀总成测试组件和适配器线束</span></span>
+     </div> 
+    </div> 
+    <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">
+     关于当地同等工具，参见
+     <a class=" x-cell-link-2-0" href="A164697-3286695.html">专用工具</a>。 
+    </div> 
+    <div class=" x-graphic-1-0">
+     <img alt="Graphic" src="graphics/1880313.png" style="max-width: 100%; ">
+    </div> 
+    <div class=" x-note-3-0"> 
+     <div id="styler-id1.2.4.1"></div> 
+     <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">
+      <span class=" x--ufe-zb-1-0">注意:</span>进气口可安装在
+      <span class=" x-sptool-1-0"><span class=" x-sptool-no-1-0">DT-48616-1</span><span class=" x-sptool-desc-1-0">测试板</span></span>的任意一端。 
+     </div> 
+    </div> 
+    <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">
+     此程序的目的是测试控制电磁阀总成的功能，是否有严重卡在接通或关闭位置的电磁阀。将
+     <span class=" x-sptool-1-0"><span class=" x-sptool-no-1-0">DT-48616-1</span><span class=" x-sptool-desc-1-0">测试板</span></span>用螺栓安装至控制电磁阀总成上的阀体安装面。压缩气体被送入铝制测试盒，通过控制电磁阀总成电磁阀通道，返回测试盒上的压力表中。如果空气压力通过电磁阀，则压力表指示打开；若空气无法通过电磁阀，则指示关闭。用故障诊断仪指令电磁阀接通和断开。观察压力表时，可以确定阀的功能是否正常。 
+    </div> 
+    <ul class=" x-list1-8-0"> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"> 
+      <div class=" x-note-1-0"> 
+       <div id="styler-id1.2.6.1.1.1"></div> 
+       <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">
+        <span class=" x--ufe-zb-1-0">注意:</span>故障诊断仪输出控制在第1代变速器上不可用，但在这些车型上不能执行控制电磁阀总成Q8性能测试。第2代和以后的变速器未配备变速器油压力开关。因此，第2代和以后的变速器没有有效的变速器油压力开关故障诊断码。如果使用第1代或第2代和以后的变速器，则确定测试程序中的步骤1和2。 
+       </div> 
+      </div><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">1.</span>将点火开关置于“ON”（打开）位置，用故障诊断仪检查指定的DTC P0842。</span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">2.</span>确认DTC P0842显示无效或黑屏。</span></li> 
+     <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果故障诊断仪不显示无效或黑屏</span></span></li> 
+     <ul class=" x-list2-2-0"> 
+      <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">2.1</span>&nbsp;不要尝试完成性能测试，因为其在第1代控制电磁阀总成Q8上不可用。</span></li> 
+      <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">2.2</span>&nbsp;确定车型年款、发动机和选装件以选择正确的诊断程序。</span></li> 
+     </ul> 
+     <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果故障诊断仪显示无效或黑屏</span></span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">3.</span>将Q8控制电磁阀总成和过滤板从变速器上拆下。参见<a class=" x-cell-link-2-0" href="A164606-S0000042361.html">控制电磁阀和变速器控制模块总成的更换</a>。</span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"> 
+      <div class=" x-caution-ref-1-0"> 
+       <div id="styler-id1.2.6.7.1.1"></div> 
+       <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-weight: bold; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">
+        <span class=" x--ufe-zb-1-0">告诫：</span>参见
+        <a class=" x-cell-link-2-0" href="A178169-2062054.html">有关紧固件的告诫</a>。 
+       </div> 
+      </div> 
+      <div class=" x-note-1-0"> 
+       <div id="styler-id1.2.6.7.2.1"></div> 
+       <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">
+        <span class=" x--ufe-zb-1-0">注意:</span>在连接至测量阀组之前先排出变速器控制模块中多余的变速器油，将气源连接至测试阀组进气口时应小心。 
+       </div> 
+      </div><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">4.</span>用螺栓将<span class=" x-sptool-1-0"><span class=" x-sptool-no-1-0">DT-48616-1</span><span class=" x-sptool-desc-1-0">测试板</span></span>固定到过滤板和Q8控制电磁阀总成上。使用工具中提供的螺栓和垫圈安装测试盒。采用中心交替的扭矩顺序，将螺栓紧固至<span class=" x-inline-spec-1-0">5牛米（44英寸磅力）</span>。</span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">5.</span>将压力表安装至相应的电磁阀气孔。关于测试板端口标识，参见“控制电磁阀总成电磁阀性能测试板至部件的标识”。</span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"> 
+      <div class=" x-note-1-0"> 
+       <div id="styler-id1.2.6.9.1.1"></div> 
+       <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">
+        <span class=" x--ufe-zb-1-0">注意:</span>如果提供高于345千帕（50磅力/平方英寸）的空气压力，则无法进行换档电磁阀的精确测试。 
+       </div> 
+      </div><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">6.</span>将空气压力调节至310-345千帕（45-50磅力/平方英寸），并将管路连接至<span class=" x-sptool-1-0"><span class=" x-sptool-no-1-0">DT-48616-1</span><span class=" x-sptool-desc-1-0">测试板</span></span>进风口。</span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">7.</span>将<span class=" x-sptool-1-0"><span class=" x-sptool-no-1-0">DT-48616-10</span><span class=" x-sptool-desc-1-0">线束</span></span>连接至车辆线束和Q8控制电磁阀总成。</span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"> 
+      <div class=" x-graphic-1-0">
+       <img alt="Graphic" src="graphics/2400940.png" style="max-width: 100%; ">
+      </div> 
+      <div class=" x-note-1-0"> 
+       <div id="styler-id1.2.6.11.2.1"></div> 
+       <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">
+        <span class=" x--ufe-zb-1-0">注意:</span>然后，变速器控制模块限制指令电磁阀接通的时间，以防止电磁阀过热。一旦达到限制时间，变速器控制模块停止测试5分钟。在5分钟倒计时期间，点火开关必须置于“ON（打开）”位置。 
+       </div> 
+      </div><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">8.</span>将点火开关置于“ON”（打开）位置。</span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"> 
+      <div class=" x-note-1-0"> 
+       <div id="styler-id1.2.6.12.1.1"></div> 
+       <ul class=" x-list1-1-0">
+        <span class=" x--ufe-zb-1-0">注意:</span>
+        <li class=" x--inherit-background-color x-item-18-0 x-item-18-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;在两次压力测试之间释放压力表中的空气压力。</span></li> 
+        <li class=" x--inherit-background-color x-item-18-0 x-item-18-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;如果电磁阀卡滞，不会发生压力变化。</span></li> 
+       </ul> 
+      </div><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">9.</span>用故障诊断仪指令相应电磁阀接通和断开时，确认压力表中的压力发生变化。必要时重新进行测试。</span></li> 
+     <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果压力表未发生变化</span></span>
+      <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">
+       更换Q8“控制电磁阀总成”。
+      </div> </li> 
+     <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果压力表发生变化</span></span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">10.</span>电磁阀未卡滞。</span></li> 
+    </ul> 
+    <div class=" x-table-1-0 x-table-1-1" id="styler-id1.2.7"> 
+     <h3 class=" x-title-17-0" id="styler-id1.2.7.1">控制电磁阀总成电磁阀性能测试板至部件的标识</h3> 
+     <table class=" x-tgroup-1-0" cellpadding="7" frame="box" border="1" rules="all"> 
+      <colgroup> 
+       <col style="width: 173px; "> 
+       <col style="width: 172px; "> 
+       <col style="width: 172px; "> 
+       <col style="width: 172px; "> 
+      </colgroup> 
+      <thead class=" x-thead-1-0" style="vertical-align: bottom; text-align: left; font-weight: bold; "> 
+       <tr class=" x-row-1-0"> 
+        <th class="entry-in-tbody" rowspan="2" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          部件
+         </div> </th> 
+        <th class="entry-in-tbody" rowspan="2" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          测试板上的端口
+         </div> </th> 
+        <th class="entry-in-tbody" rowspan="1" colspan="2" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          指令状态
+         </div> </th> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <th class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          开
+         </div> </th> 
+        <th class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          关
+         </div> </th> 
+       </tr> 
+      </thead> 
+      <tbody class=" x-tbody-1-0" style="vertical-align: top; "> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          压力控制电磁阀2，35R
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          第2代 - C
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          全部压力至压力表
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          无压力至压力表
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          压力控制电磁阀3，R1/456
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          G
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          全部压力至压力表
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          无压力至压力表
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          压力控制电磁阀4，2-6
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          B
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          全部压力至压力表
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          无压力至压力表
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          压力控制电磁阀5，1234
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          第2代 - F
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          全部压力至压力表
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          无压力至压力表
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          换档电磁阀
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          D
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          全部压力至压力表
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          低于至压力表的全部压力
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          管路压力控制电磁阀
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          A
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          指令至最高设置，全部压力至压力表
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          指令至最低设置，低于至压力表的全部压力
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          变矩器离合器压力控制电磁阀
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          E
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          全部压力至压力表
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          无压力至压力表
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" colspan="4" style="text-align: left; vertical-align: middle; padding: 7px; "> 
+         <div class=" x-note-5-0"> 
+          <div id="styler-id1.2.7.2.6.8.1.1.1"></div> 
+          <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">
+           <span class=" x--ufe-zb-1-0">注意:</span>钥匙接通，发动机关闭时，变速器控制模块指令变速器电磁阀正常循环通电和断电，以便保持孔口和电磁阀清洁且没有污物。这种高速振动功能是一项正常活动，使得变速器控制模块通电时，阀门可以快速循环通电和断电。这可能造成在阀门打开和关闭时压力表忽高忽低。当那些电磁阀循环通电和断电时，可能引起没有连接压力表的孔口漏气。 
+          </div> 
+         </div> </td> 
+       </tr> 
+      </tbody> 
+     </table> 
+    </div> 
+   </div> 
+  </div>  
+ </body>
+</html>

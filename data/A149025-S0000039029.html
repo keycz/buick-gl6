@@ -1,0 +1,79 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta content="IE=8" http-equiv="X-UA-Compatible">
+      <title>安全防盗系统故障</title><script> document.domain="saic-gm.com"; function showImg(obj){ var as = document.getElementsByTagName('a'); for(var i=0;i<as.length;i++){as[i].innerHTML='点击显示图片';as[i].parentNode.style.height='40px';} var src = obj.getAttribute("data-url"); var imgstr='<OBJECT width="892" height="680" type="image" classid="CLSID:B789F873-EB93-11D2-A6D8-00A0241989B9"><PARAM NAME="src" value="'+src+'"></OBJECT>';setTimeout(function(){obj.parentNode.style.height='700px';obj.innerHTML = imgstr;}, 1000 );parent.iFrameHeight2();}</script><meta name="Generator" content="Arbortext Publishing Engine 6.0 M130">
+      <meta name="Stylesheet" content="E:\PTC\arbortext pe\custom\doctypes\sm\sm_html.style">
+      <link rel="stylesheet" href="commonCss.css" charset="UTF-8" type="text/css"></head>
+   <div class=" x-servinfo-1-0" id="styler-id1">
+      <h4 class=" x-title-19-0" id="styler-id1.1">安全防盗系统故障</h4>
+      <div class=" x-servinfosub-2-0" id="styler-id1.3">
+         <h5 class=" x-title-16-0" id="styler-id1.3.1">诊断说明</h5>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;在使用该诊断程序前，执行<a class=" x-cell-link-2-0" href="A72794-S0000000347.html">诊断系统检查－车辆</a>。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;有关诊断方法的概述，请查阅<a class=" x-cell-link-2-0" href="A161235-S0000000340.html">诊断策略</a>。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;<a class=" x-cell-link-2-0" href="A161236-S0000000342.html">诊断程序说明</a>提供每种诊断类别的概述。</span></li>
+         </ul>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.4">
+         <h5 class=" x-title-16-0" id="styler-id1.4.1">电路/系统说明</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">安全防盗系统是一个基于软件的系统，该系统中的车身控制模块（BCM）主动监测某些输入，以确定是否为试图非法进入车辆。根据这些输入，如车门微开开关、行李厢微开开关和发动机舱盖微开开关，车身控制模块确定是否需要安全防盗系统报警。如果检测到非法进入，作为一种防盗方式，车身控制模块将使车辆喇叭鸣响并使车外灯闪烁。如装备，作为一种额外的防盗方式，车身控制模块也将激活警报器。</div>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.5">
+         <h5 class=" x-title-16-0" id="styler-id1.5.1">诊断帮助</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">故障诊断仪“Content Theft Deterrent Trigger History 1, 2, and 3（安全防盗系统触发历史1、2和3）”参数用来帮助隔离间歇性意外安全防盗系统报警。这些参数是之前引发防盗系统报警的3个原因的滚动历史记录。如果3个参数都指示同样的警报触发，当诊断间歇性故障时，指示的输入应为起点。</div>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.6">
+         <h5 class=" x-title-16-0" id="styler-id1.6.1">参考信息</h5>
+         <div class=" x-satitle-1-0">示意图参考</div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; "><a class=" x-cell-link-2-0" href="A151730-S0000040150.html">防盗系统示意图</a></div>
+         <div class=" x-satitle-1-0">连接器端视图参考</div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; "><a class=" x-cell-link-2-0" href="A164814-S0000039806.html">部件连接器端视图</a></div>
+         <div class=" x-satitle-1-0">说明与操作</div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; "><a class=" x-cell-link-2-0" href="A149050-S0000039032.html">防盗系统的说明与操作</a></div>
+         <div class=" x-satitle-1-0">电气信息参考</div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;<a class=" x-cell-link-2-0" href="A62194-S0000038422.html">电路测试</a></span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;<a class=" x-cell-link-2-0" href="A61973-S0000038457.html">连接器修理</a></span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;<a class=" x-cell-link-2-0" href="A62112-S0000038440.html">测试是否存在间歇性故障和不良连接</a></span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;<a class=" x-cell-link-2-0" href="A61965-S0000038455.html">线路修理</a></span></li>
+         </ul>
+         <div class=" x-satitle-1-0">故障诊断仪参考</div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">参见<a class=" x-cell-link-2-0" href="A72864-S0000034009.html">控制模块参考</a>，以获取故障诊断仪信息
+         </div>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.7">
+         <h5 class=" x-title-16-0" id="styler-id1.7.1">电路/系统检验</h5>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">1.</span>将点火开关置于“ON（打开）”位置。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">2.</span>当打开和关闭各个车门、发动机舱盖和行李厢时，确认各个指示灯/消息状态在微开和已关闭之间切换。</span></li>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果任何指示灯/消息未进行切换</span></span><div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">参见<a class=" x-cell-link-2-0" href="A211064-S0000035348.html">发动机舱盖微开指示灯/信息故障</a>、<a class=" x-cell-link-2-0" href="A161094-S0000039784.html">车门微开指示灯故障</a>。
+               </div>
+            </li>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果各个指示灯/消息切换</span></span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">3.</span>完全降下驾驶员门窗并关闭所有车门，将点火开关置于“OFF（关闭）”位置。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">4.</span>用无钥匙进入发射器锁止车门，以启用安全防盗系统。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">5.</span>确认故障诊断仪“Content Theft Deterrent Alarm Status（安全防盗系统警报状态）”参数为“Armed（启动）”。</span></li>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果不为“Armed（启用）”</span></span><div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">参见<a class=" x-cell-link-2-0" href="A185634-S0000039026.html">无钥匙进入系统故障</a>。
+               </div>
+            </li>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果为“Armed（启用）”</span></span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">6.</span>在没有解除系统的情况下，通过打开的驾驶员车窗和打开的驾驶员车门将手伸入车内。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">7.</span>确认故障诊断仪“Content Theft Deterrent Alarm Status（安全防盗系统警报状态）”参数为“Alarm（警报）”。</span></li>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果不为“Alarm（警报）”</span></span><div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">更换K9车身控制模块。</div>
+            </li>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果为“Alarm（警报）”</span></span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">8.</span>一切正常。</span></li>
+         </ul>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.8">
+         <h5 class=" x-title-16-0" id="styler-id1.8.1">维修指南</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">完成修理后，执行<a class=" x-cell-link-2-0" href="A143214-S0000000343.html">诊断修理检验</a>。
+         </div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">参见<a class=" x-cell-link-2-0" href="A72864-S0000034009.html">控制模块参考</a>，了解车身控制模块的更换、编程和设置。
+         </div>
+      </div>
+   </div>
+</html>

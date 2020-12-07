@@ -1,0 +1,135 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta content="IE=8" http-equiv="X-UA-Compatible">
+      <title>车速表和/或里程表故障</title><script> document.domain="saic-gm.com"; function showImg(obj){ var as = document.getElementsByTagName('a'); for(var i=0;i<as.length;i++){as[i].innerHTML='点击显示图片';as[i].parentNode.style.height='40px';} var src = obj.getAttribute("data-url"); var imgstr='<OBJECT width="892" height="680" type="image" classid="CLSID:B789F873-EB93-11D2-A6D8-00A0241989B9"><PARAM NAME="src" value="'+src+'"></OBJECT>';setTimeout(function(){obj.parentNode.style.height='700px';obj.innerHTML = imgstr;}, 1000 );parent.iFrameHeight2();}</script><meta name="Generator" content="Arbortext Publishing Engine 6.0 M130">
+      <meta name="Stylesheet" content="E:\PTC\arbortext pe\custom\doctypes\sm\sm_html.style">
+      <link rel="stylesheet" href="commonCss.css" charset="UTF-8" type="text/css"></head>
+   <div class=" x-servinfo-1-0" id="styler-id1">
+      <h4 class=" x-title-19-0" id="styler-id1.1">车速表和/或里程表故障</h4>
+      <div class=" x-servinfosub-2-0" id="styler-id1.3">
+         <h5 class=" x-title-16-0" id="styler-id1.3.1">诊断说明</h5>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;在使用该诊断程序前，执行<a class=" x-cell-link-2-0" href="A72794-S0000000347.html">诊断系统检查－车辆</a>。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;有关诊断方法的概述，请查阅<a class=" x-cell-link-2-0" href="A161235-S0000000340.html">诊断策略</a>。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;<a class=" x-cell-link-2-0" href="A161236-S0000000342.html">诊断程序说明</a>提供每种诊断类别的概述。</span></li>
+         </ul>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.4">
+         <h5 class=" x-title-16-0" id="styler-id1.4.1">电路/系统说明</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">组合仪表根据来自发动机控制模块 (ECM) 的信息显示发动机冷却液温度、燃油油位、车速和发动机转速。发动机控制模块通过串行数据将信息发送至车身控制模块 (BCM)。然后车身控制模块根据车辆要求，通过串行数据将信息发送到组合仪表，以显示发动机冷却液温度、燃油油位、发动机转速、车速和以
+            km 或 mi 为单位的行驶距离。当车辆识别号与车身控制模块接收的车辆识别号不匹配时组合仪表将显示破折号。
+         </div>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.5">
+         <h5 class=" x-title-16-0" id="styler-id1.5.1">诊断帮助</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">如果不匹配的车辆识别号已纠正，则组合仪表将再次显示里程表。如果车辆行驶标定距离后车辆识别号不匹配，则将导致组合仪表里程表进入错误模式并自行锁止该系统。此现象发生时，显示屏仍会在不匹配的车辆识别号被校正后显示破折号。在故障诊断仪上显示的车辆里程表状态数据可用以确定锁止的里程表。解锁组合仪表（清除显示屏上的破折号）的唯一方法是执行维修编程系统编程操作。未执行诊断和编程程序可能导致里程表数值不正常或导致模块更换。</div>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.6">
+         <h5 class=" x-title-16-0" id="styler-id1.6.1">参考信息</h5>
+         <div class=" x-satitle-1-0">示意图参考</div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; "><a class=" x-cell-link-2-0" href="A51380-S0000035241.html">组合仪表示意图</a></div>
+         <div class=" x-satitle-1-0">连接器端视图参考</div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; "><a class=" x-cell-link-2-0" href="A164814-S0000039806.html">部件连接器端视图</a></div>
+         <div class=" x-satitle-1-0">说明与操作</div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; "><a class=" x-cell-link-2-0" href="A51540-S0000038775.html">组合仪表的说明与操作</a></div>
+         <div class=" x-satitle-1-0">电气信息参考</div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;<a class=" x-cell-link-2-0" href="A62194-S0000038422.html">电路测试</a></span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;<a class=" x-cell-link-2-0" href="A61973-S0000038457.html">连接器修理</a></span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;<a class=" x-cell-link-2-0" href="A62112-S0000038440.html">测试是否存在间歇性故障和不良连接</a></span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;<a class=" x-cell-link-2-0" href="A61965-S0000038455.html">线路修理</a></span></li>
+         </ul>
+         <div class=" x-satitle-1-0">故障诊断仪参考</div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">参见<a class=" x-cell-link-2-0" href="A72864-S0000034009.html">控制模块参考</a>，以获取故障诊断仪信息
+         </div>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.7">
+         <h5 class=" x-title-16-0" id="styler-id1.7.1">电路/系统检验</h5>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">1.</span>将点火开关置于“ON（打开）”位置/车辆处于维修模式。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">2.</span>确认未设置DTC。</span></li>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果设置了任何DTC</span></span><div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">首先诊断这些DTC。参见<a class=" x-cell-link-2-0" href="A72795-S0000038249.html">故障诊断码（DTC）列表－车辆</a>。
+               </div>
+            </li>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果未设置 DTC</span></span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">3.</span>如果可行，用故障诊断仪执行“组合仪表扫描”时，确认车速表从低位扫描至高位。</span></li>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果车速表不扫描</span></span><div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">更换P16组合仪表。</div>
+            </li>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果车速表正确扫描</span></span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">4.</span>驾驶车辆时，确认车速表计量值与故障诊断仪“Vehicle Speed（车速）”参数相匹配。</span></li>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果数值不匹配</span></span><div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">更换P16组合仪表。</div>
+            </li>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果车速表读取值与故障诊断仪参数匹配</span></span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">5.</span>驾驶车辆时，确认里程表显示和显示的行驶距离累加。</span></li>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果里程表仅显示“----”（破折号）</span></span><div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">参见“电路/系统测试”。</div>
+            </li>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果里程表显示不累加</span></span><div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">更换P16组合仪表。</div>
+            </li>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果车速表扫描，显示正确值，且里程表显示累加</span></span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">6.</span>一切正常。</span></li>
+         </ul>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.8">
+         <h5 class=" x-title-16-0" id="styler-id1.8.1">电路/系统测试</h5>
+         <div class=" x-note-3-0">
+            <div id="styler-id1.8.2.1"></div>
+            <ul class=" x-list1-5-0"><span class=" x--ufe-zb-1-0">注意:</span><li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;在执行电路/系统测试前，必须先执行电路/系统检验。</span></li>
+               <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;如果有多个模块不是车辆原装模块，或者是用过的或配置不正确的维修件，则维修编程系统可能无法正确读取或恢复车辆里程表值。遵守政府关于不准确/未知里程表值的规定和文件（包含车辆识别）。</span></li>
+            </ul>
+         </div>
+         <div class=" x-para-1-0">
+            <h3 class=" x-title-10-0" id="styler-id1.8.3.1">校正车辆识别号 (VIN) 不匹配：组合仪表显示“----”（破折号），里程表仍处于解锁状态</h3>
+         </div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">1.</span>将点火开关置于“ON（打开）”位置/车辆处于维修模式。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">2.</span>确认故障诊断仪“里程表状态”参数为“解锁”。</span></li>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果读数为“Locked（已锁定）”</span></span><div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">参见“校正车辆识别号 (VIN) 不匹配－里程表锁止”。</div>
+            </li>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果读数为“Unlocked（未锁定）”</span></span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">3.</span>确认故障诊断仪“BCM VIN（车身控制模块车辆识别号）”参数与车辆的车辆识别号 (VIN) 标牌匹配。</span></li>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果车辆识别号不匹配</span></span><div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">对车身控制模块重新编程，然后转至步骤3。</div>
+            </li>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果车辆识别号匹配</span></span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">4.</span>确认故障诊断仪的“Instrument Cluster Vehicle Identification Number (VIN)（组合仪表车辆识别号 (VIN)）”参数与车辆识别号 (VIN) 标牌匹配。</span></li>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果车辆识别号不匹配</span></span><div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">对组合仪表重新编程。然后转至步骤4。</div>
+            </li>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果车辆识别号匹配</span></span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">5.</span>确认组合仪表显示正确数值。</span></li>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果组合仪表仍旧显示“----”（破折号）</span></span><div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">更换P16组合仪表。</div>
+            </li>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果组合仪表显示正确值</span></span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">6.</span>一切正常。</span></li>
+         </ul>
+         <div class=" x-para-1-0">
+            <h3 class=" x-title-10-0" id="styler-id1.8.5.1">校正车辆识别号 (VIN) 不匹配：组合仪表显示“----”（破折号），里程表处于锁止状态</h3>
+         </div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">1.</span>将点火开关置于“ON（打开）”位置/车辆处于维修模式。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">2.</span>确认故障诊断仪“里程表状态”参数为“锁止”。</span></li>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果读数为“Unlocked（未锁定）”</span></span><div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">参见“校正车辆识别号 (VIN) 不匹配－里程表解锁”。</div>
+            </li>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果读数为“Locked（已锁定）”</span></span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">3.</span>确认故障诊断仪的“Instrument Cluster Vehicle Identification Number (VIN)（组合仪表车辆识别号 (VIN)）”参数与车辆识别号 (VIN) 标牌匹配。</span></li>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果车辆识别号不匹配</span></span><div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">对组合仪表重新编程。然后转至步骤3。</div>
+            </li>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果车辆识别号匹配</span></span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">4.</span>执行维修编程系统中的车身控制模块设置程序。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">5.</span>确认组合仪表显示正确数值。</span></li>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果组合仪表仍旧显示“----”（破折号）</span></span><div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">更换P16组合仪表。</div>
+            </li>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果组合仪表显示正确数值</span></span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">6.</span>一切正常。</span></li>
+         </ul>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.9">
+         <h5 class=" x-title-16-0" id="styler-id1.9.1">维修指南</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">完成修理后，执行<a class=" x-cell-link-2-0" href="A143214-S0000000343.html">诊断修理检验</a>。
+         </div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">参见<a class=" x-cell-link-2-0" href="A72864-S0000034009.html">控制模块参考</a>，了解组合仪表、车身控制模块 (BCM) 或发动机控制模块 (ECM) 的更换、编程和设置。
+         </div>
+      </div>
+   </div>
+</html>

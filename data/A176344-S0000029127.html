@@ -1,0 +1,842 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta content="IE=8" http-equiv="X-UA-Compatible">
+      <title>如何使用电气示意图</title><script> document.domain="saic-gm.com"; function showImg(obj){ var as = document.getElementsByTagName('a'); for(var i=0;i<as.length;i++){as[i].innerHTML='点击显示图片';as[i].parentNode.style.height='40px';} var src = obj.getAttribute("data-url"); var imgstr='<OBJECT width="892" height="680" type="image" classid="CLSID:B789F873-EB93-11D2-A6D8-00A0241989B9"><PARAM NAME="src" value="'+src+'"></OBJECT>';setTimeout(function(){obj.parentNode.style.height='700px';obj.innerHTML = imgstr;}, 1000 );parent.iFrameHeight2();}</script><meta name="Generator" content="Arbortext Publishing Engine 6.0 M130">
+      <meta name="Stylesheet" content="E:\PTC\arbortext pe\custom\doctypes\sm\sm_html.style">
+      <link rel="stylesheet" href="tocCss2.css" charset="UTF-8" type="text/css"></head>
+   <div class=" x-servinfo-1-0" id="styler-id1">
+      <h4 class=" x-title-19-0" id="styler-id1.1">如何使用电气示意图</h4>
+      <div class=" x-servinfosub-2-0" id="styler-id1.3">
+         <h5 class=" x-title-16-0" id="styler-id1.3.1">信息概述</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">以下内容讲解通用汽车电路图的一些重要组成部分。包括：</div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;颜色缩写</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;电子传送导航功能</span></li>
+         </ul>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.4">
+         <h5 class=" x-title-16-0" id="styler-id1.4.1">颜色缩写</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">描绘导线颜色时，采用下列次序：</div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">1.</span>导线颜色修饰符，如浅色或深色（如适用）</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">2.</span>导线主色</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">3.</span>导线辅色（色带/色环）</span></li>
+         </ul>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">示意图中的导线颜色和连接器主体颜色，采用由下列二位代码表示的缩写。</div>
+         <div class=" x-table-1-0 x-table-1-1" id="styler-id1.4.5">
+            <table class=" x-tgroup-1-0" cellpadding="7" width="100%" frame="box" border="1" rules="all">
+               <colgroup>
+                  <col style="width: 2400px; ">
+                  <col style="width: 3600px; ">
+                  <col style="width: 2400px; ">
+                  <col style="width: 3600px; ">
+               </colgroup>
+               <thead class=" x-thead-1-0" style="vertical-align: bottom; text-align: left; font-weight: bold; ">
+                  <tr class=" x-row-1-0">
+                     <th class="entry-in-tbody" rowspan="1" style="text-align: center; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">缩写</div>
+                     </th>
+                     <th class="entry-in-tbody" rowspan="1" style="text-align: center; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">颜色</div>
+                     </th>
+                     <th class="entry-in-tbody" rowspan="1" style="text-align: center; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">缩写</div>
+                     </th>
+                     <th class="entry-in-tbody" rowspan="1" style="text-align: center; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">颜色</div>
+                     </th>
+                  </tr>
+               </thead>
+               <tbody class=" x-tbody-1-0" style="vertical-align: top; ">
+                  <tr class=" x-row-1-0">
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">AM</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">琥珀色</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">OG</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">橙色</div>
+                     </td>
+                  </tr>
+                  <tr class=" x-row-1-0">
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">BARE</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">裸线</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">PK</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">粉红色</div>
+                     </td>
+                  </tr>
+                  <tr class=" x-row-1-0">
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">BG</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">浅褐色</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">PU</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">紫色</div>
+                     </td>
+                  </tr>
+                  <tr class=" x-row-1-0">
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">BK</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">黑色</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">RD</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">红色</div>
+                     </td>
+                  </tr>
+                  <tr class=" x-row-1-0">
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">BN</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">棕色</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">RU</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">铁锈色</div>
+                     </td>
+                  </tr>
+                  <tr class=" x-row-1-0">
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">BU</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">蓝色</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">SR</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">银白色</div>
+                     </td>
+                  </tr>
+                  <tr class=" x-row-1-0">
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">CL</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">透明色</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">TL</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">水鸭色</div>
+                     </td>
+                  </tr>
+                  <tr class=" x-row-1-0">
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">CR</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">奶油色</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">TN</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">黄褐色</div>
+                     </td>
+                  </tr>
+                  <tr class=" x-row-1-0">
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">CU</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">咖喱色</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">TQ</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">青绿色</div>
+                     </td>
+                  </tr>
+                  <tr class=" x-row-1-0">
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">GD</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">金黄色</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">VT</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">紫罗兰色</div>
+                     </td>
+                  </tr>
+                  <tr class=" x-row-1-0">
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">GN</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">绿色</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">WH</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">白色</div>
+                     </td>
+                  </tr>
+                  <tr class=" x-row-1-0">
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">GY</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">灰色</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">YE</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">黄色</div>
+                     </td>
+                  </tr>
+                  <tr class=" x-row-1-0">
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">NA</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">本色</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">－</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">－</div>
+                     </td>
+                  </tr>
+                  <tr class=" x-row-1-0">
+                     <td class="entry-in-tbody" rowspan="1" colspan="4" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">颜色修饰符</div>
+                     </td>
+                  </tr>
+                  <tr class=" x-row-1-0">
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">L</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">浅色</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">D</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">深色</div>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">另外，各种类型的行业标准电缆不用颜色识别，而是如下所示按电缆类型加以标记：</div>
+         <div class=" x-table-1-0 x-table-1-1" id="styler-id1.4.7">
+            <table class=" x-tgroup-1-0" cellpadding="7" width="100%" frame="box" border="1" rules="all">
+               <colgroup>
+                  <col style="width: 4800px; ">
+                  <col style="width: 19200px; ">
+               </colgroup>
+               <thead class=" x-thead-1-0" style="vertical-align: bottom; text-align: left; font-weight: bold; ">
+                  <tr class=" x-row-1-0">
+                     <th class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">缩写</div>
+                     </th>
+                     <th class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">电缆类型</div>
+                     </th>
+                  </tr>
+               </thead>
+               <tbody class=" x-tbody-1-0" style="vertical-align: top; ">
+                  <tr class=" x-row-1-0">
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">COAX</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">同轴电缆</div>
+                     </td>
+                  </tr>
+                  <tr class=" x-row-1-0">
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">FW</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">扁平导线</div>
+                     </td>
+                  </tr>
+                  <tr class=" x-row-1-0">
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">HDMI</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">高清多媒体接口</div>
+                     </td>
+                  </tr>
+                  <tr class=" x-row-1-0">
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">TWINAX</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">双股电缆</div>
+                     </td>
+                  </tr>
+                  <tr class=" x-row-1-0">
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">USB</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">通用串行总线</div>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.5">
+         <h5 class=" x-title-16-0" id="styler-id1.5.1">电子传送导航功能</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">示意图信息已改进，以便于电子传送。下面说明目前可用的功能。</div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">改进了的功能分为三类：</div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;鼠标悬停－鼠标指针放在活动区域上时激活</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;热点（链接至其他信息）－将鼠标指针放在活动区域并点击鼠标左键激活</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;热点目标高亮显示－当从一个图形链接至另一个图形时，相关部位将以红色高亮显示。仅当从示意图链接至部件定位图/线束布线图，或从示意图链接至电气中心识别视图时，此功能才可用。</span></li>
+         </ul>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">鼠标指针会根据热点链接的信息量而改变形状。</div>
+         <div class=" x-graphic-1-0"><img alt="Graphic" src="graphics/3819127.png" style="max-width: 100%; "></div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">1.</span>基本鼠标指针－表示此处无可用热点，但是可能有鼠标悬停出现。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">2.</span>单个手形指针－表示有鼠标悬停和至单个文档的热点链接。点击此区域将自动转入目标链接。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">3.</span>多个手形指针－表示有鼠标悬停和至多个文档的热点链接。点击此区域将出现一个弹出式菜单，显示所有可用链接。然后点击一个显示的链接来选择一个可用链接。</span></li>
+         </ul>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">要查看图示信息的哪些区域有可用热点和/或鼠标悬停，选择并按下计算机图形元文件浏览器的高亮显示热点按钮。这将以红色高亮显示图中有可用热点和/或鼠标悬停的所有区域。一旦松开按钮，图中的这些区域将不再高亮显示。</div>
+         <div class=" x-graphic-1-0"><img alt="Graphic" src="graphics/3819130.png" style="max-width: 100%; "></div>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.6">
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">各种与图表有关的信息都具有某种程度的这些功能。与图表有关的信息包括下列信息类型：</div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;示意图</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;连接器端视图</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;部件定位图视图</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;线束布线视图</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;电气中心识别视图</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;主电气部件列表</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;主电气示意图图标</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;示意图常规选装件代码列表</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;电路号/导线颜色</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;线路</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;连接器插孔</span></li>
+         </ul>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.7">
+         <h5 class=" x-title-16-0" id="styler-id1.7.1">示意图</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">电气示意图热点为示意图中的活动图标或区域，可用光标选定，以链接至附加信息。另外，示意图中每个热点都有鼠标悬停可用。</div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">示意图中的热点分为三类：</div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;示意图导航图标热点</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;示意图信息图标热点</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;示意图导航热点</span></li>
+         </ul>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.8">
+         <h5 class=" x-title-16-0" id="styler-id1.8.1">示意图导航图标热点</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">下列图标可能出现在有可用鼠标悬停和热点的示意图的右上角。</div>
+         <div class=" x-table-1-0 x-table-1-1" id="styler-id1.8.3">
+            <table class=" x-tgroup-1-0" cellpadding="7" width="100%" frame="box" border="1" rules="all">
+               <colgroup>
+                  <col style="width: 2400px; ">
+                  <col style="width: 4800px; ">
+                  <col style="width: 8800px; ">
+               </colgroup>
+               <thead class=" x-thead-1-0" style="vertical-align: bottom; text-align: left; font-weight: bold; ">
+                  <tr class=" x-row-1-0">
+                     <th class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">图标</div>
+                     </th>
+                     <th class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">鼠标悬停</div>
+                     </th>
+                     <th class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">热点链接信息</div>
+                     </th>
+                  </tr>
+               </thead>
+               <tbody class=" x-tbody-1-0" style="vertical-align: top; ">
+                  <tr class=" x-row-1-0">
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div class=" x-graphic-1-0"><img alt="Graphic" src="graphics/1990537.png" style="max-width: 100%; "></div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">主电气部件列表</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">链接至车辆主电气部件列表，该列表显示车辆上的所有电气部件和线束零件，并提供至任何可用视图的链接。</div>
+                     </td>
+                  </tr>
+                  <tr class=" x-row-1-0">
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div class=" x-graphic-1-0"><img alt="Graphic" src="graphics/1990538.png" style="max-width: 100%; "></div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">子系统的说明与操作标题</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">链接至系统的说明与操作</div>
+                     </td>
+                  </tr>
+                  <tr class=" x-row-1-0">
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div class=" x-graphic-1-0"><img alt="Graphic" src="graphics/1988674.png" style="max-width: 100%; "></div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">控制模块参考</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">链接至控制模块参考表</div>
+                     </td>
+                  </tr>
+                  <tr class=" x-row-1-0">
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div class=" x-graphic-1-0"><img alt="Graphic" src="graphics/1990541.png" style="max-width: 100%; "></div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">下一示意图页面的标题</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">链接至子系统示意图的下一示意图。</div>
+                     </td>
+                  </tr>
+                  <tr class=" x-row-1-0">
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div class=" x-graphic-1-0"><img alt="Graphic" src="graphics/1990542.png" style="max-width: 100%; "></div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">上一示意图页面的标题</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">链接至子系统示意图的上一示意图。</div>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.9">
+         <h5 class=" x-title-16-0" id="styler-id1.9.1">示意图信息图标热点</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">下列图标可能出现在有可用鼠标悬停和热点的示意图的任何区域。</div>
+         <div class=" x-table-1-0 x-table-1-1" id="styler-id1.9.3">
+            <table class=" x-tgroup-1-0" cellpadding="7" width="100%" frame="box" border="1" rules="all">
+               <colgroup>
+                  <col style="width: 2400px; ">
+                  <col style="width: 4800px; ">
+                  <col style="width: 8800px; ">
+               </colgroup>
+               <thead class=" x-thead-1-0" style="vertical-align: bottom; text-align: left; font-weight: bold; ">
+                  <tr class=" x-row-1-0">
+                     <th class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">图标</div>
+                     </th>
+                     <th class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">鼠标悬停</div>
+                     </th>
+                     <th class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">热点链接信息</div>
+                     </th>
+                  </tr>
+               </thead>
+               <tbody class=" x-tbody-1-0" style="vertical-align: top; ">
+                  <tr class=" x-row-1-0">
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">危险</div>
+                        <div class=" x-graphic-1-0"><img alt="Graphic" src="graphics/1988672.png" style="max-width: 100%; "></div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">主电气示意图图标</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">链接至车辆主电气示意图图标列表，该列表描述图标信息。</div>
+                     </td>
+                  </tr>
+                  <tr class=" x-row-1-0">
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">电压过高</div>
+                        <div class=" x-graphic-1-0"><img alt="Graphic" src="graphics/1988673.png" style="max-width: 100%; "></div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">主电气示意图图标</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">链接至车辆主电气示意图图标列表，该列表描述图标信息。</div>
+                     </td>
+                  </tr>
+                  <tr class=" x-row-1-0">
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">告诫</div>
+                        <div class=" x-graphic-1-0"><img alt="Graphic" src="graphics/1990543.png" style="max-width: 100%; "></div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">主电气示意图图标</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">链接至车辆主电气示意图图标列表，该列表描述图标信息。</div>
+                     </td>
+                  </tr>
+                  <tr class=" x-row-1-0">
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">辅助约束</div>
+                        <div class=" x-graphic-1-0"><img alt="Graphic" src="graphics/1988667.png" style="max-width: 100%; "></div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">主电气示意图图标</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">链接至车辆主电气示意图图标列表，该列表描述图标信息。</div>
+                     </td>
+                  </tr>
+                  <tr class=" x-row-1-0">
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">行人碰撞</div>
+                        <div class=" x-graphic-1-0"><img alt="Graphic" src="graphics/3814889.png" style="max-width: 100%; "></div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">主电气示意图图标</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">链接至车辆主电气示意图图标列表，该列表描述图标信息。</div>
+                     </td>
+                  </tr>
+                  <tr class=" x-row-1-0">
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">附加信息</div>
+                        <div class=" x-graphic-1-0"><img alt="Graphic" src="graphics/1988670.png" style="max-width: 100%; "></div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">主电气示意图图标</div>
+                     </td>
+                     <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: middle; padding: 7px; ">
+                        <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">链接至车辆主电气示意图图标列表，该列表描述图标信息。</div>
+                     </td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.10">
+         <h5 class=" x-title-16-0" id="styler-id1.10.1">示意图导航热点</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">除导航图标之外，示意图有其他活动热点链接至支持信息，例如相关示意图、部件定位图视图、线束布线视图和连接器端视图。</div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">这些热点可能以文本为主，也可能以符号为主。以下各项有鼠标悬停和热点可用。</div>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.11">
+         <h5 class=" x-title-16-0" id="styler-id1.11.1">示意图标题电路引用</h5>
+         <div class=" x-graphic-1-0"><img alt="Graphic" src="graphics/G00022121.png" style="max-width: 100%; "></div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">1.</span><span class=" x-emph-1-0 x-emph-1-1">鼠标悬停：</span>显示所链接至的示意图页面的标题。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">2.</span><span class=" x-emph-1-0 x-emph-1-1">热点链接信息：</span>链接至详细显示电路的个别子系统示意图页面。如果包括多个电路或如果线路显示为多个示意图，则选择链接时将出现菜单。此菜单包括至含有与参考电路相同电路号的所有示意图的链接。另外，打开目标示意图时，参考电路将高亮显示来吸引视觉注意。注意，有多个目标链接时，链接可能在菜单中重复显示，但是它们不是所需内容。对于指向同一目标示意图的各电路号，重复相同的标题。将来的更新将包括在至进一步辅助链接选择的链接说明前的电路号。</span></li>
+         </ul>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.12">
+         <h5 class=" x-title-16-0" id="styler-id1.12.1">串行数据功能电路图标</h5>
+         <div class=" x-graphic-1-0"><img alt="Graphic" src="graphics/G00022123.png" style="max-width: 100%; "></div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">1.</span><span class=" x-emph-1-0 x-emph-1-1">鼠标悬停：</span>显示数据通信示意图的标题。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">2.</span><span class=" x-emph-1-0 x-emph-1-1">热点链接信息：</span></span></li>
+            <div class=" x-arw-list-2-0">
+               <li class=" x--inherit-background-color x-item-19-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">显示虚线的串行数据线路和图标且不带电路号时，串行数据电路图标将链接至数据通信示意图页面的完整列表，而不是特定的示意图。这是由于没有显示电路号。</span></li>
+               <li class=" x--inherit-background-color x-item-19-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">电路显示带电路号时，选择链接时将显示菜单。此菜单包括至数据通信示意图页面以及至含有与参考电路相同电路号的个别示意图的链接。另外，打开目标示意图时，参考电路将高亮显示来吸引视觉注意。注意，有多个目标链接时，链接可能在菜单中重复显示，但是它们不是所需内容。对于指向同一目标示意图的各电路号，重复相同的标题。将来的更新将包括在至进一步辅助链接选择的链接说明前的电路号。</span></li>
+            </div>
+         </ul>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.13">
+         <h5 class=" x-title-16-0" id="styler-id1.13.1">子系统示意图上的保险丝/断路器符号和名称</h5>
+         <div class=" x-graphic-1-0"><img alt="Graphic" src="graphics/G00022125.png" style="max-width: 100%; "></div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">1.</span><span class=" x-emph-1-0 x-emph-1-1">鼠标悬停：</span>显示保护装置的代码和安培数。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">2.</span><span class=" x-emph-1-0 x-emph-1-1">热点链接信息：</span></span></li>
+            <div class=" x-arw-list-2-0">
+               <li class=" x--inherit-background-color x-item-19-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">多个链接不可用时，选择链接时将显示菜单。此菜单包括在结构顺序中所有可用的链接。</span></li>
+            </div>
+            <ul class=" x-list2-2-0">
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">2.1</span>&nbsp;链接至电源分布示意图上详细显示电路的个别示意图页面。另外，打开目标示意图时，电路保护设备将高亮显示来吸引视觉注意。</span></li>
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">2.2</span>&nbsp;链接至电气中心识别视图上的个别保险丝盒俯视图或仰视图，显示设备在保险丝盒内的位置。另外，打开目标视图时，设备示意图将高亮显示来吸引视觉注意。</span></li>
+            </ul>
+         </ul>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.14">
+         <h5 class=" x-title-16-0" id="styler-id1.14.1">子系统示意图上的搭铁符号/名称</h5>
+         <div class=" x-graphic-1-0"><img alt="Graphic" src="graphics/G00022127.png" style="max-width: 100%; "></div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">1.</span><span class=" x-emph-1-0 x-emph-1-1">鼠标悬停：</span>显示搭铁号。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">2.</span><span class=" x-emph-1-0 x-emph-1-1">热点链接信息：</span></span></li>
+            <div class=" x-arw-list-2-0">
+               <li class=" x--inherit-background-color x-item-19-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">多个链接不可用时，选择链接时将显示菜单。此菜单包括在结构顺序中所有可用的链接。</span></li>
+            </div>
+            <ul class=" x-list2-2-0">
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">2.1</span>&nbsp;链接至搭铁分布示意图上详细显示电路的个别示意图页面。另外，打开目标示意图时，搭铁将高亮显示来吸引视觉注意。</span></li>
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">2.2</span>&nbsp;链接至搭铁视图上的个别定位图视图，显示搭铁在车辆上的位置。另外，打开目标视图时，搭铁和插图编号引线/号将高亮显示来吸引视觉注意。</span></li>
+            </ul>
+         </ul>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.15">
+         <h5 class=" x-title-16-0" id="styler-id1.15.1">子系统示意图上车身控制模块高端驱动器输出符号/驱动器源保险丝名称</h5>
+         <div class=" x-graphic-1-0"><img alt="Graphic" src="graphics/G00022129.png" style="max-width: 100%; "></div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">1.</span><span class=" x-emph-1-0 x-emph-1-1">鼠标悬停：</span>显示供给高端驱动器输出电路保护设备的代码。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">2.</span><span class=" x-emph-1-0 x-emph-1-1">热点链接信息：</span></span></li>
+            <div class=" x-arw-list-2-0">
+               <li class=" x--inherit-background-color x-item-19-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">多个链接不可用时，选择链接时将显示菜单。此菜单包括在结构顺序中所有可用的链接。</span></li>
+            </div>
+            <ul class=" x-list2-2-0">
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">2.1</span>&nbsp;链接至电源分布示意图上详细显示电路的个别示意图页面。另外，打开目标示意图时，电路保护设备将高亮显示来吸引视觉注意。</span></li>
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">2.2</span>&nbsp;链接至电气中心识别视图上的个别保险丝盒俯视图或仰视图，显示设备在保险丝盒内的位置。另外，打开目标视图时，设备示意图将高亮显示来吸引视觉注意。</span></li>
+            </ul>
+         </ul>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.16">
+         <h5 class=" x-title-16-0" id="styler-id1.16.1">电源和搭铁分布示意图上的部件名称</h5>
+         <div class=" x-graphic-1-0"><img alt="Graphic" src="graphics/G00022131.png" style="max-width: 100%; "></div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">1.</span><span class=" x-emph-1-0 x-emph-1-1">鼠标悬停：</span>显示部件代码和名称。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">2.</span><span class=" x-emph-1-0 x-emph-1-1">热点链接信息：</span></span></li>
+            <div class=" x-arw-list-2-0">
+               <li class=" x--inherit-background-color x-item-19-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">多个链接不可用时，选择链接时将显示菜单。此菜单包括在结构顺序中所有可用的链接。</span></li>
+            </div>
+            <ul class=" x-list2-2-0">
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">2.1</span>&nbsp;链接至子系统示意图上详细显示电路的个别示意图页面。另外，打开目标示意图时，部件代码和名称将高亮显示来吸引视觉注意。</span></li>
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">2.2</span>&nbsp;链接至可用的部件视图种类上的个别定位图视图，显示部件在车辆上的位置。另外，打开目标视图时，部件和插图编号引线/号将高亮显示来吸引视觉注意。</span></li>
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">2.3</span>&nbsp;链接至部件连接器端视图上的个别连接器端视图。</span></li>
+            </ul>
+         </ul>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.17">
+         <h5 class=" x-title-16-0" id="styler-id1.17.1">双绞线符号</h5>
+         <div class=" x-graphic-1-0"><img alt="Graphic" src="graphics/G00022133.png" style="max-width: 100%; "></div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">1.</span><span class=" x-emph-1-0 x-emph-1-1">鼠标悬停：</span>显示指定距离内导线绞数的维修规范。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">2.</span><span class=" x-emph-1-0 x-emph-1-1">热点链接信息：</span>链接至主电气示意图图标列表，该列表显示图标以及详细的导线维修规范。</span></li>
+         </ul>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.18">
+         <h5 class=" x-title-16-0" id="styler-id1.18.1">继电器名称（位于盒内）</h5>
+         <div class=" x-graphic-1-0"><img alt="Graphic" src="graphics/G00022135.png" style="max-width: 100%; "></div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">1.</span><span class=" x-emph-1-0 x-emph-1-1">鼠标悬停：</span>显示继电器代码和名称。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">2.</span><span class=" x-emph-1-0 x-emph-1-1">热点连接信息：</span>链接至电气中心识别视图上的个别保险丝盒俯视图或仰视图，显示设备在保险丝盒内的位置。另外，打开目标视图时，设备示意图将高亮显示来吸引视觉注意。</span></li>
+         </ul>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.19">
+         <h5 class=" x-title-16-0" id="styler-id1.19.1">子系统示意图上的部件名称</h5>
+         <div class=" x-graphic-1-0"><img alt="Graphic" src="graphics/G00022137.png" style="max-width: 100%; "></div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">1.</span><span class=" x-emph-1-0 x-emph-1-1">鼠标悬停：</span>显示部件代码和名称。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">2.</span><span class=" x-emph-1-0 x-emph-1-1">热点链接信息：</span></span></li>
+            <div class=" x-arw-list-2-0">
+               <li class=" x--inherit-background-color x-item-19-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">多个链接不可用时，选择链接时将显示菜单。此菜单包括在结构顺序中所有可用的链接。</span></li>
+            </div>
+            <ul class=" x-list2-2-0">
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">2.1</span>&nbsp;链接至可用的部件视图种类上的个别定位图视图，显示部件在车辆上的位置。另外，打开目标视图时，部件和插图编号引线/号将高亮显示来吸引视觉注意。</span></li>
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">2.2</span>&nbsp;链接至部件连接器端视图上的个别连接器端视图。</span></li>
+            </ul>
+         </ul>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.20">
+         <h5 class=" x-title-16-0" id="styler-id1.20.1">接头名称</h5>
+         <div class=" x-graphic-1-0"><img alt="Graphic" src="graphics/G00022139.png" style="max-width: 100%; "></div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">1.</span><span class=" x-emph-1-0 x-emph-1-1">鼠标悬停：</span>显示线束接头的代码。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">2.</span><span class=" x-emph-1-0 x-emph-1-1">热点链接信息：</span>链接至线束布线视图上的单独线束布线视图，显示线束项目在车辆线束上的位置。另外，打开目标视图时，线束项目和插图编号引线/号将高亮显示来吸引视觉注意。</span></li>
+         </ul>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.21">
+         <h5 class=" x-title-16-0" id="styler-id1.21.1">接头组件名称</h5>
+         <div class=" x-graphic-1-0"><img alt="Graphic" src="graphics/G00022143.png" style="max-width: 100%; "></div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">1.</span><span class=" x-emph-1-0 x-emph-1-1">鼠标悬停：</span>显示线束接头组件的代码。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">2.</span><span class=" x-emph-1-0 x-emph-1-1">热点链接信息：</span></span></li>
+            <div class=" x-arw-list-2-0">
+               <li class=" x--inherit-background-color x-item-19-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">多个链接不可用时，选择链接时将显示菜单。此菜单包括在结构顺序中所有可用的链接。</span></li>
+            </div>
+            <ul class=" x-list2-2-0">
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">2.1</span>&nbsp;链接至线束布线视图上的个别线束布线视图，显示线束项目在车辆线束上的位置。另外，打开目标视图时，线束项目和插图编号引线/号将高亮显示来吸引视觉注意。</span></li>
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">2.2</span>&nbsp;链接至接头组件连接器端视图上的个别连接器端视图。</span></li>
+            </ul>
+         </ul>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.22">
+         <h5 class=" x-title-16-0" id="styler-id1.22.1">直列式线束连接器名称</h5>
+         <div class=" x-graphic-1-0"><img alt="Graphic" src="graphics/G00022141.png" style="max-width: 100%; "></div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">1.</span><span class=" x-emph-1-0 x-emph-1-1">鼠标悬停：</span>显示直列式线束连接器的代码。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">2.</span><span class=" x-emph-1-0 x-emph-1-1">热点链接信息：</span></span></li>
+            <div class=" x-arw-list-2-0">
+               <li class=" x--inherit-background-color x-item-19-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">多个链接不可用时，选择链接时将显示菜单。此菜单包括在结构顺序中所有可用的链接。</span></li>
+            </div>
+            <ul class=" x-list2-2-0">
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">2.1</span>&nbsp;链接至线束布线视图上的个别线束布线视图，显示线束项目在车辆线束上的位置。另外，打开目标视图时，线束项目和插图编号引线/号将高亮显示来吸引视觉注意。</span></li>
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">2.2</span>&nbsp;链接至直列式线束连接器端视图上的个别连接器端视图。</span></li>
+            </ul>
+         </ul>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.23">
+         <h5 class=" x-title-16-0" id="styler-id1.23.1">常规选装件（RPO）代码/图标</h5>
+         <div class=" x-graphic-1-0"><img alt="Graphic" src="graphics/G00022145.png" style="max-width: 100%; "></div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">1.</span><span class=" x-emph-1-0 x-emph-1-1">鼠标悬停：</span>显示常规选装件代码说明以及可订购该选装件的国家分组名称。注意，显示的各常规选装件均具有其各自的鼠标悬停和说明。也要注意，鼠标悬停不包括任何指示带（如果包括选择，则显示为 +）或不带（显示为－以表示不带/除外）的符号。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">2.</span><span class=" x-emph-1-0 x-emph-1-1">热点链接信息：</span>链接至示意图常规选装件代码列表，该列表显示常规选装件、选装件说明以及可订购该选装件的国家集团名称。</span></li>
+         </ul>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.24">
+         <h5 class=" x-title-16-0" id="styler-id1.24.1">电路号/导线颜色</h5>
+         <div class=" x-graphic-1-0"><img alt="Graphic" src="graphics/G00022147.png" style="max-width: 100%; "></div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">1.</span><span class=" x-emph-1-0 x-emph-1-1">鼠标悬停：</span>显示电路号（如果显示）和导线绝缘层颜色缩写。每个导线颜色缩写的说明，参见“颜色缩写”。将来的更新可能以所有语言拼写线路颜色。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">2.</span><span class=" x-emph-1-0 x-emph-1-1">热点链接信息：</span>此时没有。</span></li>
+         </ul>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.25">
+         <h5 class=" x-title-16-0" id="styler-id1.25.1">线路</h5>
+         <div class=" x-graphic-1-0"><img alt="Graphic" src="graphics/G00022149.png" style="max-width: 100%; "></div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">1.</span><span class=" x-emph-1-0 x-emph-1-1">鼠标悬停：</span>显示该导线在车辆上的电路功能。相同功能显示在该导线所连接的部件的连接器端视图针脚表内。注意，如果没有显示电路号，则电路将不具有关联的鼠标悬停。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">2.</span><span class=" x-emph-1-0 x-emph-1-1">热点链接信息：</span>此时没有。将来的更新可能包括至线束布线视图的链接，显示车辆线束内电路的布线。</span></li>
+         </ul>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.26">
+         <h5 class=" x-title-16-0" id="styler-id1.26.1">连接器标识和插孔</h5>
+         <div class=" x-graphic-1-0"><img alt="Graphic" src="graphics/G00022151.png" style="max-width: 100%; "></div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">1.</span><span class=" x-emph-1-0 x-emph-1-1">鼠标悬停：</span>显示部件或直列式线束连接器上，构成该连接的插孔（插针）标识（字母/数字）。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">2.</span><span class=" x-emph-1-0 x-emph-1-1">热点链接信息：</span>此时没有。</span></li>
+         </ul>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.27">
+         <h5 class=" x-title-16-0" id="styler-id1.27.1">连接器端视图</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">连接器端视图目前具有鼠标悬停功能，可显示有插针的各插孔的导线详细信息。另外，端子零件信息已重新编写为更便于查阅的表。</div>
+         <div class=" x-graphic-1-0"><img alt="Graphic" src="graphics/G00022153.png" style="max-width: 100%; "></div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">1.</span><span class=" x-emph-1-0 x-emph-1-1">鼠标悬停：</span>显示所有针脚表的各列信息，包括插针、规格、颜色、电路、功能、端子类型ID和选装件。注意：未使用/没有插针的插孔无鼠标悬停。对于未使用/没有插针的插孔，连接器图上可能有鼠标悬停，但弹出菜单中没有信息显示。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">2.</span><span class=" x-emph-1-0 x-emph-1-1">热点链接信息：</span>此时没有。将来的更新可能包括至各电路个别子系统示意图的链接。</span></li>
+         </ul>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.28">
+         <h5 class=" x-title-16-0" id="styler-id1.28.1">部件定位图视图</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">部件定位图视图目前有至部件连接器端视图的链接。</div>
+         <div class=" x-graphic-1-0"><img alt="Graphic" src="graphics/G00022155.png" style="max-width: 100%; "></div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">1.</span><span class=" x-emph-1-0 x-emph-1-1">鼠标悬停：</span>显示部件代码和名称。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">2.</span><span class=" x-emph-1-0 x-emph-1-1">热点链接信息：</span>链接至部件连接器端视图上的各连接器端视图。</span></li>
+         </ul>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.29">
+         <h5 class=" x-title-16-0" id="styler-id1.29.1">线束布线视图</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">线束布线视图目前有至接头组件和直列式线束连接器端视图的链接。</div>
+         <div class=" x-graphic-1-0"><img alt="Graphic" src="graphics/G00022157.png" style="max-width: 100%; "></div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">1.</span><span class=" x-emph-1-0 x-emph-1-1">鼠标悬停：</span>显示线束项目的代码。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">2.</span><span class=" x-emph-1-0 x-emph-1-1">热点链接信息：</span>链接至接头组件的接头组件连接器端视图上的各接头组件连接器端视图和直列式线束连接器的直列式线束连接器端视图上的各直列式线束连接器端视图。</span></li>
+         </ul>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.30">
+         <h5 class=" x-title-16-0" id="styler-id1.30.1">电气中心识别视图</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">电气中心识别视图（俯视和仰视/前部和后部）现在具有鼠标悬停以显示各使用设备的详细功能。注意，标签视图没有任何鼠标悬停或链接。</div>
+         <div class=" x-graphic-1-0"><img alt="Graphic" src="graphics/G00022159.png" style="max-width: 100%; "></div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">1.</span><span class=" x-emph-1-0 x-emph-1-1">鼠标悬停：</span>显示所有使用情况表各列的信息，包括编号、设备标签名称、设备指定名称、额定值和说明。注意：未使用/未占用的设备没有鼠标悬停。对于未使用/没有插针的设备，设备图上可能有鼠标悬停，但弹出画面中没有信息显示。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">2.</span><span class=" x-emph-1-0 x-emph-1-1">热点链接信息：</span>此时没有。</span></li>
+         </ul>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.31">
+         <h5 class=" x-title-16-0" id="styler-id1.31.1">主电气部件列表</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">当主电气部件列表格式未改变时，其将继续提供至车内各可用电气设备的部件定位图视图、线束布线图和连接器端视图的链接。</div>
+         <div class=" x-graphic-1-0"><img alt="Graphic" src="graphics/G00022161.png" style="max-width: 100%; "></div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">1.</span><span class=" x-emph-1-0 x-emph-1-1">鼠标悬停：</span>暂无链接。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">2.</span><span class=" x-emph-1-0 x-emph-1-1">热点链接信息：</span></span></li>
+            <div class=" x-arw-list-2-0">
+               <li class=" x--inherit-background-color x-item-19-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">将来的更新可能包括至各部件/线束项目个别子系统示意图的链接。</span></li>
+            </div>
+            <div class=" x-arw-list-2-0">
+               <li class=" x--inherit-background-color x-item-19-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">部件</span></span></li>
+            </div>
+            <ul class=" x-list2-2-0">
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-3 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-3"><span style="font-family: Arial; ">– </span> 链接至八种部件示意图之一的单个定位图视图，显示部件在车辆上的位置。</span></li>
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-3 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-3"><span style="font-family: Arial; ">– </span> 链接至部件连接器端视图上的各连接器端视图。</span></li>
+            </ul>
+            <div class=" x-arw-list-2-0">
+               <li class=" x--inherit-background-color x-item-19-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">电气中心（保险丝盒）</span></span></li>
+            </div>
+            <ul class=" x-list2-2-0">
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-3 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-3"><span style="font-family: Arial; ">– </span> 链接至八种部件示意图之一的单个定位图视图，显示部件在车辆上的位置。</span></li>
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-3 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-3"><span style="font-family: Arial; ">– </span> 链接至电气中心识别视图上的各连接器端视图。</span></li>
+            </ul>
+            <div class=" x-arw-list-2-0">
+               <li class=" x--inherit-background-color x-item-19-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">直列式线束连接器</span></span></li>
+            </div>
+            <ul class=" x-list2-2-0">
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-3 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-3"><span style="font-family: Arial; ">– </span> 链接至线束布线视图上的个别线束布线视图，显示线束项目在车辆线束上的位置。</span></li>
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-3 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-3"><span style="font-family: Arial; ">– </span> 链接至直列式线束连接器端视图上的个别连接器端视图。</span></li>
+            </ul>
+            <div class=" x-arw-list-2-0">
+               <li class=" x--inherit-background-color x-item-19-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">搭铁</span></span></li>
+            </div>
+            <ul class=" x-list2-2-0">
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-3 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-3"><span style="font-family: Arial; ">– </span> 链接至搭铁视图部件视图上的个别定位图视图，显示搭铁在车辆上的位置。</span></li>
+            </ul>
+            <div class=" x-arw-list-2-0">
+               <li class=" x--inherit-background-color x-item-19-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">接头</span></span></li>
+            </div>
+            <ul class=" x-list2-2-0">
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-3 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-3"><span style="font-family: Arial; ">– </span> 链接至线束布线视图上的个别线束布线视图，显示线束项目在车辆线束上的位置。</span></li>
+            </ul>
+            <div class=" x-arw-list-2-0">
+               <li class=" x--inherit-background-color x-item-19-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">接头组件</span></span></li>
+            </div>
+            <ul class=" x-list2-2-0">
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-3 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-3"><span style="font-family: Arial; ">– </span> 链接至线束布线视图上的个别线束布线视图，显示线束项目在车辆线束上的位置。</span></li>
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-3 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-3"><span style="font-family: Arial; ">– </span> 链接至接头组件连接器端视图上的个别连接器端视图。</span></li>
+            </ul>
+         </ul>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.32">
+         <h5 class=" x-title-16-0" id="styler-id1.32.1">主电气示意图图标</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">当主电气示意图图标列表格式未改变时，其将继续包含车辆示意图上使用的图标和图标信息。</div>
+         <div class=" x-graphic-1-0"><img alt="Graphic" src="graphics/G00022165.png" style="max-width: 100%; "></div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">1.</span><span class=" x-emph-1-0 x-emph-1-1">鼠标悬停：</span>暂无链接。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">2.</span><span class=" x-emph-1-0 x-emph-1-1">热点链接信息：</span>此时没有。</span></li>
+         </ul>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.33">
+         <h5 class=" x-title-16-0" id="styler-id1.33.1">常规选装件代码列表示意图</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">常规选装件代码列表示意图仅包括示意图中显示的常规选装件，也包括国家分组选项。此列表是除了包括在一般信息内车辆常规选装件代码列表之外的列表。</div>
+         <div class=" x-graphic-1-0"><img alt="Graphic" src="graphics/G00022163.png" style="max-width: 100%; "></div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">1.</span><span class=" x-emph-1-0 x-emph-1-1">鼠标悬停：</span>暂无链接。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">2.</span><span class=" x-emph-1-0 x-emph-1-1">热点链接信息：</span>此时没有。</span></li>
+         </ul>
+      </div>
+   </div>
+</html>

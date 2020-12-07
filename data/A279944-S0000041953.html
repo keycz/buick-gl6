@@ -1,0 +1,152 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta content="IE=8" http-equiv="X-UA-Compatible">
+      <title>电子点火系统诊断</title><script> document.domain="saic-gm.com"; function showImg(obj){ var as = document.getElementsByTagName('a'); for(var i=0;i<as.length;i++){as[i].innerHTML='点击显示图片';as[i].parentNode.style.height='40px';} var src = obj.getAttribute("data-url"); var imgstr='<OBJECT width="892" height="680" type="image" classid="CLSID:B789F873-EB93-11D2-A6D8-00A0241989B9"><PARAM NAME="src" value="'+src+'"></OBJECT>';setTimeout(function(){obj.parentNode.style.height='700px';obj.innerHTML = imgstr;}, 1000 );parent.iFrameHeight2();}</script><meta name="Generator" content="Arbortext Publishing Engine 6.0 M130">
+      <meta name="Stylesheet" content="E:\PTC\arbortext pe\custom\doctypes\sm\sm_html.style">
+      <link rel="stylesheet" href="commonCss.css" charset="UTF-8" type="text/css"></head>
+   <div class=" x-servinfo-1-0" id="styler-id1">
+      <h4 class=" x-title-19-0" id="styler-id1.1">电子点火系统诊断</h4>
+      <div class=" x-servinfosub-2-0" id="styler-id1.2">
+         <h5 class=" x-title-16-0" id="styler-id1.2.1">诊断说明</h5>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;使用本诊断程序前执行<a class=" x-cell-link-2-0" href="A72794-S0000000347.html">诊断系统检查－车辆</a>。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;查阅<a class=" x-cell-link-2-0" href="A161235-S0000000340.html">诊断策略</a>中的诊断方法概述。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;<a class=" x-cell-link-2-0" href="A161236-S0000000342.html">诊断程序说明</a>提供每种诊断类别的概述。</span></li>
+         </ul>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.3">
+         <h5 class=" x-title-16-0" id="styler-id1.3.1">电路/ 系统说明</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">本点火系统对每个气缸使用独立的点火线圈/ 模块总成。发动机控制模块(ECM) 通过在每个点火线圈/ 模块上的点火控制(IC) 电路上发送正时脉冲来控制各个线圈，进行点火。每个点火线圈/ 模块具有以下电路：</div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;点火电压</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;搭铁</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;点火控制</span></li>
+         </ul>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.4">
+         <h5 class=" x-title-16-0" id="styler-id1.4.1">诊断帮助</h5>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;根据搭接点火电压电路的位置，很小至中度电阻可能引起缺火或曲轴转动/ 不起动问题。压降测试将查明此情况。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;在设置DTC P0351-P0354 前，任一点火控制电路上的很小或中等电阻就能引起缺火。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;发动机起动时间延长，可能因燃油过多污染火花塞。</span></li>
+         </ul>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.5">
+         <h5 class=" x-title-16-0" id="styler-id1.5.1">参考信息</h5>
+         <div class=" x-satitle-1-0">示意图参考</div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; "><a class=" x-cell-link-2-0" href="A279956-S0000036043.html">发动机控制示意图</a></div>
+         <div class=" x-satitle-1-0">连接器端视图参考</div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; "><a class=" x-cell-link-2-0" href="A164814-S0000039806.html">部件连接器端视图</a></div>
+         <div class=" x-satitle-1-0">电气信息参考</div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;<a class=" x-cell-link-2-0" href="A62194-S0000038422.html">电路测试</a></span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;<a class=" x-cell-link-2-0" href="A61973-S0000038457.html">连接器修理</a></span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;<a class=" x-cell-link-2-0" href="A62112-S0000038440.html">测试是否存在间歇性故障和不良连接</a></span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;<a class=" x-cell-link-2-0" href="A61965-S0000038455.html">线路修理</a></span></li>
+         </ul>
+         <div class=" x-satitle-1-0">故障诊断仪参考</div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">参见<a class=" x-cell-link-2-0" href="A72864-S0000034009.html">控制模块参考</a>以获取故障诊断仪信息
+         </div>
+         <div class=" x-satitle-1-0">专用工具</div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;J-26792 HEI 火花测试仪</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;关于当地同等工具，参见<a class=" x-cell-link-2-0" href="A279766-S0000031594.html">专用工具</a></span></li>
+         </ul>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.6">
+         <h5 class=" x-title-16-0" id="styler-id1.6.1">电路/ 系统检验</h5>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">1.</span>继续进行本诊断前，检查并确认发动机机械状态良好。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">2.</span>确认以下情况：</span></li>
+            <ul class=" x-list2-2-0">
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-2 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;点火线圈/ 模块连接正确。</span></li>
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-2 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;点火顺序正确。</span></li>
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-2 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;火花塞类型正确。</span></li>
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-2 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;火花塞间隙和扭矩正确。</span></li>
+            </ul>
+         </ul>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">参见<a class=" x-cell-link-2-0" href="A280032-S0000031508.html">火花塞的检查</a></div>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.7">
+         <h5 class=" x-title-16-0" id="styler-id1.7.1">电路/ 系统测试</h5>
+         <div class=" x-note-3-0">
+            <div id="styler-id1.7.2.1"></div>
+            <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x--ufe-zb-1-0">注意:</span>如果不是从某个缺火DTC诊断程序或“启动发动机, 但发动机不运转”诊断转至本步骤，则不要执行本诊断程序。
+            </div>
+         </div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">1.</span>将点火开关置于“OFF （关闭）”位置，所有车辆系统关闭，断开相应的T8 点火线圈的线束连接器。可能需要2 分钟才能让所有车辆系统断电。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">2.</span>测试搭铁电路端子2 和搭铁之间的电阻是否小于5 欧。</span></li>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果等于或高于5 欧</span></span></li>
+            <ul class=" x-list2-2-0">
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">2.1</span>&nbsp;将点火开关置于“OFF （关闭）”位置。</span></li>
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">2.2</span>&nbsp;测试搭铁电路端对端的电阻是否小于2 欧。</span></li>
+               <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">如果为2 欧或更大，则修理电路中的开路/ 电阻过大。</span></li>
+               <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">如果小于2 欧，则修理搭铁连接中的开路/ 电阻过大故障。</span></li>
+            </ul>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果小于5 欧</span></span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">3.</span>将点火开关置于“ON （打开）”位置。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">4.</span>确认点火电路端子1和搭铁之间的测试灯点亮。</span></li>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果测试灯未点亮，且电路保险丝状态良好</span></span></li>
+            <ul class=" x-list2-2-0">
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">4.1</span>&nbsp;将点火开关置于“OFF （关闭）”位置。</span></li>
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">4.2</span>&nbsp;测试点火电路端对端的电阻是否小于2 欧。</span></li>
+               <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">如果为2 欧或更大，则修理电路中的开路/ 电阻过大。</span></li>
+               <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">如果小于2 欧，则确认保险丝未熔断且保险丝处有电压。</span></li>
+            </ul>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果测试灯未点亮，且电路保险丝熔断</span></span></li>
+            <ul class=" x-list2-2-0">
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent">
+                  <div class=" x-note-2-0">
+                     <div id="styler-id1.7.3.11.1.1.1"></div>
+                     <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x--ufe-zb-1-0">注意:</span>点火电路可向其他部件提供电压。确保测试所有共用点火电路的电路和部件是否对搭铁短路。
+                     </div>
+                  </div><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">4.1</span>&nbsp;将点火开关置于“OFF （关闭）”位置，拆下测试灯，并断开电路上的所有部件。</span></li>
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">4.2</span>&nbsp;测试点火电路和搭铁之间的电阻是否为无穷大。</span></li>
+               <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">如果电阻不为无穷大，则修理电路上的对搭铁短路故障。</span></li>
+               <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">如果电阻为无穷大</span></li>
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">4.3</span>&nbsp;更换保险丝，将点火开关置于“ON （打开）”位置。</span></li>
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">4.4</span>&nbsp;每次连接一个部件，并在连接后确认保险丝状态是否良好。</span></li>
+               <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">如果保险丝熔断，则更换在连接时使保险丝熔断的部件。</span></li>
+               <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">如果保险丝未熔断，则全部正常。</span></li>
+            </ul>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果测试灯点亮</span></span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">5.</span>将点火开关置于“OFF （关闭）”位置，使用已知有效气缸的T8 点火线圈更换可疑的T8 点火线圈。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">6.</span>发动机运转。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">7.</span>确认在被拆下可疑T8 点火线圈的气缸上，故障诊断仪的“Cylinder 1-4 Current Misfire Counter（气缸1-4 当前缺火计数器）”参数未增加。</span></li>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果参数增加</span></span><div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">更换K20 发动机控制模块。</div>
+            </li>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果参数未增加</span></span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">8.</span>测试或更换T8 点火线圈。</span></li>
+         </ul>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.8">
+         <h5 class=" x-title-16-0" id="styler-id1.8.1">部件测试</h5>
+         <div class=" x-note-3-0">
+            <div id="styler-id1.8.2.1"></div>
+            <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x--ufe-zb-1-0">注意:</span>在进行“部件测试”前，必须执行“电路/ 系统测试”。
+            </div>
+         </div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">1.</span>将点火开关置于“OFF （关闭）”位置，将EL26792 HEI 火花测试仪连接至相应的T8 点火线圈。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">2.</span>发动机运转。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">3.</span>确认T8 点火线圈的火花输出。</span></li>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果没有输出或输出过小</span></span><div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">更换T8 点火线圈。</div>
+            </li>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果输出正常</span></span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">4.</span>全部正常。</span></li>
+         </ul>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.9">
+         <h5 class=" x-title-16-0" id="styler-id1.9.1">维修指南</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">完成诊断程序后，执行<a class=" x-cell-link-2-0" href="A143214-S0000000343.html">诊断修理检验</a></div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;参见<a class=" x-cell-link-2-0" href="A72864-S0000034009.html">控制模块参考</a>，以便对发动机控制模块进行更换、设置和编程。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;<a class=" x-cell-link-2-0" href="A279934-S0000031506.html">点火线圈的更换</a></span></li>
+         </ul>
+      </div>
+   </div>
+</html>

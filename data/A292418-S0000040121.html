@@ -1,0 +1,147 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta content="IE=8" http-equiv="X-UA-Compatible">
+      <title>K9 车身控制模块：编程和设置</title><script> document.domain="saic-gm.com"; function showImg(obj){ var as = document.getElementsByTagName('a'); for(var i=0;i<as.length;i++){as[i].innerHTML='点击显示图片';as[i].parentNode.style.height='40px';} var src = obj.getAttribute("data-url"); var imgstr='<OBJECT width="892" height="680" type="image" classid="CLSID:B789F873-EB93-11D2-A6D8-00A0241989B9"><PARAM NAME="src" value="'+src+'"></OBJECT>';setTimeout(function(){obj.parentNode.style.height='700px';obj.innerHTML = imgstr;}, 1000 );parent.iFrameHeight2();}</script><meta name="Generator" content="Arbortext Publishing Engine 6.0 M130">
+      <meta name="Stylesheet" content="E:\PTC\arbortext pe\custom\doctypes\sm\sm_html.style">
+      <link rel="stylesheet" href="tocCss3.css" charset="UTF-8" type="text/css"></head>
+   <div class=" x-servinfo-1-0" id="styler-id1">
+      <h4 class=" x-title-19-0" id="styler-id1.1">K9 车身控制模块：编程和设置</h4>
+      <div class=" x-servinfosub-2-0" id="styler-id1.3">
+         <div class=" x-note-3-0">
+            <div id="styler-id1.3.1.1"></div>
+            <ul class=" x-list1-5-0"><span class=" x--ufe-zb-1-0">注意:</span><li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;切勿对控制模块进行编程，除非有维修程序或维修通讯的指导。如果控制模块未利用正确的校准软件进行正确配置，则控制模块无法正确控制所有车辆功能。</span></li>
+               <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;确保编程工具装备了最新软件并且与数据链路连接器牢固连接。如果编程过程中断，则可能会使编程失败或损坏控制模块。</span></li>
+               <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;在编程过程中，蓄电池电压稳定很重要。任何波动、峰值、过压或电压损失都将中断编程。需要时，安装<span class=" x-sptool-1-0"><span class=" x-sptool-no-1-0">EL-49642</span><span class=" x-sptool-desc-1-0">维修编程系统编程支持工具</span></span>以维持系统电压。如果无法提供此工具，则连接一根电压充足的12伏跨接线或从交流电压电源上断开的助力器组件。不要连接蓄电池充电器。</span></li>
+               <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;关闭或停用可能对车辆蓄电池造成负荷的系统，如车内灯、车外灯（包括日间行车灯）、HVAC、收音机等。</span></li>
+               <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;在编程程序期间，遵循SPS提示以修正点火开关位置。</span></li>
+               <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;完成编程后，清除DTC。清除动力传动系统DTC可能会将Inspection/Maintenance（I/M）（检查/保养）系统状态显示设置为NO（否）。</span></li>
+            </ul>
+         </div>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.4">
+         <h5 class=" x-title-16-0" id="styler-id1.4.1">参考信息</h5>
+         <div class=" x-satitle-1-0">专用工具</div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;<span class=" x-sptool-1-0"><span class=" x-sptool-no-1-0">EL-49642</span><span class=" x-sptool-desc-1-0">维修编程系统编程支持工具</span></span></span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;<span class=" x-sptool-1-0"><span class=" x-sptool-no-1-0">EL-46079</span><span class=" x-sptool-desc-1-0">胎压监测器诊断工具</span></span>或<span class=" x-sptool-1-0"><span class=" x-sptool-no-1-0">EL-50448</span><span class=" x-sptool-desc-1-0">胎压监测器传感器激活工具</span></span></span></li>
+         </ul>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">关于当地同等工具，参见<a class=" x-cell-link-2-0" href="A72874-S0000000339.html">专用工具</a>。
+         </div>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.5">
+         <h5 class=" x-title-16-0" id="styler-id1.5.1">更换和编程控制模块</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">要对更换的K9车身控制模块（BCM）进行编程，则执行以下程序：</div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">1.</span>安装<span class=" x-sptool-1-0"><span class=" x-sptool-no-1-0">EL-49642</span><span class=" x-sptool-desc-1-0">维修编程系统编程支持工具</span></span>。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent">
+               <div class=" x-note-1-0">
+                  <div id="styler-id1.5.3.2.1.1"></div>
+                  <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x--ufe-zb-1-0">注意:</span>确保车辆的点火开关状态处于适合于下列步骤的位置。
+                  </div>
+                  <ul class=" x-list1-1-0 x-list1-1-1">
+                     <li class=" x--inherit-background-color x-item-18-0 x-item-18-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;对于钥匙点火系统，开始时点火开关处于RUN（运行）位置。</span></li>
+                     <li class=" x--inherit-background-color x-item-18-0 x-item-18-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;对于按钮起动系统，开始时车辆处于车辆OFF（关闭）电源模式。维修编程系统将使车辆进入电源模式。</span></li>
+                  </ul>
+               </div><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">2.</span>进入维修编程系统（SPS），并按屏幕上的说明进行操作。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">3.</span>在SPS Supported Controllers（维修编程系统支持的控制器）屏幕上，选择车身控制模块进行编程，并按屏幕上的说明进行操作。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">4.</span>在进行下一个操作步骤前，针对相应点火类型执行以下操作：</span></li>
+            <ul class=" x-list2-2-0">
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-2 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;钥匙点火系统：钥匙插入点火开关，且任何备用钥匙均须远离车辆至少3米。</span></li>
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-2 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;按钮起动系统：无钥匙进入发射器必须位于编程区内。关于准确的编程区位置，请参见用户手册所有其他发射器必须远离车辆至少3米。</span></li>
+            </ul>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent">
+               <div class=" x-note-1-0">
+                  <div id="styler-id1.5.3.6.1.1"></div>
+                  <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x--ufe-zb-1-0">注意:</span>以下编程设置程序可能需要10–12分钟，在此过程中进程条将停止显示进程。这是安全计时器的正常反应，此时不得进行重启。如果车身控制模块更换和编程后立即设置DTC B389A，则安全防盗系统读入程序未正常完成。需要再次执行安全防盗系统读入程序。
+                  </div>
+               </div><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">5.</span>在SPS Supported Controllers（维修编程系统支持的控制器）屏幕上，用已有的无线电频率收发器或遥控钥匙选择“锁禁器学习”，并按屏幕说明进行操作。当锁禁器学习完成后，按下无钥匙进入发射器上的Unlock（解锁）按钮使遥控门锁发射器退出锁禁器学习。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent">
+               <div class=" x-note-1-0">
+                  <div id="styler-id1.5.3.7.1.1"></div>
+                  <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x--ufe-zb-1-0">注意:</span>当在车身控制模块设置期间执行“轮胎气压监测器传感器读入”时，对于带UJM的车辆，必须使用<span class=" x-sptool-1-0"><span class=" x-sptool-no-1-0">EL-46079</span><span class=" x-sptool-desc-1-0">轮胎气压监测器诊断工具</span></span>激活每个轮胎气压传感器。
+                  </div>
+                  <ul class=" x-list1-1-0 x-list1-1-1">
+                     <li class=" x--inherit-background-color x-item-18-0 x-item-18-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;对于钥匙点火系统，开始时点火开关处于RUN（运行）位置。</span></li>
+                     <li class=" x--inherit-background-color x-item-18-0 x-item-18-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;对于按钮起动系统，开始时车辆处于车辆ON（打开）电源模式。</span></li>
+                  </ul>
+               </div><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">6.</span>在SPS Supported Controllers（维修编程系统支持的控制器）屏幕上，选择车身控制模块进行“配置与设定”，并按屏幕上的说明进行操作。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">7.</span>检查驾驶员信息中心显示器是否显示与校准说明有关的详细附加信息。如果不再出现驾驶员信息中心附加说明，则编程完成。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">8.</span>在编程结束后，选择维修编程系统屏幕上的“Clear DTCs（清除DTC）”功能。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">9.</span>如果在执行车身控制模块的编程与设置后，防抱死制动系统、牵引力控制系统和/或Stabilitrak电子稳定性控制系统指示灯点亮且K17电子制动控制模块中设置了DTC C0161，则执行以下操作：</span></li>
+            <ul class=" x-list2-2-0">
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">9.1</span>&nbsp;将故障诊断仪从X84数据链路连接器上断开。</span></li>
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">9.2</span>&nbsp;点火开关置于“OFF（关闭）”位置，关闭所有检修孔盖，停用所有车辆系统，使所有钥匙距离车辆至少3米（9.8英尺）。断电可能需要2分钟时间。</span></li>
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">9.3</span>&nbsp;点火开关置于ON（打开）位置，确认DTC C0161位于历史DTC中。否则，则重复上述步骤，以确保车辆处于休眠模式。</span></li>
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">9.4</span>&nbsp;使用故障诊断仪以清除DTC。</span></li>
+            </ul>
+         </ul>
+         <div class=" x-note-3-0">
+            <div id="styler-id1.5.4.1"></div>
+            <ul class=" x-list1-5-0"><span class=" x--ufe-zb-1-0">注意:</span><li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;由于防火墙控制模块集成在车身控制模块中，在更换和编程车身控制模块后，需要同时对防火墙控制模块进行编程。</span></li>
+               <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;由于驻车辅助控制模块（UPA）的编程通过车身控制模块编程实现，所以在更换驻车辅助控制模块（UPA）后，需要对车身控制模块重新编程与配置。</span></li>
+            </ul>
+         </div>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.6">
+         <h5 class=" x-title-16-0" id="styler-id1.6.1">重新编程控制模块</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">要对现有的K9车身控制模块进行编程，则执行以下程序：</div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">1.</span>安装<span class=" x-sptool-1-0"><span class=" x-sptool-no-1-0">EL-49642</span><span class=" x-sptool-desc-1-0">维修编程系统编程支持工具</span></span>。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent">
+               <div class=" x-note-1-0">
+                  <div id="styler-id1.6.3.2.1.1"></div>
+                  <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x--ufe-zb-1-0">注意:</span>确保车辆的点火开关状态处于适合于下列步骤的位置。
+                  </div>
+                  <ul class=" x-list1-1-0 x-list1-1-1">
+                     <li class=" x--inherit-background-color x-item-18-0 x-item-18-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;对于钥匙点火系统，开始时点火开关处于RUN（运行）位置。</span></li>
+                     <li class=" x--inherit-background-color x-item-18-0 x-item-18-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;对于按钮起动系统，开始时车辆处于车辆ON（打开）电源模式。</span></li>
+                  </ul>
+               </div><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">2.</span>进入维修编程系统（SPS），并按屏幕上的说明进行操作。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">3.</span>在SPS Supported Controllers（维修编程系统支持的控制器）屏幕上，选择车身控制模块进行编程，并按屏幕上的说明进行操作。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent">
+               <div class=" x-note-1-0">
+                  <div id="styler-id1.6.3.4.1.1"></div>
+                  <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x--ufe-zb-1-0">注意:</span>当在车身控制模块设置期间执行“轮胎气压监测器传感器读入”时，对于带UJM的车辆，必须使用<span class=" x-sptool-1-0"><span class=" x-sptool-no-1-0">EL-46079</span><span class=" x-sptool-desc-1-0">轮胎气压监测器诊断工具</span></span>激活每个轮胎气压传感器。
+                  </div>
+               </div><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">4.</span>在SPS Supported Controllers（维修编程系统支持的控制器）屏幕上，选择车身控制模块进行“配置与设定”，并按屏幕上的说明进行操作。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">5.</span>检查驾驶员信息中心显示器是否显示与校准说明有关的详细附加信息。如果不再出现驾驶员信息中心附加说明，则编程完成。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">6.</span>在编程结束后，选择维修编程系统屏幕上的“Clear DTCs（清除DTC）”功能。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">7.</span>如果在执行车身控制模块的编程与设置后，防抱死制动系统、牵引力控制系统和/或Stabilitrak电子稳定性控制系统指示灯点亮且K17电子制动控制模块中设置了DTC C0161，则执行以下操作：</span></li>
+            <ul class=" x-list2-2-0">
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">7.1</span>&nbsp;将故障诊断仪从X84数据链路连接器上断开。</span></li>
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">7.2</span>&nbsp;点火开关置于“OFF（关闭）”位置，关闭所有检修孔盖，停用所有车辆系统，使所有钥匙距离车辆至少3米（9.8英尺）。断电可能需要2分钟时间。</span></li>
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">7.3</span>&nbsp;点火开关置于ON（打开）位置，确认DTC C0161位于历史DTC中。否则，则重复上述步骤，以确保车辆处于休眠模式。</span></li>
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">7.4</span>&nbsp;使用故障诊断仪以清除DTC。</span></li>
+            </ul>
+         </ul>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.7">
+         <h5 class=" x-title-16-0" id="styler-id1.7.1">编程恢复失败</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">如果编程操作中断或失败，则执行以下步骤：</div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">1.</span>将点火开关置于ON（打开）位置。确保控制模块、数据链路连接器和编程工具连接牢靠且维修编程系统软件是最新版本。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">2.</span>确认控制模块能够重新编程。</span></li>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果控制模块无法重新编程</span></span></li>
+            <ul class=" x-list2-2-0">
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">2.1</span>&nbsp;将点火开关置于OFF（关闭）位置一分钟，然后将点火开关置于ON（打开）位置。</span></li>
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">2.2</span>&nbsp;确认控制模块能够重新编程。</span></li>
+               <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">如果控制模块无法重新编程，则更换控制模块。</span></li>
+               <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">如果控制模块能够重新编程。</span></li>
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">2.3</span>&nbsp;一切正常。</span></li>
+            </ul>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果控制模块能够重新编程</span></span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">3.</span>一切正常。</span></li>
+         </ul>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.8">
+         <h5 class=" x-title-16-0" id="styler-id1.8.1">维修指南</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">完成修理后，执行<a class=" x-cell-link-2-0" href="A143214-S0000000343.html">诊断修理检验</a>。
+         </div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">参见<a class=" x-cell-link-2-0" href="A72864-S0000034009.html">控制模块参考</a>以了解有关“控制模块”更换、编程和设置的信息
+         </div>
+      </div>
+   </div>
+</html>

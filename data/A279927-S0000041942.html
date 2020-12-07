@@ -1,0 +1,150 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta content="IE=8" http-equiv="X-UA-Compatible">
+      <title>燃油系统诊断</title><script> document.domain="saic-gm.com"; function showImg(obj){ var as = document.getElementsByTagName('a'); for(var i=0;i<as.length;i++){as[i].innerHTML='点击显示图片';as[i].parentNode.style.height='40px';} var src = obj.getAttribute("data-url"); var imgstr='<OBJECT width="892" height="680" type="image" classid="CLSID:B789F873-EB93-11D2-A6D8-00A0241989B9"><PARAM NAME="src" value="'+src+'"></OBJECT>';setTimeout(function(){obj.parentNode.style.height='700px';obj.innerHTML = imgstr;}, 1000 );parent.iFrameHeight2();}</script><meta name="Generator" content="Arbortext Publishing Engine 6.0 M130">
+      <meta name="Stylesheet" content="E:\PTC\arbortext pe\custom\doctypes\sm\sm_html.style">
+      <link rel="stylesheet" href="commonCss.css" charset="UTF-8" type="text/css"></head>
+   <div class=" x-servinfo-1-0" id="styler-id1">
+      <h4 class=" x-title-19-0" id="styler-id1.1">燃油系统诊断</h4>
+      <div class=" x-servinfosub-2-0" id="styler-id1.2">
+         <h5 class=" x-title-16-0" id="styler-id1.2.1">诊断说明</h5>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;在使用本诊断程序前执行“<a class=" x-cell-link-2-0" href="A72794-S0000000347.html">诊断系统检查－车辆</a>”。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;查看“<a class=" x-cell-link-2-0" href="A161235-S0000000340.html">诊断策略</a>”中的诊断方法概述。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;“<a class=" x-cell-link-2-0" href="A161236-S0000000342.html">诊断程序说明</a>”提供每种诊断类别的概述。</span></li>
+         </ul>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.3">
+         <h5 class=" x-title-16-0" id="styler-id1.3.1">电路/系统说明</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">当点火开关置于“ON（打开）”位置时，发动机控制模块 (ECM) 使燃油泵继电器通电。除非控制模块检测到点火参考脉冲，否则发动机控制模块将在2秒钟内使燃油继电器泵断电。只要检测到点火参考脉冲，发动机控制模块就会使燃油泵继电器继续通电。如果检测到点火参考脉冲中断且点火开关保持在“ON（打开）”位置，发动机控制模块将在2秒钟内使燃油泵继电器断电。</div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">燃油系统采用无回路请求式设计。燃油压力调节器是燃油箱燃油泵模块的一部分，不需要来自发动机的回油管。无回路燃油系统不使热燃油从发动机返回至油箱，以降低油箱的内部温度。油箱内部温度的降低导致较低的蒸发排放。</div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">涡轮式电动燃油泵连接至燃油箱内的燃油箱燃油泵模块。燃油泵通过燃油滤清器和供油管向燃油喷射系统提供高压燃油。燃油压力调节器将所需燃油导向燃油导轨，无用燃油返回燃油箱燃油泵模块的储液罐。燃油箱燃油泵模块包括一个逆流单向阀。单向阀和油压调节器保持供油管和燃油导轨内的燃油压力，防止起动时间过长。</div>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.4">
+         <h5 class=" x-title-16-0" id="styler-id1.4.1">参考信息</h5>
+         <div class=" x-satitle-1-0">说明与操作</div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; "><a class=" x-cell-link-2-0" href="A279840-S0000031362.html">燃油系统的说明</a></div>
+         <div class=" x-satitle-1-0">电气信息参考</div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;<a class=" x-cell-link-2-0" href="A62194-S0000038422.html">电路测试</a></span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;<a class=" x-cell-link-2-0" href="A61973-S0000038457.html">连接器修理</a></span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;<a class=" x-cell-link-2-0" href="A62122-S0000038462.html">扁平导线的修理</a></span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;<a class=" x-cell-link-2-0" href="A61965-S0000038455.html">线路修理</a></span></li>
+         </ul>
+         <div class=" x-satitle-1-0">故障诊断仪参考</div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">有关故障诊断仪的信息，请参见“<a class=" x-cell-link-2-0" href="A72864-S0000034009.html">控制模块参考</a>”
+         </div>
+         <div class=" x-satitle-1-0">专用工具</div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;<span class=" x-sptool-1-0"><span class=" x-sptool-no-1-0">CH 48027</span><span class=" x-sptool-desc-1-0">数字式压力表</span></span></span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;<span class=" x-sptool-1-0"><span class=" x-sptool-no-1-0">EN 37287</span><span class=" x-sptool-desc-1-0">燃油管路切断适配器</span></span></span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;<span class=" x-sptool-1-0"><span class=" x-sptool-no-1-0">J 42982</span><span class=" x-sptool-desc-1-0">燃油压力表适配器</span></span></span></li>
+         </ul>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">关于当地同等工具，参见“<a class=" x-cell-link-2-0" href="A279766-S0000031594.html">专用工具</a>”。
+         </div>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.5">
+         <h5 class=" x-title-16-0" id="styler-id1.5.1">电路/系统检验</h5>
+         <div class=" x-note-3-0">
+            <div id="styler-id1.5.2.1"></div>
+            <ul class=" x-list1-5-0"><span class=" x--ufe-zb-1-0">注意:</span><li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;在执行前，检查燃油系统有无损坏或外部泄漏。</span></li>
+               <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;在进行此诊断前，确认油箱中燃油是否充足。</span></li>
+               <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;可能需要指令燃油泵继电器通电数次，以尽量获得最高的燃油压力。</span></li>
+               <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;继续进行本测试前，关于“安全信息和说明”，请查看“用户手册CH 48027-5”。</span></li>
+            </ul>
+         </div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">1.</span>将点火开关置于“ON（打开）”位置。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">2.</span>当用故障诊断仪指令燃油泵开启打开和关闭时，确认燃油泵打开和关闭。</span></li>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果燃油泵未打开和关闭</span></span><div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">参见“<a class=" x-cell-link-2-0" href="A279917-S0000031346.html">燃油泵电路诊断</a>”。
+               </div>
+            </li>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果燃油泵打开和关闭</span></span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">3.</span>将点火开关置于“OFF（关闭）”位置，关闭所有附件，装上一个<span class=" x-sptool-1-0"><span class=" x-sptool-no-1-0">J 42982</span><span class=" x-sptool-desc-1-0">燃油压力表适配器</span></span>和一个<span class=" x-sptool-1-0"><span class=" x-sptool-no-1-0">CH 48027</span><span class=" x-sptool-desc-1-0">压力表</span></span>。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">4.</span>将点火开关置于“ON（打开）”位置，关闭发动机。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">5.</span>使用故障诊断仪指令燃油泵继电器通电数次。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">6.</span>确认燃油泵运行时燃油压力在276-345千帕（40-50磅力/平方英寸）之间。</span></li>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果低于276千帕（40磅/平方英寸）</span></span><div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">参见“电路/系统测试 - 燃油压力过低”。</div>
+            </li>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果高于345 千帕（50磅/平方英寸）</span></span><div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">更换G12燃油泵。</div>
+            </li>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果在276-345千帕（40-50磅/平方英寸）之间</span></span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">7.</span>确认燃油压力在1分钟内下降不超过34千帕（5磅/平方英寸）。</span></li>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果高于34 千帕（5磅/平方英寸）</span></span><div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">参见“电路/系统测试 - 燃油压力因泄漏下降”。</div>
+            </li>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果低于34千帕（5磅/平方英寸）</span></span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">8.</span>卸去燃油压力至69千帕（10磅/平方英寸）。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">9.</span>确认燃油压力在5分钟内下降不超过14千帕（2磅力/平方英寸）。</span></li>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果高于14 千帕（2磅/平方英寸）</span></span><div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">更换G12燃油泵。</div>
+            </li>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果低于14千帕（2磅/平方英寸）</span></span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">10.</span>在客户报修的条件下运行车辆，同时用<span class=" x-sptool-1-0"><span class=" x-sptool-no-1-0">CH 48027</span><span class=" x-sptool-desc-1-0">量表</span></span>监测燃油压力。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">11.</span>确认燃油压力在加速、巡航或转向困难时未下降。</span></li>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果燃油压力下降</span></span><div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">参见“电路/系统测试 - 燃油压力下降”。</div>
+            </li>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果燃油压力未下降</span></span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">12.</span>如果燃油系统部件测试正常，则参见“<a class=" x-cell-link-2-0" href="A280078-S0000041936.html">症状－发动机控制装置</a>”和“<a class=" x-cell-link-2-0" href="A280153-S0000031347.html">喷油器电路的诊断</a>”。</span></li>
+         </ul>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.6">
+         <h5 class=" x-title-16-0" id="styler-id1.6.1">电路/系统测试</h5>
+         <ul class=" x-list1-8-0">
+            <h3 class=" x-title-24-0" id="styler-id1.6.2.1">燃油压力过低</h3>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">1.</span>确认未出现下列故障：</span></li>
+            <ul class=" x-list2-2-0">
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-2 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;燃油滤清器堵塞</span></li>
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-2 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;燃油供油管堵塞</span></li>
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-2 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;检查燃油泵的线束连接器和搭铁电路是否接触不良。</span></li>
+            </ul>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果存在任一故障</span></span><div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">必要时进行修理。</div>
+            </li>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果不存在任一情况</span></span><div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">更换G12燃油泵。</div>
+            </li>
+         </ul>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.7">
+         <ul class=" x-list1-8-0">
+            <h3 class=" x-title-24-0" id="styler-id1.7.1.1">燃油压力因泄漏下降</h3>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">1.</span>点火开关置于“OFF（关闭）”位置，卸去燃油压力。参见“<a class=" x-cell-link-2-0" href="A280079-1860817.html">卸去燃油压力</a>”。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">2.</span>在底盘供油软管和发动机舱供油管之间安装<span class=" x-sptool-1-0"><span class=" x-sptool-no-1-0">EN 37287</span><span class=" x-sptool-desc-1-0">适配器</span></span>。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">3.</span>打开<span class=" x-sptool-1-0"><span class=" x-sptool-no-1-0">EN 37287</span><span class=" x-sptool-desc-1-0">适配器</span></span>上的阀门。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">4.</span>将点火开关置于“ON（打开）”位置，用故障诊断仪指令燃油泵继电器通电，并放出<span class=" x-sptool-1-0"><span class=" x-sptool-no-1-0">CH 48027</span><span class=" x-sptool-desc-1-0">量表</span></span>内的空气。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">5.</span>使用故障诊断仪指令燃油泵继电器通电，然后断电。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">6.</span>关闭<span class=" x-sptool-1-0"><span class=" x-sptool-no-1-0">EN 37287</span><span class=" x-sptool-desc-1-0">适配器</span></span>上的阀门。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">7.</span>确认燃油压力在1分钟内下降不超过34千帕（5磅/平方英寸）。</span></li>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果高于34 千帕（5磅/平方英寸）</span></span><div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">找到并更换泄漏的Q17喷油器。</div>
+            </li>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果低于34千帕（5磅/平方英寸）</span></span><div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">更换G12燃油泵。</div>
+            </li>
+         </ul>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.8">
+         <ul class=" x-list1-8-0">
+            <h3 class=" x-title-24-0" id="styler-id1.8.1.1">燃油压力下降</h3>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">1.</span>确认未出现下列故障：</span></li>
+            <ul class=" x-list2-2-0">
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-2 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;燃油滤清器堵塞</span></li>
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-2 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;燃油供油管堵塞</span></li>
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-2 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;检查燃油泵的线束连接器和搭铁电路是否接触不良。</span></li>
+            </ul>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果存在任一故障</span></span><div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">必要时进行修理。</div>
+            </li>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果不存在任一情况</span></span><div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">更换G12燃油泵。</div>
+            </li>
+         </ul>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.9">
+         <h5 class=" x-title-16-0" id="styler-id1.9.1">维修指南</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">完成修理后执行“<a class=" x-cell-link-2-0" href="A143214-S0000000343.html">诊断修理检验</a>”。
+         </div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;<a class=" x-cell-link-2-0" href="A279630-S0000034781.html">燃油供油管的更换（燃油箱至车底）</a>、<a class=" x-cell-link-2-0" href="A279630-S0000042010.html">燃油供油管的更换（车身底部至供油软管）</a></span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;<a class=" x-cell-link-2-0" href="A279837-S0000031062.html">喷油器的更换</a></span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;<a class=" x-cell-link-2-0" href="A279969-S0000035741.html">燃油箱燃油泵模块的更换</a></span></li>
+         </ul>
+      </div>
+   </div>
+</html>

@@ -1,0 +1,489 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+  <meta content="IE=8" http-equiv="X-UA-Compatible"> 
+  <title>电动车窗故障（AEC）</title>
+  <script> document.domain="saic-gm.com"; function showImg(obj){ var as = document.getElementsByTagName('a'); for(var i=0;i<as.length;i++){as[i].innerHTML='点击显示图片';as[i].parentNode.style.height='40px';} var src = obj.getAttribute("data-url"); var imgstr='<OBJECT width="892" height="680" type="image" classid="CLSID:B789F873-EB93-11D2-A6D8-00A0241989B9"><PARAM NAME="src" value="'+src+'"></OBJECT>';setTimeout(function(){obj.parentNode.style.height='700px';obj.innerHTML = imgstr;}, 1000 );parent.iFrameHeight2();}</script>
+  <meta name="Generator" content="Arbortext Publishing Engine 6.0 M130"> 
+  <meta name="Stylesheet" content="E:\PTC\arbortext pe\custom\doctypes\sm\sm_html.style"> 
+  <link rel="stylesheet" href="commonCss.css" charset="UTF-8" type="text/css">
+ </head> 
+ <body>
+  <div class=" x-servinfo-1-0" id="styler-id1"> 
+   <h4 class=" x-title-19-0" id="styler-id1.1">电动车窗故障（AEC）</h4> 
+   <div class=" x-servinfosub-2-0" id="styler-id1.2"> 
+    <h5 class=" x-title-16-0" id="styler-id1.2.1">诊断说明</h5> 
+    <ul class=" x-list1-8-0"> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;在使用此诊断程序之前，执行“<a class=" x-cell-link-2-0" href="A72794-S0000000347.html">诊断系统检查－车辆</a>”。</span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;查阅“<a class=" x-cell-link-2-0" href="A161235-S0000000340.html">诊断策略</a>”，以获得诊断方法的概述。</span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;“<a class=" x-cell-link-2-0" href="A161236-S0000000342.html">诊断程序说明</a>”载有各种诊断的概述。</span></li> 
+    </ul> 
+   </div> 
+   <div class=" x-servinfosub-1-0" id="styler-id1.3"> 
+    <h5 class=" x-title-16-0" id="styler-id1.3.1">故障诊断信息</h5> 
+    <div class=" x-table-1-0 x-table-1-1" id="styler-id1.3.2"> 
+     <table class=" x-tgroup-1-0" cellpadding="7" frame="box" border="1" rules="all"> 
+      <colgroup> 
+       <col style="width: 266px; "> 
+       <col style="width: 107px; "> 
+       <col style="width: 105px; "> 
+       <col style="text-align: center; width: 106px; "> 
+       <col style="width: 106px; "> 
+      </colgroup> 
+      <thead class=" x-thead-1-0" style="vertical-align: bottom; text-align: left; font-weight: bold; "> 
+       <tr class=" x-row-1-0"> 
+        <th class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          电路
+         </div> </th> 
+        <th class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          对搭铁短路
+         </div> </th> 
+        <th class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          开路/电阻过大
+         </div> </th> 
+        <th class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          对电压短路
+         </div> </th> 
+        <th class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          信号性能
+         </div> </th> 
+       </tr> 
+      </thead> 
+      <tbody class=" x-tbody-1-0" style="vertical-align: top; "> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          驾驶员侧车窗开关B+
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          1
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          1
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          －
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          －
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          驾驶员侧车窗电机控制
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          1
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          1
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          1
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          －
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          驾驶员侧车窗开关搭铁
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          －
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          1, 2, 3, 4
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          1, 2, 3, 4
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          －
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          乘客侧车窗开关信号
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          2
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          2
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          2
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          －
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          乘客侧车窗电机控制
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          2
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          2
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          2
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          －
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          左后侧车窗开关信号
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          3
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          3
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          3
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          －
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          左后车窗电机控制
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          3
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          3
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          3
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          －
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          右后侧车窗开关信号
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          4
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          4
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          4
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          －
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          右后车窗电机控制
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          4
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          4
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          4
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          －
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" colspan="5" style="text-align: left; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          1. 驾驶员侧车窗故障
+         </div> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          2. 乘客侧车窗故障
+         </div> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          3. 左后车窗故障
+         </div> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          4. 右后车窗故障
+         </div> </td> 
+       </tr> 
+      </tbody> 
+     </table> 
+    </div> 
+   </div> 
+   <div class=" x-servinfosub-1-0" id="styler-id1.4"> 
+    <h5 class=" x-title-16-0" id="styler-id1.4.1">电路/系统说明</h5> 
+    <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">
+     当点火开关置于ACC 或RUN 位置时，随时可对电动车窗系统进行操作。驾驶员电动车窗开关包括每个电动车窗单独的车窗开关。所有车窗的上升和下降均可由驾驶员电动车窗开关进行控制。单独的乘客电动车窗开关仅可控制其各自的电动车窗的上升和下降。
+    </div> 
+    <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">
+     每个电动车窗包含一个双向电动车窗电机。电动车窗电机控制电路通过正常闭合电动车窗开关的上升和下降触点以连接至搭铁。当电源开关放置于下降位置时，电动车窗电机下降控制电路切换至12 伏电源，且电源提供至电动车窗电机的下降侧。由于电动电机的另一侧已通过正常闭合上升开关的触点连接至搭铁，所以车窗向下运动。将电动车窗开关置于上升位置，电动车窗电机的极性反转，车窗向上运动。
+    </div> 
+   </div> 
+   <div class=" x-servinfosub-1-0" id="styler-id1.5"> 
+    <h5 class=" x-title-16-0" id="styler-id1.5.1">诊断帮助</h5> 
+    <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">
+     如果驾驶员侧车窗并未执行快速上升和快速下降功能，则表明驾驶员侧车窗未标准化。这可能在以下情况中出现：
+    </div> 
+    <ul class=" x-list1-8-0"> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;驾驶员侧车窗电机已断开</span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;驾驶员车门线束已断开</span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;蓄电池已断开或更换</span></li> 
+    </ul> 
+   </div> 
+   <div class=" x-servinfosub-1-0" id="styler-id1.6"> 
+    <h5 class=" x-title-16-0" id="styler-id1.6.1">参考信息</h5> 
+    <div class=" x-satitle-1-0">
+     示意图参考
+    </div> 
+    <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">
+     <a class=" x-cell-link-2-0" href="A156606-S0000003353.html">活动车窗示意图</a>
+    </div> 
+    <div class=" x-satitle-1-0">
+     连接器端视图参考
+    </div> 
+    <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">
+     <a class=" x-cell-link-2-0" href="A164814-S0000026210.html">部件连接器端视图</a>
+    </div> 
+    <div class=" x-satitle-1-0">
+     说明与操作
+    </div> 
+    <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">
+     <a class=" x-cell-link-2-0" href="A12310-S0000003593.html">电动车窗的说明与操作</a>
+    </div> 
+    <div class=" x-satitle-1-0">
+     电气信息参考
+    </div> 
+    <ul class=" x-list1-8-0"> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;<a class=" x-cell-link-2-0" href="A62194-S0000002181.html">电路测试</a></span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;<a class=" x-cell-link-2-0" href="A61973-S0000002238.html">连接器修理</a></span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;<a class=" x-cell-link-2-0" href="A62112-S0000002212.html">测试是否存在间歇性故障和不良连接</a></span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;<a class=" x-cell-link-2-0" href="A61965-S0000002224.html">线路修理</a></span></li> 
+    </ul> 
+    <div class=" x-satitle-1-0">
+     故障诊断仪参考
+    </div> 
+    <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">
+     参见“
+     <a class=" x-cell-link-2-0" href="A72864-S0000026704.html">控制模块参考</a>”，以获取故障诊断仪信息 
+    </div> 
+   </div> 
+   <div class=" x-servinfosub-1-0" id="styler-id1.7"> 
+    <h5 class=" x-title-16-0" id="styler-id1.7.1">电路/系统检验</h5> 
+    <ul class=" x-list1-8-0"> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">1.</span>将点火开关置于“ON（打开）”位置。使用“S79D驾驶员侧车窗开关”指令车窗“上升”、下降”和快速“下降”时，确认驾驶员侧车窗正常移动。</span></li> 
+     <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果驾驶员侧车窗没有按指令“上升”或“下降”</span></span>
+      <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">
+       参见“电路/系统测试 - 驾驶员侧车窗开关故障”。
+      </div> </li> 
+     <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果驾驶员侧车窗按指令“上升”、“下降”和快速“下降”</span></span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">2.</span>使用S79D 驾驶员主控制开关上的车窗开关及其各自的S79 车窗开关指令乘客侧车窗和后车窗“上升”和“下降”。</span></li> 
+     <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果乘客侧车窗和后车窗“没有按指令“上升”或“下降”</span></span>
+      <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">
+       参见“电路/系统测试 - 乘客侧车窗和后车窗开关故障”。
+      </div> </li> 
+     <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果乘客侧车窗和后车窗“有按指令“上升”或“下降”</span></span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">3.</span>全部正常。</span></li> 
+    </ul> 
+   </div> 
+   <div class=" x-servinfosub-1-0" id="styler-id1.8"> 
+    <h5 class=" x-title-16-0" id="styler-id1.8.1">电路/系统测试</h5> 
+    <ul class=" x-list1-8-0"> 
+     <h3 class=" x-title-24-0" id="styler-id1.8.2.1">驾驶员侧车窗开关故障</h3> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">1.</span>将点火开关置于“OFF（关闭）”位置，所有车辆系统关闭，断开S79D驾驶员侧车窗开关的线束连接器。可能需要2分钟才能让所有车辆系统断电。</span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">2.</span>测试搭铁电路端子11和搭铁之间的电阻是否小于10欧。</span></li> 
+     <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果等于或大于10欧</span></span></li> 
+     <ul class=" x-list2-2-0"> 
+      <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">2.1</span>&nbsp;将点火开关置于“OFF（关闭）”位置。</span></li> 
+      <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">2.2</span>&nbsp;测试搭铁电路端对端的电阻是否小于2欧。</span></li> 
+      <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">如果等于或大于2欧，则修理电路中的开路/电阻过大。</span></li> 
+      <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">如果小于2欧，则修理搭铁连接中的开路/电阻过大。</span></li> 
+     </ul> 
+     <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果小于10欧</span></span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">3.</span>将点火开关置于“ON（打开）”位置。确认B+电路端子9和搭铁之间的测试灯点亮。</span></li> 
+     <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果测试灯未点亮且电路保险丝完好</span></span></li> 
+     <ul class=" x-list2-2-0"> 
+      <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">3.1</span>&nbsp;将点火开关置于“OFF（关闭）”位置。</span></li> 
+      <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">3.2</span>&nbsp;测试B+电路端对端的电阻是否小于2欧。</span></li> 
+      <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">如果等于或大于2欧，则修理电路中的开路/电阻过大。</span></li> 
+      <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">如果小于2欧，则确认保险丝未熔断且保险丝有电压。</span></li> 
+     </ul> 
+     <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果测试灯未点亮且电路保险丝熔断</span></span></li> 
+     <ul class=" x-list2-2-0"> 
+      <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">3.1</span>&nbsp;将点火开关置于“OFF（关闭）”位置。</span></li> 
+      <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">3.2</span>&nbsp;测试B+电路和搭铁之间的电阻是否为无穷大。</span></li> 
+      <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">如果电阻不为无穷大，则修理电路上的对搭铁短路故障。</span></li> 
+      <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">如果电阻无穷大，更换S79D驾驶员侧车窗开关。</span></li> 
+     </ul> 
+     <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果测试灯点亮</span></span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">4.</span>将点火开关置于“OFF（关闭）”位置，连接S79D驾驶员侧车窗开关上的线束连接器，断开M74D驾驶员侧车窗电机的线束连接器。</span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">5.</span>测试控制电路端子1和搭铁之间的电阻是否小于5欧。</span></li> 
+     <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果大于或等于5欧</span></span></li> 
+     <ul class=" x-list2-2-0"> 
+      <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">5.1</span>&nbsp;将点火开关置于“OFF（关闭）”位置， 断开S79D驾驶员侧车窗开关的线束连接器。</span></li> 
+      <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">5.2</span>&nbsp;测试控制电路端对端电阻是否小于2欧。</span></li> 
+      <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">如果等于或大于2欧，则修理电路中的开路/电阻过大。</span></li> 
+      <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">如果小于2欧，更换S79D驾驶员侧车窗开关。</span></li> 
+     </ul> 
+     <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果小于5欧</span></span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">6.</span>测试控制电路端子2和搭铁之间的电阻是否小于5欧。</span></li> 
+     <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果大于或等于5欧</span></span></li> 
+     <ul class=" x-list2-2-0"> 
+      <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">6.1</span>&nbsp;将点火开关置于“OFF（关闭）”位置， 断开S79D驾驶员侧车窗开关的线束连接器。</span></li> 
+      <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">6.2</span>&nbsp;测试控制电路端对端电阻是否小于2欧。</span></li> 
+      <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">如果等于或大于2欧，则修理电路中的开路/电阻过大。</span></li> 
+      <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">如果小于2欧，更换S79D 驾驶员侧车窗开关。</span></li> 
+     </ul> 
+     <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果小于5欧</span></span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">7.</span>在控制电路端子1及控制电路端子2与搭铁之间连接一个测试灯。使用S79D驾驶员侧车窗开关指令驾驶员车窗“上升”和“下降”状态时，确认测试灯是否点亮。</span></li> 
+     <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果在任一指令期间测试灯始终熄灭</span></span></li> 
+     <ul class=" x-list2-2-0"> 
+      <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">7.1</span>&nbsp;将点火开关置于“OFF（关闭）”位置，测试控制电路端子和搭铁之间的电阻是否为无穷大。</span></li> 
+      <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">如果不为无穷大，则修理电路中对搭铁短路。</span></li> 
+      <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">如果为无穷大，则更换S79D驾驶员侧车窗开关</span></li> 
+     </ul> 
+     <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果在任一指令期间测试灯点亮</span></span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">8.</span>则测试或更换M74D驾驶员侧车窗电机</span></li> 
+    </ul> 
+    <ul class=" x-list1-8-0"> 
+     <h3 class=" x-title-24-0" id="styler-id1.8.3.1">乘客侧车窗和后车窗开关故障</h3> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">1.</span>将点火开关置于“OFF（关闭）”位置，所有车辆系统关闭，断开相应的乘客侧或后车窗S79车窗开关的线束连接器。可能需要2分钟才能让所有车辆系统断电。</span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">2.</span>将点火开关置于“ON（打开）”位置。确认B+电路端子3和搭铁之间的测试灯点亮。</span></li> 
+     <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果测试灯未点亮且电路保险丝完好</span></span></li> 
+     <ul class=" x-list2-2-0"> 
+      <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">2.1</span>&nbsp;将点火开关置于“OFF（关闭）”位置。</span></li> 
+      <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">2.2</span>&nbsp;测试B+电路端对端的电阻是否小于2欧。</span></li> 
+      <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">如果等于或大于2欧，则修理电路中的开路/电阻过大。</span></li> 
+      <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">如果小于2欧，则确认保险丝未熔断且保险丝有电压。</span></li> 
+     </ul> 
+     <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果测试灯未点亮且电路保险丝熔断</span></span></li> 
+     <ul class=" x-list2-2-0"> 
+      <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">2.1</span>&nbsp;将点火开关置于“OFF（关闭）”位置。</span></li> 
+      <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">2.2</span>&nbsp;测试B+电路和搭铁之间的电阻是否为无穷大。</span></li> 
+      <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">如果电阻不为无穷大，则修理电路上的对搭铁短路故障。</span></li> 
+      <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">如果电阻无穷大，更换S79乘客侧车窗或后车窗开关。</span></li> 
+     </ul> 
+     <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果测试灯点亮</span></span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">3.</span>将点火开关置于“OFF（关闭）”位置，连接S79乘客侧车窗或后车窗开关上的线束连接器，断开M74乘客侧车窗或后车窗电机的线束连接器。</span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">4.</span>测试控制电路端子1和搭铁之间的电阻是否小于5欧。</span></li> 
+     <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果大于或等于5欧</span></span></li> 
+     <ul class=" x-list2-2-0"> 
+      <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">4.1</span>&nbsp;将点火开关置于“OFF（关闭）”位置， 断开S79车窗开关的线束连接器。</span></li> 
+      <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">4.2</span>&nbsp;测试控制电路端对端电阻是否小于2欧。</span></li> 
+      <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">如果等于或大于2欧，则修理电路中的开 路/电阻过大。</span></li> 
+      <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">如果小于2欧，更换S79乘客侧车窗或后车窗开关。</span></li> 
+     </ul> 
+     <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果小于5欧</span></span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">5.</span>测试控制电路端子2和搭铁之间的电阻是否小于5欧。</span></li> 
+     <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果大于或等于5欧</span></span></li> 
+     <ul class=" x-list2-2-0"> 
+      <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">5.1</span>&nbsp;将点火开关置于“OFF（关闭）”位置， 断开S79车窗开关的线束连接器。</span></li> 
+      <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">5.2</span>&nbsp;测试控制电路端对端电阻是否小于2欧。</span></li> 
+      <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">如果等于或大于2欧，则修理电路中的开 路/电阻过大。</span></li> 
+      <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">如果小于2欧，更换S79乘客侧车窗或后车窗开关。</span></li> 
+     </ul> 
+     <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果小于5欧</span></span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">6.</span>在控制电路端子1 和控制电路端子2 之间连接一个测试灯。使用S79乘客侧车窗或后车窗开关指令车窗“上升”和“下降”状态时，确认测试灯是否点亮。</span></li> 
+     <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果在任一指令期间测试灯始终熄灭</span></span></li> 
+     <ul class=" x-list2-2-0"> 
+      <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">6.1</span>&nbsp;将点火开关置于“OFF（关闭）”位置，测试控制电路端子和搭铁之间的电阻是否为无穷大。</span></li> 
+      <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">如果不为无穷大，则修理电路中对搭铁短路。</span></li> 
+      <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">如果为无穷大，则更换S79乘客侧车窗或后车窗开关</span></li> 
+     </ul> 
+     <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果在任一指令期间测试灯点亮</span></span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">7.</span>测试或更换相应M74车窗电机。</span></li> 
+    </ul> 
+   </div> 
+   <div class=" x-servinfosub-1-0" id="styler-id1.9"></div> 
+   <div class=" x-servinfosub-1-0" id="styler-id1.10"> 
+    <h5 class=" x-title-16-0" id="styler-id1.10.1">部件测试</h5> 
+    <ul class=" x-list1-8-0"> 
+     <h3 class=" x-title-24-0" id="styler-id1.10.2.1">车窗电机</h3> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">1.</span>将点火开关置于“OFF（关闭）”位置，断开相应的乘客侧或后M74车窗电机的线束连接器。</span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">2.</span>在其中一个控制端子和12伏电压之间安装一条带25安培保险丝的跨接线。暂时在其他控制端子和搭铁之间安装一条跨接线。反接跨接线至少2次，M74车窗电机应执行“上升”和“下降”功能。</span></li> 
+     <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果该功能没有执行“上升”和“下降”功能</span></span>
+      <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">
+       更换乘客侧或后M74车窗电机。
+      </div> </li> 
+     <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果该功能执行“上升”和“下降”功能</span></span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">3.</span>全部正常</span></li> 
+    </ul> 
+   </div> 
+   <div class=" x-servinfosub-1-0" id="styler-id1.11"> 
+    <h5 class=" x-title-16-0" id="styler-id1.11.1">维修指南</h5> 
+    <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">
+     完成修理后，执行“
+     <a class=" x-cell-link-2-0" href="A143214-S0000000343.html">诊断修理检验</a>”。 
+    </div> 
+    <ul class=" x-list1-8-0"> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;<a class=" x-cell-link-2-0" href="A11796-S0000002665.html">后侧门车窗开关的更换</a></span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;<a class=" x-cell-link-2-0" href="A11922-S0000003495.html">前侧门车窗玻璃升降器电机的更换</a></span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;<a class=" x-cell-link-2-0" href="A11923-S0000003497.html">后侧门车窗玻璃升降器电机的更换</a></span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;<a class=" x-cell-link-2-0" href="A221307-S0000002678.html">前侧门车窗控制开关的更换</a></span></li> 
+    </ul> 
+   </div> 
+  </div>  
+ </body>
+</html>

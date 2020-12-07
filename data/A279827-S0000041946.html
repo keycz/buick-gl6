@@ -1,0 +1,139 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta content="IE=8" http-equiv="X-UA-Compatible">
+      <title>喷油器的诊断</title><script> document.domain="saic-gm.com"; function showImg(obj){ var as = document.getElementsByTagName('a'); for(var i=0;i<as.length;i++){as[i].innerHTML='点击显示图片';as[i].parentNode.style.height='40px';} var src = obj.getAttribute("data-url"); var imgstr='<OBJECT width="892" height="680" type="image" classid="CLSID:B789F873-EB93-11D2-A6D8-00A0241989B9"><PARAM NAME="src" value="'+src+'"></OBJECT>';setTimeout(function(){obj.parentNode.style.height='700px';obj.innerHTML = imgstr;}, 1000 );parent.iFrameHeight2();}</script><meta name="Generator" content="Arbortext Publishing Engine 6.0 M130">
+      <meta name="Stylesheet" content="E:\PTC\arbortext pe\custom\doctypes\sm\sm_html.style">
+      <link rel="stylesheet" href="tocCss2.css" charset="UTF-8" type="text/css"></head>
+   <div class=" x-servinfo-1-0" id="styler-id1">
+      <h4 class=" x-title-19-0" id="styler-id1.1">喷油器的诊断</h4>
+      <div class=" x-servinfosub-2-0" id="styler-id1.2">
+         <h5 class=" x-title-16-0" id="styler-id1.2.1">诊断说明</h5>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;在使用本诊断程序前执行“<a class=" x-cell-link-2-0" href="A72794-S0000000347.html">诊断系统检查－车辆</a>”。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;查看“<a class=" x-cell-link-2-0" href="A161235-S0000000340.html">诊断策略</a>”中的诊断方法概述。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;“<a class=" x-cell-link-2-0" href="A161236-S0000000342.html">诊断程序说明</a>”提供每种诊断类别的概述。</span></li>
+         </ul>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.3">
+         <h5 class=" x-title-16-0" id="styler-id1.3.1">电路/系统说明</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">发动机控制模块 (ECM) 使每个气缸获得合适的燃油喷射器脉冲。直接向燃油喷射器提供点火电压。发动机控制模块通过用一个被称为驱动器的固态装置使控制电路搭铁，来控制各燃油喷射器。燃油喷射器线圈绕组电阻值过大或过小将影响发动机的动力性能。可能不会设置燃油喷射器控制电路DTC，但可能会明显缺火。温度会影响燃油喷射器线圈绕组。当燃油喷射器温度升高时，燃油喷射器线圈绕组的电阻也随之增加。</div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">用燃油喷射器测试仪或故障诊断仪进行燃油喷射器平衡测试时，先用故障诊断仪启用燃油泵。然后使用喷油器测试仪或故障诊断仪，在精确的时间内向各喷油器施加脉冲，从而喷射经计量的燃油。这将导致系统燃油压力下降，可记录此压力降并用来比较各燃油喷射器。</div>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.4">
+         <h5 class=" x-title-16-0" id="styler-id1.4.1">诊断帮助</h5>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;使车辆在较大的温度范围内运行可能有助于隔离引起故障的燃油喷射器。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;在客户报修故障的条件下执行燃油喷射器线圈测试。燃油喷射器故障可能只在一定温度或者一定条件下才会明显。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;监测“当前缺火计数器”或缺火图，可能有助于隔离引起故障的燃油喷射器。</span></li>
+         </ul>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.5">
+         <h5 class=" x-title-16-0" id="styler-id1.5.1">参考信息</h5>
+         <div class=" x-satitle-1-0">示意图参照</div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; "><a class=" x-cell-link-2-0" href="A279956-S0000036043.html">发动机控制示意图</a></div>
+         <div class=" x-satitle-1-0">连接器端视图参照</div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; "><a class=" x-cell-link-2-0" href="A164814-S0000039806.html">部件连接器端视图</a></div>
+         <div class=" x-satitle-1-0">说明与操作</div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; "><a class=" x-cell-link-2-0" href="A279840-S0000031362.html">燃油系统的说明</a></div>
+         <div class=" x-satitle-1-0">电气信息参考</div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;<a class=" x-cell-link-2-0" href="A62194-S0000038422.html">电路测试</a></span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;<a class=" x-cell-link-2-0" href="A61973-S0000038457.html">连接器修理</a></span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;<a class=" x-cell-link-2-0" href="A62112-S0000038440.html">测试是否存在间歇性故障和不良连接</a></span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;<a class=" x-cell-link-2-0" href="A61965-S0000038455.html">线路修理</a></span></li>
+         </ul>
+         <div class=" x-satitle-1-0">专用工具</div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;<span class=" x-sptool-1-0"><span class=" x-sptool-no-1-0">CH 48027</span><span class=" x-sptool-desc-1-0">数字式压力表</span></span></span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;<span class=" x-sptool-1-0"><span class=" x-sptool-no-1-0">EL 39021</span><span class=" x-sptool-desc-1-0">燃油喷射器线圈和平衡测试仪</span></span></span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;<span class=" x-sptool-1-0"><span class=" x-sptool-no-1-0">EN 44602</span><span class=" x-sptool-desc-1-0">喷射器测试适配器</span></span></span></li>
+         </ul>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">关于当地同等工具，参见“<a class=" x-cell-link-2-0" href="A279766-S0000031594.html">专用工具</a>”。
+         </div>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.6">
+         <h5 class=" x-title-16-0" id="styler-id1.6.1">燃油喷射器线圈测试</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">使用下列方法之一，确认每一个Q17喷油器的电阻：</div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;如果发动机冷却液温度 (ECT) 传感器在10-32°C (50-90°F) 之间，则各喷油器电阻应为11-14欧。如果喷油器测量正常，则执行“喷油器平衡测试”。</span></li>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果不在规定范围内</span></span><div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">更换Q17燃油喷射器。</div>
+            </li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;如果发动机冷却液温度传感器不在10-32°C (50-90°F) 之间，则测量并记录每个燃油喷射器的电阻。以最高电阻值中减去最小电阻值。最小值与最大值之间的差值应等于或小于3欧。如果喷油器测量正常，则执行“喷油器平衡测试”。</span></li>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果未在规定范围内</span></span><div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">将所有燃油喷射器的电阻值相加，得到一个总电阻值。将总阻值除以燃油喷射器个数，得到平均阻值。从平均电阻值中减去单个燃油喷射器的最小电阻值。计算单个燃油喷射器最高阻值和平均阻值之间的差值。更换与平均电阻值相比差值最大的Q17燃油喷射器（无论是高于或低于平均电阻值）。</div>
+            </li>
+         </ul>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.7">
+         <h5 class=" x-title-16-0" id="styler-id1.7.1">用专用工具执行燃油喷射器平衡测试</h5>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent">
+               <div class=" x-note-1-0">
+                  <div id="styler-id1.7.2.1.1.1"></div>
+                  <ul class=" x-list1-1-0"><span class=" x--ufe-zb-1-0">注意:</span><li class=" x--inherit-background-color x-item-18-0 x-item-18-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;如果发动机冷却液温度 (ECT) 高于94°C (201°F)，切勿执行该测试。高温燃油沸腾可能导致燃油压力读数异常。</span></li>
+                     <li class=" x--inherit-background-color x-item-18-0 x-item-18-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;在进行此诊断前，确认油箱中燃油充足。</span></li>
+                     <li class=" x--inherit-background-color x-item-18-0 x-item-18-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;继续进行本测试前，关于“安全信息和说明”，请查看“用户手册CH 48027-5”。</span></li>
+                  </ul>
+               </div><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">1.</span>确认燃油系统压力正确。参见“<a class=" x-cell-link-2-0" href="A279927-S0000041942.html">燃油系统诊断</a>”。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">2.</span>将燃油喷射器测试仪上的电流供给选择器开关设置到“平衡测试”0.5 - 2.5安位置。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">3.</span>使用<span class=" x-sptool-1-0"><span class=" x-sptool-no-1-0">EN 44602</span><span class=" x-sptool-desc-1-0">喷射器测试适配器</span></span>将<span class=" x-sptool-1-0"><span class=" x-sptool-no-1-0">EL 39021</span><span class=" x-sptool-desc-1-0">燃油喷射器线圈和平衡测试仪</span></span>连接至Q17燃油喷射器。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">4.</span>用故障诊断仪器指令燃油泵继电器通电、断电3次。最后一次指令，当燃油压力开始缓慢下降并稳定时，选择燃油压力在最大燃油泵压力的34千帕（5磅/平方英寸）以内。记录该燃油压力。该压力为每个燃油喷射器喷油的开始压力。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">5.</span>在先前选择的压力下，按下<span class=" x-sptool-1-0"><span class=" x-sptool-no-1-0">EL 39021</span><span class=" x-sptool-desc-1-0">燃油喷射器线圈和平衡测试仪</span></span>上的“按下以开始测试”按钮来指令燃油泵继电器再次通电，并使燃油喷射器通电。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">6.</span>喷射器停止喷油后，选择<span class=" x-sptool-1-0"><span class=" x-sptool-no-1-0">CH 48027</span><span class=" x-sptool-desc-1-0">量表</span></span>上“Display Mode（显示模式）”中的“Min（最小）”并记录最小压力。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent">
+               <div class=" x-note-1-0">
+                  <div id="styler-id1.7.2.7.1.1"></div>
+                  <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x--ufe-zb-1-0">注意:</span>如果每个燃油喷射器测试后，最小/最大结果未被清除，则新的测试结果将不会被记录。
+                  </div>
+               </div><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">7.</span>清除以下设备上的最小/最大结果：<span class=" x-sptool-1-0"><span class=" x-sptool-no-1-0">CH 48027</span><span class=" x-sptool-desc-1-0">量表</span></span>。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">8.</span>选择以下设备上“Display Mode（显示模式）”下的“Normal（正常）”：<span class=" x-sptool-1-0"><span class=" x-sptool-no-1-0">CH 48027</span><span class=" x-sptool-desc-1-0">量表</span></span>。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">9.</span>对每个燃油喷射器重复第3步和第5到8步。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">10.</span>从一个燃油喷射器的开始压力减去最小压力。结果就是压力降值。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">11.</span>获取每个燃油喷射器压力降值。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">12.</span>将每个压力降值相加，怀疑有故障的燃油喷射器除外。该值即为总压降。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">13.</span>将总压降除以相加的燃油喷射器个数，即为平均压降。任一个压力降和平均压力降之差应不大于20千帕（3磅/平方英寸）。</span></li>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果大于可接受变量</span></span><div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">更换相应Q17燃油喷射器。</div>
+            </li>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果在可接受变量以内</span></span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">14.</span>执行喷油器电路诊断。</span></li>
+         </ul>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.8">
+         <h5 class=" x-title-16-0" id="styler-id1.8.1">用故障诊断仪执行燃油喷射器平衡测试</h5>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">1.</span>确认燃油系统压力正确。参见“<a class=" x-cell-link-2-0" href="A279927-S0000041942.html">燃油系统诊断</a>”</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">2.</span>用故障诊断仪器指令燃油泵继电器通电、断电3次。最后一次指令，当燃油压力开始缓慢下降并稳定时，选择燃油压力在最大燃油泵压力的34千帕（5磅/平方英寸）以内。记录该燃油压力。该压力为每个燃油喷射器喷油的开始压力。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">3.</span>用故障诊断仪，从“Control Functions（特殊功能）”菜单中选择“Fuel Injector Balance Test（燃油喷射器平衡测试）”功能。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">4.</span>选择要测试的燃油喷射器。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">5.</span>按下“Enter（进入）”，以起动燃油系统。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">6.</span>在先前选择的压力下，按下故障诊断仪上的“Pulse Injector（启用燃油喷射器）”按钮，使燃油喷射器通电。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">7.</span>喷射器停止喷油后，选择<span class=" x-sptool-1-0"><span class=" x-sptool-no-1-0">CH 48027</span><span class=" x-sptool-desc-1-0">量表</span></span>上“Display Mode（显示模式）”中的“Min（最小）”并记录最小压力。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent">
+               <div class=" x-note-1-0">
+                  <div id="styler-id1.8.2.8.1.1"></div>
+                  <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x--ufe-zb-1-0">注意:</span>如果每个燃油喷射器测试后，最小/最大结果未被清除，则新的测试结果将不会被记录。
+                  </div>
+               </div><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">8.</span>清除以下设备上的最小/最大结果：<span class=" x-sptool-1-0"><span class=" x-sptool-no-1-0">CH 48027</span><span class=" x-sptool-desc-1-0">量表</span></span>。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">9.</span>选择以下设备上“Display Mode（显示模式）”下的“Normal（正常）”：<span class=" x-sptool-1-0"><span class=" x-sptool-no-1-0">CH 48027</span><span class=" x-sptool-desc-1-0">量表</span></span>。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">10.</span>按下故障诊断仪上的“Enter（进入）”键，以返回“Select Injector（选择燃油喷射器）”界面。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">11.</span>对每个燃油喷射器重复第4到10步。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">12.</span>从一个燃油喷射器的开始压力减去最小压力。结果就是压力降值。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">13.</span>获取每个燃油喷射器压力降值。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">14.</span>将每个压力降值相加，怀疑有故障的燃油喷射器除外。该值即为总压降。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">15.</span>将总压降除以相加的燃油喷射器个数，即为平均压降。任一个压力降和平均压力降之差应不大于20千帕（3磅/平方英寸）。</span></li>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果大于可接受变量</span></span><div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">更换相应Q17燃油喷射器。</div>
+            </li>
+            <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果在可接受变量以内</span></span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">16.</span>执行喷油器电路诊断。</span></li>
+         </ul>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.9">
+         <h5 class=" x-title-16-0" id="styler-id1.9.1">维修指南</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">完成诊断程序后执行“<a class=" x-cell-link-2-0" href="A143214-S0000000343.html">诊断修理检验</a>”。
+         </div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; "><a class=" x-cell-link-2-0" href="A279837-S0000031062.html">喷油器的更换</a></div>
+      </div>
+   </div>
+</html>

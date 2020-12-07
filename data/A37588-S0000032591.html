@@ -1,0 +1,311 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+  <meta content="IE=8" http-equiv="X-UA-Compatible"> 
+  <title>蓄电池放电/寄生负载测试</title>
+  <script> document.domain="saic-gm.com"; function showImg(obj){ var as = document.getElementsByTagName('a'); for(var i=0;i<as.length;i++){as[i].innerHTML='点击显示图片';as[i].parentNode.style.height='40px';} var src = obj.getAttribute("data-url"); var imgstr='<OBJECT width="892" height="680" type="image" classid="CLSID:B789F873-EB93-11D2-A6D8-00A0241989B9"><PARAM NAME="src" value="'+src+'"></OBJECT>';setTimeout(function(){obj.parentNode.style.height='700px';obj.innerHTML = imgstr;}, 1000 );parent.iFrameHeight2();}</script>
+  <meta name="Generator" content="Arbortext Publishing Engine 6.0 M130"> 
+  <meta name="Stylesheet" content="C:\Program Files\PTC\Arbortext PE\custom\doctypes\sm\sm_html.style"> 
+  <link rel="stylesheet" href="commonCss.css" charset="UTF-8" type="text/css">
+ </head> 
+ <body>
+  <div class=" x-servinfo-1-0" id="styler-id1"> 
+   <h4 class=" x-title-19-0" id="styler-id1.1">蓄电池放电/寄生负载测试</h4> 
+   <div class=" x-servinfosub-2-0" id="styler-id1.2"> 
+    <h5 class=" x-title-16-0" id="styler-id1.2.1">12伏蓄电池</h5> 
+    <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">
+     以下程序仅用于12伏蓄电池。
+    </div> 
+   </div> 
+   <div class=" x-servinfosub-1-0" id="styler-id1.3"> 
+    <h5 class=" x-title-16-0" id="styler-id1.3.1">诊断说明</h5> 
+    <ul class=" x-list1-8-0"> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;在使用本诊断程序前执行“<a class=" x-cell-link-2-0" href="A72794-S0000000347.html">诊断系统检查－车辆</a>”。</span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;查看“<a class=" x-cell-link-2-0" href="A161235-S0000000340.html">诊断策略</a>”中的诊断方法概述。</span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;“<a class=" x-cell-link-2-0" href="A161236-S0000000342.html">诊断程序说明</a>”提供每种诊断类别的概述。</span></li> 
+    </ul> 
+   </div> 
+   <div class=" x-servinfosub-1-0" id="styler-id1.4"> 
+    <h5 class=" x-title-16-0" id="styler-id1.4.1">电路/系统说明</h5> 
+    <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">
+     开关、继电器和控制模块这样的部件很可能引起车辆蓄电池的寄生电流。将点火开关置于“OFF（关闭）”位置后，控制模块将开始进入休眠状态（关闭）。并不是所有的控制模块同时进入休眠状态，一些模块在将点火开关置于“OFF（关闭）”位置后可能需要30分钟或更长时间进入休眠状态，如暖风、通风和加热系统及车身控制模块。其他模块如安吉星和无钥匙进入控制模块可能周期性被唤醒，然后重新休眠。这些属正常状况。
+    </div> 
+   </div> 
+   <div class=" x-servinfosub-1-0" id="styler-id1.5"> 
+    <h5 class=" x-title-16-0" id="styler-id1.5.1">诊断帮助</h5> 
+    <ul class=" x-list1-8-0"> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;排除一切可能引起寄生放电电流过大的售后加装设备。安装在门控灯电路的售后加装附件，能引起车身控制模块 (BCM) 内的意外电源计时器不断重新设置。这可能使车身控制模块保持唤醒并引起蓄电池电流放电。</span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;不考虑客户诸如经常短途行驶等会使其没有足够的时间对蓄电池进行充电的驾驶习惯。参见“<a class=" x-cell-link-2-0" href="A37813-S0000046448.html">蓄电池的说明和操作</a>”</span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;确认蓄电池和充电系统处于正常工作状态。参见“<a class=" x-cell-link-2-0" href="A37464-S0000032589.html">蓄电池充电</a>”和“<a class=" x-cell-link-2-0" href="A37782-S0000032602.html">充电系统测试</a>”。</span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;当车辆驻车时，由间歇性放电会导致无明显原因的蓄电池放电，比如模块唤醒，或由持续放电导致，比如顶灯或卡滞继电器。</span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;一些系统、模块（如安吉星®）和调节电压控制（如装备），将被唤醒执行任务，在一定的时间间隔后重新休眠。参见“<a class=" x-cell-link-2-0" href="A148100-S0000039562.html">车身控制系统的说明和操作</a>”</span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;如果发动机控制模块 (ECM) 判定行驶周期在钥匙关断后即刻满足兼容的标准，则执行发动机关闭时的固有真空蒸发测试。发动机控制模块保持唤醒状态且通风电磁阀将保持通电达45分钟。为此所消耗的典型电流约为1安。</span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;第6代数字式安吉星和以后的车辆通信接口模块，在停车最初48小时内不会像第5代或之前版本的那样，每隔10分钟就被“唤醒”。第6代和以后的车辆通信接口模块电流消耗非常低（小于40毫安），所以安吉星系统可在最初长达48个小时内保持该状态。在最初48小时内，通过车辆通信接口模块的寄生电流可达40毫安，在偶然的高峰期可高至80毫安，这属于正常情况。</span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;一些自动温度控制系统能保持半醒状态长达3个小时，实际电流量因车而异，但不会高于50毫安。</span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;遥控无钥匙进入接收器监控功能消耗电极少，只有使用门锁发射器才会实际唤醒系统。当与遥控无钥匙进入接收器工作频率相同的其他设备（比如4轮气压监测传感器和附近其他的车辆遥控无钥匙进入接收器）激活时，遥控无钥匙进入接收器电流将达到100毫安的峰值。电流高峰是正常的，且发生时间太短，对蓄电池耗电不会有显著的影响。相抵触的信号可能引起遥控无钥匙进入装置性能故障，如信号拥堵，但不应造成超过客户所期望的蓄电池耗电水平。</span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;在初始测试时，如果不存在过多的电流消耗，则继续为期一个小时的定期测试以查看电流消耗是否增加且保持在不可接受的水平上。</span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;蓄电池放电时间随蓄电池储备容量变化。如果储备容量较高，则蓄电池放电时间可能较长。如果储备容量较低，则蓄电池放电时间可能较短。下表粗略地显示了一个冷起动电流为690安、储备容量最少为110分钟的的蓄电池从80%的充电状态开始，在恒定的放电电流下，直到电量达到50%的状态所需的天数。蓄电池储备容量和温度的不同将影响这些结果。</span></li> 
+    </ul> 
+    <div class=" x-table-1-0 x-table-1-2" id="styler-id1.5.3"> 
+     <table class=" x-tgroup-1-0" cellpadding="7" frame="box" border="1" rules="all"> 
+      <colgroup> 
+       <col style="width: 164px; "> 
+       <col style="width: 164px; "> 
+      </colgroup> 
+      <thead class=" x-thead-1-0" style="vertical-align: bottom; text-align: left; font-weight: bold; "> 
+       <tr class=" x-row-1-0"> 
+        <th class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          放电电流
+         </div> </th> 
+        <th class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          天数
+         </div> </th> 
+       </tr> 
+      </thead> 
+      <tbody class=" x-tbody-1-0" style="vertical-align: middle; "> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          25毫安
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          33
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          50毫安
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          16.5
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          75毫安
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          11
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          100毫安
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          8.25
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          250毫安
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          3.3
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          500毫安
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          1.65
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          750毫安
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          1
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          1 A
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          0.8
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          2 A
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          0.4
+         </div> </td> 
+       </tr> 
+      </tbody> 
+     </table> 
+    </div> 
+   </div> 
+   <div class=" x-servinfosub-1-0" id="styler-id1.6"> 
+    <h5 class=" x-title-16-0" id="styler-id1.6.1">参考信息</h5> 
+    <div class=" x-satitle-1-0">
+     示意图参照
+    </div> 
+    <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">
+     <a class=" x-cell-link-2-0" href="A72864-S0000034009.html">控制模块参考</a>
+    </div> 
+    <div class=" x-satitle-1-0">
+     连接器端视图参照
+    </div> 
+    <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">
+     <a class=" x-cell-link-2-0" href="A164814-S0000039806.html">部件连接器端视图</a>
+    </div> 
+    <div class=" x-satitle-1-0">
+     说明与操作
+    </div> 
+    <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">
+     <a class=" x-cell-link-2-0" href="A37815-S0000032611.html">充电系统的说明与操作</a>
+    </div> 
+    <div class=" x-satitle-1-0">
+     电气信息参考
+    </div> 
+    <ul class=" x-list1-8-0"> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;<a class=" x-cell-link-2-0" href="A62194-S0000038422.html">电路测试</a></span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;<a class=" x-cell-link-2-0" href="A61973-S0000038457.html">连接器修理</a></span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;<a class=" x-cell-link-2-0" href="A62112-S0000038440.html">测试是否存在间歇性故障和不良连接</a></span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;<a class=" x-cell-link-2-0" href="A61965-S0000038455.html">线路修理</a></span></li> 
+    </ul> 
+    <div class=" x-satitle-1-0">
+     故障诊断仪参考
+    </div> 
+    <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">
+     有关故障诊断仪的信息，请参见“
+     <a class=" x-cell-link-2-0" href="A72864-S0000034009.html">控制模块参考</a>” 
+    </div> 
+    <div class=" x-satitle-1-0">
+     专用工具
+    </div> 
+    <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">
+     <span class=" x-sptool-1-0"><span class=" x-sptool-no-1-0">EL 38758</span><span class=" x-sptool-desc-1-0">寄生电流测试开关</span></span>
+    </div> 
+   </div> 
+   <div class=" x-servinfosub-1-0" id="styler-id1.7"> 
+    <h5 class=" x-title-16-0" id="styler-id1.7.1">电路/系统检验</h5> 
+    <div class=" x-note-3-0"> 
+     <div id="styler-id1.7.2.1"></div> 
+     <ul class=" x-list1-5-0">
+      <span class=" x--ufe-zb-1-0">注意:</span>
+      <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;大多数车辆系统在30分钟内将进入休眠状态，但在所有系统电源关闭前使寄生电流测试通过则可持续最多2个小时。寄生电流偶尔会增大，只要在1秒钟之内恢复，都属正常情况。</span></li> 
+      <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;建议保持车门打开的同时关闭车门锁闩/微开开关，这可使车辆系统在“车门关闭”状态下执行，同时也可进入车内以便完成诊断步骤。</span></li> 
+      <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;锁止车门将开启车辆启动安全防盗系统（如装备）。开启安全系统时出现故障会导致防盗系统在测试时无法呈现故障。</span></li> 
+      <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;有许多情况可阻止车辆完全进入休眠状态并通过寄生电流测试。在执行寄生电流测试前，确保符合以下列出的所有情况。</span></li> 
+      <ul class=" x-list2-2-0"> 
+       <li class=" x--inherit-background-color x-item-6-0 x-item-6-3 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-3"><span style="font-family: Arial; ">– </span> 将点火开关置于“OFF（关闭）”位置</span></li> 
+       <li class=" x--inherit-background-color x-item-6-0 x-item-6-3 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-3"><span style="font-family: Arial; ">– </span> 当未配备无钥匙启动和进入装置时，将钥匙从点火开关上取出</span></li> 
+       <li class=" x--inherit-background-color x-item-6-0 x-item-6-3 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-3"><span style="font-family: Arial; ">– </span> 保持型附件电源关闭，点火开关置于“OFF（关闭）”位置后，打开和关闭驾驶员车门</span></li> 
+       <li class=" x--inherit-background-color x-item-6-0 x-item-6-3 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-3"><span style="font-family: Arial; ">– </span> 某些情况下故障诊断仪未与车辆控制模块通信，可能需要将其从数据链路连接器上断开</span></li> 
+       <li class=" x--inherit-background-color x-item-6-0 x-item-6-3 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-3"><span style="font-family: Arial; ">– </span> 关闭车上所有门</span></li> 
+       <li class=" x--inherit-background-color x-item-6-0 x-item-6-3 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-3"><span style="font-family: Arial; ">– </span> 大灯熄灭，自动大灯停用</span></li> 
+       <li class=" x--inherit-background-color x-item-6-0 x-item-6-3 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-3"><span style="font-family: Arial; ">– </span> 任何延迟灯熄灭</span></li> 
+       <li class=" x--inherit-background-color x-item-6-0 x-item-6-3 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-3"><span style="font-family: Arial; ">– </span> 如果配备发动机舱盖下灯，则将其禁用</span></li> 
+       <li class=" x--inherit-background-color x-item-6-0 x-item-6-3 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-3"><span style="font-family: Arial; ">– </span> 暖风、通风和空调系统关闭</span></li> 
+       <li class=" x--inherit-background-color x-item-6-0 x-item-6-3 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-3"><span style="font-family: Arial; ">– </span> 停用或关闭任何与点火开关相关的附件。</span></li> 
+       <li class=" x--inherit-background-color x-item-6-0 x-item-6-3 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-3"><span style="font-family: Arial; ">– </span> 等待2分钟或更长时间，直到列出的所有其他条件均满足</span></li> 
+      </ul> 
+     </ul> 
+    </div> 
+    <ul class=" x-list1-8-0"> 
+     <h3 class=" x-title-24-0" id="styler-id1.7.3.1">使用感应式探针</h3> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">1.</span>将感应式探针连接至蓄电池负极电缆，可读取至少1毫安。</span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">2.</span>点火开关置于“OFF（关闭）”位置，车辆系统关闭时，测试寄生放电电流是否低于30毫安。</span></li> 
+     <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">如果高于规定范围，则参见“电路/系统测试”。</span></li> 
+    </ul> 
+    <ul class=" x-list1-8-0"> 
+     <h3 class=" x-title-24-0" id="styler-id1.7.4.1">使用EL 38758寄生电流测试开关</h3> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"> 
+      <div class=" x-warning-ref-1-0"> 
+       <div id="styler-id1.7.4.2.1.1"></div> 
+       <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; font-weight: bold; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">
+        <span class=" x--ufe-italic-zb-1-0">警告：</span>参见“
+        <a class=" x-cell-link-2-0" href="A178001-2061934.html">有关蓄电池断开的警告</a>”。 
+       </div> 
+      </div> 
+      <div class=" x-caution-ref-1-0"> 
+       <div id="styler-id1.7.4.2.2.1"></div> 
+       <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-weight: bold; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">
+        <span class=" x--ufe-zb-1-0">告诫：</span>当保险丝的跨接线或数字式万用表连接至的测试开关端子时，务必在打开任何车门、将点火开关置于“ON（打开）”位置或打开任何附件前打开测试开关。这是为了防止损坏跨接线束或数字式万用表保险丝。 
+       </div> 
+      </div> 
+      <div class=" x-note-1-0"> 
+       <div id="styler-id1.7.4.2.3.1"></div> 
+       <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">
+        <span class=" x--ufe-zb-1-0">注意:</span>
+        <span class=" x-sptool-1-0"><span class=" x-sptool-no-1-0">EL 38758</span><span class=" x-sptool-desc-1-0">开关</span></span>上的开关旋钮标有“ON（开）”和“OFF（关）”。当此开关旋钮在“ON（打开）”位置时，电路接通且电流将通过开关。当此开关旋钮在“OFF（关闭）”位置时，电路断开且电流不会通过开关。 
+       </div> 
+      </div><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">1.</span>将点火开关置于“OFF（关闭）”位置，从蓄电池上断开蓄电池负极电缆。参见“<a class=" x-cell-link-2-0" href="A37733-S0000044529.html">蓄电池负极电缆的断开和连接</a>”。</span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">2.</span>将<span class=" x-sptool-1-0"><span class=" x-sptool-no-1-0">EL 38758</span><span class=" x-sptool-desc-1-0">开关</span></span>旋钮置于“OFF（关）”位置。</span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">3.</span>将<span class=" x-sptool-1-0"><span class=" x-sptool-no-1-0">EL 38758</span><span class=" x-sptool-desc-1-0">开关</span></span>的阳接头端安装至蓄电池搭铁端子。</span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">4.</span>将蓄电池负极电缆安装至<span class=" x-sptool-1-0"><span class=" x-sptool-no-1-0">EL 38758</span><span class=" x-sptool-desc-1-0">开关</span></span>母接头端。</span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">5.</span>将<span class=" x-sptool-1-0"><span class=" x-sptool-no-1-0">EL 38758</span><span class=" x-sptool-desc-1-0">开关</span></span>旋钮置于“ON（开）”位置。</span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">6.</span>路试车辆并启动所有附件，比如收音机和空调系统。</span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">7.</span>将点火开关置于“OFF（关闭）”位置，连接一条带10安培保险丝的跨接线到测试开关工具端子。</span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">8.</span>将<span class=" x-sptool-1-0"><span class=" x-sptool-no-1-0">EL 38758</span><span class=" x-sptool-desc-1-0">开关</span></span>旋钮置于“OFF（关）”位置。电流流经跨接线。</span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">9.</span>检查跨接线中的保险丝。保险丝应该完好。</span></li> 
+     <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">失败：如果跨接线保险丝熔断，则参见“电路/系统测试”。</span></li> 
+     <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">通过</span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">10.</span>将<span class=" x-sptool-1-0"><span class=" x-sptool-no-1-0">EL 38758</span><span class=" x-sptool-desc-1-0">开关</span></span>旋钮置于“ON（开）”位置。拆下带保险丝的跨接线。</span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">11.</span>将设定为10安直流量程的数字式万用表连接在测试开关工具端子之间。</span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">12.</span>将<span class=" x-sptool-1-0"><span class=" x-sptool-no-1-0">EL 38758</span><span class=" x-sptool-desc-1-0">开关</span></span>旋钮置于“OFF（关）”位置。电流流经数字式万用表。</span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">13.</span>车辆系统关闭时，测试寄生放电电流是否低于30毫安。</span></li> 
+     <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">如果高于规定范围，则参见“电路/系统测试”。</span></li> 
+    </ul> 
+   </div> 
+   <div class=" x-servinfosub-1-0" id="styler-id1.8"> 
+    <h5 class=" x-title-16-0" id="styler-id1.8.1">电路/系统测试</h5> 
+    <div class=" x-note-3-0"> 
+     <div id="styler-id1.8.2.1"></div> 
+     <ul class=" x-list1-5-0">
+      <span class=" x--ufe-zb-1-0">注意:</span>
+      <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;拆下或安装保险丝、继电器或连接器来判断引起高寄生电流的区域可能会唤醒控制模块。在重新设置前，必须等待控制模块返回休眠状态。诊断完成后，最好安装所拆下或断开的组件。</span></li> 
+      <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;应最后拆下电源模式主控模块部件保险丝如车身控制模块，以避免误诊断。</span></li> 
+      <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;如果故障诊断仪连接至数据链路连接器，则将其断开或将数字式万用表读数减去故障诊断仪当前电流读数以得到实际的车辆寄生放电电流。</span></li> 
+     </ul> 
+    </div> 
+    <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">
+     如果车辆寄生放电电流读数过大时，逐个拆下保险丝直至放电电流下降到可接受水平。当停用单个系统或电路时，下降超过10 - 20毫安指示放电电流过高，可能引起蓄电池放电。参见“
+     <a class=" x-cell-link-2-0" href="A61979-S0000041561.html">电源分布示意图</a>”，以准确诊断可疑系统中哪条电路引起寄生放电过高。以下为可能引起较大电流消耗的常见部件列表 
+    </div> 
+    <ul class=" x-list1-8-0"> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;开关卡滞</span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;继电器卡滞</span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;控制模块</span></li> 
+    </ul> 
+   </div> 
+   <div class=" x-servinfosub-1-0" id="styler-id1.9"> 
+    <h5 class=" x-title-16-0" id="styler-id1.9.1">维修指南</h5> 
+    <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">
+     完成诊断程序后执行“
+     <a class=" x-cell-link-2-0" href="A143214-S0000000343.html">诊断修理检验</a>”。 
+    </div> 
+    <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">
+     参见“
+     <a class=" x-cell-link-2-0" href="A72864-S0000034009.html">控制模块参考</a>”以了解有关更换、编程和设置控制模块的信息 
+    </div> 
+   </div> 
+  </div>  
+ </body>
+</html>

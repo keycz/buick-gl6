@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+  <meta content="IE=8" http-equiv="X-UA-Compatible"> 
+  <title>DTC P2544</title>
+  <script> document.domain="saic-gm.com"; function showImg(obj){ var as = document.getElementsByTagName('a'); for(var i=0;i<as.length;i++){as[i].innerHTML='点击显示图片';as[i].parentNode.style.height='40px';} var src = obj.getAttribute("data-url"); var imgstr='<OBJECT width="892" height="680" type="image" classid="CLSID:B789F873-EB93-11D2-A6D8-00A0241989B9"><PARAM NAME="src" value="'+src+'"></OBJECT>';setTimeout(function(){obj.parentNode.style.height='700px';obj.innerHTML = imgstr;}, 1000 );parent.iFrameHeight2();}</script>
+  <meta name="Generator" content="Arbortext Publishing Engine 6.0 M130"> 
+  <meta name="Stylesheet" content="E:\PTC\arbortext pe\custom\doctypes\sm\sm_html.style"> 
+  <link rel="stylesheet" href="commonCss.css" charset="UTF-8" type="text/css">
+ </head> 
+ <body>
+  <div class=" x-servinfo-1-0" id="styler-id1"> 
+   <h4 class=" x-title-19-0" id="styler-id1.1">DTC P2544</h4> 
+   <div class=" x-servinfosub-2-0" id="styler-id1.3"> 
+    <h5 class=" x-title-16-0" id="styler-id1.3.1">诊断说明</h5> 
+    <ul class=" x-list1-8-0"> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;在使用该诊断程序前，执行<a class=" x-cell-link-2-0" href="A72794-S0000000347.html">诊断系统检查－车辆</a>。</span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;有关诊断方法的概述，请查阅<a class=" x-cell-link-2-0" href="A161235-S0000000340.html">诊断策略</a>。</span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;<a class=" x-cell-link-2-0" href="A161236-S0000000342.html">诊断程序说明</a>提供每种诊断类别的概述。</span></li> 
+    </ul> 
+   </div> 
+   <div class=" x-servinfosub-1-0" id="styler-id1.4"> 
+    <h5 class=" x-title-16-0" id="styler-id1.4.1">DTC说明</h5> 
+    <div class=" x-deflist-1-0"> 
+     <div class=" x-def-1-0">
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <span class=" x--ufe-zb-1-0">DTC P2544:</span>
+      <span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">TCU控制模块扭矩请求报文校验错误</span>
+     </div> 
+    </div> 
+   </div> 
+   <div class=" x-servinfosub-1-0" id="styler-id1.5"> 
+    <h5 class=" x-title-16-0" id="styler-id1.5.1">电路/系统说明</h5> 
+    <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">
+     为了改善换档感觉，变速器控制模块（TCM）会持续向发动机控制模块（ECM）发送串行数据信息，请求改变发动机转速或扭矩。这些串行数据信息通过2个电路发送，这些电路是称为控制器局域网（CAN）的通信网络的一部分。当发动机控制模块检测到信息结构存在偏差从而导致信息完整性存在问题时，它将设置 DTC P2544。 
+    </div> 
+   </div> 
+   <div class=" x-servinfosub-1-0" id="styler-id1.6"> 
+    <h5 class=" x-title-16-0" id="styler-id1.6.1">运行DTC的条件</h5> 
+    <ul class=" x-list1-8-0"> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;发动机运行时间大于0.5 s。</span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;未出现其他的控制器局域网故障。</span></li> 
+    </ul> 
+   </div> 
+   <div class=" x-servinfosub-1-0" id="styler-id1.7"> 
+    <h5 class=" x-title-16-0" id="styler-id1.7.1">设置DTC的条件</h5> 
+    <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">
+     发动机控制模块（ECM）检测到变速器控制模块（TCM）发送的发动机转速和扭矩改变信息损坏或间歇性丢失，且持续时间超过 4 s。
+    </div> 
+   </div> 
+   <div class=" x-servinfosub-1-0" id="styler-id1.8"> 
+    <h5 class=" x-title-16-0" id="styler-id1.8.1">设置DTC时采取的操作</h5> 
+    <ul class=" x-list1-8-0"> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;DTC P2544 是 B 类 DTC。</span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;变速器控制模块在换档时指令最高管路压力，从而导致换档生硬。</span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;变速器控制模块冻结自适应功能。</span></li> 
+    </ul> 
+   </div> 
+   <div class=" x-servinfosub-1-0" id="styler-id1.9"> 
+    <h5 class=" x-title-16-0" id="styler-id1.9.1">清除DTC的条件</h5> 
+    <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">
+     DTC P2544 是 B 类 DTC。
+    </div> 
+   </div> 
+   <div class=" x-servinfosub-1-0" id="styler-id1.10"> 
+    <h5 class=" x-title-16-0" id="styler-id1.10.1">诊断帮助</h5> 
+    <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">
+     控制器局域网电路的间歇性故障会致使发动机控制模块设置 DTC P2544。
+    </div> 
+   </div> 
+   <div class=" x-servinfosub-1-0" id="styler-id1.11"> 
+    <h5 class=" x-title-16-0" id="styler-id1.11.1">参考信息</h5> 
+    <div class=" x-satitle-1-0">
+     DTC类型参考
+    </div> 
+    <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">
+     <a class=" x-cell-link-2-0" href="A161179-S0000002977.html">动力传动系统故障诊断码（DTC）类型定义</a>
+    </div> 
+   </div> 
+   <div class=" x-servinfosub-1-0" id="styler-id1.12"> 
+    <h5 class=" x-title-16-0" id="styler-id1.12.1">电路/系统检验</h5> 
+    <div class=" x-note-3-0"> 
+     <div id="styler-id1.12.2.1"></div> 
+     <ul class=" x-list1-5-0">
+      <span class=" x--ufe-zb-1-0">注意:</span>
+      <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;DTC P2544 是信息类 DTC。</span></li> 
+      <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;在 DTC P2544 之前，诊断所有其他发动机控制模块 DTC。</span></li> 
+     </ul> 
+    </div> 
+    <ul class=" x-list1-8-0"> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">1.</span>确认除 DTC P2544 以外未设置其他 DTC。</span></li> 
+     <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果设置了任何其他 DTC</span></span>
+      <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">
+       参见
+       <a class=" x-cell-link-2-0" href="A72795-S0000038249.html">故障诊断码（DTC）列表－车辆</a>。 
+      </div> </li> 
+     <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果仅设置了DTC P2544</span></span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">2.</span>更换 K71 变速器控制模块。</span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">3.</span>在运行 DTC 的条件下操作车辆。也可以在“冻结故障状态/故障记录”数据中查到的条件下操作车辆。</span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">4.</span>确认未设置DTC。</span></li> 
+     <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果设置了 DTC</span></span>
+      <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">
+       更换 K20 发动机控制模块。
+      </div> </li> 
+     <li class=" x--inherit-background-color x-item-21-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x-emph-1-0 x-emph-1-1">如果未设置DTC</span></span></li> 
+     <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">5.</span>一切正常。</span></li> 
+    </ul> 
+   </div> 
+   <div class=" x-servinfosub-1-0" id="styler-id1.13"> 
+    <h5 class=" x-title-16-0" id="styler-id1.13.1">维修指南</h5> 
+    <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">
+     完成修理后，执行
+     <a class=" x-cell-link-2-0" href="A143214-S0000000343.html">诊断修理检验</a>。 
+    </div> 
+    <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">
+     参见
+     <a class=" x-cell-link-2-0" href="A72864-S0000034009.html">控制模块参考</a>，了解发动机控制模块(ECM)或变速器控制模块(TCM)的更换、编程和设置 
+    </div> 
+   </div> 
+  </div>  
+ </body>
+</html>

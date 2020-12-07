@@ -1,0 +1,776 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+  <meta content="IE=8" http-equiv="X-UA-Compatible"> 
+  <title>盘式制动系统的诊断</title>
+  <script> document.domain="saic-gm.com"; function showImg(obj){ var as = document.getElementsByTagName('a'); for(var i=0;i<as.length;i++){as[i].innerHTML='点击显示图片';as[i].parentNode.style.height='40px';} var src = obj.getAttribute("data-url"); var imgstr='<OBJECT width="892" height="680" type="image" classid="CLSID:B789F873-EB93-11D2-A6D8-00A0241989B9"><PARAM NAME="src" value="'+src+'"></OBJECT>';setTimeout(function(){obj.parentNode.style.height='700px';obj.innerHTML = imgstr;}, 1000 );parent.iFrameHeight2();}</script>
+  <meta name="Generator" content="Arbortext Publishing Engine 6.0 M130"> 
+  <meta name="Stylesheet" content="E:\PTC\arbortext pe\custom\doctypes\sm\sm_html.style"> 
+  <link rel="stylesheet" href="tocCss2.css" charset="UTF-8" type="text/css">
+ </head> 
+ <body>
+  <div class=" x-servinfo-1-0" id="styler-id1"> 
+   <h4 class=" x-title-19-0" id="styler-id1.1">盘式制动系统的诊断</h4> 
+   <div class=" x-servinfosub-2-0" id="styler-id1.2"> 
+    <h5 class=" x-title-16-0" id="styler-id1.2.1">测试说明</h5> 
+    <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">
+     以下编号与诊断表中的步骤号相对应：
+    </div> 
+    <ul class=" x-exp-list-1-0"> 
+     <li class=" x--inherit-background-color x-exp-item-1-0 x--zero-text-indent"><span style="margin-left: 8mm; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">9.非制动系统部件泄漏的润滑油，可能会接触并污染制动系统部件。</span></li> 
+     <li class=" x--inherit-background-color x-exp-item-1-0 x--zero-text-indent"><span style="margin-left: 8mm; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">10.非制动系统部件泄漏的润滑油，可能会接触并污染制动系统部件。</span></li> 
+     <li class=" x--inherit-background-color x-exp-item-1-0 x--zero-text-indent"><span style="margin-left: 8mm; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">12.与盘式制动器制动盘接触的盘式制动器制动盘防溅罩/底板，可能会导致制动系统噪声。</span></li> 
+    </ul> 
+    <ul class=" x-exp-list-1-0"> 
+     <li class=" x--inherit-background-color x-exp-item-1-0 x--zero-text-indent"><span style="margin-left: 8mm; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">15.盘式制动器制动盘的厚度偏差超过最大允许值，会导致制动器脉动。</span></li> 
+    </ul> 
+    <ul class=" x-exp-list-1-0"> 
+     <li class=" x--inherit-background-color x-exp-item-1-0 x--zero-text-indent"><span style="margin-left: 8mm; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">19.盘式制动器制动盘的厚度偏差超过最大允许值，会导致制动器脉动。</span></li> 
+    </ul> 
+    <ul class=" x-exp-list-1-0"> 
+     <li class=" x--inherit-background-color x-exp-item-1-0 x--zero-text-indent"><span style="margin-left: 8mm; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">22.盘式制动器制动盘装配后横向跳动量 (LRO) 超过最大允许值，会导致厚度偏差。</span></li> 
+    </ul> 
+   </div> 
+   <div class=" x-servinfosub-1-0" id="styler-id1.3"> 
+    <div class=" x-table-1-0 x-table-1-1" id="styler-id1.3.1"> 
+     <h3 class=" x-title-17-0" id="styler-id1.3.1.1">盘式制动系统的诊断</h3> 
+     <table class=" x-tgroup-1-0" cellpadding="7" frame="box" border="1" rules="all"> 
+      <colgroup> 
+       <col style="width: 49px; "> 
+       <col style="width: 371px; "> 
+       <col style="width: 134px; "> 
+       <col style="width: 134px; "> 
+      </colgroup> 
+      <thead class=" x-thead-1-0" style="vertical-align: bottom; text-align: left; font-weight: bold; "> 
+       <tr class=" x-row-1-0"> 
+        <th class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          步骤
+         </div> </th> 
+        <th class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          操作
+         </div> </th> 
+        <th class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          是
+         </div> </th> 
+        <th class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          否
+         </div> </th> 
+       </tr> 
+      </thead> 
+      <tbody class=" x-tbody-1-0" style="vertical-align: top; "> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" colspan="4" style="text-align: left; vertical-align: top; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          定义：本诊断表仅用于诊断盘式制动系统的部件，以确定盘式制动系统是否正常工作。请在相应故障症状表的指导下，根据情况转至其他制动系统诊断表进行诊断。
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          1
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: top; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          是否自“制动器故障症状表”转至此表？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s02">步骤2</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-cell-link-2-0" href="A50306-S0000040228.html">症状－液压制动器</a>
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          2
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: top; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          目视检查盘式制动片是否存在以下状况：
+         </div> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          参见
+          <a class=" x-cell-link-2-0" href="A65946-S0000002550.html">制动片的的检查</a>。 
+         </div> 
+         <ul class=" x-table-list1-1-0"> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-2 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">衬片厚度低于规格</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-2 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">不均匀和/或异常磨损 - 边缘磨损和/或面磨损</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-2 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">松动或损坏 - 包括制动片构件</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-2 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">有异物污染的迹象</span></li> 
+         </ul> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          是否发现任何状况，表明前和/或后盘式制动片有故障？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s03">步骤3</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s12">步骤12</a>
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          3
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: top; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          是否存在被污染的前和/或后盘式制动片？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s08">步骤8</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s04">步骤4</a>
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          4
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: top; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          是否存在磨损不均匀的前和/或后盘式制动片？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s07">步骤7</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s05">步骤5</a>
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          5
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: top; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          是否存在出现松动或损坏的前和/或后盘式制动片和/或制动片构件？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s07">步骤7</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s06">步骤6</a>
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          6
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: top; padding: 7px; "> 
+         <ul class=" x-table-list1-1-0"> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">拆下磨损的盘式制动片，检查是否出现磨光、松动、灼斑或损坏。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">将磨损的盘式制动片按车桥成套进行更换。参见<a class=" x-cell-link-2-0" href="A11144-S0000034161.html">前盘式制动片的更换</a>、<a class=" x-cell-link-2-0" href="A11145-S0000034162.html">后盘式制动片的更换</a>。</span></li> 
+         </ul> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          是否完成检查和更换？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s12">步骤12</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          -
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          7
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: top; padding: 7px; "> 
+         <ul class=" x-table-list1-1-0"> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"> 
+           <div class=" x-caution-sio-1-0"> 
+            <div class=" x-caution-3-0"> 
+             <div id="styler-id1.3.1.2.6.8.2.1.1.1.1.1"></div> 
+             <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">
+              <span class=" x--ufe-zb-1-0">告诫：</span>无论制动钳已从其支座上分离，还是仍连接着液压挠性制动软管，都要用粗钢丝或同等工具支撑住制动钳。若不这样支撑制动钳，会使挠性制动软管承受制动钳重量，导致制动软管损坏，从而可能使制动液泄漏。 
+             </div> 
+            </div> 
+           </div> 
+           <div class=" x-note-6-0"> 
+            <div id="styler-id1.3.1.2.6.8.2.1.1.2.1"></div> 
+            <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">
+             <span class=" x--ufe-zb-1-0">注意:</span>切勿将液压制动挠性软管从制动钳上断开。 
+            </div> 
+           </div><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">检查盘式制动器制动钳安装托架和安装/滑动构件是否存在以下状况：</span>
+           <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">
+            参见
+            <a class=" x-cell-link-2-0" href="A63563-S0000002557.html">前盘式制动器的安装和构件的的检查</a>
+           </div> 
+           <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">
+            参见
+            <a class=" x-cell-link-2-0" href="A63564-S0000002562.html">后盘式制动器的安装和构件的的检查</a>
+           </div> 
+           <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">
+            参见
+            <a class=" x-cell-link-2-0" href="A68625-S0000002552.html">制动钳的的检查</a>
+           </div> </li> 
+          <ul class=" x-table-list2-1-0"> 
+           <li class=" x--inherit-background-color x-table-item-6-0 x-table-item-6-2 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">构件卡滞或卡死</span></li> 
+           <li class=" x--inherit-background-color x-table-item-6-0 x-table-item-6-2 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">构件磨损、损坏或缺失</span></li> 
+           <li class=" x--inherit-background-color x-table-item-6-0 x-table-item-6-2 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">制动钳安装托架松动、弯曲、开裂或损坏</span></li> 
+          </ul> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">必要时更换部件。必要时参见以下程序：</span></li> 
+          <ul class=" x-table-list2-1-0"> 
+           <li class=" x--inherit-background-color x-table-item-6-0 x-table-item-6-2 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><a class=" x-cell-link-2-0" href="A11150-S0000034265.html">前制动钳托架的更换</a></span></li> 
+           <li class=" x--inherit-background-color x-table-item-6-0 x-table-item-6-2 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><a class=" x-cell-link-2-0" href="A11151-S0000034267.html">后制动钳托架的更换</a></span></li> 
+          </ul> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">按车桥成套更换磨损不均匀、松动或损坏的盘式制动片。参见<a class=" x-cell-link-2-0" href="A11144-S0000034161.html">前盘式制动片的更换</a>、<a class=" x-cell-link-2-0" href="A11145-S0000034162.html">后盘式制动片的更换</a>。</span></li> 
+         </ul> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          是否完成检查和更换？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s12">步骤12</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          -
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          8
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: top; padding: 7px; "> 
+         <ul class=" x-table-list1-1-0"> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">检查盘式制动器制动钳、制动软管和制动管是否存在外部制动液泄漏迹象。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">更换任何发现有制动液泄漏的部件。必要时参见以下程序：</span></li> 
+          <ul class=" x-table-list2-1-0"> 
+           <li class=" x--inherit-background-color x-table-item-6-0 x-table-item-6-2 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><a class=" x-cell-link-2-0" href="A11146-S0000034221.html">前制动钳的更换</a></span></li> 
+           <li class=" x--inherit-background-color x-table-item-6-0 x-table-item-6-2 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><a class=" x-cell-link-2-0" href="A11147-S0000034236.html">后制动钳的更换</a></span></li> 
+           <li class=" x--inherit-background-color x-table-item-6-0 x-table-item-6-2 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><a class=" x-cell-link-2-0" href="A50084-S0000034384.html">前制动软管的更换</a></span></li> 
+          </ul> 
+         </ul> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          是否发现并排除了导致制动片污染的泄漏源？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s11">步骤11</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s09">步骤9</a>
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          <a class=" x-intxref-1-0" href="#td09">9</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: top; padding: 7px; "> 
+         <ul class=" x-table-list1-1-0"> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">检查车轮驱动轴外侧密封件是否损坏和存在润滑脂泄漏迹象。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">更换任何润滑脂泄漏而可能导致制动片污染的车轮驱动轴密封件。</span></li> 
+         </ul> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          是否发现并排除了导致制动片污染的泄漏源？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s11">步骤11</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s10">步骤10</a>
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          <a class=" x-intxref-1-0" href="#td10">10</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: top; padding: 7px; "> 
+         <ul class=" x-table-list1-1-0"> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">检查自动变速器冷却系统管路（如装备），是否存在可能导致制动片污染的损坏和外部制动液泄漏迹象。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">检查动力转向系统软管是否存在可能导致制动片污染的损坏和外部制动液泄漏迹象。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">更换任何制动液泄漏而可能导致制动片污染的部件。</span></li> 
+         </ul> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          是否发现并排除了导致制动片污染的泄漏源？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s11">步骤11</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          -
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          11
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: top; padding: 7px; "> 
+         <ul class=" x-table-list1-1-0"> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">清理其余盘式制动系统部件，以清除污染痕迹。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"> 
+           <div class=" x-caution-sio-1-0"> 
+            <div class=" x-caution-3-0"> 
+             <div id="styler-id1.3.1.2.6.12.2.1.2.1.1.1"></div> 
+             <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">
+              <span class=" x--ufe-zb-1-0">告诫：</span>无论制动钳已从其支座上分离，还是仍连接着液压挠性制动软管，都要用粗钢丝或同等工具支撑住制动钳。若不这样支撑制动钳，会使挠性制动软管承受制动钳重量，导致制动软管损坏，从而可能使制动液泄漏。 
+             </div> 
+            </div> 
+           </div> 
+           <div class=" x-note-6-0"> 
+            <div id="styler-id1.3.1.2.6.12.2.1.2.2.1"></div> 
+            <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">
+             <span class=" x--ufe-zb-1-0">注意:</span>切勿将液压制动挠性软管从制动钳上断开。 
+            </div> 
+           </div><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">将相应的前和/或后盘式制动器制动钳从安装托架上拆下并将其支撑住。参见<a class=" x-cell-link-2-0" href="A11146-S0000034221.html">前制动钳的更换</a>、<a class=" x-cell-link-2-0" href="A11147-S0000034236.html">后制动钳的更换</a>。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">检查盘式制动器制动钳的安装/滑动构件是否存在以下状况：</span>
+           <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">
+            参见
+            <a class=" x-cell-link-2-0" href="A63563-S0000002557.html">前盘式制动器的安装和构件的的检查</a>
+           </div> 
+           <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">
+            参见
+            <a class=" x-cell-link-2-0" href="A68625-S0000002552.html">制动钳的的检查</a>
+           </div> </li> 
+          <ul class=" x-table-list2-1-0"> 
+           <li class=" x--inherit-background-color x-table-item-6-0 x-table-item-6-2 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">构件卡滞或卡死</span></li> 
+           <li class=" x--inherit-background-color x-table-item-6-0 x-table-item-6-2 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">构件变形、磨损、损坏或缺失</span></li> 
+          </ul> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">必要时更换制动钳的安装/滑动构件。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">按车桥成套更换被污染的盘式制动片。参见<a class=" x-cell-link-2-0" href="A11144-S0000034161.html">前盘式制动片的更换</a>、<a class=" x-cell-link-2-0" href="A11145-S0000034162.html">后盘式制动片的更换</a>。</span></li> 
+         </ul> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          是否完成清理、检查和更换？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s12">步骤12</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          -
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          <a class=" x-intxref-1-0" href="#td12">12</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: top; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          目视检查每个后盘式制动器制动盘防溅罩/底板（如装备）是否接触到制动盘。
+         </div> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          是否有任何制动盘防溅罩/底板接触到制动盘？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s13">步骤13</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s14">步骤14</a>
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          13
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: top; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          必要时，修理或更换盘式制动器制动盘防溅罩/底板。参见
+          <a class=" x-cell-link-2-0" href="A11125-S0000041890.html">前制动器防溅罩的更换</a>、
+          <a class=" x-cell-link-2-0" href="A164181-S0000034301.html">后制动器防溅罩的更换</a>。 
+         </div> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          是否完成修理或更换？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s14">步骤14</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          -
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          14
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: top; padding: 7px; "> 
+         <ul class=" x-table-list1-1-0"> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">检查每个盘式制动器制动盘的厚度。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"> 
+           <div class=" x-note-6-0"> 
+            <div id="styler-id1.3.1.2.6.15.2.1.2.1.1"></div> 
+            <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">
+             <span class=" x--ufe-zb-1-0">注意:</span>进行以下确认，并针对每个制动盘分别回答问题。 
+            </div> 
+           </div><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">确认每个制动盘是否能进行表面修整并仍能满足制动盘最低厚度要求。</span></li> 
+         </ul> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          盘式制动器制动盘是否符合进行表面修整的最低要求？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s15">步骤15</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s18">步骤18</a>
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          <a class=" x-intxref-1-0" href="#td15">15</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; padding: 7px; "> 
+         <div class=" x-note-5-0"> 
+          <div id="styler-id1.3.1.2.6.16.2.1.1"></div> 
+          <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">
+           <span class=" x--ufe-zb-1-0">注意:</span>执行以下检查，并针对每个制动盘分别回答问题。 
+          </div> 
+         </div> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          检查每个盘式制动器制动盘的厚度偏差是否超过最大允许值。参见
+          <a class=" x-cell-link-2-0" href="A73159-S0000002534.html">制动盘厚度偏差的测量</a>。 
+         </div> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          制动盘厚度偏差是否超过最大允许值？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s17">步骤17</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s16">步骤16</a>
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          16
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: top; padding: 7px; "> 
+         <ul class=" x-table-list1-1-0"> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">检查每个盘式制动器制动盘是否存在以下表面和磨损状况：</span>
+           <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">
+            参见
+            <a class=" x-cell-link-2-0" href="A63562-S0000002540.html">制动盘表面和磨损的检查</a>。 
+           </div> </li> 
+          <ul class=" x-table-list2-1-0"> 
+           <li class=" x--inherit-background-color x-table-item-6-0 x-table-item-6-2 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">严重锈蚀和/或点蚀</span></li> 
+           <li class=" x--inherit-background-color x-table-item-6-0 x-table-item-6-2 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">开裂和/或灼斑</span></li> 
+           <li class=" x--inherit-background-color x-table-item-6-0 x-table-item-6-2 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">严重变蓝</span></li> 
+           <li class=" x--inherit-background-color x-table-item-6-0 x-table-item-6-2 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">划痕过深或过多，超过最大允许值</span></li> 
+          </ul> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"> 
+           <div class=" x-note-6-0"> 
+            <div id="styler-id1.3.1.2.6.17.2.1.3.1.1"></div> 
+            <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">
+             <span class=" x--ufe-zb-1-0">注意:</span>进行以下确认，并针对每个制动盘分别回答问题。 
+            </div> 
+           </div><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">根据检查结果，确认每个制动盘是否需要进行表面修整。</span>
+           <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">
+            如果制动盘出现任何上述状况，则需要进行表面修整。
+           </div> </li> 
+         </ul> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          制动盘是否需要进行表面修整？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s17">步骤17</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s22">步骤22</a>
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          17
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: top; padding: 7px; "> 
+         <ul class=" x-table-list1-1-0"> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">对制动盘进行表面修整。参见<a class=" x-cell-link-2-0" href="A11102-S0000022857.html">制动盘表面修整</a>。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">检查制动盘厚度。参见<a class=" x-cell-link-2-0" href="A63569-S0000002529.html">制动盘厚度测量</a>。</span></li> 
+         </ul> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          能否对制动盘进行表面修整并达到最低厚度要求？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s22">步骤22</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s21">步骤21</a>
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          18
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: top; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          制动盘是否达到或低于报废的要求？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s21">步骤21</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s19">步骤19</a>
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          <a class=" x-intxref-1-0" href="#td19">19</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; padding: 7px; "> 
+         <div class=" x-note-5-0"> 
+          <div id="styler-id1.3.1.2.6.20.2.1.1"></div> 
+          <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">
+           <span class=" x--ufe-zb-1-0">注意:</span>执行以下检查，并针对每个制动盘分别回答问题。 
+          </div> 
+         </div> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          检查每个盘式制动器制动盘的厚度偏差是否超过最大允许值。参见
+          <a class=" x-cell-link-2-0" href="A73159-S0000002534.html">制动盘厚度偏差的测量</a>。 
+         </div> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          制动盘厚度偏差是否超过最大允许值？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s21">步骤21</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s20">步骤20</a>
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          20
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; padding: 7px; "> 
+         <ul class=" x-table-list1-1-0"> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">检查每个盘式制动器制动盘是否存在以下表面和磨损状况：</span>
+           <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">
+            参见
+            <a class=" x-cell-link-2-0" href="A63562-S0000002540.html">制动盘表面和磨损的检查</a>。 
+           </div> </li> 
+          <ul class=" x-table-list2-1-0"> 
+           <li class=" x--inherit-background-color x-table-item-6-0 x-table-item-6-2 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">严重锈蚀和/或点蚀</span></li> 
+           <li class=" x--inherit-background-color x-table-item-6-0 x-table-item-6-2 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">开裂和/或灼斑</span></li> 
+           <li class=" x--inherit-background-color x-table-item-6-0 x-table-item-6-2 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">严重变蓝</span></li> 
+           <li class=" x--inherit-background-color x-table-item-6-0 x-table-item-6-2 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">划痕过深或过多，超过最大允许值</span></li> 
+          </ul> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"> 
+           <div class=" x-note-6-0"> 
+            <div id="styler-id1.3.1.2.6.21.2.1.3.1.1"></div> 
+            <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">
+             <span class=" x--ufe-zb-1-0">注意:</span>进行以下确认，并针对每个制动盘分别回答问题。 
+            </div> 
+           </div><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">根据检查结果，确定每个制动盘是否需要进行更换。</span>
+           <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 1.00pt; margin-bottom: 1.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">
+            如果制动盘出现任何上述状况，则需要更换。
+           </div> </li> 
+         </ul> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          制动盘是否需要更换？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s21">步骤21</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s22">步骤22</a>
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          21
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; padding: 7px; "> 
+         <div class=" x-note-5-0"> 
+          <div id="styler-id1.3.1.2.6.22.2.1.1"></div> 
+          <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">
+           <span class=" x--ufe-zb-1-0">注意:</span>更换制动盘时，必须测量制动盘装配后横向跳动量 (LRO)，以确保盘式制动器的最佳性能。 
+          </div> 
+         </div> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          更换制动盘。参见
+          <a class=" x-cell-link-2-0" href="A11152-S0000041301.html">前制动盘的更换</a>、
+          <a class=" x-cell-link-2-0" href="A11153-S0000034284.html">后制动盘的更换</a>。 
+         </div> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          是否完成更换？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s24">步骤24</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          -
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          <a class=" x-intxref-1-0" href="#td22">22</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; padding: 7px; "> 
+         <div class=" x-note-5-0"> 
+          <div id="styler-id1.3.1.2.6.23.2.1.1"></div> 
+          <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">
+           <span class=" x--ufe-zb-1-0">注意:</span>执行以下检查，并针对每个制动盘分别回答问题。 
+          </div> 
+         </div> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          检查每个盘式制动器制动盘装配后横向跳动量是否超过最大允许值。参见
+          <a class=" x-cell-link-2-0" href="A73160-S0000002546.html">制动盘装配后横向跳动量的测量</a>。 
+         </div> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          制动盘装配后横向跳动量是否超过最大允许值？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s23">步骤23</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s24">步骤24</a>
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          23
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: top; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          针对横向跳动量已确定超过最大允许值的制动盘，校正每个制动盘的横向跳动量。参见
+          <a class=" x-cell-link-2-0" href="A73160-S0000002546.html">制动盘装配后横向跳动量的测量</a>。 
+         </div> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          是否完成操作？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s24">步骤24</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          -
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          24
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: top; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          安装或连接在诊断期间拆下或断开的部件。
+         </div> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          是否完成操作？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          盘式制动系统正常
+         </div> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          返回至“故障症状表”
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          -
+         </div> </td> 
+       </tr> 
+      </tbody> 
+     </table> 
+    </div> 
+   </div> 
+  </div>  
+ </body>
+</html>

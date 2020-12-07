@@ -1,0 +1,533 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+  <meta content="IE=8" http-equiv="X-UA-Compatible"> 
+  <title>液压制动系统的诊断</title>
+  <script> document.domain="saic-gm.com"; function showImg(obj){ var as = document.getElementsByTagName('a'); for(var i=0;i<as.length;i++){as[i].innerHTML='点击显示图片';as[i].parentNode.style.height='40px';} var src = obj.getAttribute("data-url"); var imgstr='<OBJECT width="892" height="680" type="image" classid="CLSID:B789F873-EB93-11D2-A6D8-00A0241989B9"><PARAM NAME="src" value="'+src+'"></OBJECT>';setTimeout(function(){obj.parentNode.style.height='700px';obj.innerHTML = imgstr;}, 1000 );parent.iFrameHeight2();}</script>
+  <meta name="Generator" content="Arbortext Publishing Engine 6.0 M130"> 
+  <meta name="Stylesheet" content="C:\Program Files\PTC\Arbortext PE\custom\doctypes\sm\sm_html.style"> 
+  <link rel="stylesheet" href="commonCss.css" charset="UTF-8" type="text/css">
+ </head> 
+ <body>
+  <div class=" x-servinfo-1-0" id="styler-id1"> 
+   <h4 class=" x-title-19-0" id="styler-id1.1">液压制动系统的诊断</h4> 
+   <div class=" x-servinfosub-2-0" id="styler-id1.2"> 
+    <div class=" x-table-1-0 x-table-1-1" id="styler-id1.2.1"> 
+     <h3 class=" x-title-17-0" id="styler-id1.2.1.1">液压制动系统的诊断</h3> 
+     <table class=" x-tgroup-1-0" cellpadding="7" frame="box" border="1" rules="all"> 
+      <colgroup> 
+       <col style="width: 49px; "> 
+       <col style="width: 371px; "> 
+       <col style="width: 134px; "> 
+       <col style="width: 134px; "> 
+      </colgroup> 
+      <thead class=" x-thead-1-0" style="vertical-align: bottom; text-align: left; font-weight: bold; "> 
+       <tr class=" x-row-1-0"> 
+        <th class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          步骤
+         </div> </th> 
+        <th class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          操作
+         </div> </th> 
+        <th class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          是
+         </div> </th> 
+        <th class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          否
+         </div> </th> 
+       </tr> 
+      </thead> 
+      <tbody class=" x-tbody-1-0" style="vertical-align: top; "> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" colspan="4" style="text-align: left; vertical-align: top; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          定义：本诊断表仅适用于诊断液压制动系统的部件，以确定液压制动系统是否正常工作。请在相应故障症状表的指导下，根据情况转至其他制动系统诊断表进行诊断。
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          1
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: top; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          是否自“制动器故障症状表”转至此表？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s02">步骤2</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          -
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          2
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          检查并调整制动总泵中的制动液液位。参见
+          <a class=" x-cell-link-2-0" href="A50081-S0000003870.html">总泵储液罐的加注</a>。 
+         </div> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          制动液液位是否过低？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s05">步骤5</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s03">步骤3</a>
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          3
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: top; padding: 7px; "> 
+         <ul class=" x-table-list1-1-0"> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">检查制动液是否存在以下表明制动液受到污染的状况：</span></li> 
+          <ul class=" x-table-list2-1-0"> 
+           <li class=" x--inherit-background-color x-table-item-6-0 x-table-item-6-2 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">油液分离，表明存在2种油液</span></li> 
+           <li class=" x--inherit-background-color x-table-item-1-0 x-table-item-1-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">呈旋涡状 - 存在油基物质</span></li> 
+           <li class=" x--inherit-background-color x-table-item-1-0 x-table-item-1-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">呈分层状 - 存在硅基物质</span></li> 
+           <li class=" x--inherit-background-color x-table-item-6-0 x-table-item-6-2 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">油液变色</span></li> 
+           <li class=" x--inherit-background-color x-table-item-1-0 x-table-item-1-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">外观混浊 - 存在水分</span></li> 
+           <li class=" x--inherit-background-color x-table-item-1-0 x-table-item-1-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">外观灰暗/制动液中有悬浮颗粒物 - 污物、铁锈、腐蚀、制动器灰尘</span></li> 
+          </ul> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">检查总泵储液罐盖膜片以及储液罐至总泵护环是否膨胀，若膨胀，则表明油液受到污染。</span></li> 
+         </ul> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          是否存在任何上述状况？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s04">步骤4</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s05">步骤5</a>
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          4
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: top; padding: 7px; "> 
+         <ul class=" x-table-list1-1-0"> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">对液压制动系统排气。参见<a class=" x-cell-link-2-0" href="A50160-S0000042722.html">液压制动系统的排气</a>。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">如果制动液受到油基或硅基油液污染，出现油液分层现象和/或总泵储液罐盖膜片和/或储液罐至总泵护环膨胀，则执行以下步骤。参见指示的程序。</span></li> 
+          <ul class=" x-table-list2-1-0"> 
+           <li class=" x--inherit-background-color x-table-item-6-0 x-table-item-6-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">拆下以下所有部件。每个部件内部含有已受到污染的橡胶密封件/衬片。</span></li> 
+           <li class=" x--inherit-background-color x-table-item-6-0 x-table-item-6-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">用工业酒精或同等品清洗液压制动管。</span></li> 
+           <li class=" x--inherit-background-color x-table-item-6-0 x-table-item-6-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">用不含润滑油并经过过滤的空气干燥制动管。</span></li> 
+           <li class=" x--inherit-background-color x-table-item-6-0 x-table-item-6-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">修理或更换所有下列部件。每个部件内部含有已受到污染的橡胶密封件/衬片。</span></li> 
+           <li class=" x--inherit-background-color x-table-item-1-0 x-table-item-1-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">更换制动总泵储液罐盖膜片。</span></li> 
+           <li class=" x--inherit-background-color x-table-item-1-0 x-table-item-1-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><a class=" x-cell-link-2-0" href="A50183-S0000034322.html">制动总泵的更换</a></span></li> 
+           <li class=" x--inherit-background-color x-table-item-1-0 x-table-item-1-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">制动总泵储液罐：用工业酒精或同等产品清洁制动总泵储液罐，然后用不含润滑脂并经过过滤的压缩空气干燥储液罐，或者如有必要，更换制动总泵储液罐。参见<a class=" x-cell-link-2-0" href="A50113-S0000034349.html">制动总泵储液罐的更换</a>。</span></li> 
+           <li class=" x--inherit-background-color x-table-item-1-0 x-table-item-1-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><a class=" x-cell-link-2-0" href="A50084-S0000034384.html">前制动软管的更换</a></span></li> 
+           <li class=" x--inherit-background-color x-table-item-1-0 x-table-item-1-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><a class=" x-cell-link-2-0" href="A50122-S0000034473.html">后制动软管的更换</a></span></li> 
+           <li class=" x--inherit-background-color x-table-item-1-0 x-table-item-1-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><a class=" x-cell-link-2-0" href="A11146-S0000034221.html">前制动钳的更换</a></span></li> 
+           <li class=" x--inherit-background-color x-table-item-1-0 x-table-item-1-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><a class=" x-cell-link-2-0" href="A11147-S0000034236.html">后制动钳的更换</a></span></li> 
+          </ul> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">如果制动液未受到油基油液的污染，但受到水或污物、锈蚀、腐蚀和/或制动器灰尘的污染，则更换可能已使湿气或污物进入系统的制动总泵储液罐盖膜片。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">重新加注液压制动系统并对系统进行排气。参见<a class=" x-cell-link-2-0" href="A50160-S0000042722.html">液压制动系统的排气</a>。</span></li> 
+         </ul> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          是否完成操作和所需修理和/或更换？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s06">步骤6</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          -
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          5
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: top; padding: 7px; "> 
+         <ul class=" x-table-list1-1-0"> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">检查以下液压制动系统部件是否存在外部油液泄漏：修理或更换任何泄漏制动液的部件。参见相应的程序：</span></li> 
+          <ul class=" x-table-list2-1-0"> 
+           <li class=" x--inherit-background-color x-table-item-6-0 x-table-item-6-2 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">制动总泵储液罐盖膜片</span></li> 
+           <li class=" x--inherit-background-color x-table-item-6-0 x-table-item-6-2 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><a class=" x-cell-link-2-0" href="A50183-S0000034322.html">制动总泵的更换</a></span></li> 
+           <li class=" x--inherit-background-color x-table-item-6-0 x-table-item-6-2 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><a class=" x-cell-link-2-0" href="A50084-S0000034384.html">前制动软管的更换</a></span></li> 
+           <li class=" x--inherit-background-color x-table-item-6-0 x-table-item-6-2 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><a class=" x-cell-link-2-0" href="A50122-S0000034473.html">后制动软管的更换</a></span></li> 
+           <li class=" x--inherit-background-color x-table-item-6-0 x-table-item-6-2 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><a class=" x-cell-link-2-0" href="A11146-S0000034221.html">前制动钳的更换</a></span></li> 
+           <li class=" x--inherit-background-color x-table-item-6-0 x-table-item-6-2 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><a class=" x-cell-link-2-0" href="A11147-S0000034236.html">后制动钳的更换</a></span></li> 
+          </ul> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">如果修理或更换了上列任何制动系统部件，则对液压制动系统进行排气。参见<a class=" x-cell-link-2-0" href="A50160-S0000042722.html">液压制动系统的排气</a>。在对液压制动系统进行排气时，观察以下状况：</span></li> 
+          <ul class=" x-table-list2-1-0"> 
+           <li class=" x--inherit-background-color x-table-item-6-0 x-table-item-6-2 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">系统中的空气出现在排气阀位置，而非修理位置，制动总泵和/或比例阀总成更换时除外</span></li> 
+           <li class=" x--inherit-background-color x-table-item-6-0 x-table-item-6-2 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">排气时每个车桥的制动液流动顺畅且均匀</span></li> 
+          </ul> 
+         </ul> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          是否发现并排除了故障？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s06">步骤6</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s08">步骤8</a>
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          6
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: top; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          系统中的空气是否出现在排气阀位置，而非修理位置，制动总泵和/或比例阀总成更换时除外？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s17">步骤17</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s07">步骤7</a>
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          7
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: top; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          排气时每个车桥的制动液流动是否顺畅且均匀？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s08">步骤8</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s09">步骤9</a>
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          8
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: top; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          检查制动钳和/或车轮制动分泵的液压功能（如装备）是否正常。参见
+          <a class=" x-cell-link-2-0" href="A63486-S0000001498.html">液压制动器部件操作的目视检查</a>。 
+         </div> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          制动钳/制动分泵的液压功能是否正常？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s19">步骤19</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s12">步骤12</a>
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          9
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: top; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          排气时制动液是否顺畅而均匀地流过前桥液压部件？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s11">步骤11</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s10">步骤10</a>
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          10
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: top; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          排气时制动液是否顺畅而均匀地流过后桥液压部件？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s15">步骤15</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          -
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          11
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: top; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          确定制动钳是否堵塞制动液和/或工作是否异常：
+         </div> 
+         <ul class=" x-table-list1-1-0"> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">举升和顶起车辆。参见<a class=" x-cell-link-2-0" href="A47852-S0000046003.html">举升和顶起车辆</a>。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">拆下轮胎和车轮总成。参见<a class=" x-cell-link-2-0" href="A59611-S0000041782.html">轮胎和车轮的拆卸和安装</a>。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">打开可疑的制动钳放气阀。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">用大号C型夹钳压缩制动钳活塞，并观察制动液流动是否顺畅以及制动钳活塞能否自由移动。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">关闭制动钳放气阀。</span></li> 
+         </ul> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          制动液流动是否顺畅，制动钳活塞能否自由移动？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s15">步骤15</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s12">步骤12</a>
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          12
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: top; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          修理或更换任何工作异常的制动钳/制动分泵。参见相应的程序。
+         </div> 
+         <ul class=" x-table-list1-1-0"> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-2 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><a class=" x-cell-link-2-0" href="A11146-S0000034221.html">前制动钳的更换</a></span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-2 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><a class=" x-cell-link-2-0" href="A11147-S0000034236.html">后制动钳的更换</a></span></li> 
+         </ul> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          是否完成修理和/或更换？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s19">步骤19</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          -
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          13
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: top; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          对液压制动系统进行排气，观察系统中是否还有空气存在，并观察排气时每个车桥的制动液流动是否顺畅且均匀。参见
+          <a class=" x-cell-link-2-0" href="A50160-S0000042722.html">液压制动系统的排气</a>。 
+         </div> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          系统中是否有空气？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s17">步骤17</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s14">步骤14</a>
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          14
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: top; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          排气时每个车桥的制动液流动是否顺畅且均匀？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s19">步骤19</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s15">步骤15</a>
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          15
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: top; padding: 7px; "> 
+         <ul class=" x-table-list1-1-0"> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">检查液压制动管和挠性制动软管是否有油液阻塞迹象，如弯曲、扭结、夹住或损坏。参见<a class=" x-cell-link-2-0" href="A63487-S0000001499.html">制动管和软管的检查</a>。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">更换所有弯曲、扭结、夹住或损坏的液压制动管和/或挠性制动软管。必要时参见以下程序：</span></li> 
+          <ul class=" x-table-list2-1-0"> 
+           <li class=" x--inherit-background-color x-table-item-6-0 x-table-item-6-2 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><a class=" x-cell-link-2-0" href="A50084-S0000034384.html">前制动软管的更换</a></span></li> 
+           <li class=" x--inherit-background-color x-table-item-6-0 x-table-item-6-2 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><a class=" x-cell-link-2-0" href="A50122-S0000034473.html">后制动软管的更换</a></span></li> 
+          </ul> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">如果未发现液压制动管或挠性制动软管明显弯曲、扭结、夹住或损坏，则更换阻塞位置的液压制动挠性软管。</span></li> 
+         </ul> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          是否发现并排除了故障？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s19">步骤19</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s16">步骤16</a>
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          16
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: top; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          更换制动调制器总成，以校正液压制动系统动态后轮制动力分配的机械操作。
+         </div> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          是否完成更换？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s19">步骤19</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          -
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          17
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: top; padding: 7px; "> 
+         <ul class=" x-table-list1-1-0"> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">检查液压制动系统部件在密封件和/或接头位置是否存在制动液渗漏，从而可能使空气进入系统。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">检查液压制动系统部件是否有最近修理过的迹象，从而可能使空气进入系统。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">修理或更换任何安装不正确或渗漏制动液的部件。</span></li> 
+         </ul> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          是否发现并排除了故障？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s19">步骤19</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s18">步骤18</a>
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          18
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: top; padding: 7px; "> 
+         <ul class=" x-table-list1-1-0"> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">检查制动总泵内部是否存在制动液泄漏。参见<a class=" x-cell-link-2-0" href="A63485-S0000001497.html">制动系统内部泄漏测试</a>。</span></li> 
+          <li class=" x--inherit-background-color x-table-item-7-0 x-table-item-7-1 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">如果发现内部泄漏制动液，则修理或更换制动总泵。参见<a class=" x-cell-link-2-0" href="A50183-S0000034322.html">制动总泵的更换</a>。</span></li> 
+         </ul> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          是否发现并排除了故障？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          转至
+          <a class=" x-intxref-1-0" href="#s19">步骤19</a>
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          返回至“故障症状表”
+         </div> </td> 
+       </tr> 
+       <tr class=" x-row-1-0"> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: middle; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          19
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: top; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          安装或连接在诊断期间拆下或断开的部件。
+         </div> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          是否完成操作？
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: left; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          液压制动系统正常
+         </div> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          返回至“故障症状表”
+         </div> </td> 
+        <td class="entry-in-tbody" rowspan="1" style="text-align: center; vertical-align: bottom; padding: 7px; "> 
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; ">
+          -
+         </div> </td> 
+       </tr> 
+      </tbody> 
+     </table> 
+    </div> 
+   </div> 
+  </div>  
+ </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta content="IE=8" http-equiv="X-UA-Compatible">
+      <title>数据链路通信的说明与操作</title><script> document.domain="saic-gm.com"; function showImg(obj){ var as = document.getElementsByTagName('a'); for(var i=0;i<as.length;i++){as[i].innerHTML='点击显示图片';as[i].parentNode.style.height='40px';} var src = obj.getAttribute("data-url"); var imgstr='<OBJECT width="892" height="680" type="image" classid="CLSID:B789F873-EB93-11D2-A6D8-00A0241989B9"><PARAM NAME="src" value="'+src+'"></OBJECT>';setTimeout(function(){obj.parentNode.style.height='700px';obj.innerHTML = imgstr;}, 1000 );parent.iFrameHeight2();}</script><meta name="Generator" content="Arbortext Publishing Engine 6.0 M130">
+      <meta name="Stylesheet" content="E:\PTC\arbortext pe\custom\doctypes\sm\sm_html.style">
+      <link rel="stylesheet" href="commonCss.css" charset="UTF-8" type="text/css"></head>
+   <div class=" x-servinfo-1-0" id="styler-id1">
+      <h4 class=" x-title-19-0" id="styler-id1.1">数据链路通信的说明与操作</h4>
+      <div class=" x-servinfosub-2-0" id="styler-id1.2">
+         <div class=" x-note-3-0">
+            <div id="styler-id1.2.1.1"></div>
+            <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x--ufe-zb-1-0">注意:</span>这是有关GM装置用来彼此通信的不同串行数据总线的概述。用“<a class=" x-cell-link-2-0" href="A156662-S0000038761.html">数据通信示意图</a>”找出特定车辆配置的串行数据总线。
+            </div>
+         </div>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.3">
+         <h5 class=" x-title-16-0" id="styler-id1.3.1">电路说明</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">车辆内部有很多部件都依赖于来自其它部件的信息并向其它部件传输信息或者两者并存。串行数据通信网络提供了一个可靠的、经济有效的通路，使车辆内的不同部件之间可以互相“联系”并分享信息。</div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">本车使用大量不同的信息总线以确保装置之间的及时且高效的信息交换。相互比较这些总线，其中一些在速度、信号特性和性能上都有着本质的不同。</div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">另一方面，比较其它的总线，它们有相似的特性并且完全以并联运行。如此，它们便可用于高交互性的集合部件。比如P CAN，D CAN，I CAN和E CAN。与所有车辆装置都集中在一条单总线上相比，这使它们能够在信息拥挤度较低的总线上彼此通信，从而确保了更迅速且更及时的信息交换。</div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">大多数信息通常出现在局域内特定的网络上；但有些信息则必须与其它网络分享。指定控制模块作为网关，执行在不同总线之间传输信息的功能。网关模块被连接到至少2条总线，并且根据其信息策略和传输模式与各个网络交互。</div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">串行数据使接收装置能够监测来自其它装置的信息传输，以便确定是否未接收到重要信息。主要目的在于用合理的默认值替代无法再被接收的信息。此外，串行数据接收装置可能会设置DTC，以指示它所等待提供信息的装置不再进行通信。</div>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.4">
+         <h5 class=" x-title-16-0" id="styler-id1.4.1">CAN总线电路说明</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">CAN总线主要用于高速交换数据，以使传感器值的变化情况和通过信息调节车辆系统的控制装置的信息接收状况之间的延迟最小化。</div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">D CAN主要连接车辆诊断口（DLC）和网关；传输速率：500千字节/秒。</div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">I CAN主要连接娱乐系统模块和网关；传输速率：500千字节/秒。</div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">E CAN主要连接底盘控制模块；传输速率：500千字节/秒。</div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">P CAN主要连接底盘车身，动力总成控制模块；传输速率：500千字节/秒。</div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">动力总成GMLAN（内部）：主要连接动力总成模块及相应网关；传输速率：500千字节/秒。</div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">以上介绍的CAN总线连接形式主要由双绞线组成。在每对数据总线的每端都有一个120欧的终端电阻器。</div>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.5">
+         <h5 class=" x-title-16-0" id="styler-id1.5.1">局域互联网 (LIN) 电路说明</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">局域互联网 (LIN) 总线由一条传输速率为10.417千字节/秒的单线组成。该模块用于交换主控制模块和其它提供支持功能的智能装置之间的信息。此类配置对高速GMLAN总线或低速GMLAN总线的容量或速度没有要求，因此相对比较简单。</div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">要传输的数据符号（1和0）在通信总线上由不同的电压电平表示。当LIN总线静止且未被驱动时，该信号处于接近电池电压的高压状态。这代表逻辑“1”。当传输逻辑“0”时，信号电压被拉低至搭铁（0.0伏）。</div>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.6">
+         <h5 class=" x-title-16-0" id="styler-id1.6.1">通信启用电路说明</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">CAN总线上的装置根据通信启用电路上的电压电平启用或停用通信。当电路电压过高时（12伏左右），启用通信。当电路电压过低时，停用通信。</div>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.7">
+         <h5 class=" x-title-16-0" id="styler-id1.7.1">数据链路连接器 (DLC)</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">X84数据链路连接器 (DLC) 是标准的16孔连接器。连接器的设计和位置符合行业范围内的标准，并要求提供以下项目：</div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;针脚4 故障诊断仪电源搭铁端子</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;针脚5 公共信号搭铁端子</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;针脚6 CAN串行数据总线 (+) 端子（D CAN）</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;针脚14CAN串行数据总线 (-) 端子（D CAN）</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;针脚16故障诊断仪电源，蓄电池正极电压端子</span></li>
+         </ul>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.8">
+         <h5 class=" x-title-16-0" id="styler-id1.8.1">串行数据参考</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">故障诊断仪通过车辆上各种总线进行通信。如果车辆上安装了故障诊断仪，则故障诊断仪将尝试与每个可能选装在车辆上的装置进行通信。如果车辆上未安装某个选装件，则对于该选装装置，故障诊断仪将显示“No Comm（无通信）”（或“Not Connected（未连接）”）。为避免出现与特定装置不能通信的误诊，请参见“<a class=" x-cell-link-2-0" href="A148085-S0000039522.html">数据链路参考</a>”，以获取装置列表、与其通信的总线和特定装置的常规选装件代码。
+         </div>
+      </div>
+   </div>
+</html>

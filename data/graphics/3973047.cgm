@@ -1,0 +1,133 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>网站验证</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Expires" content="-1">
+
+<link href="/siap4dealer/webresource/css/bootstrap.min.css" rel="stylesheet" media="screen">
+<link rel="stylesheet" type="text/css" href="/siap4dealer/webresource/css/datatables.css"/>
+<link rel="stylesheet" type="text/css" href="/siap4dealer/webresource/css/jquery-ui-1.11.4.css"/>
+<link rel="stylesheet" href="/siap4dealer/webresource/css/bootstrapValidator.min.css"/>
+<link rel="stylesheet" href="/siap4dealer/webresource/css/jquery.mCustomScrollbar.css" />
+<link href="/siap4dealer/webresource/css/style.css" rel="stylesheet" media="screen">
+
+<script type="text/javascript" src="/siap4dealer/webresource/js/jquery-1.11.3.min.js"></script>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="/siap4dealer/webresource/js/json2.js"></script>
+<script type="text/javascript" src="/siap4dealer/webresource/js/respond.min.js"></script>
+<script type="text/javascript" src="/siap4dealer/webresource/js/ie8Compatible.js"></script>
+<![endif]-->
+<script type="text/javascript" src="/siap4dealer/webresource/js/jquery-ui-1.11.4.min.js"></script>
+<script type="text/javascript" src="/siap4dealer/webresource/js/datepicker-zh-CN.js"></script>
+<script type="text/javascript" src="/siap4dealer/webresource/js/datatables.js"></script>
+<script type="text/javascript" src="/siap4dealer/webresource/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/siap4dealer/webresource/js/bootstrapValidator.min.js"></script>
+<script type="text/javascript" src="/siap4dealer/webresource/js/datatable.js"></script>
+<script type="text/javascript" src="/siap4dealer/webresource/js/siap-ajax_plugin.js"></script>
+<script type="text/javascript" src="/siap4dealer/webresource/js/template.min.js"></script>
+<script type="text/javascript" src="/siap4dealer/webresource/js/tree/siap-class-toggler.js"></script>
+<script type="text/javascript" src="/siap4dealer/webresource/js/tree/siap-tree-node.js"></script>
+<script type="text/javascript" src="/siap4dealer/webresource/js/tree/siap-tree.js"></script>
+<script type="text/javascript" src="/siap4dealer/webresource/js/commonData.js"></script>
+<script type="text/javascript" src="/siap4dealer/webresource/js/dropdownHelper.js"></script>
+<script src="/siap4dealer/webresource/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script type="text/javascript">
+  document.domain = 'saic-gm.com';
+  function initGlobalAjaxEvent(globalStart, globalStop) {
+    $(document).ajaxStart(function (evt, request, settings) {
+      if (globalStart) {
+        globalStart.call();
+      }
+    }).ajaxComplete(function () {
+    }).ajaxStop(function(){
+      if (globalStop) {
+        globalStop.call();
+      }
+    });
+    $.ajaxSetup({
+      cache: false,
+      statusCode: {
+      }
+    })
+  }
+
+  function globalAjaxStart(){
+    $('#loading').modal('show');
+  }
+
+  function globalAjaxStop() {
+    $('#loading').modal('hide');
+  }
+</script>
+<!-- LOADING -->
+<div class="modal fade" id="loading" tabindex="-1">
+  <img src="/siap4dealer/webresource/img/loading.gif" class="progress-loading">
+</div>
+    <script type="text/javascript">
+        function refreshValiCode(){
+            document.getElementById("validCode").src="/siap4dealer/mvc/validation/valiCode?c="
+                    + (new Date().getTime().toString(36));
+            return false;
+        }
+    </script>
+</head>
+<body class="login">
+<div class="header page_header">
+    <div class="container text-center">
+        <div>
+            <img src="/siap4dealer/webresource/img/logoMin.png"></div>
+    </div>
+
+</div>
+<div class="container">
+    <div class="col-md-6 login-main ">
+        <div class="alert alert-danger" role="alert">
+            <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+            <span class="sr-only">Error:</span>
+            网站需要验证，填写验证码
+        </div>
+        <div class="well">
+
+            <form class="form-horizontal"  method="post">
+
+                <div class="form-group">
+                    <label for="inputEmail3" class="col-sm-4 control-label">
+                        <span class="glyphicon glyphicon-qrcode"></span>
+                        验证码
+                    </label>
+                    <div class="col-sm-8">
+                        <input type="text" name="code" class="form-control"/>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-8 pull-right">
+                        <img src="/siap4dealer/mvc/validation/valiCode"
+                             alt="验证码"
+                             id="validCode"
+                             onClick="refreshValiCode();"/>
+                        <div>请点击图片刷新</div>
+                        
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="">
+                        <input type="submit" class="btn btn-primary btn-lg btn-block m-reset-btn" value="验证" onClick="javascript:location.href='4s_01_02.html ' ">
+                        <br/>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="footer"></div>
+
+</body>
+</html>

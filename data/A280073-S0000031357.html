@@ -1,0 +1,207 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta content="IE=8" http-equiv="X-UA-Compatible">
+      <title>发动机控制模块的说明</title><script> document.domain="saic-gm.com"; function showImg(obj){ var as = document.getElementsByTagName('a'); for(var i=0;i<as.length;i++){as[i].innerHTML='点击显示图片';as[i].parentNode.style.height='40px';} var src = obj.getAttribute("data-url"); var imgstr='<OBJECT width="892" height="680" type="image" classid="CLSID:B789F873-EB93-11D2-A6D8-00A0241989B9"><PARAM NAME="src" value="'+src+'"></OBJECT>';setTimeout(function(){obj.parentNode.style.height='700px';obj.innerHTML = imgstr;}, 1000 );parent.iFrameHeight2();}</script><meta name="Generator" content="Arbortext Publishing Engine 6.0 M130">
+      <meta name="Stylesheet" content="E:\PTC\arbortext pe\custom\doctypes\sm\sm_html.style">
+      <link rel="stylesheet" href="commonCss.css" charset="UTF-8" type="text/css"></head>
+   <div class=" x-servinfo-1-0" id="styler-id1">
+      <h4 class=" x-title-19-0" id="styler-id1.1">发动机控制模块的说明</h4>
+      <div class=" x-servinfosub-2-0" id="styler-id1.2">
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">发动机控制模块(ECM) 位于发动机舱内，是燃油喷射系统的控制中心。它不断监测来自各个传感器的信息，并控制影响车辆性能的各个系统。发动机控制模块还执行系统诊断功能。它可识别操作故障，并通过故障指示 灯(MIL) 提醒驾驶员并存储DTC以指示故障部位，便于维修人员进行维修。</div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">发动机控制模块中没有可维修部件。校准值被存储在发动机控制模块的可编程只读存储器(PROM) 中。发动机控制模块向传感器或开关提供5 伏或12 伏电 压。这是通过发动机控制模块内部的电阻来完成的，发动机控制模块的内阻非常大。在某些情况下，甚至普通
+            维修用电压表不能给出精确读数，因为其内阻相对太低。必须使用输入阻抗为10 兆欧的数字式电压表才能 获得精确的电压读数。发动机控制模块通过晶体管或一 个称为“四路驱动器”的装置控制接地电路，以此来控制输出电路，如喷油器、怠速空气控制阀、空调离合器继电器等。
+         </div>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.3">
+         <h5 class=" x-title-16-0" id="styler-id1.3.1">部件综合性监测诊断操作</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">部件综合性监测诊断的目的是监测与排放相关的动力系统输入和输出部件。</div>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.4">
+         <h5 class=" x-title-16-0" id="styler-id1.4.1">输入部件</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">监测输入部件的电路导通性或参数值是否超出范围。其中包括合理性检查。合理性检查是指：当来自传感器的信号看上去不合理时（如，如果发动机负荷较低或进气 歧管绝对压力(MAP) 电压较低时节气门位置(TP) 传感 器指示节气门位置较高），指示故障的存在。输入部件包括但不限于如下传感器：</div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;车速传感器(VSS)</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;曲轴位置(CKP) 传感器</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;节气门位置传感器</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;发动机冷却液温度(ECT) 传感器</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;凸轮轴位置(CMP) 传感器</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;进气歧管绝对压力(MAP) 传感器</span></li>
+         </ul>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">除电路导通性和合理性检查外，还监测发动机冷却液温度传感器能否达到稳态温度，从而启用闭环燃油控制。</div>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.5">
+         <h5 class=" x-title-16-0" id="styler-id1.5.1">输出部件</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">诊断输出部件是否能正确响应控制模块的指令。对于无法进行功能监测的部件，如果可行，则监测其电路导通性和参数值是否超出范围。要监测的输出部件包括但不限于如下电路：</div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;由控制模块控制的蒸发排放(EVAP) 碳罐清污阀</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;空调继电器</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;冷却风扇继电器</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;车速传感器(VSS) 输出</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;故障指示灯(MIL) 控制</span></li>
+         </ul>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.6">
+         <h5 class=" x-title-16-0" id="styler-id1.6.1">故障指示灯(MIL) 控制</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">被动测试指对车辆系统或部件仅仅进行监测的诊断测试。与此相反，主动测试在执行诊断功能时会根据未通过的被动测试采取一些实际操作。例如，排气再循环(EGR) 诊断主动测试将在节气门关闭状态下减速时强制打开排气再循环阀，和/ 或在稳态期间强制关闭排气再循环阀。上述任一操作均会导致歧管压力变化。</div>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.7">
+         <h5 class=" x-title-16-0" id="styler-id1.7.1">干扰性诊断测试</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">指由诊断管理系统运行的任何车载测试，可能对车辆性能或排放水平有影响。</div>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.8">
+         <h5 class=" x-title-16-0" id="styler-id1.8.1">预热循环</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">一个预热循环指发动机温度在一个行程中必须至少达到 70℃ (160℉)，并上升至少22℃(72℉)。</div>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.9">
+         <h5 class=" x-title-16-0" id="styler-id1.9.1">冻结故障状态</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">“冻结故障状态”是诊断管理系统的一个要素，当与排放相关的故障被存储到内存中，以及故障指示灯被指令启亮时，它会存储当时的各种车辆信息。这些数据可帮助识别故障原因。</div>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.10">
+         <h5 class=" x-title-16-0" id="styler-id1.10.1">故障记录</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">“故障记录”数据是车载电子诊断(EOBD) “冻结故障状态”功能的增强功能。“故障记录”存储与“故障冻 结状态”相同的车辆信息，但是它会存储被保存在车载存储器中的任何故障相关信息，而“冻结故障状态”仅存储与排放相关且会令故障指示灯(MIL) 启亮的故障的信息。</div>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.11">
+         <h5 class=" x-title-16-0" id="styler-id1.11.1">常用车载电子诊断 (EOBD) 术语</h5>
+         <div class=" x-para-1-0">
+            <h3 class=" x-title-10-0" id="styler-id1.11.2.1">诊断</h3>
+            <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; margin-left: 8mm; text-indent: 0pt; ">当作为名词使用时，“诊断”指车辆诊断管理系统运行的任何车载测试。诊断只是在一个系统或部件上运行、 以确定系统或部件是否按照规格运行的测试。诊断有很多，列表如下：</div>
+         </div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;缺火</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;前加热型氧传感器(HO2S) 1</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;后加热型氧传感器 (HO2S) 2</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;排气再循环(EGR)</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;催化剂监测</span></li>
+         </ul>
+         <div class=" x-para-1-0">
+            <h3 class=" x-title-10-0" id="styler-id1.11.4.1">启动标准</h3>
+            <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; margin-left: 8mm; text-indent: 0pt; ">术语 “启动标准”是一个工程用语，表示运行某个给定的诊断测试所需的条件。每个诊断都有一系列特定的条件，在诊断运行前必须满足这些条件。</div>
+            <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; margin-left: 8mm; text-indent: 0pt; ">“启动标准“是必要条件的另一种说法。</div>
+            <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; margin-left: 8mm; text-indent: 0pt; ">每个诊断的启动标准列于DTC说明的第一页，位于标题“设置DTC的条件”下。每个诊断的启动标准各不相同，一般包括但不限于如下项目：</div>
+         </div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;发动机转速</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;车速</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;发动机冷却液温度(ECT)</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;进气歧管绝对压力(MAP)</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;大气压力(BARO)</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;进气温度(IAT)</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;节气门位置(TP)</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;高碳罐清污</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;燃油调节</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;空调接通</span></li>
+         </ul>
+         <div class=" x-para-1-0">
+            <h3 class=" x-title-10-0" id="styler-id1.11.6.1">行程</h3>
+         </div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">从技术角度而言，一个行程就是指一个从点火钥匙接通、运行、至点火钥匙关闭的循环，而且在此循环中，某个给定诊断的所有启动标准都得到满足，使诊断得以运行。遗憾的是，这一概念并非那么简单。当某个给定诊断的所有启动标准均满足时，才能严格称之为一个行 程。但是因为每个诊断的启动标准各不相同，行程的定义也各不相同。有些诊断在车辆达到工作温度时运行，
+            有些则在车辆初次起动时运行，但有些要求车辆以稳定的公路车速巡航，有些则只有在车辆怠速运行时才运行，而有些诊断在变矩器离合器(TCC) 被禁用时才会启动。有些诊断在发动机冷起动后就立即运行。
+         </div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">因此，将行程定义为从点火钥匙接通、运行、至点火钥匙关闭的一个循环，而且在此循环中，车辆运行方式必须满足某个给定诊断的启动标准，该诊断就会将此循环 视为一个行程。但是，如果另一个诊断带有一组不同的启动标准，而在车辆的此次行驶期间没有满足该诊断的启动标准，则该诊断不会将它视为一个行程。对于该特定诊断而言，只有当车辆运行方式满足其所有的启动标准时，才会出现一个行程。</div>
+         <div class=" x-para-1-0">
+            <h3 class=" x-title-10-0" id="styler-id1.11.9.1">诊断信息</h3>
+            <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; margin-left: 8mm; text-indent: 0pt; ">设计诊断表和功能检查的目的是为了通过逻辑判定程序来确定故障电路或部件。编制这些表时有前提要求，即车辆在装配时功能正常，而且不存在多个故障并存的情形。</div>
+            <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; margin-left: 8mm; text-indent: 0pt; ">车辆诊断系统会对某些控制功能进行连续的自诊断。本 手册中介绍的诊断程序是对这种自诊断能力的补充。DTC 是用来描述故障源的一种工程用语系统。当控制模块检测到故障时，将设置DTC并启亮故障指示灯(MIL)。</div>
+         </div>
+         <div class=" x-para-1-0">
+            <h3 class=" x-title-10-0" id="styler-id1.11.10.1">故障指示灯(MIL)</h3>
+            <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; margin-left: 8mm; text-indent: 0pt; ">车载诊断(EOBD) 需要故障指示灯，该灯在一组严格的准则下启亮。</div>
+            <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; margin-left: 8mm; text-indent: 0pt; ">一般而言，当发动机控制模块检测到将会影响车辆排放的故障时，就启亮故障指示灯。</div>
+            <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; margin-left: 8mm; text-indent: 0pt; ">故障指示灯在诊断执行程序的控制之下。如果与排放相关的诊断测试显示有故障发生，故障指示灯将被启亮。它将保持启亮，直到在连续三个行程内系统或组件通过相同测试而未出现与排放相关的故障。</div>
+         </div>
+         <div class=" x-para-1-0">
+            <h3 class=" x-title-10-0" id="styler-id1.11.11.1">熄灭故障指示灯</h3>
+            <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; margin-left: 8mm; text-indent: 0pt; ">当故障指示灯启亮时，若在连续3 个行程中报告起初导致故障指示灯启亮的诊断测试已通过测试，诊断执行程序将熄灭故障指示灯。虽然故障指示灯已关闭，但DTC将保存在发动机控制模块内存中，包括“冻结故障状态”和“故障记录”，直到故障消失后完成了40 个预热循环。</div>
+            <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; margin-left: 8mm; text-indent: 0pt; ">如果故障指示灯是由燃油调节或缺火相关的DTC导致的，则还必须满足其它要求。除了上文中所述的要求外，还有如下要求：</div>
+         </div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;已通过的诊断测试必须发生在上次测试未通过时存储的发动机转速数据值时，即375 转/ 分时。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;发动机负荷为上次测试未通过时存储的发动机负荷再加减10%。类似的发动机温度条件、已预热或正在预热，均与上次测试未通过时存储的状态相同。</span></li>
+         </ul>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">满足这些要求后，才可确保启亮故障指示灯的故障已经被排除。</div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">故障指示灯位于仪表板上，具有如下功能：</div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;它通知驾驶员发生了影响车辆排放水平的故障，车辆应尽快送修。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;作为系统检查，故障指示灯将在点火开关接通且发动机不运行的情况下启亮。发动机起动后，故障指示灯将熄灭。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;如果在发动机运行期间故障指示灯一直启亮，或怀疑有操纵性能或排放问题导致的故障时，必须执行车载诊断系统检查。这些检查的程序在“车载诊断系统检查”中列出。如果首先执行了其它诊断，这些检查将暴露可能未被检测出的故障。</span></li>
+         </ul>
+         <div class=" x-para-1-0">
+            <h3 class=" x-title-10-0" id="styler-id1.11.16.1">数据链路连接器(DLC)</h3>
+            <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; margin-left: 8mm; text-indent: 0pt; ">数据链路连接器(DLC) 是用来与控制模块进行通信的装置。数据链路连接器用来连接故障诊断仪。故障诊断仪的常规用途列表如下：</div>
+         </div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;识别存储的DTC</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;清除DTC</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;执行输出控制测试</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;读取串行数据</span></li>
+         </ul>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.12">
+         <h5 class=" x-title-16-0" id="styler-id1.12.1">主要的系统性诊断</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">主要的系统性诊断用来评估系统运行情况以及它对车辆排放的影响。下面列举了主要的系统性诊断，并简要介绍了其诊断功能。</div>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.13">
+         <h5 class=" x-title-16-0" id="styler-id1.13.1">氧传感器诊断</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">对燃油控制系统前加热型氧传感器(HO2S)1 诊断如下状况：</div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;响应过慢</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;响应时间，浓/ 稀或稀/ 浓转换时间</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;未启动信号，输出稳定在约450 毫伏的偏置电压</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;信号固定在高电平值</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;信号固定在低电平值</span></li>
+         </ul>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">对催化剂监测系统后加热型氧传感器(HO2S)2 诊断如下状况：</div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;加热器性能，冷起动时启动时间</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;在应指示混合气偏浓的稳态过程中或动力增强（急加速）过程中，信号固定在低电平值</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;在应指示混合气偏稀的稳态过程中或减速模式（减速）过程中，信号固定在高电平值</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;传感器未启动，输出稳定在约438 毫伏</span></li>
+         </ul>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">如果加热型氧传感器引线、连接器或端子损坏，必须更换整个氧传感器总成。不要试图修复导线、连接器或端子。为确保传感器功能正常，必须给它提供清洁的参考空气。此清洁的参考空气是通过氧传感器导线获得的。 如果试图修理导线、连接器或端子，会堵塞参考空气并导致氧传感器性能下降。</div>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.14">
+         <h5 class=" x-title-16-0" id="styler-id1.14.1">缺火监测诊断操作</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">缺火监测诊断基于曲轴转速、参考期间和变化量。发动机控制模块(ECM) 使用曲轴位置(CKP) 传感器和凸轮轴位置(CMP) 传感器信号来确定曲轴转速。当某个气 缸缺火时，曲轴转速会瞬时减慢。通过监测曲轴位置和凸轮轴位置传感器信号，发动机控制模块可计算缺火发生的时刻。</div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">对于非催化剂破坏型缺火，诊断需要发动机运转1,000-3,200 转来判断是否存在缺火故障。</div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">对于催化剂破坏型缺火，诊断在发动机运转200 转之内就可对是否存在缺火故障作出响应。</div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">不平路面可能导致检测到假缺火故障。不平路面将导致扭矩被施加到驱动轮和传动系上。该扭矩可间歇性降低曲轴转速。这可能被误检测为缺火。</div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">不平路面传感器或G 传感器配合缺火检测系统进行工作。 G 传感器产生一个随路面振动强度而变化的电压。当发动机控制模块检测到不平路面时，缺火检测系统被暂时关闭。</div>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.15">
+         <h5 class=" x-title-16-0" id="styler-id1.15.1">缺火计数器</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">只要某个气缸缺火，缺火诊断就统计缺火次数并记录缺火发生时的曲轴位置。这些缺火计数器基本上是各发动机气缸的一个档案。每个气缸都保存了一个当前和一个历史缺火计数器。当前缺火计数器-Misfire Cur #1-4（当前缺火#1-4），表示最近200
+            个气缸点火事件中发生缺火的点火事件数。当前缺火计数器将显示实时数据，而不存储缺火DTC。历史缺火计数器 -Misfire Hist #1-4 （历史缺火#1-4），表示发生缺火的气缸点火事件的总数。历史缺火计数器将一直显示0， 直到缺火诊断未通过并设置了DTC
+            P0300。一旦设置了缺火DTC P0300，历史缺火计数器将每200 个气缸 点火事件即更新一次。每个气缸都保存了一个缺火计数器。
+         </div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">如果缺火诊断报告未通过，诊断执行程序将检查所有缺火计数器，然后再报告一个DTC。这样，诊断执行程序将报告最新信息。</div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">当曲轴旋转不稳定时，会检测到缺火故障。由于这种不稳定状况，诊断所收集的数据有时会错误判断哪个气缸在缺火。</div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">应使用诊断设备监测与车载诊断(EOBD) 系统兼容的车辆的缺火计数器数据。即使在处理多气缸缺火时，知道哪些具体气缸缺火也有助于确定故障根源。使用缺火计 数器中的信息，确定发生缺火的气缸。如果计数器显示1 号和4 号气缸曾经缺火，应查找1 号和4
+            号气缸共用的电路或部件。
+         </div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">缺火诊断可能会显示一个由于临时故障引起的故障，不一定由车辆排放系统故障引起。举例如下：</div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;燃油污染</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;燃油液面过低</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;燃油污染了火花塞</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;基本发动机故障</span></li>
+         </ul>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.16">
+         <h5 class=" x-title-16-0" id="styler-id1.16.1">燃油调节系统监测诊断操作</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">本系统监测短期和长期燃油调节平均值。如果这些燃油调节值低于或高于其极限值达到一定时间，则指示故障存在。燃油调节诊断将短期和长期燃油调节平均值与混 合气过浓和过稀阈值相比较。如果两值都在阈值范围内，则记录诊断通过。如果两值超出它们的阈值，将记录混合气过浓或过稀DTC。</div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">燃油调节系统诊断还进行一项干扰测试。这一测试确定混合气过浓状况是否因来自蒸发排放(EVAP) 碳罐的过量燃油蒸气引起。为了满足车载电子诊断(EOBD) 的要 求，控制模块使用燃油调节单元的加权值来确定是否需要设置燃油调节DTC。只有在加权燃油调节单元中的燃油调节计数超过规定时，才设置燃油调节DTC。这意味着车辆可能存在燃油调节故障，该故障在某些条件下会引发其它故障，如由于轻微真空泄漏导致发动机怠速过高或由于严重真空泄漏导致怠速不良，而在其它时间车辆运行良好。尽管不会设置燃油调节DTC，但可能设置发动机怠速DTC或加热型氧传感器2(HO2S2)
+            DTC。当发生故障时，使用故障诊断仪观察燃油调节计数。
+         </div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">许多车辆故障均可能触发燃油调节DTC。在诊断燃油调节故障时，利用所有可用的信息，如存储的其它DTC、混合气过浓或过稀状况等。</div>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.17">
+         <h5 class=" x-title-16-0" id="styler-id1.17.1">燃油调节单元诊断的权值</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">不管单元0 中的燃油调节计数如何，都不会设置燃油调节DTC，除非加权单元中的燃油调节计数也超出规定范围。这意味着车辆可能存在燃油调节故障，该故 障在某些条件下会引发其它故障，如由于轻微真空泄漏导致发动机怠速过高或由于严重真空泄漏导致怠速不良，而在其它时间车辆运行良好。尽管不会设置燃油调节DTC，但可能设置发动机怠速DTC或加热型氧传感器2(HO2S2)
+            DTC。当发生故障时，使用故障诊断仪观察燃油调节计数。
+         </div>
+      </div>
+   </div>
+</html>

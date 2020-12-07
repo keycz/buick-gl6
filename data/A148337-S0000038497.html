@@ -1,0 +1,53 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta content="IE=8" http-equiv="X-UA-Compatible">
+      <title>保持型附件电源的说明与操作</title><script> document.domain="saic-gm.com"; function showImg(obj){ var as = document.getElementsByTagName('a'); for(var i=0;i<as.length;i++){as[i].innerHTML='点击显示图片';as[i].parentNode.style.height='40px';} var src = obj.getAttribute("data-url"); var imgstr='<OBJECT width="892" height="680" type="image" classid="CLSID:B789F873-EB93-11D2-A6D8-00A0241989B9"><PARAM NAME="src" value="'+src+'"></OBJECT>';setTimeout(function(){obj.parentNode.style.height='700px';obj.innerHTML = imgstr;}, 1000 );parent.iFrameHeight2();}</script><meta name="Generator" content="Arbortext Publishing Engine 6.0 M130">
+      <meta name="Stylesheet" content="E:\PTC\arbortext pe\custom\doctypes\sm\sm_html.style">
+      <link rel="stylesheet" href="commonCss.css" charset="UTF-8" type="text/css"></head>
+   <div class=" x-servinfo-1-0" id="styler-id1">
+      <h4 class=" x-title-19-0" id="styler-id1.1">保持型附件电源的说明与操作</h4>
+      <div class=" x-servinfosub-2-0" id="styler-id1.2">
+         <h5 class=" x-title-16-0" id="styler-id1.2.1">保持型附件电源</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">车身控制模块 (BCM) 监视点火开关位置、蓄电池状况和每个车门微关/打开开关状态，以确定是否应启动或终止保持型附件电源。保持型附件电源通过两种不同的方法控制，继电器控制和串行数据。一些模块通过串行数据电路从车身控制模块收到保持型附件电源信息。如有必要，通过模块保持型附件电源模式操作关闭串行数据控制的保持型附件电源。其它子系统通过继电器直接由车身控制模块启动。只要点火开关不处于“OFF（关闭）”位置，无论车门开关信号如何，由保持型附件电源启动的部件和系统在任何时候都能够启动。</div>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.3">
+         <h5 class=" x-title-16-0" id="styler-id1.3.1">继电器控制的保持型附件电源</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">除了“关闭 - 唤醒”和“起动”电源模式，车身控制模块在所有其它电源模式下保持继电器通电。在所有车门关闭的情况下，将点火开关置于“OFF（关闭）”位置，并拔出钥匙后，继电器还能再通电约10分钟。</div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">当满足以下条件之一时，继电器控制的保持型附件电源将终止：</div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;在点火钥匙拔出后，车身控制模块从任何车门微关或打开开关接收到指示任何车门打开的输入。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent">
+               <div class=" x-note-1-0">
+                  <div id="styler-id1.3.4.2.1.1"></div>
+                  <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x--ufe-zb-1-0">注意:</span>点火钥匙拔出时，如果车身控制模块从这些开关收到任何车门微关或打开信号，则保持型附件电源不启动。
+                  </div>
+               </div><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;车身控制模块内部的保持型附件电源计时器计时约10分钟。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;车身控制模块检测到蓄电池容量降低至规定的极限以下。</span></li>
+         </ul>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">在保持型附件电源模式下，由保持型附件电源继电器供电的系统如下：</div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent">
+               <div class=" x-note-1-0">
+                  <div id="styler-id1.3.6.1.1.1"></div>
+                  <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x--ufe-zb-1-0">注意:</span>车辆可能未装备下列所有部件。
+                  </div>
+               </div>
+            </li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;附件电源插座</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;点烟器插座</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;变速器换档杆位置指示器（带安装在地板上的控制台换档装置）</span></li>
+         </ul>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.4">
+         <h5 class=" x-title-16-0" id="styler-id1.4.1">串行数据控制的保持型附件电源</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">串行数据控制的保持型附件电源系统如下：</div>
+         <div class=" x-satitle-1-0">收音机</div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">收音机保持型附件电源启动/终止与继电器的操作相同，有一个例外；保持型附件电源工作时，关闭收音机的唯一车门开关是驾驶员车门打开开关。</div>
+         <div class=" x-satitle-1-0">车辆通信接口模块 (VCIM)（安吉星®）（如装备）</div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">车辆通信接口模块保持型附件电源启动/终止与收音机操作相同，有一个例外；如果点火钥匙拔出时存在启动请求，车辆通信接口模块将保持在保持型附件电源模式，保持收音机处于保持型附件电源模式直到请求终止。</div>
+      </div>
+   </div>
+</html>

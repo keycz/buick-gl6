@@ -1,0 +1,61 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta content="IE=8" http-equiv="X-UA-Compatible">
+      <title>轮胎气压指示灯传感器的读入（UJM）</title><script> document.domain="saic-gm.com"; function showImg(obj){ var as = document.getElementsByTagName('a'); for(var i=0;i<as.length;i++){as[i].innerHTML='点击显示图片';as[i].parentNode.style.height='40px';} var src = obj.getAttribute("data-url"); var imgstr='<OBJECT width="892" height="680" type="image" classid="CLSID:B789F873-EB93-11D2-A6D8-00A0241989B9"><PARAM NAME="src" value="'+src+'"></OBJECT>';setTimeout(function(){obj.parentNode.style.height='700px';obj.innerHTML = imgstr;}, 1000 );parent.iFrameHeight2();}</script><meta name="Generator" content="Arbortext Publishing Engine 6.0 M130">
+      <meta name="Stylesheet" content="C:\Program Files\PTC\Arbortext PE\custom\doctypes\sm\sm_html.style">
+      <link rel="stylesheet" href="commonCss.css" charset="UTF-8" type="text/css"></head>
+   <div class=" x-servinfo-1-0" id="styler-id1">
+      <h4 class=" x-title-19-0" id="styler-id1.1">轮胎气压指示灯传感器的读入（UJM）</h4>
+      <div class=" x-servinfosub-2-0" id="styler-id1.3">
+         <ul class=" x-list1-8-0">
+            <h3 class=" x-title-24-0" id="styler-id1.3.1.1">专用工具</h3>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;<span class=" x-sptool-1-0"><span class=" x-sptool-no-1-0">EL-46079</span><span class=" x-sptool-desc-1-0">轮胎气压监测器诊断工具</span></span></span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;<span class=" x-sptool-1-0"><span class=" x-sptool-no-1-0">EL-50448</span><span class=" x-sptool-desc-1-0">轮胎气压监测器传感器启动工具</span></span></span></li>
+         </ul>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">关于当地同等工具，参见<a class=" x-cell-link-2-0" href="A59410-S0000014320.html">专用工具</a></div>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.4">
+         <h5 class=" x-title-16-0" id="styler-id1.4.1">读入模式的说明</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">轮胎气压监测系统使用组合仪表、车身控制模块(BCM)、4 个射频传输气压传感器、遥控门锁接收器(RCDLR)和串行数据电路执行轮胎气压监测器读入模式功能。在每次轮胎换位、车身控制模块 (BCM) 更换或传感器更换后，都必须执行传感器读入程序。一旦启用读入模式，每个传感器的唯一识别码将会被读入车身控制模块
+            (BCM) 存储器中。当读入一个传感器识别码时，车身控制模块 (BCM) 使喇叭发出唧唧声指示传感器已经发送其识别码且车身控制模块 (BCM) 已经接收且读入。车身控制模块 (BCM) 必须按正确的顺序读入传感器识别码，以确定正确的传感器位置。读入的第一个识别码分配至左前位置，第二个分配至右前位置，第三个分配至右后位置而第四个分配至左后位置。转向信号灯将分别点亮，以指示读入位置的正确顺序。
+         </div>
+         <div class=" x-para-1-0">
+            <h3 class=" x-title-10-0" id="styler-id1.4.3.1">使用EL-46079、EL-50448或同等工具执行传感器功能</h3>
+            <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; margin-left: 8mm; text-indent: 0pt; ">每个传感器内部带有一个低频线圈。轮胎气压监测器专用工具用于启动模式时，将产生一个启动传感器的低频传输信号。在远程触发读入模式中，传感器通过传输信号来回应低频启动。在轮胎气压监测器读入模式下，当车身控制模块 (BCM) 接收到一个“远程触发读入模式”传输信号时，便将该传感器识别码分配至与其读入顺序相对应的车辆位置。</div>
+         </div>
+         <div class=" x-para-1-0">
+            <h3 class=" x-title-10-0" id="styler-id1.4.4.1">读入模式的取消</h3>
+            <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; margin-left: 8mm; text-indent: 0pt; ">如果将电源开关循环至“OFF（关闭）”位置，或者如果任何传感器读入的时间超过 2 分钟，或者所有 4 个传感器的匹配总共消耗了 5 分钟，则读入模式将被取消。如果在读入第一个传感器之前读入模式被取消，则原始传感器识别码将被保留。如果在读入第一个传感器之后读入模式被取消，则将发生以下情况：</div>
+         </div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;车身控制模块 (BCM) 存储器中存储的所有传感器识别码都将失效。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;驾驶员信息中心将显示破折号以取代轮胎气压（如装备）。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;将设置DTC C0775。</span></li>
+         </ul>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">此时这些情况将需要重复执行读入程序，以使系统正常工作。</div>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.5">
+         <h5 class=" x-title-16-0" id="styler-id1.5.1">轮胎气压监测器读入程序</h5>
+         <div class=" x-note-3-0">
+            <div id="styler-id1.5.2.1"></div>
+            <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; margin-top: 2.00pt; margin-bottom: 2.00pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; "><span class=" x--ufe-zb-1-0">注意:</span>启动特定传感器但喇叭未发出唧唧声，这种情况可能是由于传感器信号受到另一个部件的阻挡造成的，只需将车轮气门嘴转动到不同的位置即可。确保轮胎气压监测工具电池足以完成轮胎气压监测器读入过程。不要将轮胎气压监测工具直接放在气门嘴上。轮胎气压监测工具应放在靠近气门嘴的轮胎侧壁上。在确定传感器故障之前，可能必须重复轮胎气压监测器传感器读入启动程序多达3次。
+            </div>
+         </div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">1.</span>施加驻车制动。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">2.</span>将车辆置于维修模式，使用故障诊断仪或驾驶员信息中心按钮启动“轮胎气压传感器读入模式”。若听到喇叭发出两声唧唧声，表示读入模式已经启用。左前转向信号也将点亮。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">3.</span>从左前轮胎开始，使轮胎气压监测器专用工具的天线朝上，顶住靠近气门杆处轮辋的轮胎侧壁以激活传感器。按下然后松开激活按钮。确保专用工具上的发射指示灯指示传感器正在发射激活信号。等待喇叭发出唧唧声。如果喇叭未发出唧唧声，则用工具再次进行传感器激活步骤。一旦喇叭发出唧唧声，传感器信息就被读入，而要读入的下一个位置的转向信号灯将点亮。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">4.</span>喇叭发出鸣响且右前转向信号灯点亮后，剩下的3 个传感器按以下顺序重复步骤 3：</span></li>
+            <ul class=" x-list2-2-0">
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">4.1</span>&nbsp;右前</span></li>
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">4.2</span>&nbsp;右后</span></li>
+               <li class=" x--inherit-background-color x-item-6-0 x-item-6-1 x--zero-text-indent"><span class=" x-ptxt-2-0 x-ptxt-2-1"><span style="">4.3</span>&nbsp;左后</span></li>
+            </ul>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">5.</span>当左后传感器已被读入且喇叭也发出两次唧唧声后，读入过程完成且车身控制模块也退出读入模式。</span></li>
+         </ul>
+      </div>
+   </div>
+</html>

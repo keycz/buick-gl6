@@ -1,0 +1,31 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta content="IE=8" http-equiv="X-UA-Compatible">
+      <title>车身控制系统的说明与操作</title><script> document.domain="saic-gm.com"; function showImg(obj){ var as = document.getElementsByTagName('a'); for(var i=0;i<as.length;i++){as[i].innerHTML='点击显示图片';as[i].parentNode.style.height='40px';} var src = obj.getAttribute("data-url"); var imgstr='<OBJECT width="892" height="680" type="image" classid="CLSID:B789F873-EB93-11D2-A6D8-00A0241989B9"><PARAM NAME="src" value="'+src+'"></OBJECT>';setTimeout(function(){obj.parentNode.style.height='700px';obj.innerHTML = imgstr;}, 1000 );parent.iFrameHeight2();}</script><meta name="Generator" content="Arbortext Publishing Engine 6.0 M130">
+      <meta name="Stylesheet" content="E:\PTC\arbortext pe\custom\doctypes\sm\sm_html.style">
+      <link rel="stylesheet" href="commonCss.css" charset="UTF-8" type="text/css"></head>
+   <div class=" x-servinfo-1-0" id="styler-id1">
+      <h4 class=" x-title-19-0" id="styler-id1.1">车身控制系统的说明与操作</h4>
+      <div class=" x-servinfosub-2-0" id="styler-id1.2">
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">车身控制系统包括车身控制模块 (BCM)、通信和各类输入与输出。一些输入、输出和信息要求其它模块与车身控制模块相互作用。车身控制模块具有离散的输入和输出端子，以控制车身功能。车身控制模块接线至多条CAN数据总线和多条LIN总线，并作为多条总线之间的网关。</div>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.3">
+         <h5 class=" x-title-16-0" id="styler-id1.3.1">电源模式主控模块</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">此车身控制模块 (BCM) 用作电源模式主控模块 (PMM) 功能。开关信号用于确定电源模式，并将电源模式通过串行数据电路发送到需要此信息的点火开关是小电流开关，电源模式主导装置接收到的多个离散的点火其它模块，因此电源模式主导装置将根据需要启动继电器和其它电源模式主导装置的直接输出。参见“<a class=" x-cell-link-2-0" href="A148335-S0000038495.html">电源模式的说明与操作</a>”，以获得电源模式功能的完整说明。
+         </div>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.4">
+         <h5 class=" x-title-16-0" id="styler-id1.4.1">网关</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">车身控制模块 (BCM) 在此车型中作为网关或转换器。网关的目的是多条CAN数据总线总线和多条LIN总线之间的串行数据信息，以在不同模块之间进行通信。网关按照网络传输协议与每个网络交互。</div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">车身控制模块通过单独的CAN数据总线（D CAN），通过车辆故障诊断口（DLC）与故障诊断仪相连，将故障诊断仪请求的各模块诊断需求转发到模块所在的CAN数据总线上，并将各模块诊断响应转发到与故障诊断仪相连的CAN数据总线（D CAN）。</div>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.5">
+         <h5 class=" x-title-16-0" id="styler-id1.5.1">车身控制</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">在车身控制模块电气系统示意图的相应功能区域中，对各种车身控制模块 (BCM) 输入和输出电路进行了说明。参见“<a class=" x-cell-link-2-0" href="A147986-S0000038770.html">车身控制系统示意图</a>”，以获得详细信息。
+         </div>
+      </div>
+   </div>
+</html>

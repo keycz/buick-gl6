@@ -1,0 +1,67 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta content="IE=8" http-equiv="X-UA-Compatible">
+      <title>K109 前视摄像头模块：编程和设置</title><script> document.domain="saic-gm.com"; function showImg(obj){ var as = document.getElementsByTagName('a'); for(var i=0;i<as.length;i++){as[i].innerHTML='点击显示图片';as[i].parentNode.style.height='40px';} var src = obj.getAttribute("data-url"); var imgstr='<OBJECT width="892" height="680" type="image" classid="CLSID:B789F873-EB93-11D2-A6D8-00A0241989B9"><PARAM NAME="src" value="'+src+'"></OBJECT>';setTimeout(function(){obj.parentNode.style.height='700px';obj.innerHTML = imgstr;}, 1000 );parent.iFrameHeight2();}</script><meta name="Generator" content="Arbortext Publishing Engine 6.0 M130">
+      <meta name="Stylesheet" content="E:\PTC\arbortext pe\custom\doctypes\sm\sm_html.style">
+      <link rel="stylesheet" href="commonCss.css" charset="UTF-8" type="text/css"></head>
+   <div class=" x-servinfo-1-0" id="styler-id1">
+      <h4 class=" x-title-19-0" id="styler-id1.1">K109 前视摄像头模块：编程和设置</h4>
+      <div class=" x-servinfosub-2-0" id="styler-id1.2">
+         <div class=" x-note-3-0">
+            <div id="styler-id1.2.1.1"></div>
+            <ul class=" x-list1-5-0"><span class=" x--ufe-zb-1-0">注意:</span><li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;切勿对控制模块进行编程，除非有维修程序或维修通讯的指导。如果控制模块未利用正确的校准软件进行正确配置，则控制模块无法正确控制所有车辆功能。</span></li>
+               <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;确保编程工具装备了最新软件并且与数据链路连接器牢固连接。如果编程过程中断，则可能会使编程失败或损坏控制模块。</span></li>
+               <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;在编程过程中，蓄电池电压稳定很重要。任何波动、峰值、过压或电压损失都将中断编程。需要时，安装<span class=" x-sptool-1-0"><span class=" x-sptool-no-1-0">EL-49642</span><span class=" x-sptool-desc-1-0">维修编程系统编程支持工具</span></span>以维持系统电压。如果不适用，则连接一根电压充足的12 V跨接线或从交流电压电源上断开的助力器组件。切勿连接蓄电池充电器。</span></li>
+               <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;关闭或停用可能对车辆蓄电池造成负荷的系统，如车内灯、车外灯（包括日间行车灯）、HVAC、收音机等。</span></li>
+               <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;在编程程序期间，遵循SPS提示以修正点火开关位置。</span></li>
+               <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;完成编程后，清除DTC。清除动力传动系统DTC可能会将“Inspection/Maintenance（I/M）（检查/保养）”系统状态显示设置为“NO（否）”。</span></li>
+               <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;如果已更换挡风玻璃，则必须校准前视摄像头模块。</span></li>
+               <li class=" x--inherit-background-color x-item-20-0 x-item-20-2 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-2"><span style="font-size: 14pt; font-family: Arial; ">• </span> &nbsp;如果拆下并重新安装了前视摄像头模块，则不必进行任何操作。</span></li>
+            </ul>
+         </div>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.3">
+         <h5 class=" x-title-16-0" id="styler-id1.3.1">在更换挡风玻璃后</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">当仅更换挡风玻璃时，切勿对前视摄像头模块重新编程，除非有维修程序或维修通讯的指导。</div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">必须校准 K109 前视摄像头，参见<a class=" x-cell-link-2-0" href="A283712-S0000044081.html">前视摄像头模块的读入</a>。
+         </div>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.4">
+         <h5 class=" x-title-16-0" id="styler-id1.4.1">更换和编程前视摄像头模块，或对其重新编程</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">若要编程一个更换的或已有的前视摄像头模块，执行以下程序：</div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">1.</span>进入维修编程系统 (SPS)，并按屏幕上的说明进行操作。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">2.</span>在维修编程系统（SPS）选择控制器界面选择“前视摄像头控制模块”，下一步选中“选择编程方式 - 编程”，“选择编程类型 - 正常”，并按屏幕上的说明进行操作。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">3.</span>在编程结束后，选择维修编程系统屏幕上的“Clear DTCs（清除DTC）”功能。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">4.</span>K109前视摄像头模块编程后，必须对其进行校准。参见<a class=" x-cell-link-2-0" href="A283712-S0000044081.html">前视摄像头模块的读入</a>。</span></li>
+         </ul>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.5">
+         <h5 class=" x-title-16-0" id="styler-id1.5.1">重新编程控制模块</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">切勿对前视摄像头模块重新编程，除非有维修程序或维修通讯的指导。</div>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">若要编程一个更换的或已有的前视摄像头模块，执行以下程序：</div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">1.</span>进入维修编程系统 (SPS)，并按屏幕上的说明进行操作。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">2.</span>在维修编程系统（SPS）选择控制器界面选择“前视摄像头控制模块”，下一步选中“选择编程方式 - 编程”，“选择编程类型 - 正常”，并按屏幕上的说明进行操作。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">3.</span>在编程结束后，选择维修编程系统屏幕上的“Clear DTCs（清除DTC）”功能。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">4.</span>K109前视摄像头模块编程后，必须对其进行校准。参见<a class=" x-cell-link-2-0" href="A283712-S0000044081.html">前视摄像头模块的读入</a>。</span></li>
+         </ul>
+      </div>
+      <div class=" x-servinfosub-1-0" id="styler-id1.6">
+         <h5 class=" x-title-16-0" id="styler-id1.6.1">编程恢复不成功</h5>
+         <div style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; text-indent: 8mm; line-height: 16.00pt; margin-top: 6.00pt; ">如果编程操作中断或失败，则执行以下步骤：</div>
+         <ul class=" x-list1-8-0">
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">1.</span>切勿将点火开关置于“OFF（关闭）”位置。确保所有前视摄像头模块、数据链路连接器和编程工具连接牢靠且TIS终端操作软件是最新版本。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">2.</span>尝试对前视摄像头模块重新进行编程。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">3.</span>如果仍无法对前视摄像头模块进行编程，则将点火开关置于OFF（关闭）位置持续至少1 min。</span></li>
+            <li class=" x--inherit-background-color x-item-20-0 x-item-20-1 x--zero-text-indent"><span class=" x-ptxt-4-0 x-ptxt-4-1"><span style="">4.</span>将点火开关置于ON（打开）位置，尝试对前视摄像头模块重新编程。</span></li>
+            <div class=" x-arw-list-2-0">
+               <li class=" x--inherit-background-color x-item-19-0 x--zero-text-indent"><span style="margin-left: 0pt; margin-right: 0pt; text-indent: 0pt; font-family: Arial; font-size: 12pt; line-height: 16.00pt; ">如果仍无法对前视摄像头模块进行编程，则将更换前视摄像头。</span></li>
+            </div>
+         </ul>
+      </div>
+   </div>
+</html>
